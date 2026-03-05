@@ -1,0 +1,364 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\title{LLMPhysics Journal Ambitions Contest\\Statistical Methodology and Analysis Framework\\Pre-Registration Document v1.1}
+\author{Data Handler: alamalarian}
+\date{March 3, 2026}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Overview}
+
+This document describes the complete statistical methodology for evaluating whether the LLMPhysics Journal Ambitions Contest produces a measurable improvement in submission quality relative to the pre-contest baseline. All thresholds, equations, and decision criteria described herein are pre-registered prior to the scoring of any paper --- baseline or contest. This document is committed to the project repository with a timestamp and SHA-256 hash to ensure methodological integrity and prevent post-hoc adjustment.
+
+The analysis is conducted by the designated data handler, who plays no role in judging submissions and has no stake in the outcome of the contest itself.
+
+\section{Data Collection}
+
+\subsection{Baseline Sample}
+
+A corpus of $n_2 = 50$ papers submitted to r/LLMPhysics prior to the contest announcement has been assembled. This corpus constitutes the pre-contest baseline and represents the typical quality distribution of submissions to the subreddit in the absence of any structured quality incentive. Each baseline paper is identified by its citation, which will appear in full in the final results paper. The papers themselves are not stored in the repository.
+
+Baseline papers have not yet been scored. Scoring will proceed using the automated pipeline described in Section 3, after this methodology document has been committed and published.
+
+\subsection{Contest Submissions}
+
+All papers formally submitted to the contest will constitute the contest sample, with size $n_1$ determined by the number of valid submissions received. Contest papers will be scored identically to baseline papers using the same automated pipeline and rubric.
+
+\section{Automated Scoring Pipeline}
+
+\subsection{Model Configuration}
+
+Each paper will be scored independently by two large language models:
+
+\begin{itemize}
+    \item Model A: GPT-5.2 (OpenAI)
+    \item Model B: Claude Sonnet 4.6 (Anthropic)
+\end{itemize}
+
+Both models will be configured identically for all scoring runs:
+
+\begin{itemize}
+    \item Temperature: 0 (fully deterministic output)
+    \item Context: Fresh context window for every individual scoring run --- no conversation history, no cross-contamination between papers or between models
+    \item Shot type: Single-shot --- prompt $\to$ paper $\to$ output, nothing else
+\end{itemize}
+
+The models will be provided with the standardized judge guidelines (v1.1) as their scoring prompt and will not be aware of each other's outputs at any point.
+
+\subsection{Audit Trail and Transparency}
+
+Every scoring run will be fully logged. Each log entry will record:
+
+\begin{itemize}
+    \item The full model output
+    \item Token counts (input and output)
+    \item Any failures or malformed responses
+    \item A UTC timestamp
+\end{itemize}
+
+These logs will be compiled into structured documents, one per paper per model per run, and committed to the project git repository. The repository remains private during the contest to prevent gaming of the rubric or scoring criteria, and will be made fully public upon contest conclusion.
+
+The scoring prompt (judge guidelines v1.1) is fixed prior to any scoring run. Its SHA-256 hash is recorded in the repository alongside this document, providing independent verification that the prompt was identical across all runs and was not modified after scoring began.
+
+\subsection{Rubric Categories and Scoring}
+
+The rubric evaluates six categories with the following maximum point allocations:
+
+\begin{center}
+\begin{tabular}{lc}
+\toprule
+\textbf{Category} & \textbf{Maximum Points} \\
+\midrule
+Hypothesis & 15 \\
+Novelty & 15 \\
+Scientific Humility & 15 \\
+Engagement & 20 \\
+Rigor & 10 \\
+Citations & 10 \\
+\midrule
+Raw Total & 85 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The normalized total score is computed as:
+\begin{equation}
+S_{\text{norm}} = \frac{S_{\text{raw}}}{85} \times 100
+\end{equation}
+where $S_{\text{raw}}$ is the sum of all six category scores. $S_{\text{norm}}$ is rounded to one decimal place.
+
+Statistical analysis will be conducted on each of the six category scores individually, as well as on $S_{\text{norm}}$, yielding seven parallel analyses.
+
+\textbf{Note:} Human panel judges additionally conduct a defense evaluation component not available to the automated pipeline. The normalized scoring formula accounts for this structural difference.
+
+\section{Noise Floor Characterization}
+
+\subsection{Purpose}
+
+Because the models are run at temperature 0, their outputs are expected to be largely deterministic. However, subtle variation may still occur across runs due to differences in internal floating point handling, batching, or infrastructure. More importantly, certain rubric categories require interpretive judgment (e.g., Novelty, Scientific Humility), and the models may produce different score assignments across runs even when prompted identically. Characterizing this variance is essential before any between-group comparisons can be trusted.
+
+\subsection{Procedure}
+
+A subset of $k = 10$ papers will be drawn from the 50-paper baseline corpus. Each of these papers will be scored 5 times per model, producing:
+\begin{equation}
+10 \text{ papers} \times 5 \text{ runs} \times 2 \text{ models} = 100 \text{ total scoring runs}
+\end{equation}
+
+All runs will use the identical configuration described in Section 3.1. No information from any prior run will be present in the context of any subsequent run.
+
+\subsection{Noise Variance Calculation}
+
+For each paper $i$, category $c$, and model $m$, the within-paper variance across 5 runs will be computed. The noise variance $\sigma^2_{\text{noise}}$ for a given category is defined as the mean of these within-paper variances across all 10 papers and both models:
+\begin{equation}
+\sigma^2_{\text{noise},c} = \frac{1}{2k} \sum_{m=1}^{2} \sum_{i=1}^{k} s^2_{i,m,c}
+\end{equation}
+where $s^2_{i,m,c}$ is the sample variance of the 5 repeated scores for paper $i$, model $m$, category $c$, and $k = 10$.
+
+The noise standard deviation is then:
+\begin{equation}
+\sigma_{\text{noise},c} = \sqrt{\sigma^2_{\text{noise},c}}
+\end{equation}
+
+This will be computed separately for each of the six categories and for the normalized total $S_{\text{norm}}$.
+
+\textbf{Interpretation:} At temperature 0, any observed noise variance is structural rather than random --- it reflects genuine ambiguity in how the models interpret the rubric criteria for certain paper types or categories. Categories with higher noise variance require correspondingly larger effect sizes before conclusions can be drawn.
+
+\section{Effect Size Calculation}
+
+\subsection{Statistic: Noise-Corrected Hedges' \texorpdfstring{$g'$}{g'}}
+
+The primary effect size statistic is Hedges' $g'$, chosen over Cohen's $d$ due to the small sample sizes involved. Hedges' $g'$ applies a correction factor that reduces bias in effect size estimation when group sizes are small.
+
+Additionally, the pooled standard deviation is corrected for noise variance --- the model's own scoring instability is subtracted from the observed between-paper variance before the effect size is computed. This ensures the reported effect size reflects genuine differences in paper quality rather than artifacts of model variance.
+
+\subsection{Step 1: Observed Pooled Standard Deviation}
+
+The observed pooled standard deviation between the two groups (contest vs.\ baseline) for category $c$ is:
+\begin{equation}
+\text{SD}_{\text{observed},c} = \sqrt{\frac{(n_1 - 1)s^2_{1,c} + (n_2 - 1)s^2_{2,c}}{n_1 + n_2 - 2}}
+\end{equation}
+where:
+\begin{itemize}
+    \item $n_1$ = number of contest papers
+    \item $n_2 = 50$ = number of baseline papers
+    \item $s^2_{1,c}$ = sample variance of contest paper scores in category $c$
+    \item $s^2_{2,c}$ = sample variance of baseline paper scores in category $c$
+\end{itemize}
+
+\subsection{Step 2: Noise-Corrected Pooled Standard Deviation}
+
+The noise variance established in Section 4 is subtracted from the observed variance to yield the corrected pooled standard deviation:
+\begin{equation}
+\text{SD}_{\text{corrected},c} = \sqrt{\text{SD}^2_{\text{observed},c} - \sigma^2_{\text{noise},c}}
+\end{equation}
+
+\textbf{Critical condition:} If $\sigma^2_{\text{noise},c} > \text{SD}^2_{\text{observed},c}$, then the expression under the square root is negative and $\text{SD}_{\text{corrected},c}$ is not a real number. In this case the result for category $c$ is declared invalid. See Section 7.
+
+\subsection{Step 3: Raw Effect Size}
+
+\begin{equation}
+g_c = \frac{\bar{X}_{1,c} - \bar{X}_{2,c}}{\text{SD}_{\text{corrected},c}}
+\end{equation}
+where:
+\begin{itemize}
+    \item $\bar{X}_{1,c}$ = mean score of contest papers in category $c$
+    \item $\bar{X}_{2,c}$ = mean score of baseline papers in category $c$
+\end{itemize}
+
+\subsection{Step 4: Hedges' Small-Sample Correction}
+
+To correct for bias introduced by small sample sizes, the correction factor $J$ is applied:
+\begin{equation}
+J = 1 - \frac{3}{4(n_1 + n_2 - 2) - 1}
+\end{equation}
+
+The final reported effect size is:
+\begin{equation}
+g'_c = g_c \times J = \frac{\bar{X}_{1,c} - \bar{X}_{2,c}}{\text{SD}_{\text{corrected},c}} \times \left(1 - \frac{3}{4(n_1 + n_2 - 2) - 1}\right)
+\end{equation}
+
+This is computed independently for each of the six rubric categories and for the normalized total score, yielding seven values of $g'$.
+
+\section{Bootstrap Confidence Intervals}
+
+\subsection{Purpose}
+
+The noise-corrected Hedges' $g'$ computed in Section 5 is a point estimate. Given the potentially small number of contest submissions $n_1$, a point estimate alone is insufficient for confident inference. Bootstrap confidence intervals are computed for each category and for $S_{\text{norm}}$ to characterize the uncertainty in each $g'$ value.
+
+\subsection{Procedure}
+
+A parametric bootstrap will be performed with $B = 10{,}000$ iterations. For each iteration $b$:
+
+\begin{enumerate}
+    \item Resample $n_1$ papers with replacement from the contest paper scores to form bootstrap contest sample $\mathbf{x}^{(b)}_1$.
+    \item Resample $n_2 = 50$ papers with replacement from the baseline paper scores to form bootstrap baseline sample $\mathbf{x}^{(b)}_2$.
+    \item Compute $\text{SD}^{(b)}_{\text{observed},c}$ from the resampled groups per Equation (5).
+    \item Compute the noise-corrected pooled standard deviation:
+    \[
+    \text{SD}^{(b)}_{\text{corrected},c} = \sqrt{\text{SD}^{(b)}_{\text{observed},c}{}^2 - \sigma^2_{\text{noise},c}}
+    \]
+    If the expression under the radical is negative, this iteration is flagged invalid for category $c$ and excluded from the CI for that category.
+    \item Compute $g^{(b)}_c$ per Equation (7) and apply $J$ per Equation (9) to obtain $g'^{(b)}_c$.
+\end{enumerate}
+
+\subsection{Fixed Noise Floor}
+
+$\sigma^2_{\text{noise},c}$ is held fixed across all bootstrap iterations at the value established during noise floor characterization (Section 4). It is not resampled.
+
+This is methodologically correct: $\sigma^2_{\text{noise},c}$ is a property of the scoring pipeline, not of the paper population. Resampling it would conflate uncertainty about paper quality with uncertainty about model behavior, which are distinct sources of variance. The resulting confidence intervals therefore capture uncertainty about true between-group quality differences only.
+
+\subsection{Confidence Interval Extraction}
+
+After $B$ valid iterations, the 95\% confidence interval for $g'_c$ is the percentile interval:
+\begin{equation}
+\text{CI}_{95}(g'_c) = \left[P_{2.5},\; P_{97.5}\right]
+\end{equation}
+where $P_{2.5}$ and $P_{97.5}$ are the 2.5th and 97.5th percentiles of the $B$ bootstrap values $\{g'^{(b)}_c\}$.
+
+If more than 10\% of bootstrap iterations are flagged invalid for a given category, the CI for that category is declared unreliable and the result for that category is reported as invalid regardless of the point estimate.
+
+\subsection{Reporting}
+
+All seven point estimates and their 95\% CIs will be reported in the final results. The full bootstrap distribution for each category will be archived in the public repository. CIs are interpreted alongside the point estimate:
+
+\begin{itemize}
+    \item A CI entirely above 0.2 provides strong evidence of meaningful improvement.
+    \item A CI straddling 0.2 warrants cautious interpretation even if the point estimate exceeds the threshold.
+    \item A CI entirely below 0 provides evidence of regression in that category, independent of the point estimate.
+\end{itemize}
+
+\section{Decision Framework}
+
+\subsection{Hypotheses}
+
+The test is \textbf{two-tailed}. The contest hypothesis is directional: the intervention is expected to improve submission quality, not merely to produce any change. However, meaningful regression is an acknowledged possible outcome and is treated as a substantive finding.
+
+\begin{align}
+H_0 &: |g'_c| < 0.2 \quad \text{(no detectable effect)} \\
+H_1 &: g'_c \geq 0.2 \quad \text{(meaningful improvement)}
+\end{align}
+
+\subsection{Three Mutually Exclusive Outcomes}
+
+For each category $c$, exactly one of three outcomes obtains. These are exhaustive and mutually exclusive.
+
+\bigskip
+\noindent\textbf{Outcome 1 --- Fail to Reject $H_0$}
+
+\medskip
+\noindent Either of the following conditions is sufficient:
+\begin{align}
+\text{(Invalid):} \quad & \sigma^2_{\text{noise},c} \geq \text{SD}^2_{\text{observed},c} \implies \text{SD}_{\text{corrected},c} \notin \mathbb{R} \\
+\text{(Below threshold):} \quad & |g'_c| < 0.2
+\end{align}
+
+The noise floor exceeds or equals the observed variance, or the signal is too weak in either direction to attribute to the contest. No directional conclusion is drawn.
+
+\bigskip
+\noindent\textbf{Outcome 2 --- Reject $H_0$, Support $H_1$ ($g'_c \geq 0.2$)}
+
+\medskip
+\noindent The contest is associated with a meaningful positive improvement in category $c$. Magnitude is classified as follows:
+
+\begin{center}
+\begin{tabular}{lcl}
+\toprule
+\textbf{Condition} & \textbf{Classification} & \textbf{Interpretation} \\
+\midrule
+$0.2 \leq g'_c < 0.5$ & Small effect & Cautious conclusions \\
+$0.5 \leq g'_c < 0.8$ & Medium effect & Moderate confidence \\
+$g'_c \geq 0.8$ & Large effect & Strong conclusions \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Note on confidence scaling:} A small effect size, while sufficient to reject the null, leaves meaningful uncertainty about the source of the improvement. Systematic biases in the baseline vs.\ contest sample composition, or unmeasured confounds, are harder to rule out at small effect sizes. Confidence in attributing improvement to the contest intervention increases substantially at medium and large effect sizes.
+
+\bigskip
+\noindent\textbf{Outcome 3 --- Reject $H_0$, Reject $H_1$ ($g'_c \leq -0.2$)}
+
+\medskip
+\noindent The contest is associated with a meaningful decrease in submission quality in category $c$. This is a stronger statement than a null result: it is not merely that the contest failed to help, but that contest submissions score detectably worse than baseline on this dimension. This outcome is a substantive finding and is reported with the same weight as Outcome 2.
+
+Magnitude classification mirrors the positive arm:
+
+\begin{center}
+\begin{tabular}{lcl}
+\toprule
+\textbf{Condition} & \textbf{Classification} & \textbf{Interpretation} \\
+\midrule
+$-0.5 < g'_c \leq -0.2$ & Small regression & Cautious concern \\
+$-0.8 < g'_c \leq -0.5$ & Medium regression & Moderate concern \\
+$g'_c \leq -0.8$ & Large regression & Strong concern \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Role of Confidence Intervals in Decisions}
+
+The point estimate $g'_c$ determines the outcome classification above. The 95\% CI (Section 6) is reported alongside all classifications and informs confidence in the conclusion:
+
+\begin{itemize}
+    \item A CI entirely within one outcome region strengthens the conclusion.
+    \item A CI straddling an outcome boundary (e.g., crossing $\pm 0.2$ or crossing zero) warrants explicit hedging in the written interpretation, even when the point estimate falls clearly within a region.
+\end{itemize}
+
+\subsection{Reporting}
+
+Results will be reported per category and for $S_{\text{norm}}$. All seven outcomes, their validity status, point estimates, 95\% CIs, and magnitude classifications will be reported in full. A mixed result across categories is methodologically valid and itself informative --- it identifies which specific dimensions of the rubric the contest successfully or unsuccessfully incentivized.
+
+\section{Summary of Variable Definitions}
+
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+\textbf{Variable} & \textbf{Definition} \\
+\midrule
+$n_1$ & Number of contest paper submissions \\
+$n_2$ & Number of baseline papers ($= 50$) \\
+$k$ & Number of papers used in noise floor characterization ($= 10$) \\
+$\bar{X}_{1,c}$ & Mean score of contest papers in category $c$ \\
+$\bar{X}_{2,c}$ & Mean score of baseline papers in category $c$ \\
+$s^2_{1,c}$ & Sample variance of contest paper scores in category $c$ \\
+$s^2_{2,c}$ & Sample variance of baseline paper scores in category $c$ \\
+$s^2_{i,m,c}$ & Within-paper variance across 5 repeated runs for paper $i$, model $m$, category $c$ \\
+$\sigma^2_{\text{noise},c}$ & Mean noise variance across papers and models for category $c$ \\
+$\sigma_{\text{noise},c}$ & Noise standard deviation for category $c$ \\
+$\text{SD}_{\text{observed},c}$ & Observed pooled standard deviation between groups for category $c$ \\
+$\text{SD}_{\text{corrected},c}$ & Noise-corrected pooled standard deviation for category $c$ \\
+$g_c$ & Raw effect size for category $c$ \\
+$J$ & Hedges' small-sample correction factor \\
+$g'_c$ & Final noise-corrected Hedges' $g'$ for category $c$ \\
+$B$ & Number of bootstrap iterations ($= 10{,}000$) \\
+$g'^{(b)}_c$ & Bootstrap estimate of $g'_c$ at iteration $b$ \\
+$\text{CI}_{95}(g'_c)$ & 95\% percentile bootstrap confidence interval for $g'_c$ \\
+$S_{\text{raw}}$ & Sum of all six category scores (max 85) \\
+$S_{\text{norm}}$ & Normalized total score: $(S_{\text{raw}}/85) \times 100$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Pre-Registration Statement}
+
+All methodological decisions described in this document --- including the baseline sample size, noise floor procedure, effect size statistic, null condition definitions, bootstrap procedure, and the $|g'| \geq 0.2$ rejection threshold --- were finalized and committed to the project repository prior to the scoring of any paper, baseline or contest. No parameters will be adjusted after scoring begins.
+
+Two SHA-256 hashes are recorded in the repository alongside this document: one for this methodology document (computed from the \texttt{.tex} source with this line reading \texttt{[HASH]}), and one for the scoring prompt (judge guidelines v1.1). Together they establish that both the statistical framework and the scoring instructions were fixed before any scoring run was executed.
+
+To verify the methodology hash: obtain the \texttt{.tex} source from the repository, replace the hash value below with \texttt{[HASH]}, and recompute SHA-256.
+
+\bigskip
+\noindent\textbf{Methodology SHA-256 (\texttt{.tex} source):}\\
+\small\texttt{[Hash]}
+
+\bigskip
+\noindent\textit{Any subsequent version of this document will carry a new version number and a documented changelog.}
+
+\end{document}
