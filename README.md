@@ -1,1 +1,0 @@
-# LLMPhysics-Journal-Ambitions-Contest
