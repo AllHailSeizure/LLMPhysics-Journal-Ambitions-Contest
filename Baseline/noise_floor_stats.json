@@ -1,0 +1,346 @@
+{
+  "meta": {
+    "description": "Noise floor variance statistics per methodology v1.1 Section 4.3",
+    "input_file": "./output/noisefloor.json",
+    "k": 10,
+    "runs_per_paper": 5,
+    "n_models": 2,
+    "models": [
+      "claude-sonnet-4-6",
+      "gpt-5.2"
+    ],
+    "total_runs": 100,
+    "categories": [
+      "hypothesis",
+      "novelty",
+      "scientific_humility",
+      "engagement",
+      "rigor",
+      "citations"
+    ]
+  },
+  "noise_variance": {
+    "hypothesis": {
+      "sigma2_noise": 0.10375,
+      "sigma_noise": 0.322102
+    },
+    "novelty": {
+      "sigma2_noise": 0.193958,
+      "sigma_noise": 0.440407
+    },
+    "scientific_humility": {
+      "sigma2_noise": 0.134167,
+      "sigma_noise": 0.366288
+    },
+    "engagement": {
+      "sigma2_noise": 0.17125,
+      "sigma_noise": 0.413824
+    },
+    "rigor": {
+      "sigma2_noise": 0.053125,
+      "sigma_noise": 0.230489
+    },
+    "citations": {
+      "sigma2_noise": 0.026667,
+      "sigma_noise": 0.163299
+    },
+    "snorm": {
+      "sigma2_noise": 1.577839,
+      "sigma_noise": 1.256121
+    }
+  },
+  "per_model_breakdown": {
+    "claude-sonnet-4-6": {
+      "hypothesis": {
+        "sigma2_noise": 0.0675,
+        "sigma_noise": 0.259808
+      },
+      "novelty": {
+        "sigma2_noise": 0.117917,
+        "sigma_noise": 0.34339
+      },
+      "scientific_humility": {
+        "sigma2_noise": 0.103333,
+        "sigma_noise": 0.321455
+      },
+      "engagement": {
+        "sigma2_noise": 0.055,
+        "sigma_noise": 0.234521
+      },
+      "rigor": {
+        "sigma2_noise": 0.05625,
+        "sigma_noise": 0.237171
+      },
+      "citations": {
+        "sigma2_noise": 0.018333,
+        "sigma_noise": 0.135401
+      },
+      "snorm": {
+        "sigma2_noise": 0.823526,
+        "sigma_noise": 0.907483
+      }
+    },
+    "gpt-5.2": {
+      "hypothesis": {
+        "sigma2_noise": 0.14,
+        "sigma_noise": 0.374166
+      },
+      "novelty": {
+        "sigma2_noise": 0.27,
+        "sigma_noise": 0.519615
+      },
+      "scientific_humility": {
+        "sigma2_noise": 0.165,
+        "sigma_noise": 0.406202
+      },
+      "engagement": {
+        "sigma2_noise": 0.2875,
+        "sigma_noise": 0.53619
+      },
+      "rigor": {
+        "sigma2_noise": 0.05,
+        "sigma_noise": 0.223607
+      },
+      "citations": {
+        "sigma2_noise": 0.035,
+        "sigma_noise": 0.187083
+      },
+      "snorm": {
+        "sigma2_noise": 2.332153,
+        "sigma_noise": 1.527139
+      }
+    }
+  },
+  "per_paper_variances": [
+    {
+      "paper_id": "010",
+      "models": {
+        "claude-sonnet-4-6": {
+          "hypothesis": 0.0,
+          "novelty": 0.0,
+          "scientific_humility": 0.0,
+          "engagement": 0.0,
+          "rigor": 0.0,
+          "citations": 0.05,
+          "snorm": 0.069219
+        },
+        "gpt-5.2": {
+          "hypothesis": 1.2,
+          "novelty": 0.3,
+          "scientific_humility": 0.3,
+          "engagement": 0.7,
+          "rigor": 0.05,
+          "citations": 0.0,
+          "snorm": 10.103817
+        }
+      }
+    },
+    {
+      "paper_id": "011",
+      "models": {
+        "claude-sonnet-4-6": {
+          "hypothesis": 0.0,
+          "novelty": 0.0,
+          "scientific_humility": 0.0,
+          "engagement": 0.3,
+          "rigor": 0.0,
+          "citations": 0.0,
+          "snorm": 0.415246
+        },
+        "gpt-5.2": {
+          "hypothesis": 0.0,
+          "novelty": 0.3,
+          "scientific_humility": 0.075,
+          "engagement": 0.575,
+          "rigor": 0.0,
+          "citations": 0.0,
+          "snorm": 2.145301
+        }
+      }
+    },
+    {
+      "paper_id": "015",
+      "models": {
+        "claude-sonnet-4-6": {
+          "hypothesis": 0.0,
+          "novelty": 0.05,
+          "scientific_humility": 0.3,
+          "engagement": 0.05,
+          "rigor": 0.075,
+          "citations": 0.0,
+          "snorm": 0.449838
+        },
+        "gpt-5.2": {
+          "hypothesis": 0.0,
+          "novelty": 0.0,
+          "scientific_humility": 0.0,
+          "engagement": 0.2,
+          "rigor": 0.0,
+          "citations": 0.3,
+          "snorm": 1.107216
+        }
+      }
+    },
+    {
+      "paper_id": "018",
+      "models": {
+        "claude-sonnet-4-6": {
+          "hypothesis": 0.0,
+          "novelty": 0.2,
+          "scientific_humility": 0.075,
+          "engagement": 0.0,
+          "rigor": 0.05,
+          "citations": 0.0,
+          "snorm": 0.41521
+        },
+        "gpt-5.2": {
+          "hypothesis": 0.0,
+          "novelty": 0.0,
+          "scientific_humility": 0.0,
+          "engagement": 0.0,
+          "rigor": 0.0,
+          "citations": 0.0,
+          "snorm": 0.0
+        }
+      }
+    },
+    {
+      "paper_id": "020",
+      "models": {
+        "claude-sonnet-4-6": {
+          "hypothesis": 0.0,
+          "novelty": 0.229167,
+          "scientific_humility": 0.083333,
+          "engagement": 0.0,
+          "rigor": 0.083333,
+          "citations": 0.083333,
+          "snorm": 0.778522
+        },
+        "gpt-5.2": {
+          "hypothesis": 0.0,
+          "novelty": 0.3,
+          "scientific_humility": 0.0,
+          "engagement": 0.7,
+          "rigor": 0.075,
+          "citations": 0.05,
+          "snorm": 2.076111
+        }
+      }
+    },
+    {
+      "paper_id": "029",
+      "models": {
+        "claude-sonnet-4-6": {
+          "hypothesis": 0.0,
+          "novelty": 0.25,
+          "scientific_humility": 0.25,
+          "engagement": 0.0,
+          "rigor": 0.229167,
+          "citations": 0.0,
+          "snorm": 1.470549
+        },
+        "gpt-5.2": {
+          "hypothesis": 0.2,
+          "novelty": 0.3,
+          "scientific_humility": 0.175,
+          "engagement": 0.2,
+          "rigor": 0.0,
+          "citations": 0.0,
+          "snorm": 2.871863
+        }
+      }
+    },
+    {
+      "paper_id": "039",
+      "models": {
+        "claude-sonnet-4-6": {
+          "hypothesis": 0.0,
+          "novelty": 0.0,
+          "scientific_humility": 0.2,
+          "engagement": 0.05,
+          "rigor": 0.0,
+          "citations": 0.0,
+          "snorm": 0.276825
+        },
+        "gpt-5.2": {
+          "hypothesis": 0.0,
+          "novelty": 0.0,
+          "scientific_humility": 0.3,
+          "engagement": 0.3,
+          "rigor": 0.3,
+          "citations": 0.0,
+          "snorm": 0.968836
+        }
+      }
+    },
+    {
+      "paper_id": "041",
+      "models": {
+        "claude-sonnet-4-6": {
+          "hypothesis": 0.675,
+          "novelty": 0.05,
+          "scientific_humility": 0.05,
+          "engagement": 0.075,
+          "rigor": 0.075,
+          "citations": 0.0,
+          "snorm": 2.871916
+        },
+        "gpt-5.2": {
+          "hypothesis": 0.0,
+          "novelty": 0.3,
+          "scientific_humility": 0.3,
+          "engagement": 0.2,
+          "rigor": 0.0,
+          "citations": 0.0,
+          "snorm": 2.491309
+        }
+      }
+    },
+    {
+      "paper_id": "043",
+      "models": {
+        "claude-sonnet-4-6": {
+          "hypothesis": 0.0,
+          "novelty": 0.2,
+          "scientific_humility": 0.075,
+          "engagement": 0.075,
+          "rigor": 0.05,
+          "citations": 0.05,
+          "snorm": 1.211104
+        },
+        "gpt-5.2": {
+          "hypothesis": 0.0,
+          "novelty": 1.2,
+          "scientific_humility": 0.2,
+          "engagement": 0.0,
+          "rigor": 0.0,
+          "citations": 0.0,
+          "snorm": 1.107239
+        }
+      }
+    },
+    {
+      "paper_id": "044",
+      "models": {
+        "claude-sonnet-4-6": {
+          "hypothesis": 0.0,
+          "novelty": 0.2,
+          "scientific_humility": 0.0,
+          "engagement": 0.0,
+          "rigor": 0.0,
+          "citations": 0.0,
+          "snorm": 0.27683
+        },
+        "gpt-5.2": {
+          "hypothesis": 0.0,
+          "novelty": 0.0,
+          "scientific_humility": 0.3,
+          "engagement": 0.0,
+          "rigor": 0.075,
+          "citations": 0.0,
+          "snorm": 0.449838
+        }
+      }
+    }
+  ]
+}
