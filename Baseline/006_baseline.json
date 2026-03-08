@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "006",
+    "citation": "Mustafa, 2026",
+    "group": "baseline",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-07T23:53:14.382708+00:00",
+    "input_tokens": 13767,
+    "output_tokens": 831,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 5.0,
+        "justification": "The manuscript states a hypothesis \u2014 that the 2:1 dipole asymmetry combined with matter's 'chessboard' structure yields a net attractive force mimicking gravity \u2014 but never explicitly defines a null hypothesis or alternate hypothesis. The paper discusses what would be needed to support the idea (deriving f, the correlation mechanism, distance dependence) but does not articulate what specific outcomes would falsify it, nor are failure conditions mutually exclusive or clearly testable as stated."
+      },
+      "novelty": {
+        "score": 6.0,
+        "justification": "The author briefly distinguishes their proposal from historical electromagnetic gravity theories (Lesage, Majorana) in Section 5.4, noting it 'does not propose new particles or fields' and differs from shadow/pressure mechanisms. However, the comparative work is superficial \u2014 no recent literature on electromagnetic gravity unification or van der Waals-gravity analogies is cited, and the claim of novelty rests largely on assertion rather than systematic engagement with prior approaches."
+      },
+      "scientific_humility": {
+        "score": 11.0,
+        "justification": "The author consistently and explicitly acknowledges limitations throughout, stating 'significant theoretical work remains,' identifying the correlation mechanism as 'the central theoretical gap,' and noting 'this estimate does not prove the hypothesis.' The paper is framed as 'a starting point for investigation, not a completed theory,' and open questions are enumerated in Sections 5.2 and 5.3. Minor overreach occurs in the abstract where the hypothesis is presented with somewhat confident framing before the gaps are acknowledged."
+      },
+      "engagement": {
+        "score": 7.0,
+        "justification": "The author cites ferrofluid literature (Ivanov & Zubarev 2020, Zubarev & Iskakova 2004, Philip 2022) and connects them explicitly to the 2:1 asymmetry driving structure formation, and cites Sukhov et al. (2013) on novel distance dependencies. However, engagement with the specific subfield of electromagnetic gravity theories, van der Waals force summation over macroscopic bodies, or Casimir effect literature \u2014 all directly relevant to the proposal \u2014 is absent beyond passing mention, leaving major conceptual connections unsubstantiated."
+      },
+      "rigor": {
+        "score": 2.0,
+        "justification": "The manuscript reproduces standard dipole-dipole energy formulas (Equations 1\u20132) correctly but presents no original derivation. The central quantitative claim \u2014 that f \u2248 10\u207b\u00b9\u00b2 yields a force comparable to G \u2014 is stated without any dimensional calculation or derivation shown. The author explicitly concedes that the distance dependence (1/r\u00b2 scaling from summing 1/r\u2074 pair forces) is 'not automatic' and is left as 'an important open problem,' meaning the core physical claim is entirely underived."
+      },
+      "citations": {
+        "score": 5.0,
+        "justification": "Citations are mostly recent (6 of 9 within the past ten years) and some are explicitly connected to claims in the text (e.g., ferrofluid references tied to the 2:1 asymmetry discussion). However, reference [9] is a commercial FAQ website used to support a physics claim about magnet attraction, which is inappropriate for a scientific manuscript. Additionally, foundational textbooks [1\u20133] are cited without any recent literature in classical electrodynamics or intermolecular forces to complement them, and several major claims (e.g., the analogy to van der Waals summation) lack any citation support."
+      }
+    }
+  },
+  {
+    "paper_id": "006",
+    "citation": "Mustafa, 2026",
+    "group": "baseline",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-08T01:08:14.924023+00:00",
+    "input_tokens": 5345,
+    "output_tokens": 750,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 8.0,
+        "justification": "The paper states a reasonably clear central hypothesis: that the 2:1 dipole angular asymmetry plus matter\u2019s intrinsic \u201cchessboard\u201d charge structure could yield a nonzero net attraction that \u201cmay follow an inverse-square (1/r\u00b2) law\u201d and be comparable to gravity if a residual fraction f\u224810\u221212 remains. However, it does not explicitly define null vs alternate hypotheses or mutually exclusive, concrete falsification criteria beyond general statements about needing to derive the correlation mechanism and distance dependence."
+      },
+      "novelty": {
+        "score": 7.0,
+        "justification": "The manuscript proposes an electromagnetic-origin mechanism for gravity-like attraction via dipole asymmetry and a bulk \u2018chessboard\u2019 correlation, and briefly distinguishes itself from \u201cLesage\u2019s shadow theory\u201d and \u201cMajorana\u2019s absorption hypothesis.\u201d But it does not clearly demonstrate novelty through a detailed comparison to modern electromagnetic-gravity or dispersion-force literature, and the claimed inverse-square emergence is presented as a possibility rather than a developed new result."
+      },
+      "scientific_humility": {
+        "score": 13.0,
+        "justification": "The author repeatedly flags key gaps: \u201cThis correlation mechanism is the central theoretical gap,\u201d \u201cleave a rigorous derivation as an important open problem,\u201d and \u201cThis hypothesis is offered as a starting point for investigation, not a completed theory.\u201d Claims are generally hedged (\u201cmay,\u201d \u201cin principle,\u201d \u201cplausible\u201d) and the paper avoids asserting it has derived gravity, instead emphasizing the need to compute f and the distance law from first principles."
+      },
+      "engagement": {
+        "score": 9.0,
+        "justification": "The paper connects foundational dipole interaction texts (Jackson, Griffiths, Stone) to examples in ferrofluids (2020\u20132022 reviews) and cites a 2013 optics paper on dipole interactions in random fields to motivate nontrivial distance dependencies. However, engagement with the specific modern literature on long-range intermolecular forces/Casimir-Polder scaling and equivalence-principle constraints is limited, and several citations (e.g., magnets FAQ) are only loosely tied to the core proposed correlation mechanism."
+      },
+      "rigor": {
+        "score": 3.0,
+        "justification": "While the dipole-dipole energy formula and the (1\u22123cos\u00b2\u03b8) asymmetry are correctly stated, the central steps\u2014how \u201csummation over the three-dimensional chessboard structure\u201d yields a 1/r\u00b2 law and how the residual fraction f\u224810\u221212 arises\u2014are not derived. The argument relies on analogy (e.g., to van der Waals summations) and qualitative claims about alignment/correlation without a quantitative model, making the logical chain to Newtonian gravity non-rigorous."
+      },
+      "citations": {
+        "score": 6.0,
+        "justification": "Citations are present and mostly relevant for background on dipole interactions and ferrofluids, with several recent sources (2020\u20132022) and a 2021 engineering paper; the manuscript also ties specific claims (e.g., the 2:1 ratio) to [1\u20133]. However, some support is weak or non-scholarly (a commercial \u201cSupermagnete\u201d FAQ for magnet attraction vs repulsion), and key claims (inverse-square emergence, universality/equivalence-principle compatibility) are not backed by targeted, up-to-date primary literature."
+      }
+    }
+  }
+]

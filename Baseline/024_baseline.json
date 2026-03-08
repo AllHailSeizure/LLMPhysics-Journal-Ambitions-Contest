@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "024",
+    "citation": "Francisco, 2026",
+    "group": "baseline",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-08T01:25:26.770707+00:00",
+    "input_tokens": 5791,
+    "output_tokens": 576,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 3.0,
+        "justification": "The manuscript makes no explicit statement of a hypothesis, null hypothesis, or alternate hypothesis. While it references 'null models' for comparison and mentions 'falsifiability' as a principle, it never articulates what specific claim is being tested or what outcomes would falsify or support it \u2014 the paper frames itself as 'measurement-only' and explicitly avoids making interpretive claims, which precludes a structured hypothesis."
+      },
+      "novelty": {
+        "score": 1.0,
+        "justification": "The manuscript makes no citations whatsoever and does not engage with any prior literature, making it impossible to assess novelty through comparison with existing work. The author does not identify gaps in prior approaches or articulate how DDPD differs from or improves upon them, and claiming novelty without this comparative work does not earn credit under the rubric."
+      },
+      "scientific_humility": {
+        "score": 7.0,
+        "justification": "The manuscript is notably restrained in its claims, explicitly stating 'no interpretive claims beyond statistical differentiation from null models are made' and framing results as an 'empirical foundation suitable for falsification.' However, it fails to properly cite or attribute prior work and foundational concepts, and does not identify open questions or areas requiring further investigation beyond a vague reference to 'future studies.'"
+      },
+      "engagement": {
+        "score": 1.0,
+        "justification": "The manuscript contains zero citations and demonstrates no engagement with any existing literature, current or foundational. There is no discussion of how DDPD relates to, extends, or challenges any prior work in network dynamics, fractal geometry, or related fields, earning the lowest possible marks under this criterion."
+      },
+      "rigor": {
+        "score": 3.0,
+        "justification": "The manuscript reports quantitative results such as a fractal dimension of '1.85 \u00b1 0.07' and connected component occupancy of '42\u201351%' but provides no mathematical derivations, dimensional analysis, or logical justification for how these values are obtained. The simulation protocol is described only in vague procedural terms, and no equations or formal definitions of the metrics are presented."
+      },
+      "citations": {
+        "score": 0.0,
+        "justification": "The manuscript contains no citations whatsoever \u2014 no bibliography, no in-text references, and no attribution of any kind to prior work or foundational concepts. Under the rubric, citations that are absent cannot be evaluated as recent, relevant, or properly formatted, warranting the lowest possible score."
+      }
+    }
+  },
+  {
+    "paper_id": "024",
+    "citation": "Francisco, 2026",
+    "group": "baseline",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-08T01:26:07.706788+00:00",
+    "input_tokens": 2455,
+    "output_tokens": 618,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 6.0,
+        "justification": "The paper frames an empirical aim to \"quantify emergent behavior\" and evaluate \"statistical differentiation from null models,\" but it does not state a single clear hypothesis with explicit null vs alternate hypotheses and mutually exclusive falsification conditions. While it repeatedly references \"explicit null comparisons\" and claims signatures \"absent in null models,\" it does not define what specific measured outcomes would falsify the central claims beyond general non-differentiation."
+      },
+      "novelty": {
+        "score": 2.0,
+        "justification": "The manuscript asserts a \"measurement-only characterization\" and that it provides an \"empirical foundation,\" but it does not cite or compare against any prior approaches or recent work, nor does it identify specific gaps in existing literature. Without any literature positioning, the claimed contribution is not demonstrably novel by the rubric standard."
+      },
+      "scientific_humility": {
+        "score": 13.0,
+        "justification": "The author repeatedly constrains scope: \"No new mechanisms, interpretations, or metaphors are introduced\" and \"No interpretive claims beyond statistical differentiation from null models are made,\" which keeps claims proportionate to the presented measurements. The paper also emphasizes falsifiability via \"explicit null models\" and notes boundaries like \"The generative dynamics and axioms of the model are treated as fixed,\" though it does not enumerate many open questions."
+      },
+      "engagement": {
+        "score": 1.0,
+        "justification": "There is no substantive engagement with the current state of the field because the manuscript contains no citations and no discussion of how its metrics relate to, extend, or contrast with existing work. Claims about applying metrics to \"other domains\" are presented without connecting to any established measurement literature."
+      },
+      "rigor": {
+        "score": 5.0,
+        "justification": "The paper provides operational metric lists (e.g., \"Betti numbers,\" \"fractal dimension via box-counting\") and a basic simulation protocol with replication (\"M \u2265 10 independent runs\"), but it does not define algorithms, estimators, or statistical tests used to support quantitative claims like \"fractal dimension of approximately 1.85 \u00b1 0.07\" or \"heavy-tailed behavior relative to null models.\" Key details needed to assess mathematical/statistical soundness (null model definitions, test procedures, uncertainty computation) are not shown."
+      },
+      "citations": {
+        "score": 0.0,
+        "justification": "The manuscript includes no citations or bibliography, despite making methodological and quantitative claims (e.g., heavy-tailed survival probabilities, fractal dimension estimates, phase transitions) that would normally be supported and contextualized by references. As a result, it does not meet the rubric requirements for recency, relevance, attribution, or integration of citations."
+      }
+    }
+  }
+]

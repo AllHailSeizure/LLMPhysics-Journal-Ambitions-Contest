@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "021",
+    "citation": "GhostMeshIO, 2026",
+    "group": "baseline",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-08T01:49:33.013463+00:00",
+    "input_tokens": 4854,
+    "output_tokens": 560,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 1.0,
+        "justification": "The manuscript presents no scientific hypothesis whatsoever. It describes 'ontological datasets' and assigns novelty scores, but never states a testable claim, defines a null hypothesis, or identifies any failure conditions. Phrases like 'lim[t\u2192\u221e] (meaning/entropy) = ?' are presented as 'core statements' but are not hypotheses in any scientific sense."
+      },
+      "novelty": {
+        "score": 0.0,
+        "justification": "The manuscript cites no prior work at any point. It claims 'conceptual breakthroughs' and 'revolutionary' status for its frameworks but makes no attempt to position these against existing literature, identify gaps in prior approaches, or demonstrate how the proposal differs from established work. No citations of any kind are present."
+      },
+      "scientific_humility": {
+        "score": 1.0,
+        "justification": "The manuscript is replete with grandiose, unsupported claims, including describing selfistrue as 'Revolutionary (breaks multiple conceptual paradigms)' and predicting 'autonomous ontological evolution beyond current human conceptual frameworks.' No meaningful limitations are acknowledged, no open questions are honestly framed, and the tone is consistently boastful without substantive evidence to support any of the claims made."
+      },
+      "engagement": {
+        "score": 0.0,
+        "justification": "There are zero citations in the manuscript. The author makes no attempt to engage with any existing literature, subfield, or prior work. Terms like 'Ricci flow,' 'G\u00f6del encoding,' and 'autopoietic networks' are invoked without any connection to the bodies of work from which they originate."
+      },
+      "rigor": {
+        "score": 0.0,
+        "justification": "No derivations, calculations, or logically structured arguments are presented. Mathematical notation such as '(self \u2283<true)' and 'lim[t\u2192\u221e] (meaning/entropy) = ?' is used decoratively without definition, justification, or derivation. Numerical scores like 'novelty 0.997' and 'alienness 7.0' are asserted without any methodological basis."
+      },
+      "citations": {
+        "score": 0.0,
+        "justification": "The manuscript contains no citations of any kind \u2014 no bibliography, no in-text references, no footnotes. No prior work is attributed at any point in the document."
+      }
+    }
+  },
+  {
+    "paper_id": "021",
+    "citation": "GhostMeshIO, 2026",
+    "group": "baseline",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-08T00:02:41.580045+00:00",
+    "input_tokens": 4285,
+    "output_tokens": 567,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 2.0,
+        "justification": "The manuscript frames several \u201ccore statements\u201d (e.g., \u201c(self \u2283<true)\u201d and \u201clim[t\u2192\u221e] (meaning/entropy) = ?\u201d) and makes comparative claims (e.g., \u201cselfistrue sacrifices coherence for higher paradox intensity and novelty\u201d), but it does not state an explicit, testable scientific hypothesis with a defined null and alternate, nor does it specify mutually exclusive falsification conditions."
+      },
+      "novelty": {
+        "score": 4.0,
+        "justification": "It provides an internal novelty analysis (e.g., \u201cAverage Novelty 0.997\u2026 Peak Novelty 1.098,\u201d \u201c40% increase in alienness,\u201d and a \u201cComposite Novelty Score\u201d), but it does not compare against external prior approaches via cited literature or identify concrete gaps in existing work that this manuscript improves upon."
+      },
+      "scientific_humility": {
+        "score": 8.0,
+        "justification": "The manuscript repeatedly flags limitations and risk (e.g., \u201cExperimental, high-risk,\u201d \u201ccoherence collapse if novelty exceeds 1.2 threshold,\u201d \u201cinfinite regression in self-reference systems,\u201d and \u201cparadox containment protocols\u201d), but it also makes expansive capability claims like \u201cautonomous ontological evolution beyond current human conceptual frameworks\u201d without evidentiary support or clear boundary conditions."
+      },
+      "engagement": {
+        "score": 1.0,
+        "justification": "There is essentially no engagement with the current state of any scientific field: the text uses terms like \u201cRicci flow,\u201d \u201cG\u00f6del encoding,\u201d and \u201cquantum entanglement\u201d as metaphors/mechanisms but provides no discussion of relevant recent literature or how the proposal relates to, extends, or challenges specific existing work."
+      },
+      "rigor": {
+        "score": 2.0,
+        "justification": "Although it includes mathematical-looking elements (e.g., \u201cRicci scalar range from -0.199 to +0.174,\u201d \u201clim[t\u2192\u221e] (meaning/entropy) = ?,\u201d and coherence/novelty statistics), it provides no derivations, definitions of metrics, dimensional/physical justification, or explicit logical chain connecting these quantities to testable physical claims."
+      },
+      "citations": {
+        "score": 0.0,
+        "justification": "No citations or bibliography are provided at all; numerous technical concepts are invoked (e.g., \u201cRicci flow,\u201d \u201cG\u00f6del encoding,\u201d \u201cholographic encoding\u201d) without attribution or supporting references, so the citations criterion is not met."
+      }
+    }
+  }
+]

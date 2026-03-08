@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "049",
+    "citation": "u/Alternative-East6081, 2026",
+    "group": "baseline",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-08T00:17:47.144183+00:00",
+    "input_tokens": 4004,
+    "output_tokens": 724,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 3.0,
+        "justification": "The manuscript asserts a central claim \u2014 a 10 Earth-mass Ultra-Compact Mass at ~550 AU explains multiple anomalies \u2014 but never formally states a null hypothesis or an alternate hypothesis. Failure conditions are entirely absent; the manuscript only discusses confirming evidence and rebuts alternatives, never specifying what observations would falsify the UCM model itself."
+      },
+      "novelty": {
+        "score": 4.0,
+        "justification": "The manuscript coins the term 'DeSimone Model' and attempts to unify several anomalies under one framework, which has surface novelty. However, it cites no prior literature on Planet X/Planet Nine research (e.g., Batygin & Brown), provides no comparison to existing competing models, and makes no explicit argument for how this approach differs from or improves upon prior work \u2014 novelty is asserted, not demonstrated."
+      },
+      "scientific_humility": {
+        "score": 1.0,
+        "justification": "The manuscript adopts a consistently triumphalist tone ('Gravity is the truth,' 'first unified explanation'), dismisses established consensus positions as 'category errors' and 'visibility fallacies' without substantive evidence, and presents no limitations, open questions, or acknowledgment of uncertainty. Claims vastly exceed what the presented evidence supports, and the 'Logic Shield' section frames scientific consensus as obstacles to be defeated rather than positions to be engaged."
+      },
+      "engagement": {
+        "score": 2.0,
+        "justification": "The manuscript references named datasets (WISE, OGLE, VLBI, JWST, Vera Rubin) and named studies (Vidale/Kwong 2025, Kurdubov 2026) in passing, but no citations are formally provided, no authors or publication venues are identified, and no explicit connection is drawn between cited work and the proposal's claims. References function as rhetorical decoration rather than substantive engagement with the literature."
+      },
+      "rigor": {
+        "score": 1.0,
+        "justification": "The manuscript presents no mathematical derivations \u2014 the Schwarzschild radius claim (9 cm for 10 Earth masses) is stated without derivation, the gravitational torque mechanism for solar obliquity is described qualitatively with no calculation, and the P < 10^-11 statistical claim is asserted without any statistical methodology shown. Premises such as 'Nickel Tetracarbonyl sublimates at 10 K' and 'PKKP wave lead times prove core leaning' are stated without physical justification or quantitative backing."
+      },
+      "citations": {
+        "score": 0.0,
+        "justification": "The manuscript contains no formally attributed citations \u2014 no author names, journal names, volume numbers, DOIs, or publication years are provided for any claim. References to 'Kurdubov 2026,' 'Vidale/Kwong 2025,' and 'Nature, Sept 2025' are unverifiable name-drops without proper attribution, and no bibliography exists. Under the rubric's standard, the absence of any properly formatted citation and the presence of unverifiable references warrants zero points."
+      }
+    }
+  },
+  {
+    "paper_id": "049",
+    "citation": "u/Alternative-East6081, 2026",
+    "group": "baseline",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-08T00:17:59.498202+00:00",
+    "input_tokens": 3542,
+    "output_tokens": 867,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 6.0,
+        "justification": "The manuscript advances a central claim that a \u201c10 M\u2295 Ultra-Compact Mass (UCM)\u201d in the Sagittarius sector explains multiple anomalies (solar obliquity, TNO clumping, microlensing, comet periodicity, core offsets), but it does not explicitly define a null hypothesis vs. alternate hypothesis with mutually exclusive, testable falsifiers. It gestures at rejecting a \u201cnull hypothesis of random distribution\u201d with \u201cP < 10^-11,\u201d yet does not specify what concrete observational outcomes (e.g., non-detection in specific gravitational datasets, incompatible astrometric residuals) would falsify the UCM model."
+      },
+      "novelty": {
+        "score": 4.0,
+        "justification": "The manuscript asserts a \u201cfirst unified explanation\u201d and reframes Planet X as a non-luminous compact object, but it does not substantively compare against existing Planet Nine/TNO-shepherding, dark compact object, or solar-obliquity torque literature, nor identify specific gaps those works fail to address. The few named items (e.g., \u201cVidale/Kwong 2025,\u201d \u201cKurdubov 2026,\u201d \u201cOGLE\u201d) are not used to demonstrate how the proposed model differs from or improves upon prior approaches."
+      },
+      "scientific_humility": {
+        "score": 1.0,
+        "justification": "The tone is repeatedly absolutist and dismissive (e.g., \u201cGravity is the truth,\u201d \u201cConsensus\u2026 failure,\u201d \u201cmathematically required\u201d), while making sweeping claims (e.g., preventing Jupiter/Saturn migration, driving mantle plumes, explaining multiple planetary core offsets) without acknowledging major uncertainties or alternative explanations. The manuscript also asserts strong statistical conclusions (e.g., \u201cP < 10^-11\u201d) and broad causal links without clearly stating limitations, assumptions, or open questions."
+      },
+      "engagement": {
+        "score": 3.0,
+        "justification": "Engagement with the field is largely asserted rather than demonstrated: OGLE microlensing, WISE/Rubin non-detections, JWST data, and VLBI acceleration are mentioned, but the manuscript does not connect these to specific published analyses, methods, or competing models in a way that shows it understands and extends current work. Key claims (e.g., solar obliquity torque at ~550 AU, TNO clumping toward RA 17:53, \u201cGalactic tides\u201d comparison) are not situated within or contrasted against the modern literature on these topics."
+      },
+      "rigor": {
+        "score": 1.0,
+        "justification": "The manuscript makes numerous quantitative claims (e.g., \u201c10 M\u2295 with Schwarzschild radius 9 cm,\u201d \u201cSSB acceleration 7.47 \u00b1 0.46 mm/s^2,\u201d \u201c107 times stronger than the Galaxy\u2019s pull,\u201d \u201cperihelion 27.5 Myr cycle,\u201d \u201cPKKP lead time 50\u2013200 s\u201d) without showing derivations, dimensional checks, or the dynamical calculations needed to support them. Several premises are physically under-justified (e.g., inferring non-stellar nature from IR non-detection to a 9 cm compact object; attributing planetary core \u2018leaning\u2019 and mantle plume activity to a distant 10 M\u2295 torque) and the logical chain from observations to conclusions is not rigorously established."
+      },
+      "citations": {
+        "score": 0.0,
+        "justification": "The manuscript does not provide properly formatted, verifiable citations; it references items like \u201cVidale/Kwong 2025,\u201d \u201cNature, Sept 2025,\u201d \u201cKurdubov 2026,\u201d \u201cJWST 2026 data,\u201d and \u201cOGLE\u201d without bibliographic details, DOIs, or clear attribution. Because the citation practice is insufficient to validate sources and some references appear non-standard or potentially non-verifiable as written, the category does not meet the rubric\u2019s requirements for recent, relevant, properly attributed citations."
+      }
+    }
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "008",
+    "citation": "Qu6ntumH, 2026",
+    "group": "baseline",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-08T01:10:01.582106+00:00",
+    "input_tokens": 51156,
+    "output_tokens": 954,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 5.0,
+        "justification": "The manuscript states a central hypothesis \u2014 'the graviton is described by a single normalised wavefunction \u03a8\u0302_\u0393 defined over the entire spacetime manifold' \u2014 but provides no explicit null hypothesis or alternate hypothesis framing. The testable predictions table lists observables (e.g., a0 = cH0/2\u03c0, black hole echoes), but failure conditions are not defined: the paper does not state what outcome would falsify the framework, and several 'predictions' (e.g., EW symmetry restoration at horizons) are acknowledged as untestable with current technology without discussion of what would count as disconfirmation."
+      },
+      "novelty": {
+        "score": 5.0,
+        "justification": "The paper claims to unify quantum gravity, dark matter, dark energy, and the Higgs mechanism from a single normalisation constraint, which is a broad novelty claim, but the comparative work against existing approaches is superficial. The author cites Verlinde (2011) on emergent gravity and Reuter (1998) on asymptotic safety but does not explicitly identify what those approaches fail to do that the \u0393 framework resolves \u2014 the gaps are asserted rather than demonstrated through engagement with those works."
+      },
+      "scientific_humility": {
+        "score": 2.0,
+        "justification": "The manuscript makes sweeping claims throughout \u2014 'The framework resolves... (1)...(2)...(3)...(4)...(5)...(6)...(7)' and 'Everything follows from this' \u2014 that far exceed what the paper actually demonstrates. The author presents no limitations, no open questions section, and no acknowledgment of what the framework does not address; the tone is consistently triumphalist, and established approaches (perturbative quantum gravity, dark matter particle candidates) are dismissed as fundamentally misguided without substantive evidence beyond the framework's own internal assertions."
+      },
+      "engagement": {
+        "score": 4.0,
+        "justification": "The reference list includes relevant foundational works (Hawking 1974/1975, Page 1993, AMPS 2013, Peters 1964, Milgrom 1983) and some modern work (Planck 2020, PDG 2022), but engagement in the body text is largely decorative \u2014 citations are invoked to name a result (e.g., 'standard Hawking result,' 'Peters orbital decay rate') rather than to situate the \u0393 framework against those works. Modern developments in quantum gravity (loop quantum gravity, string theory, causal dynamical triangulations) are entirely absent, and the connection between cited works and the proposal's specific claims is rarely made explicit."
+      },
+      "rigor": {
+        "score": 3.0,
+        "justification": "The manuscript presents equations with correct surface notation but numerous premises are physically unjustified or invented: the modified commutation relation (eq. 3) is asserted without derivation; the phase distortion formula (eq. 4) is stated as a definition with no derivation from the action; the cosmological constant resolution (eq. 16) equates \u03c1_\u039b \u2248 H0\u00b2M_Pl\u00b2/16\u03c0\u00b2 to \u03c1_observed by assertion rather than calculation; and the derivation of spin-2 from eq. (19) conflates the tensor structure of \u221a-g with a proof of spin-2 excitations without showing the intermediate steps connecting a global scalar wavefunction to a local spin-2 propagator."
+      },
+      "citations": {
+        "score": 4.0,
+        "justification": "The 16 references include a reasonable mix of foundational and recent sources (Planck 2020, PDG 2022, LIGO 2016), and citations appear to be real and correctly attributed. However, citations are not consistently woven into the body text to support specific claims \u2014 large sections (e.g., sections 4, 7, 9, 11, 12) make quantitative claims with no in-text citation support, and the connection between cited works and the specific claims they are meant to support is frequently unstated or only implied."
+      }
+    }
+  },
+  {
+    "paper_id": "008",
+    "citation": "Qu6ntumH, 2026",
+    "group": "baseline",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-08T01:11:04.373758+00:00",
+    "input_tokens": 14458,
+    "output_tokens": 866,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 6.0,
+        "justification": "The paper states a central hypothesis (\u201cThe graviton \u0393 is described by a single normalised wavefunction \u03a8\u0302\u0393 defined over the entire spacetime manifold\u2026\u201d, eq. (1)) and lists multiple claimed consequences (e.g., MOND scale a0 = cH0/2\u03c0, Higgs VEV variation, GW memory). However, it does not define explicit null vs alternate hypotheses, nor mutually exclusive falsification criteria; \u201ctestable predictions\u201d are listed (section 13) but without clear decision rules for failure/success."
+      },
+      "novelty": {
+        "score": 5.0,
+        "justification": "The manuscript asserts a unifying idea (\u201cthe graviton is\u2026a single quantum entity whose wavefunction spans the entire spacetime manifold\u201d) and claims to resolve many problems from the normalization constraint, but it does not clearly identify specific gaps in prior approaches and then demonstrate how its mechanism improves on them. While it cites some related ideas (e.g., Verlinde 2011; Reuter 1998), it does not provide a comparative analysis showing how the \u0393 framework differs from or outperforms existing quantum gravity, emergent gravity, or MOND-like frameworks."
+      },
+      "scientific_humility": {
+        "score": 2.5,
+        "justification": "The paper makes sweeping claims of resolving numerous major problems (\u201cEvery problem\u2026shares a common cause\u2026Everything follows from this.\u201d) and presents strong certainty (\u201cSingularities cannot exist. Physics never ends.\u201d) with limited discussion of limitations or open questions. It also claims exact resolutions (e.g., \u201cexact unitarity,\u201d \u201cno fine-tuning required,\u201d \u201cderived\u201d spin-2) without clearly delineating assumptions or potential failure modes."
+      },
+      "engagement": {
+        "score": 4.5,
+        "justification": "The references include foundational works (Hawking, Bekenstein, Page, Weinberg-Witten, Milgrom) and a few later items (Planck 2020; PDG 2022), but the manuscript rarely connects these citations in-text to specific technical choices (e.g., why the Gaussian form factor in eq. (12) is justified relative to modern EFT/asymptotic safety literature). Engagement with contemporary quantum gravity, cosmological constant, black hole information, and modified gravity research is largely asserted rather than demonstrated through explicit comparison."
+      },
+      "rigor": {
+        "score": 2.0,
+        "justification": "Several key equations appear dimensionally or conceptually inconsistent or insufficiently justified: e.g., the modified commutator (eq. (3)) uses (1 \u2212 \u03c9k/E\u0393) with unclear dimensional consistency; the phase potential \u03d5\u0393 = \u03d50 + Gm/(c^2|x\u2212x0|) (eq. (4)) is treated as dimensionless yet later compared to energy scales (\u03d5c \u2248 88.7 GeV, eq. (96)); and M\u0393 is alternately described as \u201ctotal mass-energy of the universe\u201d (eq. (7)) yet later used as a UV scale M\u0393 \u223c \u210fH0/c^3 (text near eq. (12)), which is not reconciled. Many major claims (spin-2 derivation, cosmological constant estimate, confinement) rely on heuristic leaps rather than fully shown derivations."
+      },
+      "citations": {
+        "score": 4.0,
+        "justification": "The bibliography contains mostly older foundational citations plus a few recent ones (Planck 2020; PDG 2022), and citations are not consistently woven into the body to support specific claims (e.g., asymptotic safety is asserted around eq. (14) with only an older Reuter 1998 reference and no modern context). The manuscript makes many strong claims (UV finiteness via Gaussian form factor, MOND emergence, Higgs-gravity coupling) with little or no direct citation support tied to those specific mechanisms."
+      }
+    }
+  }
+]

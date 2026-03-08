@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "037",
+    "citation": "Ullman, 2026",
+    "group": "baseline",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-08T00:10:55.844528+00:00",
+    "input_tokens": 24650,
+    "output_tokens": 787,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 4.0,
+        "justification": "The manuscript proposes numerous analogical mappings (e.g., 'Arjun's breakdown as thermodynamic cost of information acquisition,' 'unitarity as soul imperishability') but never states a single unambiguous scientific hypothesis with an explicit null and alternate form. The 'testable intuitions' sections gesture toward experiments (e.g., 'two RL agents,' 'EEG during chanting') but failure conditions are not defined \u2014 the manuscript only discusses confirming outcomes, never what result would falsify the central claim that the Gita encodes modern physics."
+      },
+      "novelty": {
+        "score": 3.0,
+        "justification": "The manuscript claims to present a novel synthesis of Vedic philosophy and quantum mechanics/thermodynamics but cites no prior literature whatsoever \u2014 not even the substantial existing body of work on science-spirituality intersections (e.g., Capra's 'The Tao of Physics,' Penrose-Hameroff, or recent quantum cognition literature). Without engaging existing comparative work, the author cannot demonstrate that this framing is genuinely novel rather than a restatement of prior analogical traditions."
+      },
+      "scientific_humility": {
+        "score": 2.0,
+        "justification": "The manuscript consistently uses assertive, grandiose language ('Krishna is handing Arjun the operating manual for entropy-neutral intervention,' 'you earn the right to hack reality') and presents speculative analogies as established correspondences without qualification. Significant limitations \u2014 such as the non-falsifiability of most mappings, the metaphorical rather than mathematical nature of all connections, and the absence of any disconfirming evidence \u2014 are never acknowledged. The claim that the Gita 'encodes advanced physical concepts' is presented as fact rather than hypothesis."
+      },
+      "engagement": {
+        "score": 1.0,
+        "justification": "The manuscript contains zero citations to any scientific or scholarly literature throughout its entire length. There is no engagement with quantum mechanics literature (e.g., Nielsen & Chuang, Zurek on decoherence), thermodynamics literature (e.g., Landauer's original paper, which is name-dropped without citation), information theory, or any prior comparative religion-science scholarship. The judge cannot infer unstated relevance, and no connections to existing work are explicitly made anywhere in the manuscript."
+      },
+      "rigor": {
+        "score": 1.0,
+        "justification": "No mathematical derivations, equations, dimensional analyses, or quantitative calculations are presented anywhere in the manuscript. Concepts such as 'Landauer's principle,' 'unitarity,' 'path integrals,' and 'topological invariance' are invoked by name but never formally applied \u2014 they function as rhetorical labels rather than analytical tools. The logical chain from Gita verse to physical principle is consistently analogical and metaphorical, not deductive or mathematically grounded, and premises are asserted without physical justification."
+      },
+      "citations": {
+        "score": 0.0,
+        "justification": "The manuscript contains no citations of any kind \u2014 no references to scientific papers, textbooks, prior philosophical scholarship, or any other sources. Physical concepts including Landauer's principle, unitarity, the Aharonov two-state vector formalism, and topological insulators are referenced without attribution. Per the rubric, citations are entirely absent, earning the lowest possible score."
+      }
+    }
+  },
+  {
+    "paper_id": "037",
+    "citation": "Ullman, 2026",
+    "group": "baseline",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-08T00:11:10.168563+00:00",
+    "input_tokens": 21112,
+    "output_tokens": 822,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 6.0,
+        "justification": "The manuscript advances an overarching claim that the G\u012bt\u0101 is an \u201coperating manual for reality\u201d that \u201cencodes advanced physical concepts\u201d (quantum mechanics, thermodynamics, information theory), and it repeatedly proposes empirical sketches (e.g., \u201cRemote-observer channel\u2026 Watch whether human operators\u2026 report the remote qubit flip above chance,\u201d Ch.1). However, it does not state an explicit null hypothesis vs. alternate hypothesis, nor does it define mutually exclusive falsification criteria; many proposed tests rely on ill-defined constructs (e.g., \u201cSanjay\u2019s remote sight\u201d as a \u201cnon-local information channel\u201d) that are not operationalized."
+      },
+      "novelty": {
+        "score": 3.0,
+        "justification": "The work is stylistically distinctive in mapping each chapter to modern-physics metaphors (e.g., gu\u1e47as as \u201ctri-phase order parameters,\u201d Ch.14; devotion as \u201cphase-coherence,\u201d Ch.9\u201312), but it does not cite or compare against prior scholarship on physics\u2013Ved\u0101nta analogies, consciousness/observer interpretations, or information-theoretic readings of scripture. It asserts that the G\u012bt\u0101 \u201canticipates modern scientific principles\u201d without demonstrating novelty via engagement with existing approaches or identifying a specific gap it fills."
+      },
+      "scientific_humility": {
+        "score": 4.0,
+        "justification": "The manuscript frequently overstates claims (e.g., \u201croot-level admin access to reality,\u201d \u201ckernel developer,\u201d \u201coperating manual for entropy-neutral intervention\u201d) and treats metaphorical correspondences as if they were encoded technical content, without clearly delimiting what is metaphor vs. physics. While it occasionally uses softer framing like \u201ctestable intuitions & lab analogs,\u201d it does not adequately acknowledge limitations, alternative explanations, or the risk of category error in equating spiritual concepts (\u0101tman, m\u0101y\u0101, bhakti) with specific physical principles (unitarity, decoherence, Landauer cost)."
+      },
+      "engagement": {
+        "score": 2.0,
+        "justification": "Despite extensive use of modern-physics terminology (unitarity, error-correcting codes, Landauer\u2019s principle, post-selection, Poincar\u00e9 recurrence, topological order), the manuscript does not engage the current scientific literature in any substantive way\u2014there are no referenced papers, models, or debates to which the proposal is explicitly connected. The experimental sketches (e.g., \u201cAUM frequency lock\u2026 136.1 Hz,\u201d Ch.8) are not grounded in or contrasted with existing findings in neuroscience, acoustics, or quantum information."
+      },
+      "rigor": {
+        "score": 2.0,
+        "justification": "Most connections are analogical rather than derived: e.g., \u201cSoul is imperishable = unitarity\u201d (Ch.2) and \u201cTime as destroyer = second law\u201d (Ch.11) are asserted without mathematical mapping, dimensional analysis, or a defined model linking textual variables to physical observables. Several quantitative-sounding claims are physically unsupported or dubious (e.g., \u201ccarrier-frequency lock\u2026 \u2248 136 Hz AUM,\u201d Ch.8; \u201cPlanck-scale energy density\u201d inferred from \u201cthousand suns,\u201d Ch.11), and proposed experiments often conflate human subjective reports with quantum-state readout without specifying controls or feasible mechanisms."
+      },
+      "citations": {
+        "score": 0.0,
+        "justification": "No formal citations or bibliography are provided for any physics claims (e.g., Landauer\u2019s principle, unitarity, quantum error correction, post-selection, topological phases) or for interpretive claims about the G\u012bt\u0101; therefore the manuscript does not meet the rubric\u2019s requirements for recent, relevant, properly attributed citations woven into the text."
+      }
+    }
+  }
+]

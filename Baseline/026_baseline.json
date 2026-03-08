@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "026",
+    "citation": "Errante, 2026",
+    "group": "baseline",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-08T01:27:43.364350+00:00",
+    "input_tokens": 11864,
+    "output_tokens": 635,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 2.0,
+        "justification": "The manuscript asserts '0 free parameters' and '22 predictions match all current experimental data,' but never states a null hypothesis or defines failure conditions. The closing imperative 'Test it' is not a testable hypothesis \u2014 no specific experimental protocol, predicted deviation, or falsification criterion is articulated anywhere in the document."
+      },
+      "novelty": {
+        "score": 2.0,
+        "justification": "The manuscript claims to unify 'every thread of the JSY framework' but cites no prior literature whatsoever \u2014 not even the foundational works it implicitly builds on (AdS/CFT, Everett, CKM, Weil conjectures). Without any engagement with existing literature, the author cannot demonstrate what gap this fills or how it differs from prior approaches, making novelty impossible to assess on the author's own terms."
+      },
+      "scientific_humility": {
+        "score": 0.5,
+        "justification": "The manuscript declares '72 proven theorems, 22 predictions, 0 parameters' and states 'The blueprint is complete,' language that is maximally boastful and entirely disproportionate to what is shown. Theorems are stated without proof, derivations are absent, and no limitations, open questions, or failure modes are acknowledged anywhere in the document."
+      },
+      "engagement": {
+        "score": 0.0,
+        "justification": "The manuscript contains zero citations \u2014 no references to AdS/CFT literature, CKM experimental results, neutrino mass measurements, Weil's theorem, Baker's theorem, or any other work explicitly invoked in the text. Named results such as 'Baker's theorem' and 'Weil' are mentioned in passing without attribution, and no connection to any external body of work is established."
+      },
+      "rigor": {
+        "score": 1.0,
+        "justification": "Equations are presented throughout but derivations are entirely absent \u2014 for example, the cosmological constant formula 'Lambda L_Pl^2 = exp(-5pi/2 * (pi/R_L)^2 + 17/19)' is stated with no derivation of the instanton action or one-loop determinant, and the gauge coupling formula 'g^2 = 4pi/Vol(M_n)' has no dimensional justification. Labeling assertions as 'theorems' without proof does not constitute mathematical rigor."
+      },
+      "citations": {
+        "score": 0.0,
+        "justification": "The manuscript contains no citations of any kind \u2014 no bibliography, no in-text references, no footnotes. Under the rubric, citations that are absent cannot be evaluated for recency or relevance, and the complete absence of any citation support warrants the lowest possible score."
+      }
+    }
+  },
+  {
+    "paper_id": "026",
+    "citation": "Errante, 2026",
+    "group": "baseline",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-08T00:04:48.896472+00:00",
+    "input_tokens": 10196,
+    "output_tokens": 667,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 3.0,
+        "justification": "The manuscript asserts a sweeping central claim that \u201cthe entire universe is encoded\u201d by the seed state |\u03a80\u27e9 and that \u201c22 physical predictions match all current experimental data,\u201d but it does not explicitly define a null hypothesis vs. alternate hypothesis or mutually exclusive falsification criteria. While a few items are framed as testable (e.g., \u201c\u03b4_PMNS = 216\u00b0 to be tested by DUNE\u201d), the paper does not specify what outcomes would decisively refute the framework as a whole."
+      },
+      "novelty": {
+        "score": 2.0,
+        "justification": "The manuscript repeatedly claims completeness and unification (e.g., \u201ccomplete blueprint\u2026 unifying every thread\u2026 0 free parameters\u201d) but does not cite prior approaches or identify specific gaps in existing literature that it improves upon. Apart from brief name-drops (e.g., \u201cBaker\u2019s theorem,\u201d \u201cWeil,\u201d \u201cAdS/CFT\u201d), there is no comparative positioning against recent work."
+      },
+      "scientific_humility": {
+        "score": 1.0,
+        "justification": "The tone is maximally absolute (e.g., \u201ccomplete blueprint,\u201d \u201cevery theorem proven,\u201d \u201c0 free parameters,\u201d \u201cThe blueprint is complete. Test it.\u201d) with little delineation of limitations, open problems, or uncertainty. Several claims are far broader than the evidence shown in-text (e.g., deriving \u201cquantum geometry of spacetime\u201d and \u201cBorn rule from coherence\u201d from the seed) without acknowledging speculative steps."
+      },
+      "engagement": {
+        "score": 1.0,
+        "justification": "There is essentially no substantive engagement with the current state of any relevant field: no discussion of how the proposed constructions relate to modern particle phenomenology, quantum gravity model-building, or mathematical physics literature. The manuscript provides many internal \u2018Theorems\u2019 but does not connect them to existing research programs via explicit, referenced comparison."
+      },
+      "rigor": {
+        "score": 2.0,
+        "justification": "Some internal mathematical statements are presented in a structured way (e.g., Fourier factorization of the seed, Parseval-style sums, basic facts about F_37^\u00d7), but many major physics claims are asserted without derivation or physical justification (e.g., \u201cSU(3)\u00d7SU(2)\u00d7U(1) from Galois groups,\u201d \u201cgauge coupling unification\u2026 = 4\u03c0/Vol(M_n),\u201d \u201c\u039bL_Pl^2 = exp(\u2026)\u201d). Dimensional analysis and the chain from number-theoretic objects to measured couplings/masses are not shown in sufficient detail to establish soundness."
+      },
+      "citations": {
+        "score": 0.0,
+        "justification": "No formal citations or bibliography are provided, and key claims are not supported by referenced sources; only informal mentions like \u201cBaker\u2019s theorem\u201d and \u201cWeil\u201d appear without attribution details. Under the rubric, the absence of properly formatted, connected citations warrants a zero in this category."
+      }
+    }
+  }
+]

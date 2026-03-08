@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "050",
+    "citation": "Jansen, 2026",
+    "group": "baseline",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-08T00:18:22.043317+00:00",
+    "input_tokens": 34230,
+    "output_tokens": 714,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 3.0,
+        "justification": "The manuscript presents a design goal (GPI > 2\u00d7 baseline) and a north-star KPI, but never states a formal scientific hypothesis, null hypothesis, or alternate hypothesis. There is no explicit discussion of what outcomes would falsify the core claims \u2014 the document is a design specification, not a scientific hypothesis-driven manuscript."
+      },
+      "novelty": {
+        "score": 5.0,
+        "justification": "The manuscript cites relevant prior work (Loihi, SpiNNaker, e-prop, memristors) and gestures at combining physical entropy sources with neuromorphic spiking architectures, but the comparative argument for novelty is underdeveloped \u2014 the document states design requirements rather than explicitly articulating how the SNS architecture differs from and improves upon existing neuromorphic systems in a scientifically argued way."
+      },
+      "scientific_humility": {
+        "score": 9.0,
+        "justification": "The manuscript is notably restrained: it explicitly disclaims AGI and sentience claims ('This specification makes no claims of AGI or sentience'), acknowledges the Sim2Real gap, labels KPIs as 'aspirational' or 'assumption-level,' and defers unresolved parameters to V12.0 with [TBD] markers. However, the document's framing as a 'PERFECT MASTER' and 'GOLD STANDARD' introduces minor boastful language inconsistent with full marks."
+      },
+      "engagement": {
+        "score": 4.0,
+        "justification": "Citations to foundational works (Chua 1971, Mead 1990, Bak 1987, Friston 2010) are listed in the bibliography but are not substantively connected to specific claims in the body text \u2014 they appear as a reference list rather than being woven into the argument. Modern neuromorphic work (Loihi, SpiNNaker) is mentioned only in a non-normative benchmark table without meaningful engagement with what those systems do or do not achieve relative to the proposal."
+      },
+      "rigor": {
+        "score": 2.0,
+        "justification": "The manuscript presents several equations (quantum-extended SDE, GPI formula, cooling model) but provides no derivations, no dimensional analysis, and no justification for key parameters such as the coupling factor \u03b7 or the cooling overhead k_cool \u2248 400 W/W beyond labeling it a 'model assumption.' The quantum noise term \u03b7\u221a(\u210f/2m)dQ_t mixes quantum mechanical constants with a dimensionless conductance variable without physical justification."
+      },
+      "citations": {
+        "score": 4.0,
+        "justification": "The bibliography lists 20 references with DOIs, but citations are almost entirely absent from the body of the manuscript \u2014 they are not woven into claims as they are made, and the body text rarely references specific numbered citations. Foundational sources from 1971, 1987, and 1990 dominate without justification for why recent work is insufficient, and the connection between cited works and specific design decisions is never explicitly stated."
+      }
+    }
+  },
+  {
+    "paper_id": "050",
+    "citation": "Jansen, 2026",
+    "group": "baseline",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-08T01:34:27.355135+00:00",
+    "input_tokens": 9309,
+    "output_tokens": 822,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 6.0,
+        "justification": "The manuscript states an overall goal to \u201cintegrate physical entropy \u2026 as a non-deterministic compute/learning pathway to bypass deterministic scaling limits\u201d and defines a target composite KPI (GPI) \u201c> 2\u00d7 baseline,\u201d but it does not explicitly define a null vs alternate hypothesis or mutually exclusive falsification conditions. While it specifies pass criteria for several tests (e.g., NIST SP 800-22 thresholds; accuracy/robustness targets), these are framed as requirements/targets rather than a structured hypothesis with explicit falsifiers."
+      },
+      "novelty": {
+        "score": 7.0,
+        "justification": "The proposal combines memristor ReRAM noise with a \u201cQuantum Dot SET\u201d entropy source and ties it to neuromorphic learning/control (SOC, active inference, Tsallis entropy, global workspace), which is presented as a distinctive architecture. However, the manuscript does not clearly identify specific gaps in prior approaches (e.g., existing neuromorphic chips or TRNG/entropy-injection work) and does not explicitly argue, with comparisons, how this improves over cited systems like Loihi/SpiNNaker beyond high-level motivation."
+      },
+      "scientific_humility": {
+        "score": 14.0,
+        "justification": "The manuscript repeatedly constrains claims: it is \u201cFROZEN / DESIGN SPECIFICATION ONLY (NO ARTIFACTS),\u201d states \u201cno claims of AGI or sentience,\u201d and emphasizes that S1 simulation results may not transfer to hardware (\u201cSim2Real gap\u2026 apply a simulation-to-real transfer factor \u03b3\u201d). It also labels many values as \u201cNON-NORMATIVE placeholders\u201d and requires hashed evidence artifacts only in V12.0, demonstrating clear boundary-setting and acknowledgment of limitations."
+      },
+      "engagement": {
+        "score": 8.0,
+        "justification": "The manuscript cites relevant foundational and some modern works (e.g., Friston 2010 active inference, Bellec 2020 e-prop, PyPhi 2019, Loihi 2018, ISSCR 2021) and includes standards references (NIST SP 800-22/90B). However, engagement is mostly at the level of naming components (SOC, Tsallis entropy, global workspace) without detailed discussion of how specific recent results in neuromorphic entropy sources, memristor variability compensation, or active-inference SNN implementations motivate particular design choices or parameterizations."
+      },
+      "rigor": {
+        "score": 5.0,
+        "justification": "The manuscript provides some formal elements (e.g., a \u201cQuantum-extended SDE\u201d and defined units for rates, plus explicit NIST test pass criteria and a percolation acceptance envelope), but it largely lacks derivations connecting the physics/noise model to learning or performance claims. The SDE term \u201c\u03b7\u221a(\u210f/2m) dQt\u201d is introduced without dimensional analysis or physical justification for the coupling to memristor conductance dynamics, and many quantitative KPIs (e.g., energy pJ/SOP with cooling factor) are presented as assumptions/targets rather than derived results."
+      },
+      "citations": {
+        "score": 6.0,
+        "justification": "The bibliography is substantial and includes relevant standards and several recent references (e.g., 2018\u20132022 items like NIST 90B 2018, Loihi 2018, PyPhi 2019, IRDS 2022, ISSCR 2021). However, citations are mostly confined to the references section and are not consistently woven into the body to support specific claims (e.g., quantum entropy source characteristics, SOC control, Tsallis entropy use), and much of the manuscript reads as a requirements/spec document with limited in-text attribution beyond occasional bracketed references."
+      }
+    }
+  }
+]

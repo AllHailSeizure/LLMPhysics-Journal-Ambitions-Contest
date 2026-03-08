@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "040",
+    "citation": "u/GreyzoneInsights, 2026",
+    "group": "baseline",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-08T00:12:13.318997+00:00",
+    "input_tokens": 2979,
+    "output_tokens": 752,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 2.0,
+        "justification": "The manuscript offers an 'Irreducible Statement' \u2014 'Life and consciousness consist in maintaining coherence by actively collapsing possible futures within a bounded quantum\u2013topological biological system' \u2014 but this functions as a thesis assertion, not a scientific hypothesis. No null hypothesis is stated, no alternate hypothesis is defined, and no failure conditions or falsification criteria are identified anywhere in the document. The 'Research Program' section gestures at varying assumptions and tracking robustness but does not specify any testable prediction or outcome that would count as disconfirmation."
+      },
+      "novelty": {
+        "score": 2.0,
+        "justification": "The manuscript makes no citations whatsoever, rendering it impossible to assess novelty through comparative engagement with prior work. The ideas presented \u2014 quantum coherence in biological systems, organism-level consciousness, topological constraint \u2014 overlap with existing literature (e.g., Penrose-Hameroff, enactivism, quantum biology), but the author makes no attempt to identify gaps in prior approaches or articulate how this proposal differs from or improves upon them. Claiming novelty without this comparative work does not earn credit under the rubric."
+      },
+      "scientific_humility": {
+        "score": 4.0,
+        "justification": "The manuscript adopts the Hamkins methodological framing to pre-emptively deflect falsification, stating 'failure in one model does not refute the framework globally' and 'this theory defines a universe of discourse to be explored, not a claim of absolute truth,' which provides some rhetorical humility. However, the document makes sweeping, unqualified claims \u2014 'consciousness is not localised in the brain,' 'the organism is the quantum object, not the neuron' \u2014 without substantive evidence, and no prior work is cited or attributed, meaning existing ideas are presented as the author's own framework without acknowledgment."
+      },
+      "engagement": {
+        "score": 1.0,
+        "justification": "The manuscript contains zero citations and makes no reference to any specific researcher, paper, or body of literature beyond invoking 'Hamkins' as a methodological label in the title and section headers. There is no demonstrated engagement with quantum biology, consciousness studies, enactivism, topological approaches to biology, or any other relevant subfield. The judge cannot infer unstated relevance, and none is stated."
+      },
+      "rigor": {
+        "score": 1.0,
+        "justification": "The manuscript is composed entirely of declarative axiomatic assertions \u2014 e.g., 'total possibility may be treated as a constant' and 'capacity increases with scale, not variability' \u2014 with no mathematical derivations, no dimensional analysis, no formal definitions, and no logical proofs connecting premises to conclusions. Concepts such as 'quantum\u2013topological system' and 'possibility as a constant' are introduced without physical justification or formal specification. No quantitative claims are supported by calculation."
+      },
+      "citations": {
+        "score": 0.0,
+        "justification": "The manuscript contains no citations of any kind \u2014 no in-text references, no bibliography, and no attribution of any foundational or recent work. Under the rubric, citations that are absent cannot be evaluated as recent, relevant, or properly formatted, and the author makes no connections between external sources and any claims in the body of the text."
+      }
+    }
+  },
+  {
+    "paper_id": "040",
+    "citation": "u/GreyzoneInsights, 2026",
+    "group": "baseline",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-08T00:12:23.749733+00:00",
+    "input_tokens": 2650,
+    "output_tokens": 598,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 3.0,
+        "justification": "The manuscript offers an overarching claim (\u201cLife and consciousness consist in maintaining coherence by actively collapsing possible futures within a bounded quantum\u2013topological biological system\u201d) but does not define explicit null vs alternate hypotheses or mutually exclusive, plausibly testable falsification conditions. While it gestures at a \u201cResearch Program\u201d and \u201cvary assumptions to test survivability,\u201d it does not specify concrete empirical outcomes that would refute the framework."
+      },
+      "novelty": {
+        "score": 2.0,
+        "justification": "The submission asserts a distinctive synthesis (organism as the \u201cquantum object,\u201d consciousness as \u201ccoherence via possibility reduction\u201d), but it does not cite or compare against any prior approaches, identify gaps in recent work, or explain how it improves on existing theories. The only named reference is \u201cHamkins\u201d as a methodological inspiration, without literature positioning."
+      },
+      "scientific_humility": {
+        "score": 8.0,
+        "justification": "The manuscript explicitly frames itself as model-relative (\u201cTruth is model-relative,\u201d \u201cFailure in one model does not refute the framework globally\u201d) and treats the theory as a \u201cuniverse of discourse\u2026 not a claim of absolute truth,\u201d which appropriately limits scope. However, it still makes strong ontological assertions (e.g., \u201cConsciousness is not localised in the brain,\u201d \u201cThe organism is therefore the quantum object\u201d) without specifying evidential boundaries or clear open empirical questions."
+      },
+      "engagement": {
+        "score": 1.0,
+        "justification": "There is essentially no substantive engagement with the current state of relevant fields (quantum foundations, decoherence in biology, neuroscience of consciousness, free will literature): no recent citations and no explicit discussion of how the proposal relates to existing models. Concepts like superposition/collapse and macroscopic coherence are invoked, but not connected to contemporary research programs or debates."
+      },
+      "rigor": {
+        "score": 1.0,
+        "justification": "The manuscript is almost entirely conceptual and does not provide mathematical formulations, derivations, dimensional analysis, or physically grounded mechanisms for key claims (e.g., how an organism maintains quantum coherence, what \u201cquantum\u2013topological system\u201d means operationally). Assertions such as \u201cThe organism is effectively a closed system\u201d and \u201cCollapse preserves coherence\u201d are not justified with quantitative or established physical argument."
+      },
+      "citations": {
+        "score": 0.0,
+        "justification": "No formal citations or bibliography are provided, and specific claims about quantum mechanics, biology, neuroscience, and topology are made without attribution. The mention of \u201cHamkins\u201d is not accompanied by a reference, and there are no recent, relevant sources connected to the manuscript\u2019s assertions."
+      }
+    }
+  }
+]

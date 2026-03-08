@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "017",
+    "citation": "Jakey, 2026",
+    "group": "baseline",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-07T23:59:49.360381+00:00",
+    "input_tokens": 14436,
+    "output_tokens": 884,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 5.0,
+        "justification": "The manuscript presents a central claim that the vacuum is a tetrahedral lattice from which fundamental constants can be derived, and Section 17 lists some falsification conditions (e.g., '\u03b1\u207b\u00b9 cannot be expressed as 360/\u03b4S \u2212 n\u03b4S for integer n,' discovery of a fourth fermion generation, Tolman test results). However, there is no explicit null hypothesis or alternate hypothesis framing, and several falsification conditions are either trivially unfalsifiable or circular \u2014 for instance, the condition about \u03b1\u207b\u00b9 merely restates the formula rather than providing an independent empirical test."
+      },
+      "novelty": {
+        "score": 3.0,
+        "justification": "The manuscript claims to derive fundamental constants from tetrahedral vacuum geometry and presents this as a novel unified framework, but makes no meaningful attempt to cite or differentiate from prior work in related areas such as lattice aether models, digital physics, or numerological approaches to fundamental constants. The only named prior work is Schwinger (1948) for the anomalous magnetic moment, which the author explicitly disclaims as original, and the Boerdijk\u2013Coxeter helix is referenced without citation. No recent literature is engaged to establish what gap this work fills."
+      },
+      "scientific_humility": {
+        "score": 5.5,
+        "justification": "The manuscript does show some restraint through its tiered grading system (A/B/C/Dev.) and the revision log acknowledging prior errors (e.g., 'The v6.0 formula 20sin(\u2206T)/(2\u03c0) = 0.134 was off by 60\u00d7 and has been replaced'), and it honestly labels baryon asymmetry and Hubble tension as Tier 3. However, the abstract and framing make sweeping claims \u2014 'gravity is not an independent force,' resolving the cosmological constant problem, and claiming '80% reduction' in parameters \u2014 that substantially exceed what the paper demonstrates, and the tone of 'Cracks in Mainstream Physics' dismisses established theory without substantive evidence."
+      },
+      "engagement": {
+        "score": 2.0,
+        "justification": "The manuscript contains virtually no citations to external literature throughout its body \u2014 no references section exists, and the only named works are Schwinger (1948) and a vague reference to 'the literature' for the BC helix axial rotation angle. There is no engagement with modern work in quantum gravity, lattice field theory, fine-structure constant derivations, or cosmology, and no connections between any cited work and the proposals are explicitly made in the text."
+      },
+      "rigor": {
+        "score": 2.0,
+        "justification": "The key derivations \u2014 such as \u03b1\u207b\u00b9 = 360\u00b0/\u03b4S \u2212 5\u03b4S and \u00b5 = \u03b1\u207b\u00b9(12 + \u221a2) \u2212 20uk \u2014 are presented as results without derivation from first principles; the physical justification for why these specific combinations of geometric constants should equal electromagnetic or mass-ratio observables is asserted rather than derived. The formula G = 12\u210f\u00b2H0/(cm\u00b3\u03c0) is described as following from 'dimensional analysis' with N chosen to match observation, which is numerological fitting rather than physical derivation, and the premises of Axioms A1\u2013A3 are invented concepts without grounding in established physics."
+      },
+      "citations": {
+        "score": 0.5,
+        "justification": "The manuscript contains no reference list and no properly formatted citations anywhere in the text; the only attributions are informal name-drops (Schwinger 1948, Plateau's law, Mackay shell) without any citation formatting, DOI, or bibliographic detail. No citations are woven through the manuscript to support claims as they are made, and the engagement with prior work is essentially nonexistent."
+      }
+    }
+  },
+  {
+    "paper_id": "017",
+    "citation": "Jakey, 2026",
+    "group": "baseline",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-08T01:18:25.252132+00:00",
+    "input_tokens": 5920,
+    "output_tokens": 659,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 6.0,
+        "justification": "The manuscript states a central claim via axioms (e.g., \u201cA1 (Lattice Structure). The vacuum is a high-pressure lattice of regular tetrahedra\u2026\u201d) and offers falsification conditions in \u00a717 (e.g., Tolman test, \u201cA fourth fermion generation is discovered\u201d), but it does not explicitly define a null hypothesis vs. alternate hypothesis or make mutually exclusive outcome criteria for the core claims (e.g., \u03b1, \u00b5, G) beyond a short list."
+      },
+      "novelty": {
+        "score": 2.0,
+        "justification": "The work asserts a new framework (\u201cPressure Gradient Theory\u2026 vacuum is a high-pressure lattice\u2026\u201d) and new numerological-style formulas (e.g., \u03b1\u22121 = 360\u00b0/\u03b4S \u2212 5\u03b4S), but it does not cite or compare against recent (past 10 years) relevant literature, nor does it identify specific gaps in prior approaches that this work improves upon."
+      },
+      "scientific_humility": {
+        "score": 7.0,
+        "justification": "The manuscript does acknowledge multiple items as incomplete or under development (e.g., \u201cFull cosmological model under development. Tier 3,\u201d \u201cDark matter framework Dev.,\u201d and a revision log admitting prior errors like \u03b5K \u201c60\u00d7 off\u201d), but it also makes broad, high-confidence claims (e.g., \u201call forces reduce to pressure gradients\u201d and \u201cresolve the cosmological constant problem conceptually\u201d) that exceed the level of derivation shown in the excerpt."
+      },
+      "engagement": {
+        "score": 1.0,
+        "justification": "There is minimal substantive engagement with the current field: the text references a few named concepts (e.g., Schwinger 1948; Boerdijk\u2013Coxeter helix \u201cfrom the literature\u201d) but provides no explicit discussion of how the proposal relates to, extends, or challenges modern work in quantum field theory, cosmology, or particle physics."
+      },
+      "rigor": {
+        "score": 2.0,
+        "justification": "While the manuscript includes dimensional checks (Appendix B) and some geometric definitions (e.g., \u03b8d = arccos(1/3)), key quantitative results are presented without derivations from the axioms (e.g., \u03b1\u22121 = 360\u00b0/\u03b4S \u2212 5\u03b4S, \u00b5 formula, and especially G = 12\u210f\u00b2H0/(c m\u03c0\u00b3) introduced via \u201cDimensional analysis\u201d with an asserted integer N=12), leaving major logical gaps and physically unjustified premises."
+      },
+      "citations": {
+        "score": 0.0,
+        "justification": "The provided manuscript excerpt contains essentially no formal citations or bibliography and makes many claims (e.g., about QFT vacuum energy, CP violation, cosmology, and the BC helix) without properly attributed, verifiable references; therefore it does not meet the rubric\u2019s requirements for recent, relevant, consistently formatted citations."
+      }
+    }
+  }
+]

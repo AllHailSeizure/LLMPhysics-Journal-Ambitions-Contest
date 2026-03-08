@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "014",
+    "citation": "Nolan, 2026",
+    "group": "baseline",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-07T23:58:25.724189+00:00",
+    "input_tokens": 19252,
+    "output_tokens": 885,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 4.0,
+        "justification": "The manuscript asserts several claims (e.g., that a Planck-scale throat resolves the information loss paradox, that entropic gravity explains cosmic expansion, that MOND emerges from holographic saturation) but never explicitly states a null hypothesis or alternate hypothesis in any formal sense. There is no discussion of what specific outcomes would falsify the model \u2014 the paper only discusses confirming evidence such as 'matching Planck observations of low large-scale power' and 'rotation curves flatten,' without identifying conditions under which the model would be rejected."
+      },
+      "novelty": {
+        "score": 6.0,
+        "justification": "The author acknowledges in the abstract that 'ideas similar to those explored here...have been investigated in prior works' and cites relevant literature, but does not systematically identify specific gaps or limitations in those prior approaches. The combination of horn torus topology, Planck-scale regularization, and entropic gravity is presented as a synthesis, but the manuscript does not clearly articulate how this synthesis differs from or improves upon existing cyclic cosmologies or entropic gravity frameworks beyond juxtaposing them."
+      },
+      "scientific_humility": {
+        "score": 6.0,
+        "justification": "The author does acknowledge prior work and uses hedging language such as 'I propose' and 'I posit,' and the abstract notes that similar ideas have been explored before. However, the paper makes sweeping claims such as 'resolving the information loss paradox' and 'addressing the black hole information paradox' and 'explaining expansion without ad hoc dark energy' without substantive evidence beyond qualitative arguments, and open questions or limitations of the framework are not explicitly identified or discussed."
+      },
+      "engagement": {
+        "score": 8.0,
+        "justification": "The manuscript cites a reasonable range of relevant work including Verlinde [11], Maldacena [16], Swingle [17], and recent arXiv papers (2025), and connects them to specific claims in the text \u2014 for example, citing Verlinde for entropic gravity and causal limits, and citing Swingle for tensor network structures in the holographic projection. However, engagement is sometimes superficial, with citations like [8] and [9] pointing to preprints without clear articulation of how those specific works inform the proposal beyond keyword overlap."
+      },
+      "rigor": {
+        "score": 4.0,
+        "justification": "The derivation of the Schwarzschild time-dilation factor from the I/C ratio is the most formally developed section, but the information load formula I = 8\u03c0Mcr/\u210f is introduced without derivation or physical justification \u2014 it is simply asserted as 'the load imposed by central mass M.' Similarly, the MOND derivation relies on an asserted proportionality \u03b4(d\u03c4/dt) \u221d \u221a(\u0394I/C_bg) without derivation, and the time dilation formalism \u0394t \u221d N/\u03a9 is stated as 'derived from thermodynamic considerations' without showing the derivation."
+      },
+      "citations": {
+        "score": 5.0,
+        "justification": "The manuscript includes a mix of recent and older sources, and several citations are woven into the text with explicit connections (e.g., Verlinde [11] for entropic gravity, Maldacena [16] for AdS/CFT). However, several references are vaguely attributed \u2014 [8] is listed only as 'Information Theory of Gravity (ITG), Preprints.org, 2021' and [9] as 'Gravity from entropy: New theory bridging quantum mechanics and relativity, FirstPrinciples, 2025' \u2014 without author names or DOIs, raising concerns about verifiability, and [3] and [4] similarly lack full attribution details."
+      }
+    }
+  },
+  {
+    "paper_id": "014",
+    "citation": "Nolan, 2026",
+    "group": "baseline",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-08T01:17:41.746618+00:00",
+    "input_tokens": 6162,
+    "output_tokens": 914,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 6.0,
+        "justification": "The paper advances a central claim that a regularized horn-torus cosmology with an information-theoretic substrate yields GR time dilation (via d\u03c4/dt = sqrt(1\u2212I/C)) and can explain expansion/MOND-like behavior, but it never states an explicit null vs alternate hypothesis pair. It offers some test-facing statements (e.g., \u201cquadrupole (l=2) is reduced by \u223c20% compared to \u039bCDM\u201d and MOND scaling geff \u2248 sqrt(gN a0)) yet does not specify mutually exclusive falsification criteria or a clear experimental decision procedure."
+      },
+      "novelty": {
+        "score": 9.0,
+        "justification": "The manuscript combines several elements\u2014\u201cholographic projection on a regularized horn torus topology,\u201d a \u201cPlanck-scale throat\u201d for cyclic information preservation, and an information-load/channel-capacity derivation of the Schwarzschild factor\u2014into a single proposal, which is presented as a distinct synthesis. However, while it lists many related ideas and references (entropic gravity, cyclic/toroidal cosmologies, singularity regularization), it only partially articulates concrete gaps in those works and exactly how this model improves on them beyond broad claims like \u201cresolving the information loss paradox\u201d and avoiding \u201cad hoc dark energy.\u201d"
+      },
+      "scientific_humility": {
+        "score": 6.5,
+        "justification": "The paper sometimes overreaches in tone and scope, e.g., claiming the throat \u201cthereby resolving the information loss paradox\u201d and that MOND/cluster phenomena are explained \u201cwithout particulate dark matter,\u201d without clearly delimiting what is actually derived versus asserted. It does acknowledge some consistency constraints (e.g., \u201cFor planetary orbits, accelerations exceed a0, so entropic corrections are negligible\u201d) and frames parts as proposals (\u201cI propose,\u201d \u201cI posit\u201d), but it provides limited discussion of open problems, parameter constraints, or failure modes."
+      },
+      "engagement": {
+        "score": 10.5,
+        "justification": "The manuscript engages recognizable threads (Verlinde entropic gravity, AdS/CFT-inspired bulk-boundary mapping, tensor networks, cosmic topology, loop-quantum-cosmology-style regularization) and occasionally ties them to specific claims (e.g., matched circles null results, low-l CMB suppression). Still, many connections remain high-level (e.g., invoking \u201cquantum error-correcting codes\u201d and \u201cnested holographic screens\u201d without showing how they constrain the horn-torus dynamics), and several recent citations are referenced generically rather than being used to motivate specific modeling choices or to compare predictions quantitatively."
+      },
+      "rigor": {
+        "score": 4.0,
+        "justification": "The Schwarzschild time-dilation recovery from I/C is presented cleanly (I/C \u2192 2GM/rc^2 using lP^2 = \u0127G/c^3), but key premises are introduced by definition rather than derived or physically justified (e.g., the specific \u201cInformation Load\u201d I = 8\u03c0Mcr/\u0127 and the rule d\u03c4/dt = sqrt(1\u2212I/C)). Other quantitative claims (e.g., \u201cquadrupole reduced by \u223c20%,\u201d Bullet-Cluster-like behavior via a memory kernel, and the MOND transition from a de Sitter noise floor) are asserted with minimal derivation, and the horn-torus metric/regularization discussion does not rigorously connect to an Einstein-equation solution or a consistent cosmological dynamics."
+      },
+      "citations": {
+        "score": 5.5,
+        "justification": "The paper includes a substantial reference list with several recent entries (2024\u20132025 preprints) and cites foundational works (Maldacena 1998, Verlinde 2010, Swingle 2012), and some citations are linked to specific statements (e.g., circles-in-the-sky searches [12], entropic gravity [11]). However, formatting is inconsistent (several references are unnamed titles or generic descriptors), many claims in the text are not tightly supported by specific citations, and the presence of multiple preprints/unclear bibliographic details weakens attribution and traceability."
+      }
+    }
+  }
+]

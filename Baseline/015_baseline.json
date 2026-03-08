@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "015",
+    "citation": "u/Fuck-it-allin, 2026",
+    "group": "baseline",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-07T23:58:47.275976+00:00",
+    "input_tokens": 2579,
+    "output_tokens": 528,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 2.0,
+        "justification": "The manuscript presents no structured hypothesis, null hypothesis, or alternate hypothesis. It makes general assertions such as 'a CubeSat swarm just gives us the resolution to exploit them' without defining any testable claim, failure condition, or falsifiability criterion."
+      },
+      "novelty": {
+        "score": 2.0,
+        "justification": "The manuscript claims novelty by combining CubeSat swarms with gravitational lensing but cites no prior literature to establish what has or has not been done. No gaps in existing approaches are identified, and no comparative analysis is performed \u2014 the author explicitly states 'I'm not a Science guy lmao.'"
+      },
+      "scientific_humility": {
+        "score": 4.0,
+        "justification": "The author does acknowledge limitations with phrases like 'the engineering challenge is enormous' and 'we can't build gravitational lenses,' and does not make overtly grandiose claims about overturning established theory. However, the work does not properly attribute foundational concepts such as VLBI or gravitational lensing to any sources, and open questions are not explicitly identified or discussed."
+      },
+      "engagement": {
+        "score": 1.0,
+        "justification": "The only citation provided is a NASA blog post about a solar monitoring mission (SUNRISE), which is not directly connected to the core proposal of a CubeSat interferometric array for extragalactic observation. No literature on VLBI, space-based interferometry, or gravitational lensing is cited or engaged with substantively."
+      },
+      "rigor": {
+        "score": 2.0,
+        "justification": "The manuscript presents one equation (\u03b8 \u2248 \u03bb / B) with a brief numerical example, but no derivation, dimensional analysis, or physical justification is provided. Claims such as '10\u00d7\u2013100\u00d7 magnification' from gravitational lensing are stated without any mathematical backing or sourcing."
+      },
+      "citations": {
+        "score": 1.0,
+        "justification": "Only a single citation is present \u2014 a NASA blog post \u2014 and it is not connected to the central claims of the manuscript regarding interferometry or gravitational lensing. No citations are woven through the text to support specific claims, and no academic or peer-reviewed sources are referenced anywhere."
+      }
+    }
+  },
+  {
+    "paper_id": "015",
+    "citation": "u/Fuck-it-allin, 2026",
+    "group": "baseline",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-07T23:58:56.358228+00:00",
+    "input_tokens": 2325,
+    "output_tokens": 596,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 3.0,
+        "justification": "The manuscript proposes that \u201claunch 10,000 CubeSats\u2026spread antennas over a million kilometers and act as a single synthetic telescope\u201d to achieve extreme angular resolution, but it does not state a clear, testable hypothesis with explicit null vs alternate hypotheses. It also does not specify mutually exclusive falsification criteria beyond general statements like \u201cThe physics checks out\u201d and that the \u201cengineering challenge is enormous.\u201d"
+      },
+      "novelty": {
+        "score": 2.0,
+        "justification": "The manuscript asserts a concept (space-based long-baseline radio interferometry plus gravitational lensing) but does not identify specific gaps in prior work or explain how the approach improves on existing proposals beyond being \u201cfar larger than Earth.\u201d It references the Event Horizon Telescope as precedent but provides no literature comparison or evidence of novelty relative to existing space-VLBI or swarm-interferometry concepts."
+      },
+      "scientific_humility": {
+        "score": 9.0,
+        "justification": "The author includes restraint such as \u201cThe engineering challenge is enormous \u2014 but not forbidden by physics,\u201d and lists concrete hard parts (clock sync, N^2 correlation, formation knowledge) rather than claiming easy feasibility. However, some claims are presented with high confidence (\u201cThe physics checks out\u201d) without showing supporting analysis or clearly delineating what is not addressed (e.g., calibration, downlink limits, correlator feasibility)."
+      },
+      "engagement": {
+        "score": 3.0,
+        "justification": "Engagement with the field is minimal: the manuscript mentions \u201cEvent Horizon Telescope\u201d and a NASA mission link, but does not connect these to specific technical requirements or prior results in a way that demonstrates substantive engagement. There is no discussion of existing space interferometry efforts, formation-flying metrology, or modern correlator/clock-distribution approaches."
+      },
+      "rigor": {
+        "score": 4.0,
+        "justification": "The manuscript includes the correct high-level interferometric scaling \u201c\u03b8 \u2248 \u03bb / B\u201d and a numerical example (\u201c1 cm\u20261,000,000 km\u2026about 2 microarcseconds\u201d), but provides no derivation, error budget, or physical justification for required timing/position accuracy. Key quantitative claims (e.g., feasibility of 10,000-satellite correlation and synchronization) are not supported by calculations."
+      },
+      "citations": {
+        "score": 1.0,
+        "justification": "The manuscript provides no formal citations and only informal references to \u201cEvent Horizon Telescope\u201d and a NASA webpage link, with no in-text attribution tied to specific claims. There is no bibliography, no recent peer-reviewed sources, and no citation support for the quantitative or feasibility assertions."
+      }
+    }
+  }
+]

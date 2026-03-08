@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "007",
+    "citation": "Schultz, 2026",
+    "group": "baseline",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-07T23:54:05.909110+00:00",
+    "input_tokens": 131587,
+    "output_tokens": 963,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 8.0,
+        "justification": "The manuscript presents a clear central hypothesis \u2014 that all 25 Standard Model free parameters derive from the E8 root lattice at the Planck scale \u2014 and Section 16 provides explicit falsification criteria including 'Detection of a QCD axion,' 'Inverted neutrino mass ordering,' and 'm\u03b2\u03b2 > 10 meV in neutrinoless double beta decay.' However, no formal null hypothesis is stated, and the alternate/null framing is absent; the failure conditions, while listed, are not systematically paired with what would 'support' the hypothesis in a mutually exclusive structure."
+      },
+      "novelty": {
+        "score": 7.0,
+        "justification": "The manuscript cites foundational work by Dixon [6] and Furey [7] and states it 'builds on and extends the division-algebra approach to particle physics,' and connects to Georgi-Glashow SU(5) [10], but engagement with recent literature (post-2017) is sparse \u2014 Viazovska (2017) is cited for sphere packing but no recent work on E8 phenomenology, lattice unification, or competing parameter-free SM derivations is discussed, leaving the comparative case for novelty underdeveloped."
+      },
+      "scientific_humility": {
+        "score": 9.0,
+        "justification": "The manuscript explicitly classifies every result into four tiers (Theorem, Derived, Structurally determined, Conjecture) and Section 17 provides a detailed accounting of 'remaining derivational gaps,' stating for example that 'the choice of multiplicative over additive regularization is motivated... but has not been elevated to a uniqueness proof.' However, the abstract's claim to derive 'all 25 free parameters... from a single axiom' with 'zero free parameters and zero experimental inputs' is somewhat overstated given the acknowledged structurally-determined coefficients a3 and a4 extracted from experiment."
+      },
+      "engagement": {
+        "score": 6.0,
+        "justification": "The manuscript cites relevant foundational sources (Hurwitz, Milnor, Viazovska, Osterwalder-Seiler, Mertens, Koide, Fritzsch, Georgi-Glashow) and connects them explicitly to derivations in the text, but the reference list contains only 18 entries with most being decades-old classics; there is no engagement with modern E8 phenomenology literature, recent lattice QCD results, or contemporary work on SM parameter derivations, making the field engagement shallow despite explicit in-text connections."
+      },
+      "rigor": {
+        "score": 5.0,
+        "justification": "The manuscript presents detailed mathematical derivations with explicit logical chains \u2014 for example, the Epstein zeta factorization ZE8(s) = 240\u03b6(s)\u03b6(s\u22123) and the Schur equipartition argument \u2014 and claims 250-digit numerical verification. However, several critical steps rely on physically unjustified leaps, such as the identification of Koide phases with octonionic associator variance (equation 53) where 'the Jaynes maximum-entropy principle implicit in equation (53) is the same axiom used for the Boltzmann mass formula,' and the gravitational correction \u03b4 = 35/(4\u03c0\u2074) whose derivation gap is acknowledged as 'the boundary between lattice gauge theory and quantum gravity.'"
+      },
+      "citations": {
+        "score": 4.0,
+        "justification": "The 18 references include several properly connected to specific claims in the text (e.g., Viazovska [4] cited for sphere packing density, Osterwalder-Seiler [14] for confinement), but the list is heavily weighted toward foundational classics (Hurwitz 1898, Mertens 1874, Epstein 1903) with minimal recent literature; reference [18] (Buttcane and Zhou 2020) appears in the reference list but is never cited in the body text, and the overall citation density is insufficient for a manuscript making claims across the entire Standard Model parameter space."
+      }
+    }
+  },
+  {
+    "paper_id": "007",
+    "citation": "Schultz, 2026",
+    "group": "baseline",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-08T01:09:02.459877+00:00",
+    "input_tokens": 42463,
+    "output_tokens": 950,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 8.0,
+        "justification": "The manuscript states a clear central claim/axiom\u2014\u201cthe internal geometry of the vacuum at the Planck scale is the E8 root lattice\u201d (Def. 2.10) from which \u201call 25 parameters \u2026 and 24 additional observable quantities\u201d are derived\u2014but it does not explicitly define null vs. alternate hypotheses. It does provide concrete falsification-style tests in Section 16 (e.g., \u201cDetection of a QCD axion would falsify the framework,\u201d \u201cInverted neutrino mass ordering,\u201d \u201cAbsence of a scalar near 95 GeV\u201d), which are plausibly testable, but they are not framed as mutually exclusive null/alternate outcomes."
+      },
+      "novelty": {
+        "score": 6.0,
+        "justification": "The paper claims a strong novel contribution (\u201czero free parameters and zero experimental inputs,\u201d \u201cderive 49 quantities\u201d) and introduces distinctive mechanisms (e.g., Mertens-regularized coupling Reff = 240 e^{-\u03b3}, G2 WZW/Fibonacci anyon picture, continued-fraction \u2018tower\u2019 for \u03b1). However, it provides limited comparative positioning against prior approaches beyond brief mentions of Dixon/Furey and SU(5) (Intro) and does not clearly articulate specific shortcomings of recent competing programs or why this improves on them."
+      },
+      "scientific_humility": {
+        "score": 10.0,
+        "justification": "The manuscript repeatedly delineates status tiers (\u25a0/\u2662/\u2662\u2217/\u25e6) and explicitly lists \u201cRemaining derivational gaps\u201d (Section 17.3), including calling out the Higgs quartic as the \u201csole conjecture (\u25e6)\u201d and noting where arguments are physical rather than theorem-level. That said, some claims are rhetorically overconfident relative to the shown support (e.g., \u201cThe framework requires zero free parameters and zero experimental inputs\u201d while also admitting two CF coefficients are extracted from experiment, and \u201cNo other mass hierarchy is mathematically possible on the E8 lattice\u201d)."
+      },
+      "engagement": {
+        "score": 6.0,
+        "justification": "The paper engages substantively with some established results it relies on (Hurwitz, Milnor\u2013Husemoller, Viazovska sphere packing, Osterwalder\u2013Seiler confinement, WZW/anyon references) and connects them to its construction (e.g., using Viazovska density in the Higgs quartic expression, citing Osterwalder\u2013Seiler for confinement in d>4). However, engagement with the modern particle-phenomenology and lattice/QFT literature is thin and often asserted rather than developed (e.g., RGE, CKM/PMNS derivations are presented with limited linkage to contemporary analyses beyond PDG/NuFIT-style comparisons)."
+      },
+      "rigor": {
+        "score": 3.0,
+        "justification": "While parts of the mathematics are presented cleanly (e.g., E8 root counts, theta/Eisenstein series, Epstein zeta factorization ZE8(s)=240 \u03b6(s)\u03b6(s\u22123), plaquette counting), many key physics inferences rely on under-justified leaps or acknowledged gaps (e.g., choosing multiplicative Mertens regularization as \u201cforced,\u201d mapping lattice confinement to specific mass exponents, deriving CKM/PMNS formulas from octonionic/WZW \u2018braiding\u2019 without explicit computations). Several quantitative claims hinge on structurally fitted inputs (\u03b1 continued-fraction coefficients a3=193, a4=5) or heuristic counting arguments (e.g., second scalar mass ratio from 7/12), reducing overall soundness as a physics derivation."
+      },
+      "citations": {
+        "score": 4.0,
+        "justification": "The bibliography includes some relevant sources and a few recent items (e.g., Viazovska 2017; Buttcane & Zhou 2020; PDG 2024; CODATA 2022/2024), and citations are sometimes tied to specific claims (e.g., Osterwalder\u2013Seiler for confinement, Viazovska for packing). However, many central claims (e.g., detailed CKM/PMNS derivations, Mertens regularization choice, WZW braiding outputs) are not supported by targeted, up-to-date citations, and the reference list is relatively sparse for the breadth of claims."
+      }
+    }
+  }
+]

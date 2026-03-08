@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "043",
+    "citation": "u/FiredByBlus, 2026",
+    "group": "baseline",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-08T00:13:41.973873+00:00",
+    "input_tokens": 4767,
+    "output_tokens": 872,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 7.5,
+        "justification": "The manuscript presents a clearly stated hypothesis \u2014 that the observable universe resides within a stabilized Kerr black hole interior \u2014 and offers several falsifiable predictions (non-zero C_lTB and C_lEB, low-l CMB power suppression, r \u2248 0.033). However, no explicit null hypothesis is stated, and failure conditions are one-sided: the paper discusses only confirming evidence and does not specify what observational outcomes would falsify the model, e.g., what a detection of zero TB/EB correlation would imply for the framework."
+      },
+      "novelty": {
+        "score": 6.0,
+        "justification": "The manuscript combines several existing ideas (Einstein-Cartan bounce, Savvidy vacuum, Bianchi IX cosmology, universe-in-a-black-hole) into a unified EFT framework, which represents some combinatorial novelty. However, the paper does not cite or engage with prior universe-in-a-black-hole proposals (e.g., Pop\u0142awski, Smolin) or recent loop quantum cosmology bounce literature, making it impossible to assess how this work genuinely differs from or improves upon existing approaches \u2014 the novelty claim is asserted rather than demonstrated comparatively."
+      },
+      "scientific_humility": {
+        "score": 4.0,
+        "justification": "The manuscript makes sweeping claims disproportionate to the evidence shown, including that it 'resolves' the Cauchy horizon singularity, provides a 'mathematically consistent model,' and offers a 'complete, non-singular history' \u2014 none of which are rigorously demonstrated within the paper. The conclusion states the theory 'replaces the Singularity with a Passage' as settled fact, and open questions, approximation regimes, and model limitations are not explicitly identified or discussed."
+      },
+      "engagement": {
+        "score": 3.0,
+        "justification": "The manuscript cites only two foundational holographic principle references ('t Hooft 1993; Susskind 1995) and the ABJ anomaly by name, with no engagement with modern literature in any of its core subfields \u2014 Einstein-Cartan cosmology, chromomagnetic condensates, Bianchi IX dynamics, or CMB parity violation searches. Citations are sparse and decorative rather than woven into the argument, and no recent work is discussed in relation to the proposal's specific claims."
+      },
+      "rigor": {
+        "score": 3.5,
+        "justification": "The modified Raychaudhuri equation derivation follows a recognizable loop quantum cosmology template but is not derived from the stated action \u2014 the connection between the Dimension-6 torsion operator and the rho^2/rho_crit correction term is asserted rather than shown. The spectral index formula n_s = 1 - 2/N and the tensor-to-scalar ratio r = 8/N are standard slow-roll results quoted without derivation from the Savvidy potential, and the suppression factor yielding r \u2248 0.033 is described qualitatively ('proportional to the beta-function coefficient') without any calculation."
+      },
+      "citations": {
+        "score": 1.5,
+        "justification": "Only two citations are provided ('t Hooft 1993; Susskind 1995), both decades old and cited without connection to specific claims in the body text beyond a parenthetical. No references are provided for Einstein-Cartan gravity, the Savvidy vacuum, Bianchi IX cosmology, the ABJ anomaly, Planck 2018 results, or BICEP/Keck bounds \u2014 all of which are invoked as supporting evidence. The citation infrastructure is critically insufficient for a manuscript making quantitative observational claims."
+      }
+    }
+  },
+  {
+    "paper_id": "043",
+    "citation": "u/FiredByBlus, 2026",
+    "group": "baseline",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-08T00:13:56.765034+00:00",
+    "input_tokens": 4124,
+    "output_tokens": 814,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 7.5,
+        "justification": "The manuscript advances a reasonably clear central claim (\"the observable universe resides within the stabilized interior of a hyper-massive Kerr black hole\" and the Cauchy-horizon singularity is replaced by a torsion-driven bounce), and it lists potentially testable observational signatures (nonzero C_lTB/C_lEB, low-\u2113 power suppression, r\u22480.033). However, it does not explicitly define null vs alternate hypotheses, nor does it specify mutually exclusive falsification criteria (e.g., what exact observational outcomes would rule out CSKC versus alternative parity-violating mechanisms)."
+      },
+      "novelty": {
+        "score": 5.0,
+        "justification": "The work combines several ideas (Kerr-interior cosmology, Einstein\u2013Cartan torsion bounce, Savvidy vacuum, Bianchi IX phase, anomaly reheating) into a single narrative and proposes a specific dimension-6 torsion operator coupled to the gauge invariant F. But it does not make a literature-based case for novelty: it provides almost no comparison to prior universe-in-a-black-hole, mass inflation, Einstein\u2013Cartan bounce, or chromomagnetic vacuum stabilization work beyond brief classic holography citations."
+      },
+      "scientific_humility": {
+        "score": 6.0,
+        "justification": "The manuscript includes some restraint via phrases like \"first-order consistency checks\" and frames several results as predictions, but it repeatedly asserts strong conclusions (\"We resolve the Cauchy horizon singularity,\" \"mathematically guarantees\" a bounce, \"ensuring\" reheating and baryogenesis) without clearly delineating open problems (e.g., stability, backreaction, matching conditions, parameter ranges). Attribution is limited, and several major claims are presented as settled despite being model-dependent."
+      },
+      "engagement": {
+        "score": 3.5,
+        "justification": "Engagement with the current field is minimal: aside from Planck/BICEP bounds and foundational holography references (\u2019t Hooft 1993; Susskind 1995), the manuscript does not substantively discuss or connect to modern work on mass inflation, Kerr interiors, Einstein\u2013Cartan cosmology, Bianchi IX dynamics, or CMB parity-violation systematics. As written, the proposal is largely self-contained and does not explicitly situate itself within recent research debates."
+      },
+      "rigor": {
+        "score": 4.0,
+        "justification": "The manuscript presents an action and a modified Friedmann/Raychaudhuri-style derivation, but key steps are asserted rather than derived (e.g., how mass inflation \"activates\" the dimension-6 operator, how F \"diverges\" and dominates, and how the torsion term yields the specific negative correction rho(1\u2212rho/rho_crit)). Several quantitative outputs (n_s=1\u22122/N, r suppression to 0.033, T_R\u224810^16 GeV, eta_B scaling) are given as estimates without showing the intermediate calculations, parameter choices, or dimensional checks needed to make them sound."
+      },
+      "citations": {
+        "score": 2.0,
+        "justification": "Citations are extremely sparse and mostly not integrated into the technical claims: only holography is explicitly referenced (\u2019t Hooft 1993; Susskind 1995), while major invoked ingredients (Einstein\u2013Cartan torsion bounce, Savvidy vacuum stability/instability, mass inflation at Cauchy horizons, Bianchi IX isotropization, ABJ anomaly reheating, CMB TB/EB parity violation constraints) are largely uncited. Because most claims lack supporting references and there is no consistent citation format throughout, the citation support is weak."
+      }
+    }
+  }
+]

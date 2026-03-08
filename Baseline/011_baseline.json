@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "011",
+    "citation": "u/Shanaki, 2026",
+    "group": "baseline",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-08T01:14:11.157265+00:00",
+    "input_tokens": 4706,
+    "output_tokens": 989,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 9.5,
+        "justification": "The manuscript presents a reasonably clear hypothesis \u2014 that the beam/bottle discrepancy arises from two systematic errors (Fomblin quasi-elastic scattering and NIST proton backscattering extrapolation bias) \u2014 and explicitly states falsification conditions: 'If BL2/BL3 still give ~887 s, I'm wrong.' However, the null and alternate hypotheses are never formally stated as such, and the failure conditions, while present, are somewhat one-sided (confirming tests are described more thoroughly than falsifying ones), preventing full marks."
+      },
+      "novelty": {
+        "score": 7.5,
+        "justification": "The author attempts to position their work against existing literature by citing Serebrov et al.'s 2008 Monte Carlo paper and the December 2024 J-PARC result, and explicitly frames the novelty as combining two known systematic corrections to achieve simultaneous reconciliation. However, the author does not clearly demonstrate that this specific combination and quantitative reconciliation has not been previously attempted, and engagement with the broader literature on neutron lifetime systematics (e.g., Wietfeldt, Greene reviews) is absent, leaving the novelty claim underdeveloped."
+      },
+      "scientific_humility": {
+        "score": 11.5,
+        "justification": "The author explicitly flags limitations throughout, stating 'Some corrections are scaled estimates, not full recalculations,' 'I have not performed full SRIM detector simulations for NIST,' and '\u03c7\u00b2/dof = 0.39 may indicate overfitting or conservative errors.' The 'Why You Should Be Skeptical' section is a genuine strength. Minor deductions apply because the framing 'The statistical improvement was 93.8% \u2014 which is insane' and 'I Think I Solved the Neutron Lifetime Puzzle' slightly overstates what the paper actually demonstrates given the acknowledged speculative corrections."
+      },
+      "engagement": {
+        "score": 7.0,
+        "justification": "The author engages meaningfully with the J-PARC 2024 result (arXiv:2412.19519) and references Serebrov et al.'s 2008 JETP Letters Monte Carlo work, connecting them directly to the argument. However, engagement is narrow \u2014 major recent contributions to the neutron lifetime literature (e.g., UCN\u03c4 collaboration papers beyond the single citation, BL1 systematic studies, Wietfeldt & Greene 2011 review, Czarnecki et al. on radiative corrections) are absent or unaddressed, and connections between cited works and specific claims are sometimes implied rather than explicitly stated."
+      },
+      "rigor": {
+        "score": 4.5,
+        "justification": "The manuscript presents the formula \u03c4_measured = \u03c4_true / (1 + \u03bb_wall \u00d7 \u03c4_true) without derivation or dimensional verification, and the MAMBO II correction is explicitly acknowledged as a 'scaling argument, not independent validation.' The NIST backscattering correction of \u22129.7 s is described as 'even more speculative' with no mathematical derivation shown. The chi-squared improvement calculation is stated but not derived from first principles, and the weighted average methodology is not shown, leaving significant gaps in the logical chain from premises to quantitative conclusions."
+      },
+      "citations": {
+        "score": 5.5,
+        "justification": "The manuscript cites several relevant sources with partial in-text connection: J-PARC (arXiv:2412.19519), UCN\u03c4 (Phys. Rev. Lett. 127, 162501), PNPI (Phys. Lett. B 605, 72), MAMBO II (Phys. Lett. B 745, 79), NIST BL1 (Phys. Rev. C 88, 045501), and Serebrov et al. 2008 (JETP Letters 87, 555). However, formatting is inconsistent (some have full journal references, others do not), MAMBO I lacks a proper citation, and the citation set is sparse relative to the breadth of claims made, with no citations supporting the Fomblin thermal physics claims or the SRIM backscattering hypothesis beyond assertion."
+      }
+    }
+  },
+  {
+    "paper_id": "011",
+    "citation": "u/Shanaki, 2026",
+    "group": "baseline",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-07T23:56:13.529907+00:00",
+    "input_tokens": 4126,
+    "output_tokens": 829,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 11.0,
+        "justification": "The manuscript advances a clear central hypothesis: that the neutron-lifetime discrepancy is explained by two experiment-specific systematics (Fomblin quasi-elastic upscattering in some bottle experiments and nonlinearity in NIST\u2019s backscatter extrapolation), and it gives concrete, near-term falsification tests (e.g., \u201cIf BL2/BL3 still give ~887 s, I\u2019m wrong\u201d and a temperature-scan prediction). However, it does not explicitly define a null hypothesis versus an alternate hypothesis in a mutually exclusive formal structure, and some tests are framed more as confirmations than as a complete decision procedure."
+      },
+      "novelty": {
+        "score": 8.0,
+        "justification": "The proposed reconciliation via combining two specific corrections and demonstrating a large drop in reduced chi-squared (\u201c93.8% reduction\u201d) is presented as the manuscript\u2019s contribution, and it leverages the 2024 J-PARC result to reframe the issue as not simply \u201cbeam vs bottle.\u201d But the bottle-side mechanism is largely drawn from prior work (e.g., Serebrov\u2019s Monte Carlo bias estimate for MAMBO I), and the NIST nonlinearity correction is asserted without a clear literature gap analysis showing that this specific extrapolation-bias mechanism is new relative to existing beam-systematics discussions."
+      },
+      "scientific_humility": {
+        "score": 13.5,
+        "justification": "The author repeatedly flags limitations and uncertainty: \u201cSome corrections are scaled estimates, not full recalculations,\u201d \u201cI have not performed full SRIM detector simulations,\u201d and notes that \u03c7\u00b2/dof = 0.39 \u201cmay indicate overfitting or conservative errors.\u201d They also present clear falsifiability conditions and avoid claiming discovery of new physics, though the opening framing (\u201cI Think I Solved\u2026\u201d) and emphasis on the dramatic statistical improvement occasionally overstates confidence relative to the speculative parts of the corrections."
+      },
+      "engagement": {
+        "score": 12.0,
+        "justification": "The manuscript engages meaningfully with specific experimental modalities and results, especially contrasting NIST proton-counting with J-PARC electron-counting and incorporating UCN\u03c4 and PNPI, and it references a concrete prior Monte Carlo study for MAMBO I. However, engagement with the broader recent neutron-lifetime systematics literature is limited; the NIST extrapolation-nonlinearity claim is not connected to existing analyses of BL1 systematics beyond a qualitative description, and the discussion does not deeply situate the proposal within multiple recent beam/bottle methodological papers."
+      },
+      "rigor": {
+        "score": 5.5,
+        "justification": "The manuscript provides some quantitative structure (weighted averages, \u03c7\u00b2/dof before/after, and a simple loss-rate relation with \u03bb_wall = \u03b7\u03bd), and it correctly treats the proposal as testable. But key numerical corrections are not derived from first principles or fully recalculated from raw experimental datasets; MAMBO II is corrected via an admitted scaling argument, and the NIST \u22129.7 s correction is speculative without the promised SRIM/nonlinear fit demonstration, leaving major logical steps insufficiently validated."
+      },
+      "citations": {
+        "score": 6.5,
+        "justification": "The manuscript cites several relevant primary results with identifiers (J-PARC arXiv:2412.19519; UCN\u03c4 PRL 2021; NIST PRC 2013; PNPI and MAMBO II papers) and attributes the MAMBO I bias estimate to Serebrov\u2019s Monte Carlo work. Citation formatting is inconsistent (mix of links, arXiv IDs, and partial journal references), and several central quantitative claims (especially the NIST extrapolation nonlinearity and some temperature-scaling numbers) are not directly supported by specific cited sources in the text."
+      }
+    }
+  }
+]

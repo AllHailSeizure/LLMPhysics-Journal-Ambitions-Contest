@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "018",
+    "citation": "Mustafa & Abdullah, 2023",
+    "group": "baseline",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-08T00:00:27.381419+00:00",
+    "input_tokens": 26230,
+    "output_tokens": 897,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 4.0,
+        "justification": "The manuscript presents a central claim \u2014 that gravity is an emergent electromagnetic force arising from heterogeneous charge distribution and intrinsic electric dipoles \u2014 but never explicitly frames a null hypothesis or alternate hypothesis. The paper states 'if either an electron or a positron is placed in a given distance to any neutral baryon, neutral atom or neutral molecule, the electron or the positron will be attracted to the atom or the molecule' as a testable prediction, and mentions experimental simulation as a path to 'prove or disprove this hypothesis,' but failure conditions are vague and no mutually exclusive falsification criteria are defined."
+      },
+      "novelty": {
+        "score": 4.0,
+        "justification": "The authors claim their approach is 'an entirely new approach method' and 'first of its kind,' and the HCD-F equation is presented as novel, but the manuscript makes almost no attempt to cite or engage with prior work on electromagnetic unification of gravity, emergent gravity, or related approaches \u2014 only briefly naming 'Emergent Gravity, Quantum Gravity, String Theory, Modified Newtonian Dynamics' without citation or substantive comparison. The claim of novelty is asserted rather than demonstrated through comparative analysis with existing literature."
+      },
+      "scientific_humility": {
+        "score": 4.0,
+        "justification": "The manuscript contains several instances of overreach, including claiming to provide 'new definition for gravitons,' 'mass-charge equivalence as integration for Einstein's mass-energy equivalence,' and being 'one step forward toward the theory of everything' \u2014 claims that far exceed what the paper actually demonstrates. While the authors do note that relativistic gravitational force requires future work and acknowledge the HCD-F derivation has limitations, the abstract and body repeatedly use boastful language and assert solutions to major unsolved problems (hierarchy problem, absence of anti-gravity, quantization of gravity) without substantive evidence."
+      },
+      "engagement": {
+        "score": 2.0,
+        "justification": "The manuscript's reference list contains only three citations \u2014 two of which are a chemistry LibreTexts page and a blog post about CCl4 polarity, and one is the PhET simulation platform \u2014 none of which are peer-reviewed physics literature relevant to gravity unification, quantum gravity, or electromagnetic theory. The authors name several relevant theories and theorists (Glashow, Weinberg, Salam, emergent gravity, string theory) in passing but provide no citations for any of them, demonstrating minimal substantive engagement with the current state of the field."
+      },
+      "rigor": {
+        "score": 3.0,
+        "justification": "The central equation F = K(|q1|*|q2|)/(HCD-F1 * HCD-F2)r\u00b2 is introduced without derivation from first principles, and the HCD-F factors are defined conceptually but never given explicit physical or mathematical grounding beyond being 'unit-less' and 'always much less than one.' The derivation equating Newton's gravitational law with the HCD equation to extract rHCD-F = \u221a(K/G) * qp/mp has correct dimensional structure in form, but the physical justification for equating the two forces for positronium \u2014 treating gravity as identical to the HCD force without independent verification \u2014 is circular and unjustified."
+      },
+      "citations": {
+        "score": 1.0,
+        "justification": "The manuscript contains only three references: a chemistry LibreTexts organic chemistry page, a blog post, and the PhET simulation platform \u2014 none are peer-reviewed physics sources relevant to the claims being made about gravity, electromagnetism, or particle physics. Foundational works on Coulomb's law, Newton's gravity, general relativity, the Standard Model, electric dipole moments, or any of the named competing theories (string theory, emergent gravity, etc.) are entirely absent from the reference list, and citations are not woven throughout the manuscript to support specific claims."
+      }
+    }
+  },
+  {
+    "paper_id": "018",
+    "citation": "Mustafa & Abdullah, 2023",
+    "group": "baseline",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-08T01:19:10.184184+00:00",
+    "input_tokens": 7819,
+    "output_tokens": 846,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 6.0,
+        "justification": "The manuscript states a central claim that gravity is an \u201calways attractive\u201d emergent electromagnetic effect arising from \u201cheterogeneous charge distribution\u201d and \u201cintrinsic electric dipole\u201d behavior, and proposes that this can be tested via \u201cexperimental simulations using permanent magnets or electrostatic objects.\u201d However, it does not define explicit null vs alternate hypotheses, nor does it specify mutually exclusive, quantitative falsification criteria beyond general statements like \u201cprove or disprove this hypothesis\u201d via simulations."
+      },
+      "novelty": {
+        "score": 4.0,
+        "justification": "The paper repeatedly asserts novelty (e.g., \u201cnovel approach,\u201d \u201cfirst of its kind,\u201d \u201cnew equation,\u201d \u201cone step forward toward the theory of everything\u201d) and introduces new terms (HCD-F, attraction-repulsion inequality), but it does not substantively compare against specific prior unification attempts with citations, beyond naming broad areas like \u201cString Theory, Modified Newtonian Dynamics.\u201d The only concrete references are general educational/chemistry sources, not research literature establishing a gap this work uniquely fills."
+      },
+      "scientific_humility": {
+        "score": 5.0,
+        "justification": "The manuscript includes some boundary-setting (e.g., \u201cregarding relativistic gravitational force, there's another mechanism\u2026 in our future work\u201d and a list of \u201cFuture work\u201d topics), but it also makes expansive claims disproportionate to the evidence shown, such as compatibility \u201cwith both General Relativity and Quantum Mechanics,\u201d a \u201cnew definition for gravitons,\u201d and \u201cone step forward toward the theory of everything.\u201d It also asserts that existing electromagnetism has a \u201cgap\u201d where laws \u201cwill not be able to predict observations\u201d without providing controlled evidence or acknowledging alternative explanations (e.g., induced dipoles, thermal motion, constraints)."
+      },
+      "engagement": {
+        "score": 2.0,
+        "justification": "Engagement with the current field is minimal: the manuscript mentions major programs (electroweak theory, QCD, emergent gravity, quantum gravity, string theory, MOND) but does not cite or discuss specific modern results or how the proposal relates to them in detail. The discussion relies mainly on qualitative analogies (magnets, dipoles, intermolecular forces) and does not connect to contemporary literature on gravity-electromagnetism unification, equivalence principle tests, or constraints on electric dipole moments."
+      },
+      "rigor": {
+        "score": 2.0,
+        "justification": "The core equation introduces an ad hoc factor (HCD-F) in a Coulomb-like form, but the definition is internally inconsistent: the text says HCD-F is \u201calways much less than one,\u201d yet the force formula divides by (HCD-F1*HCD-F2), which would increase the force rather than reduce it, conflicting with the claim that the effect is \u201cvery weak due to electromagnetic cancellation.\u201d The derivation equating Newtonian gravity to the new force for positronium assumes \u201ccenter of mass is the same as center of charge\u201d and treats |q| as \u201csum of charges\u201d (e.g., |2e| for neutral positronium), which is not physically justified for long-range fields; dimensional/physical justification for mapping to gravity is not provided."
+      },
+      "citations": {
+        "score": 2.0,
+        "justification": "The reference list contains only three items (Chemistry LibreTexts 2015, a blog post 2022, and PhET simulations 2019) plus two web links (Wikipedia and YouTube) and does not cite peer-reviewed physics literature supporting key claims (e.g., intrinsic electric dipoles of electrons/positrons, graviton definition, hierarchy problem resolution). Citations are not woven into the technical claims (e.g., the new equation, HCD-F properties, or graviton definition) and are largely educational rather than research-relevant."
+      }
+    }
+  }
+]

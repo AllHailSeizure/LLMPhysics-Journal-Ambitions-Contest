@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "038",
+    "citation": "Berrang, 2025",
+    "group": "baseline",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-08T00:11:21.443863+00:00",
+    "input_tokens": 3549,
+    "output_tokens": 487,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 1.0,
+        "justification": "The manuscript asserts that 'Frequenz ist nicht die Folge von etwas. Frequenz ist der Ursprung' but presents no structured hypothesis, no null hypothesis, no alternate hypothesis, and no falsification conditions. There is no discussion of what experimental outcome would disprove the central claim."
+      },
+      "novelty": {
+        "score": 1.0,
+        "justification": "The manuscript claims to present 'die erste vollst\u00e4ndige Beschreibung dieses Betriebssystems' but cites no prior literature whatsoever, making no attempt to identify gaps in existing work or differentiate the proposal from any prior approach. Novelty is asserted without any comparative scholarly work."
+      },
+      "scientific_humility": {
+        "score": 0.5,
+        "justification": "The manuscript repeatedly makes grandiose claims such as 'Dies ist keine Metapher. Es ist mathematisch, operational und reproduzierbar' and describes itself as completing centuries of physics, while acknowledging no limitations, no open questions, and no boundaries of applicability. The tone is consistently boastful and the claims vastly exceed any evidence presented."
+      },
+      "engagement": {
+        "score": 0.0,
+        "justification": "The manuscript contains zero citations and makes no reference to any existing literature, research, or prior work in physics, philosophy of science, or any related field. There is no engagement whatsoever with the current state of any relevant field."
+      },
+      "rigor": {
+        "score": 0.5,
+        "justification": "The manuscript presents one symbolic expression ('Frequenz \u2192 Zeit \u2192 Information \u2192 Realit\u00e4t') and a table of assertions, but provides no mathematical derivations, no dimensional analysis, no defined variables, and no logical chain connecting premises to conclusions. Claims such as 'Masse ist gefestigte Frequenz' are stated without any mathematical backing."
+      },
+      "citations": {
+        "score": 0.0,
+        "justification": "The manuscript contains no citations of any kind \u2014 no bibliography, no in-text references, no footnotes. No sources are cited anywhere in the work."
+      }
+    }
+  },
+  {
+    "paper_id": "038",
+    "citation": "Berrang, 2025",
+    "group": "baseline",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-08T00:11:29.733995+00:00",
+    "input_tokens": 2907,
+    "output_tokens": 456,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 2.0,
+        "justification": "The manuscript asserts a central claim that \u201cFrequenz ist der Ursprung\u201d and gives a causal chain \u201cFrequenz \u2192 Zeit \u2192 Information \u2192 Realit\u00e4t,\u201d but it does not define explicit null vs. alternate hypotheses or specify mutually exclusive, plausibly testable falsification criteria."
+      },
+      "novelty": {
+        "score": 2.0,
+        "justification": "It repeatedly claims to be \u201cdie erste vollst\u00e4ndige Beschreibung\u201d and \u201cgeh\u00f6rt zu keinem bestehenden Fachgebiet,\u201d but provides no comparative discussion against prior approaches and no citations to demonstrate a gap in existing work or how the proposal improves on it."
+      },
+      "scientific_humility": {
+        "score": 1.0,
+        "justification": "The tone makes sweeping, absolute claims such as \u201cDies ist keine Metapher. Es ist mathematisch, operational und reproduzierbar\u201d and \u201cerste vollst\u00e4ndige Beschreibung dieses Betriebssystems,\u201d without presenting evidence, limitations, or open questions, and without acknowledging boundaries of applicability."
+      },
+      "engagement": {
+        "score": 0.0,
+        "justification": "There is no substantive engagement with the current state of any field: no references to existing theories, experiments, or recent literature, and no explicit connection to or critique of specific contemporary work beyond broad statements about \u201cklassische Physik.\u201d"
+      },
+      "rigor": {
+        "score": 1.0,
+        "justification": "Aside from a single symbolic expression \u201cZeit ist Phasenfortschritt (\u0394\u03a6)\u201d and the causal arrow chain, the manuscript provides no derivations, dimensional analysis, operational definitions, or quantitative predictions supporting claims like \u201cMasse ist gefestigte Frequenz\u201d or \u201cEnergie ist ein Effekt von Frequenz.\u201d"
+      },
+      "citations": {
+        "score": 0.0,
+        "justification": "No citations or bibliography are provided, and major claims (e.g., frequency as the origin of energy/mass/time and consciousness as resonance with feedback) are made without attribution or supporting references."
+      }
+    }
+  }
+]

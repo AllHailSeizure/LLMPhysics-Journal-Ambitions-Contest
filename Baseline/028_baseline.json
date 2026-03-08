@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "028",
+    "citation": "u/GianniMariani, 2026",
+    "group": "baseline",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-08T00:06:09.365443+00:00",
+    "input_tokens": 2520,
+    "output_tokens": 623,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 3.0,
+        "justification": "The manuscript asserts a collection of claims ('We might be inside a black hole,' 'Dark Matter is superfluid vortices,' 'Dark Energy is core pressure') but never states a formal hypothesis, null hypothesis, or alternate hypothesis. No explicit falsification conditions are provided \u2014 the author does not specify what observational outcome would disprove RISH, making the proposal untestable as presented."
+      },
+      "novelty": {
+        "score": 4.0,
+        "justification": "The manuscript name-drops Wetterich (conformal rescaling), Poplawski (black hole cosmology), and Khoury (superfluid dark matter) but makes no attempt to identify gaps or limitations in those prior approaches, nor does it articulate how RISH differs from or improves upon them. The synthesis is asserted rather than demonstrated, and no comparative analysis is performed."
+      },
+      "scientific_humility": {
+        "score": 2.0,
+        "justification": "The manuscript adopts a confident, promotional tone ('disturbingly well,' 'Time to stop looking for WIMPs') and frames the Standard Model as simply 'leaking' without substantive evidence that RISH resolves the cited tensions. The author does not acknowledge any limitations, open questions, or ways in which RISH might fail, and presents a sweeping unification claim disproportionate to the evidence shown."
+      },
+      "engagement": {
+        "score": 3.0,
+        "justification": "Three names (Wetterich, Poplawski, Khoury) are mentioned in passing without citation details, dates, or explicit connection to the specific claims being made. The manuscript references JWST and DESI findings superficially without engaging with the actual papers or their methodologies, and no modern literature in superfluid dark matter or regular black hole cosmology is substantively discussed."
+      },
+      "rigor": {
+        "score": 1.0,
+        "justification": "No mathematical derivations, equations, or quantitative calculations are presented. The claim that 'Expanding Space \u2261 Shrinking Atoms' is a gauge transformation is stated without any formal demonstration, and assertions such as 'vortices separate from gas during collisions' to explain the Bullet Cluster are made without physical or mathematical justification."
+      },
+      "citations": {
+        "score": 1.0,
+        "justification": "No citations are formally provided \u2014 Wetterich, Poplawski, and Khoury are mentioned by surname only with no titles, years, journals, or links, and no bibliography exists. Citations are not woven into claims with any specificity, and the connection between the named authors and the specific assertions made is never explicitly established."
+      }
+    }
+  },
+  {
+    "paper_id": "028",
+    "citation": "u/GianniMariani, 2026",
+    "group": "baseline",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-08T00:06:17.442746+00:00",
+    "input_tokens": 2279,
+    "output_tokens": 605,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 6.0,
+        "justification": "The manuscript states a central synthesis claim (\"We might be inside a black hole\"; \"Expansion is an illusion caused by changing mass scales\"; \"Dark Matter is superfluid vortices\"; \"Dark Energy is the core pressure\"), but it does not explicitly define a null hypothesis vs. alternate hypothesis or specify mutually exclusive, testable falsification criteria beyond qualitative matches to JWST/DESI/S8."
+      },
+      "novelty": {
+        "score": 6.5,
+        "justification": "The author attempts to combine existing ideas (\"Wetterich\" conformal rescaling, \"Poplawski\" black-hole interior cosmology, \"Khoury\" superfluid dark matter) into a single picture (RISH), but does not clearly identify specific gaps/limitations in those approaches or demonstrate how the synthesis yields new, distinct predictions beyond asserting it \"fits the new data\"."
+      },
+      "scientific_humility": {
+        "score": 6.0,
+        "justification": "The tone includes strong, sweeping claims (\"The Standard Model is Leaking\"; \"Time to stop looking for WIMPs\") and presents multiple major re-interpretations without delineating scope, assumptions, or open problems; while it acknowledges being an \"amateur enthusiast,\" it does not clearly state limitations or what the proposal fails to address."
+      },
+      "engagement": {
+        "score": 7.0,
+        "justification": "The manuscript references several current observational issues (JWST high-z galaxies, DESI 2024 evolving w, S8 tension, Bullet Cluster) and names relevant conceptual anchors (Wetterich/Poplawski/Khoury), but the engagement is largely at the level of qualitative alignment rather than detailed comparison to the current technical literature or competing explanations."
+      },
+      "rigor": {
+        "score": 2.5,
+        "justification": "Key claims are asserted without derivations or quantitative modeling (e.g., \"Expanding Space\u2261Shrinking Atoms\" as a gauge transformation; \"vortices are the halo\"; \"superfluids resist clumping\" explaining S8), and no equations, parameter mappings, or calculations are provided to show that the proposal reproduces CMB/BAO/SNe or lensing constraints."
+      },
+      "citations": {
+        "score": 2.0,
+        "justification": "Citations are not provided in a formal or consistent way (only names like \"Wetterich,\" \"Poplawski,\" \"Khoury\" and references to \"DESI (2024)\"), and specific claims (JWST 'impossible' galaxies, Bullet Cluster behavior, evolving w) are not supported with explicit, verifiable bibliographic references."
+      }
+    }
+  }
+]

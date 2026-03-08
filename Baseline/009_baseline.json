@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "009",
+    "citation": "u/Valuable-Fan419, 2026",
+    "group": "baseline",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-08T01:11:51.746923+00:00",
+    "input_tokens": 3399,
+    "output_tokens": 674,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 3.0,
+        "justification": "The manuscript asserts that universes reproduce through black holes and that dark energy is an evolutionary feature, but never states a formal null hypothesis or alternate hypothesis. No explicit falsification conditions are provided \u2014 the paper does not describe what observable outcome would disprove EMT, making it untestable as presented."
+      },
+      "novelty": {
+        "score": 6.0,
+        "justification": "The framework is explicitly built on Smolin's Cosmological Natural Selection (1997), which already proposed universe reproduction via black holes and selection of physical constants. The manuscript does not meaningfully differentiate EMT from Smolin's prior work beyond adding the 'cosmic DNA' metaphor and a Gaussian fertility function, and it cites no work from the past ten years to position itself against recent developments in the field."
+      },
+      "scientific_humility": {
+        "score": 7.0,
+        "justification": "The manuscript does identify open questions in Section 11 ('the detailed structure of cosmic DNA,' 'microscopic description of the singularity transition') and avoids overtly boastful language. However, claims such as 'EMT provides a natural explanation for the fine-tuning of physical constants' and 'emergence of time' are stated as conclusions without supporting derivation, exceeding what the paper actually demonstrates."
+      },
+      "engagement": {
+        "score": 3.0,
+        "justification": "The four citations (Smolin 1997, Penrose 2004, Hawking & Penrose 1996, Tegmark 2014) are listed in a bibliography but never explicitly connected to specific claims in the body of the text. No citation appears inline, no recent literature (post-2014) is engaged, and the manuscript makes no attempt to articulate how EMT relates to, extends, or challenges any of the cited works in detail."
+      },
+      "rigor": {
+        "score": 2.0,
+        "justification": "The mathematical content consists of two placeholder equations \u2014 'DNAn+1 = DNAn + V\u00b7\u0394' and 'Nn = Nn\u22121\u00b7F\u00b7P' \u2014 with no derivation, no dimensional analysis, and no physical justification for the form chosen. The Gaussian fertility function F(\u039b) = Fmax\u00b7e^(\u2212\u03b1(\u039b\u2212\u039bopt)\u00b2) is asserted without derivation or parameter estimation, and the claim that 'time emerges as an intrinsic property of reconstructed cosmic DNA' is stated without any formal treatment."
+      },
+      "citations": {
+        "score": 2.0,
+        "justification": "All four citations are outdated (oldest 1996, most recent 2014), none are connected to specific claims within the manuscript body, and the bibliography is the only place they appear. No recent work on cosmological natural selection, black hole information, or multiverse models is cited, and the author provides no justification for the absence of recent literature."
+      }
+    }
+  },
+  {
+    "paper_id": "009",
+    "citation": "u/Valuable-Fan419, 2026",
+    "group": "baseline",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-07T23:55:14.083621+00:00",
+    "input_tokens": 3064,
+    "output_tokens": 742,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 5.0,
+        "justification": "The manuscript advances a central claim that \u201cuniverses\u2026generate offspring through the formation of large black holes\u201d with \u201ccosmic DNA\u201d that mutates and is selected, but it does not state explicit null vs. alternate hypotheses or mutually exclusive falsification criteria. It mentions \u201cpotentially testable\u201d and \u201cpossible observable signatures of earlier universe generations\u201d yet provides no concrete observational/experimental outcomes that would decisively refute EMT versus standard cosmology."
+      },
+      "novelty": {
+        "score": 6.0,
+        "justification": "The proposal resembles and cites Smolin\u2019s cosmological natural selection (\u201cThe Life of the Cosmos\u201d) and frames additions like \u201ccosmic DNA,\u201d an evolutionary account of dark energy, and \u201cemergence of time,\u201d but it does not clearly identify specific gaps in prior work or demonstrate how EMT improves on them beyond re-labeling and broad extensions. The reference list is largely older and the manuscript does not make a detailed comparative case for novelty relative to existing multiverse/black-hole cosmogenesis literature."
+      },
+      "scientific_humility": {
+        "score": 8.0,
+        "justification": "The manuscript includes an explicit \u201cOpen questions include: the detailed structure of cosmic DNA [and] the microscopic description of the singularity transition,\u201d which appropriately acknowledges major missing pieces. However, it also makes strong claims such as offering a \u201ccoherent, closed model\u201d and providing \u201can evolutionary explanation for the existence and magnitude of dark energy\u201d without presenting commensurate evidence or constraints, so the scope sometimes exceeds what is supported."
+      },
+      "engagement": {
+        "score": 4.0,
+        "justification": "Engagement with the field is limited to a few broad, mostly foundational citations (Smolin 1997; Penrose 2004; Hawking & Penrose 1996; Tegmark 2014) and the text does not explicitly connect these works to specific EMT mechanisms (e.g., how singularity/black-hole interior physics would preserve \u201ccosmic DNA\u201d). There is no substantive discussion of modern developments in black-hole information, quantum gravity, cosmological constant problems, or observational constraints that would situate EMT within current research."
+      },
+      "rigor": {
+        "score": 2.0,
+        "justification": "The mathematical content is largely schematic (e.g., \u201cDNAn+1=DNAn+V\u22c5\u0394,\u201d \u201cF(\u039b)=Fmax\u22c5e\u2212\u03b1(\u039b\u2212\u039bopt)2,\u201d and \u201cNn=Nn\u22121\u22c5F\u22c5P\u201d) without definitions of the state space for \u2018DNA,\u2019 dimensional consistency, or derivations from physical principles. Key premises\u2014information preservation through a singularity and black-hole-to-white-hole transitions\u2014are asserted rather than physically justified, and quantitative claims (e.g., about \u039b being evolutionarily optimized) are not derived or constrained."
+      },
+      "citations": {
+        "score": 3.0,
+        "justification": "Only four citations are provided and they are mostly older (1996\u20132014) with none from the past ten years, despite the manuscript making claims about black-hole information transfer, dark energy magnitude, and time\u2019s arrow. Citations are not woven into the body to support specific assertions (e.g., no citation is tied to the \u2018cosmic DNA\u2019 preservation claim), and the bibliography is too sparse to substantiate the breadth of claims."
+      }
+    }
+  }
+]
