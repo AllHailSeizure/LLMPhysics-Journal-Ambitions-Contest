@@ -1,0 +1,34 @@
+
+TUE: Theoretical Framework for an Elastic Vacuum
+1. The Physical Origin: Elastic Stress of the Vacuum
+In the Theory of the Elastic Universe (TUE), the vacuum is not a mere background but a relativistic elastic medium. For a homogeneous and isotropic cosmic medium, the elastic stress tensor \sigma^{\mu\nu} is governed by the bulk modulus K and the shear modulus \mu. In the cosmological limit, we define an effective elastic modulus B \equiv K + \mu/2.
+The conservation law \nabla_\nu \sigma^{\mu\nu} = 0 leads to a continuity equation for the elastic sector:
+
+2. Effective Lagrangian and EOM
+The dynamics of the elastic vacuum can be described by a scalar degree of freedom \varepsilon (the trace of the strain tensor). The effective Lagrangian density in an FRW metric is:
+
+
+where A is a coupling constant and U(\varepsilon) is the potential energy density of the deformation. The resulting Equation of Motion (EOM) is a cosmologically damped oscillator:
+
+
+with the characteristic frequency defined as \omega_*^2 \equiv U''(\varepsilon)/A.
+3. The Emergence of the Scaling Law (p)
+In the current epoch, the field \varepsilon is in a slow-roll regime (\ddot\varepsilon \ll 3H\dot\varepsilon), meaning the elastic vacuum is slowly relaxing toward its minimum. In this limit, the equation reduces to:
+
+
+This integration yields a power-law behavior for the strain: \varepsilon(a) \propto a^{-p}, where:
+
+Since the energy density \rho_{TUE} scales with the square of the deformation (\rho \propto \varepsilon^2), we derive the final cosmological scaling law:
+
+4. Numerical Estimation and "Naturalness"
+For TUE to be consistent with current Dark Energy observations (p \sim 10^{-2}), the characteristic frequency \omega_* must be of the same order as the Hubble constant H_0:
+ * Target: p \approx 0.01
+ * Result: \omega_* \approx 0.17 \, H_0
+ * Energy Scale: E_* = \hbar \omega_* \sim 10^{-34} \text{ eV}
+This extremely low energy scale is not fine-tuned; it emerges naturally as the fundamental mode of the cosmic horizon (L_H \approx c/H_0). The "Dark Energy" we observe is simply the residual potential energy of a cosmic elastic mode that has not yet fully relaxed.
+5. Summary of the Non-Circular Derivation
+ * Microphysics: Vacuum possesses an elastic modulus K.
+ * Geometry: The cosmic expansion provides the damping term 3H\dot\varepsilon.
+ * Dynamics: The ratio between elasticity and expansion \omega_*/H determines the deviation from \LambdaCDM.
+ * Observation: p is no longer an arbitrary parameter but a measurable signature of vacuum relaxation.
+

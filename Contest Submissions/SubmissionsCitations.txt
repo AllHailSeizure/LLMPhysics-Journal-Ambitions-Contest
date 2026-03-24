@@ -1,0 +1,19 @@
+1. BlackJakey. (2026). Pressure Gradient Theory: Deriving Maxwell's Equations and Periodic Table Structure from a Single Geometric Parameter on the FCC Lattice [Unpublished manuscript]. GitHub. https://github.com/BlackJakey-lgtm/PGT/blob/main/PGT_v7_Contest_EN_v5.pdf
+
+2. Mata Sánchez, L. D. (2025). Relational Geometry and the Emergence of Gravity: From Harmonic Closure to Stellar Structure (Version v6). Zenodo. https://doi.org/10.5281/zenodo.19141411
+
+3. Novgorodtsev, A. (2026). Nuclear Structure: Weizsäcker Formula Derived from Sphere Packing Geometry Zero-Parameter SEMF Verified on 2541 Nuclei (AME2020, mpmath 150-digit precision). Zenodo. https://doi.org/10.5281/zenodo.19133881
+
+4. aveeageZA. (2026). TUE: Theoretical Framework for an Elastic Vacuum [Unpublished manuscript]. GitHub. https://github.com/aveeageZA/Elastic-Universe-Theory/blob/main/E%20UT
+
+5. D. Christian. (2026). Navier-Stokes regularity is independent of ZFC: The Church-Turing barrier and the Fisher information spectral gap [Unpublished manuscript]. Dropbox. https://www.dropbox.com/scl/fi/i3plar0ywwzgdtncvq7rw/1NS_independence.pdf?rlkey=sjpmpeszv4xa9pg3510bqwbam&raw=1
+
+6. Düring, S. (2026). Quantum Consensus Principle: A Thermodynamic Theory Of Quantum Measurement. Zenodo. https://doi.org/10.5281/zenodo.18983453
+
+7. Jason Mosher. (2026). Gravitational phenomena from medium flow: A tick-rate framework with atomic mass predictions [Unpublished manuscript]. Google Drive. https://drive.google.com/file/d/1oNTw3UBocictpCTnePds9352TjS0aheg/view
+
+8. Guri, A. J. (2026). Threshold-activated dissipation in a vorticity-dependent Navier-Stokes model: An enstrophy-based continuation criterion [Unpublished manuscript]. GitHub. https://github.com/aguri2013/threshold-activated-navier-stokes-model/blob/main/Conditional%20Relativity_github.pdf
+
+9. Shatto, B. (2026). Mode Identity Theory: Modal Realization from Nested Topology. Zenodo. https://doi.org/10.5281/zenodo.18729503
+
+10. Anonymous. (2026). Standard model structure from the bundle of Lorentzian metrics: A trace-reversal construction. Zenodo. https://doi.org/10.5281/zenodo.18995792
