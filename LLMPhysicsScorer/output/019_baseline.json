@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "019",
+    "citation": "Partin, 2026",
+    "group": "baseline",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-08T01:20:20.103011+00:00",
+    "input_tokens": 170669,
+    "output_tokens": 960,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 5.0,
+        "justification": "The manuscript makes bold claims ('all four fundamental forces emerge from GOV-01 + GOV-02 alone') but never explicitly states a null hypothesis or alternate hypothesis in any structured sense. While Section XIV lists some falsifiable predictions (e.g., 'if shear at r > 200 kpc matches NFW prediction, LFM is ruled out'), these are scattered and not framed as formal hypothesis tests with mutually exclusive failure conditions \u2014 the paper reads more as a theoretical framework document than a hypothesis-driven scientific investigation."
+      },
+      "novelty": {
+        "score": 6.0,
+        "justification": "The paper claims novelty in deriving \u03b3=4/3 from first principles, predicting a0=cH0/2\u03c0, and unifying four forces from a single wave equation, but engages minimally with competing modified gravity frameworks (MOND, TeVeS, AQUAL) or other emergent gravity proposals. The citation list is dominated by observational papers (SPARC, McGaugh et al.) and foundational classics (Wolfram, Zuse, Fredkin), with no engagement with recent theoretical competitors such as Verlinde's emergent gravity or Hossenfelder's covariant emergent gravity, making the novelty claim largely unsubstantiated by comparative analysis."
+      },
+      "scientific_humility": {
+        "score": 3.0,
+        "justification": "The manuscript repeatedly uses language like 'EXACT match,' 'zero free parameters,' and claims to derive all four fundamental forces, while simultaneously acknowledging major failures (perihelion precession excluded as 'scope limitation,' binary pulsar decay requiring GR inheritance, Bullet Cluster 'unresolved,' CMB peaks an 'open challenge'). The abstract's claim that \u03c70=19 'correctly predicts' multiple particle physics quantities without derivation of \u03c70 itself, combined with boastful framing throughout, represents significant overreach relative to what is actually demonstrated."
+      },
+      "engagement": {
+        "score": 4.0,
+        "justification": "The manuscript cites McGaugh et al. (2016), Lelli et al. (2016), and Chae et al. (2020) in connection with observational tests, which is appropriate, but engagement with theoretical literature is extremely thin \u2014 the only theoretical physics citations are Fredkin (1990), Wolfram (2002), and Zuse (1969), all decades old. There is no engagement with modern emergent gravity, modified gravity, or quantum gravity literature that would be directly relevant to the central claims, and connections between cited works and specific theoretical claims are rarely made explicit."
+      },
+      "rigor": {
+        "score": 3.0,
+        "justification": "While the manuscript presents many derivations (dispersion relation, Hamiltonian density, etc.), the foundational parameter \u03c70=19 is never derived \u2014 it is simply asserted as 'fundamental,' yet the entire nuclear physics prediction edifice (Ngluons=\u03c70-11, Ngenerations=(\u03c70-1)/6, sin\u00b2\u03b8W=3/(\u03c70-11)) rests on it without justification. The claim that electromagnetism 'emerges from phase interference' and confinement from '\u03c7 gradient energy' are supported only by qualitative arguments and cited numerical experiments, not rigorous derivations, and the dimensional analysis throughout uses 'natural units' in ways that obscure whether equations are physically consistent."
+      },
+      "citations": {
+        "score": 4.0,
+        "justification": "The manuscript contains only 11 references, of which several are the author's own prior work (reference [8]), and the theoretical physics citations (Fredkin 1990, Wolfram 2002, Zuse 1969) are over 20 years old with no justification for why recent work in digital physics or emergent spacetime is insufficient. While observational citations (SPARC, McGaugh, Chae) are recent and connected to specific claims, the overall citation density is very low for a paper claiming to unify all four fundamental forces, and many major claims \u2014 particularly in the nuclear physics and quantum field theory sections \u2014 are made without any citation support."
+      }
+    }
+  },
+  {
+    "paper_id": "019",
+    "citation": "Partin, 2026",
+    "group": "baseline",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-08T01:21:06.720387+00:00",
+    "input_tokens": 63302,
+    "output_tokens": 941,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 6.0,
+        "justification": "The paper states a central claim that \u201cspacetime is the computational substrate\u201d and that \u201call four fundamental forces emerge from GOV-01 + GOV-02 alone,\u201d and it lists many testable predictions (e.g., SPARC RMS = 0.024 dex; a0 = cH0/2\u03c0; high\u2011z v \u221d H(z)1/4). However, it does not explicitly define a null hypothesis vs alternate hypothesis with mutually exclusive falsification criteria; failure conditions are discussed in a scattered way (e.g., weak lensing falloff, stream gaps, high\u2011z rotation) rather than as a formal hypothesis test framework."
+      },
+      "novelty": {
+        "score": 7.0,
+        "justification": "The manuscript claims novel unification (gravity/EM/strong/weak emerging from coupled wave equations) and specific parameter numerology from \u03c70 = 19 (e.g., Ng = \u03c70 \u2212 11 = 8; \u03b1s = 2/17; Ngen = 3), and it positions itself against MOND and CDM in the SPARC/RAR/BTFR context. But it provides limited comparative analysis to recent (past 10 years) theoretical work on emergent gravity/modified gravity/digital physics beyond citing SPARC/McGaugh and a few classics; the novelty case is asserted more than demonstrated via detailed gap analysis of contemporary approaches."
+      },
+      "scientific_humility": {
+        "score": 11.0,
+        "justification": "The paper repeatedly delineates scope and limitations (e.g., \u201cscope is classical wave mechanics,\u201d \u201cno claims about quantum gravity,\u201d and explicit exclusions X1\u2013X8), and it candidly flags obstructions and gaps (e.g., VEL-01 factor issue, cluster/merger issues, Bullet Cluster, CMB peaks as \u201copen challenge,\u201d and frame dragging requiring EXT-B). However, it also makes very strong claims of correctness/prediction (e.g., multiple \u201cEXACT\u201d matches from \u03c70 = 19 and \u201cdefinitive reference\u201d) that sometimes outpace the demonstrated derivations within the manuscript."
+      },
+      "engagement": {
+        "score": 8.0,
+        "justification": "Engagement is substantive with observational galaxy-phenomenology literature (SPARC 2016; RAR 2016; BTFR 2000) and with standard GR benchmarks (light bending, perihelion precession) and GW speed constraints (GW170817 mentioned). But engagement with modern theoretical literature in relevant subfields (modified gravity, emergent spacetime, lattice field theory, quantum foundations) is thin; the bibliography is short and the manuscript often relies on internal \u201cLFM-PAPER-0xx\u201d references rather than connecting to external contemporary work."
+      },
+      "rigor": {
+        "score": 5.0,
+        "justification": "The manuscript contains many explicit derivations from GOV-01 (dispersion, Hamiltonian density, conservation laws, ray equations) with clear algebraic steps, and it distinguishes DERIVED vs LIMIT vs PHENOM. However, several physically crucial steps rely on asserted identifications or conditional mappings (e.g., \u03c7-profile set to match Schwarzschild to recover GR observables; a0 derived from a boundary condition \u03c7\u221e = H0/c; multiple unit/definition moves like E=\u210f\u03c9 treated as definitional), and there are internal inconsistencies/obstructions acknowledged (e.g., velocity mapping exponent discrepancy; light bending giving 2/3 of GR in one section; perihelion precession both derived conditionally and later declared excluded), reducing overall soundness."
+      },
+      "citations": {
+        "score": 6.0,
+        "justification": "Citations are present and relevant for key datasets and classic results (SPARC 2016; RAR 2016; Dyson/Eddington 1920; Einstein 1915; Verlet 1967; digital physics references), and some are connected in-text to claims (e.g., SPARC validation, RAR). But the reference list is limited for a work claiming unification of forces, includes many foundational/older sources with little recent-theory coverage, and many major claims are supported primarily by internal LFM paper references (e.g., \u201cLFM-PAPER-050/065\u201d) rather than external peer-reviewed literature."
+      }
+    }
+  }
+]

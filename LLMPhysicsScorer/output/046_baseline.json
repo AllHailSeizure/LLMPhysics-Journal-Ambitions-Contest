@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "046",
+    "citation": "Yazdani, 2026",
+    "group": "baseline",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-08T00:15:08.474808+00:00",
+    "input_tokens": 37825,
+    "output_tokens": 699,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 3.0,
+        "justification": "The manuscript asserts that the catenoid bridge geometry produces 'integer-spaced quasinormal mode frequencies' and 'gravitational-wave echoes with timescales of order 0.1 s for stellar-mass objects,' and states these are 'falsifiable signatures.' However, no explicit null hypothesis is stated, no alternate hypothesis is framed, and the failure conditions are not defined \u2014 the paper does not specify what observational outcome would falsify the catenoid bridge interpretation versus competing models."
+      },
+      "novelty": {
+        "score": 3.0,
+        "justification": "The manuscript claims to present 'a complete geometric reformulation of the catenoid bridge black hole metric as a Geometry\u2013Flow vacuum' and asserts this is a new framework, but provides no citations to prior literature on catenoid bridge black holes, wormhole geometries, echo phenomenology, or competing singularity-free models. Without comparative engagement with existing work, the novelty claim is entirely unsubstantiated by the paper's own content."
+      },
+      "scientific_humility": {
+        "score": 2.0,
+        "justification": "The manuscript makes sweeping claims such as 'a complete geometric reformulation' and asserts that GFT requires 'no reference to Newton's constant, stress-energy, or matter sources' as if this is an established result rather than a speculative proposal. The paper does not acknowledge that 'Geometry-Flow Theory' is not an established framework, does not discuss limitations of the catenoid bridge metric as a physical model, and does not identify open questions beyond vague references to 'the broader GFT program.'"
+      },
+      "engagement": {
+        "score": 1.0,
+        "justification": "The manuscript contains no citations whatsoever \u2014 no bibliography, no in-text references to any prior work. Claims about LIGO echo detections, wormhole geometries, quasinormal modes, and minimal surface theory are made without any connection to the existing literature, making substantive engagement with the field entirely absent."
+      },
+      "rigor": {
+        "score": 3.0,
+        "justification": "While some mathematical steps are shown (e.g., the photon sphere derivation in Appendix B is internally consistent), the foundational premise \u2014 that a metric can be derived from a 1-form via 'g\u03bc\u03bd = F(\u03c9)' where F 'encodes the holofractal structure' \u2014 is never defined or derived. The claim that 'G\u03bc\u03bd(gcat) = 0 for all \u03bc, \u03bd' in equation (32) is asserted without computation, and the WKB quantization argument relies on an ad hoc cutoff \u03c1min with no physical justification."
+      },
+      "citations": {
+        "score": 0.0,
+        "justification": "The manuscript contains no citations of any kind \u2014 no bibliography, no footnotes, no in-text references. Under the rubric, citations are entirely absent, which constitutes the lowest possible performance on this criterion regardless of other content."
+      }
+    }
+  },
+  {
+    "paper_id": "046",
+    "citation": "Yazdani, 2026",
+    "group": "baseline",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-08T01:33:02.134260+00:00",
+    "input_tokens": 9984,
+    "output_tokens": 646,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 6.0,
+        "justification": "The manuscript advances testable claims (e.g., \u201cinteger-spaced quasinormal mode frequencies\u201d and \u201cdouble photon ring\u201d as \u201csharp, falsifiable predictions\u201d in Sec. 6), but it does not explicitly state a null hypothesis vs. alternate hypothesis pair, nor mutually exclusive falsification criteria; it mainly lists confirming signatures (integer ratios, echoes, double ring) without a structured hypothesis-testing framework."
+      },
+      "novelty": {
+        "score": 2.0,
+        "justification": "The paper repeatedly asserts a \u201ccomplete geometric reformulation\u201d and \u201ctopological quantization without \u210f,\u201d but provides essentially no comparison to prior approaches via citations (no literature review, no references to recent work, and no explicit gap analysis beyond general statements about Schwarzschild singularities and \u201ctentative LIGO observations\u201d)."
+      },
+      "scientific_humility": {
+        "score": 5.0,
+        "justification": "The manuscript uses strong, expansive language (\u201ccomplete geometric reformulation,\u201d \u201chighly distinctive\u2026 echoes,\u201d \u201cclean, falsifiable signature\u201d) while key elements are left unspecified (e.g., the mapping g\u00b5\u03bd = F(\u03c9) is not defined, and the \u201ccutoff\u201d \u03c1min is introduced ad hoc), and it links predictions to observations (\u201cconsistent with tentative echo detections\u201d) without careful uncertainty analysis; it does note some dependence on \u03c1min for echo times while claiming integer spacing is cutoff-independent."
+      },
+      "engagement": {
+        "score": 1.0,
+        "justification": "There is minimal substantive engagement with the current field: the manuscript mentions LIGO and standard GR concepts (Schwarzschild, photon sphere) but does not cite or discuss contemporary echo searches, QNM literature, wormhole/black-hole mimicker models, or minimal-surface/Weierstrass theory in relation to existing research, so connections to the state of the art are not demonstrated."
+      },
+      "rigor": {
+        "score": 3.0,
+        "justification": "Some internal derivations are shown (e.g., photon-sphere condition from Veff(\u03c1), wave equation reduction to a Schr\u00f6dinger form, near-throat expansion of f), but major premises are not rigorously specified or justified (notably g\u00b5\u03bd = F(\u03c9) is undefined, the topological quantization condition \u222e\u03c9 = 2\u03c0n is asserted without derivation/units, and the WKB cavity quantization and \u201cexact integer ratios\u201d rely on an ill-defined divergent Leff with an arbitrary cutoff \u03c1min)."
+      },
+      "citations": {
+        "score": 0.0,
+        "justification": "No formal citations or bibliography entries are provided anywhere in the manuscript text despite numerous claims that require sourcing (e.g., \u201ctentative LIGO observations,\u201d comparisons to Schwarzschild/Kerr predictions, and mathematical minimal-surface/associate-family constructions), so the citation standard is not met."
+      }
+    }
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "109",
+    "citation": "Shatto, 2026",
+    "group": "contest",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-22T03:38:24.667114+00:00",
+    "input_tokens": 49062,
+    "output_tokens": 940,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 9.5,
+        "justification": "The manuscript states clear primary predictions with explicit falsification thresholds, e.g., 'a0(z) \u221d H(z)' falsified if 'a0 consistent with constant at high z \u2265 2\u03c3, z > 2,' and '\u039b constant' falsified if '\u03c1DE(z) shows significant evolution \u2265 2\u03c3.' However, the null hypothesis is never explicitly framed as such \u2014 the paper presents falsification conditions but does not formally distinguish null from alternate hypotheses, and some secondary predictions (e.g., 'H0 discrete') lack precise quantitative thresholds."
+      },
+      "novelty": {
+        "score": 8.0,
+        "justification": "The manuscript explicitly positions itself against MOND (Milgrom [10]), \u039bCDM, DESI w(z) results [13], and the Luminet/Weeks Poincar\u00e9 dodecahedral space proposal [32], articulating how MIT extends those frameworks. However, the comparative work is often brief and the claimed improvements over prior topological cosmology approaches are asserted rather than rigorously demonstrated \u2014 for instance, the extension from CMB anomalies to particle structure via McKay correspondence is identified as novel but the derivation is described as 'in progress.'"
+      },
+      "scientific_humility": {
+        "score": 5.5,
+        "justification": "The manuscript includes a section explicitly stating 'What MIT does not modify' and identifies open questions in 'The Horizon' table, which shows some restraint. However, the paper makes sweeping claims such as 'Einstein's constant, resolved,' 'Neither matter nor energy is dark,' and 'The answer is easy money' regarding the Yang-Mills mass gap \u2014 a Millennium Prize problem \u2014 without complete derivations, and the tone frequently exceeds what the presented evidence supports."
+      },
+      "engagement": {
+        "score": 7.0,
+        "justification": "The manuscript cites recent work including DESI 2025 [13], COMPACT 2025 [19], LZ 2023 [21], XENONnT 2023 [22], Labb\u00e9 et al. 2023 [11], and Riess et al. 2022 [12], and explicitly connects these to specific claims (e.g., DESI phantom crossing mapped to zcross \u2248 0.66, COMPACT parity result matched to RTT < 1). However, engagement with modern quantum gravity, loop quantum cosmology, or competing topological field theory literature is absent, and connections between citations and claims are sometimes stated only in passing."
+      },
+      "rigor": {
+        "score": 4.5,
+        "justification": "The manuscript presents several derivations with explicit steps (e.g., the Gauss-Codazzi conversion yielding \u039bobs = (3/2)\u039btop, the anti-periodic boundary condition yielding half-integer modes), but critical load-bearing steps are deferred \u2014 the particle mass spectrum computation is explicitly described as 'in progress,' and the Grid-Hierarchy exponent 1/|I| = 1/60 for \u03b1 is motivated but not rigorously derived. The assignment of observables to Fibonacci wells relies on post-hoc coprimality arguments rather than derivation from first principles."
+      },
+      "citations": {
+        "score": 5.5,
+        "justification": "The manuscript includes a mix of recent (2022\u20132025) and foundational citations, with several explicitly connected to claims in the text (e.g., Milgrom [10] for a0, Planck Collaboration [16] for \u039bobs\u00b7\u2113P\u00b2). However, many older citations (de Broglie 1924, Gauss 1828, Fibonacci 1202, Klein 1884) are used without justification for why recent work is insufficient, and the McKay correspondence [25] \u2014 central to the particle structure section \u2014 is cited via a 1980 proceedings paper with no modern follow-up literature cited."
+      }
+    }
+  },
+  {
+    "paper_id": "109",
+    "citation": "Shatto, 2026",
+    "group": "contest",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-22T03:24:57.325272+00:00",
+    "input_tokens": 23271,
+    "output_tokens": 995,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 9.0,
+        "justification": "The manuscript advances a central structured claim that a single topological postulate \u201cS1 = \u2202(M\u00f6bius) \u2192 S3, \u2202S3 = \u2205\u201d yields a scaling law \u201cA/AP \u2248 C(\u0398)\u00b7(\u221a\u03a9)\u2212n\u201d that determines \u039b, H0, a0, and \u03b1, and it lists explicit falsification criteria (e.g., \u201ca0(z) \u221d H(z) while \u039b remains constant,\u201d and thresholds such as \u201c\u2265 2\u03c3, z > 2\u201d for a0). However, it does not explicitly define a null hypothesis vs alternate hypothesis pair; instead it provides one-sided predictions and a falsification table without mutually exclusive null/alt framing."
+      },
+      "novelty": {
+        "score": 8.0,
+        "justification": "The paper claims a unifying topological mechanism that maps multiple anomalies and constants to discrete \u201cFibonacci wells\u201d on a \u201c120 domain\u201d and introduces a specific \u201cphase field\u201d step (2/120) to explain the Hubble tension, which is presented as a distinct proposal. But the comparative case is underdeveloped: it references related ideas (e.g., Poincar\u00e9 dodecahedral space, MOND, DESI w(z)) without clearly identifying concrete limitations of those approaches and demonstrating, with direct comparisons, how MIT improves on them beyond asserting one-to-one mappings and percent-level fits."
+      },
+      "scientific_humility": {
+        "score": 7.5,
+        "justification": "The manuscript does delineate some scope and open work (e.g., \u201cWhat MIT does not modify. Einstein\u2019s field equations and the Standard Model particle content are unchanged,\u201d and a \u2018Horizon\u2019 section listing items \u2018in progress\u2019), and it provides explicit falsification thresholds. However, it repeatedly makes very strong claims (\u201cderives the constants of the universe\u2026 across 122 orders of magnitude,\u201d \u201cThe topology had only one choice,\u201d \u201ceasy money\u201d on the Yang\u2013Mills gap) that exceed what is fully demonstrated within the manuscript and sometimes adopt a rhetorically confident tone."
+      },
+      "engagement": {
+        "score": 9.0,
+        "justification": "The paper engages several modern observational results and tensions (Planck 2020, Riess 2022, LZ 2023, XENONnT 2023, Labb\u00e9 2023 JWST, DESI 2025 preprint) and ties them to specific proposed mechanisms (e.g., an 8.4% H0 shift from \u0398f = 2/120; zcross \u2248 0.66 from the standing-wave phase). Still, engagement with the broader contemporary theoretical literature on topology, dark matter alternatives, and modified gravity is limited; many connections are asserted rather than developed through detailed comparison to current models and constraints."
+      },
+      "rigor": {
+        "score": 4.0,
+        "justification": "While the manuscript contains many equations and some internal calculations (e.g., deriving half-integer modes from anti-periodic BCs; defining C(\u0398)=2 sin^2(\u03c0\u0398); computing the 8.4% shift via C(36/120)/C(34/120)), key premises are not physically justified to the standard required for soundness (e.g., selection rules assigning n=1,2,3 by \u2018observable character,\u2019 the identification of |2I|=120 as \u2018maximum resolution,\u2019 and the step-function \u2018phase field\u2019 response locking exactly to 2/120). Several quantitative leaps (e.g., L \u2248 2.1 Gpc, \u2113cut \u2248 31, and the mapping of \u039btop to \u039bobs via a minimal-embedding assumption Kij=0) are presented with limited derivational support and rely on strong, nonstandard assumptions."
+      },
+      "citations": {
+        "score": 7.0,
+        "justification": "The bibliography includes a mix of foundational and recent sources, with multiple post-2016 references directly relevant to claims (Planck 2020 for \u039b/CMB, Riess 2022 for H0, LZ/XENONnT 2023 for null detection, Labb\u00e9 2023 for early galaxies, DESI 2025 for w(z)). However, many central claims (e.g., the uniqueness of the topology choice, the 120-domain resolution argument, and the specific phase-field trigger/locking mechanism) are not supported by external citations, and some citations are invoked broadly rather than being tightly connected to the specific derivations in the text."
+      }
+    }
+  }
+]

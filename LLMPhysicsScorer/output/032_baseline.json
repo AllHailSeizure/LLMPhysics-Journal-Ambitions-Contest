@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "032",
+    "citation": "u/the_hootbot, 2026",
+    "group": "baseline",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-08T00:07:53.295659+00:00",
+    "input_tokens": 3198,
+    "output_tokens": 659,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 3.0,
+        "justification": "The manuscript presents no clearly stated hypothesis, null hypothesis, or alternate hypothesis. It sketches a 'unified framework' and lists 'open questions' but never specifies what outcome would falsify any claim; the closest it comes is listing 'observational signatures' without connecting them to testable predictions with defined success or failure conditions."
+      },
+      "novelty": {
+        "score": 4.0,
+        "justification": "The manuscript proposes combining Di\u00f3si-Penrose, CSL, trace dynamics, and a cosmological H-based collapse mechanism, and gestures at gaps (e.g., 'Di\u00f3si-Penrose struggles with cosmological applications'), but cites no specific papers by author, title, or date, making it impossible to verify that the synthesis is genuinely novel or that prior work has been properly engaged and distinguished."
+      },
+      "scientific_humility": {
+        "score": 5.0,
+        "justification": "The manuscript does list 'open questions' and acknowledges individual weaknesses of each approach, which shows some restraint; however, it makes sweeping claims such as 'the most compelling synthesis would show your cosmological mechanism as the fundamental scale-setter' without supporting evidence, and the speculative overreach in asserting derivability from trace dynamics or LQG is not tempered by proportionate caveats."
+      },
+      "engagement": {
+        "score": 2.0,
+        "justification": "The manuscript references Di\u00f3si-Penrose, CSL, Adler's trace dynamics, and loop quantum gravity by name but provides zero actual citations\u2014no authors, years, journal references, or DOIs\u2014making it impossible to assess whether engagement with current literature is substantive or merely name-dropping of well-known frameworks."
+      },
+      "rigor": {
+        "score": 2.0,
+        "justification": "Equations such as '\u03b3_DP \u221d (\u0394E_grav/\u210f)\u00b2' and '\u03b3_total = \u03b3_DP + \u03b3_H' and 'H_collapse = H_DP + H_CSL + H_cosmological' are stated without derivation, dimensional analysis, or physical justification for additivity; the claim that '\u03bb \u221d H\u2080' and 'r_C \u221d \u03bb_Compton \u00d7 some function' are asserted with no mathematical backing, leaving the logical chain from premises to conclusions entirely unsupported."
+      },
+      "citations": {
+        "score": 0.0,
+        "justification": "The manuscript contains no formatted citations whatsoever\u2014no bibliography, no in-text references with author names or years, no DOIs or journal names\u2014making it impossible to evaluate recency, relevance, or proper attribution; under the rubric this constitutes citations that are entirely absent rather than sparse or outdated."
+      }
+    }
+  },
+  {
+    "paper_id": "032",
+    "citation": "u/the_hootbot, 2026",
+    "group": "baseline",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-08T00:08:06.186374+00:00",
+    "input_tokens": 2822,
+    "output_tokens": 758,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 6.0,
+        "justification": "The manuscript proposes a structured idea\u2014e.g., an additive multi-scale collapse rate \"\u03b3_total = \u03b3_DP(mass, spatial separation) + \u03b3_H(mode, expansion rate)\" and a scale-dependent interpolator \"f(k/(aH))\"\u2014but it does not state an explicit null hypothesis vs alternate hypothesis, nor mutually exclusive falsification criteria. While it lists potential \"Observational Signatures\" (laboratory tests, CMB anomalies, modified power spectrum), these are not framed as specific pass/fail outcomes that would decisively support or refute the framework."
+      },
+      "novelty": {
+        "score": 5.0,
+        "justification": "The manuscript\u2019s main contribution is a synthesis sketch combining Di\u00f3si\u2013Penrose, CSL, cosmological H-dependent collapse, and trace dynamics into a hierarchical architecture with an interpolating window function, but it does not demonstrate novelty via comparison to prior art beyond naming existing approaches. It asserts unification ideas like \"CSL as effective theory\" with \"\u03bb \u221d H\u2080\" and \"r_C\" emerging from balances, yet does not identify specific gaps/limitations in recent literature or show how this differs from existing hybrid or cosmological-collapse proposals."
+      },
+      "scientific_humility": {
+        "score": 12.0,
+        "justification": "The manuscript explicitly flags uncertainties and limitations via an \"Open Questions for Synthesis\" section (\"Consistency\", \"Coupling\", \"Derivation\", \"Parsimony\"), and uses appropriately tentative language (\"might\", \"potentially\", \"sketch\"). It generally avoids overclaiming derivations, though some statements (e.g., \"The most compelling synthesis would show your cosmological mechanism as the fundamental scale-setter\") lean aspirational without supporting evidence."
+      },
+      "engagement": {
+        "score": 6.0,
+        "justification": "There is some substantive conceptual engagement with known collapse frameworks (Di\u00f3si\u2013Penrose, CSL) and Adler\u2019s trace dynamics, and the manuscript attempts to map each to regimes (micro/meso/cosmological) and to connect parameters (e.g., \"\u03bb \u221d H\"). However, engagement remains high-level: it does not discuss specific modern results, constraints, or how existing cosmology/CSL/DP literature quantitatively bears on the proposed couplings and the function \"f(k/(aH))\"."
+      },
+      "rigor": {
+        "score": 3.0,
+        "justification": "The manuscript provides schematic equations (e.g., \"H_collapse = H_DP + H_CSL + H_cosmological\" and \"\u03b3_total = \u03b3_DP + \u03b3_H\") and qualitative scaling claims (e.g., \"\u03b3_DP \u221d (\u0394E_grav/\u210f)\u00b2\"; \"\u03bb \u221d H\"), but it does not supply derivations, dimensional checks, or a defined stochastic dynamics showing how these terms enter a master equation. Key constructs like the interpolator \"f(k/(aH))\" are motivated qualitatively but not derived or specified mathematically."
+      },
+      "citations": {
+        "score": 1.0,
+        "justification": "The manuscript mentions names and models (Di\u00f3si\u2013Penrose, CSL, Adler/trace dynamics) but provides no formal citations, dates, or bibliography, and does not cite recent work within the past ten years. Because claims are not supported with explicit references, the citation standard in the rubric is not met."
+      }
+    }
+  }
+]

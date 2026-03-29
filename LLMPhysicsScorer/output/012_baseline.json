@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "012",
+    "citation": "Borden, 2026",
+    "group": "baseline",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-08T01:14:59.196456+00:00",
+    "input_tokens": 12771,
+    "output_tokens": 680,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 3.0,
+        "justification": "The manuscript asserts that 'information is the only fundamental constituent of reality' and that matter, energy, and spacetime are emergent, but never explicitly states a null hypothesis or alternate hypothesis in any formal sense. Section 3.7 mentions 'identify testable signatures differentiating this model from standard cosmology' as a future direction, but no specific falsifiable predictions or failure conditions are articulated anywhere in the paper \u2014 the path to testing remains entirely unspecified."
+      },
+      "novelty": {
+        "score": 3.0,
+        "justification": "The manuscript references 'It from Bit,' holographic encoding, causal set theory, and quantum gravity in passing, but cites no specific papers and performs no comparative analysis identifying gaps or limitations in prior approaches. The author claims the framework is 'novel' and 'unified' but makes no attempt to demonstrate how it differs from or improves upon existing informational ontology proposals such as those by Verlinde, Jacobson, or Wheeler \u2014 the comparative work required for novelty credit is entirely absent."
+      },
+      "scientific_humility": {
+        "score": 4.0,
+        "justification": "The manuscript does identify future directions and frames some claims as paths 'toward' emergent physics rather than established results, showing partial restraint. However, the conclusion states the framework 'generates all observed phenomena' and 'naturally accounting for dark matter phenomena,' claims that substantially exceed what the paper's minimal mathematical sketch actually supports, and the author presents no acknowledgment of significant limitations or competing explanations."
+      },
+      "engagement": {
+        "score": 1.0,
+        "justification": "The manuscript makes passing references to 'holographic principle,' 'causal set theory,' 'quantum field theory,' and 'general relativity' but cites zero specific papers, authors, or publications anywhere in the document. There is no bibliography, no in-text citation, and no explicit connection drawn between any named prior work and the proposal \u2014 citations are entirely absent, rendering substantive engagement impossible to assess."
+      },
+      "rigor": {
+        "score": 2.5,
+        "justification": "The recursion rule in Section 2.3 is formally stated but its physical justification is entirely absent \u2014 the coupling constant \u03b1 and radial step \u03b5 are introduced without derivation, dimensional analysis, or grounding in established physics. The claim that 'correlations between points on successive shells define an effective metric g_\u03bc\u03bd' is stated without any derivation or demonstration of how a binary \u00b11 field on discrete shells produces a Lorentzian metric, leaving the central physical claims mathematically unsupported."
+      },
+      "citations": {
+        "score": 0.0,
+        "justification": "The manuscript contains no citations whatsoever \u2014 no bibliography, no in-text references, and no footnotes. Concepts such as 'It from Bit,' the holographic principle, Shannon entropy, and causal set theory are invoked without attribution to any source, and no papers are cited anywhere in the document."
+      }
+    }
+  },
+  {
+    "paper_id": "012",
+    "citation": "Borden, 2026",
+    "group": "baseline",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-08T01:15:45.111094+00:00",
+    "input_tokens": 5992,
+    "output_tokens": 702,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 6.0,
+        "justification": "The paper advances a central claim that \u201cinformation is the only fundamental constituent of reality\u201d and that spacetime/matter/gravity \u201care emergent phenomena, arising from the recursive organization of binary information,\u201d but it does not state explicit null vs. alternate hypotheses or mutually exclusive falsification conditions. \u201cFuture Directions\u201d mentions \u201cidentify testable signatures\u201d yet provides no concrete, plausibly testable outcomes that would support vs. falsify the model."
+      },
+      "novelty": {
+        "score": 4.0,
+        "justification": "The manuscript asserts connections to \u201cIt from Bit,\u201d the holographic principle, emergent spacetime, and causal set theory, but it does not cite specific prior works or identify precise gaps/limitations in those approaches that this model resolves. The proposed recursion-on-nested-boundaries idea is described as \u201cnovel,\u201d yet the paper does not demonstrate novelty through comparative analysis or literature grounding."
+      },
+      "scientific_humility": {
+        "score": 7.5,
+        "justification": "The author includes some scope-limiting language and open tasks (e.g., \u201cpath toward emergent physics,\u201d and \u201cFuture Directions\u201d such as \u201cNumerical simulation\u201d and \u201cMetric derivation\u201d), which acknowledges incompleteness. However, the paper makes broad, high-confidence claims (e.g., \u201cnaturally accounting for dark matter phenomena\u201d and that a \u201csingle principle\u2026governs the evolution of all structures\u201d) without presenting supporting evidence commensurate with the strength of the conclusions."
+      },
+      "engagement": {
+        "score": 3.0,
+        "justification": "Engagement with the field is largely conceptual and name-checking: it references \u201cquantum gravity,\u201d \u201ccausal set theory,\u201d and the \u201cholographic principle\u201d but does not discuss specific recent results, debates, or how the proposal concretely extends or challenges them. There are no explicit citations or detailed comparisons tying the recursion rule or manifold foliation to existing technical literature."
+      },
+      "rigor": {
+        "score": 4.0,
+        "justification": "The paper provides basic definitions (a 4-manifold foliated into 3-boundaries, binary field \\(\\sigma_r\\), total charge \\(Q_r=\\sum\\sigma_r(x)\\), and a threshold recursion rule with coupling \\(\\alpha\\)), but key constructs are underspecified (e.g., what the sum over \\(S_r\\) means on a continuum manifold, how \\(x\\in S_{r+\\epsilon}\\) maps to \\(\\sigma_r(x)\\), and how an effective metric \\(g\\) is derived from correlations). Major physical claims (Lorentz invariance, gravity/dark matter reproduction, entanglement-like behavior) are not supported by derivations or quantitative calculations."
+      },
+      "citations": {
+        "score": 0.0,
+        "justification": "No formal citations or bibliography are provided; the manuscript only makes uncited references to broad ideas like \u201cIt from Bit\u201d and the \u201cholographic principle\u201d without attributing specific sources. Because claims are made without supporting references and there is no consistent citation apparatus, this category scores zero."
+      }
+    }
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "047",
+    "citation": "u/MisterSpectrum, 2026",
+    "group": "baseline",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-08T00:16:48.219457+00:00",
+    "input_tokens": 15142,
+    "output_tokens": 994,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 6.0,
+        "justification": "The manuscript presents a clear technical proposal \u2014 that GH inequalities applied to spectral moments yield provable two-sided bounds on Levy\u2013Lieb functionals \u2014 but never explicitly frames a null hypothesis or alternate hypothesis, nor does it articulate what specific outcomes would falsify the framework. The 'speedometer' table and benchmark protocol gesture toward testability, but failure conditions (e.g., what would demonstrate IADFT bounds are not provable or not chemically useful) are never stated."
+      },
+      "novelty": {
+        "score": 9.0,
+        "justification": "The manuscript explicitly identifies gaps in existing DFT UQ approaches \u2014 'Common uncertainty-quantification strategies \u2014 benchmarks, functional ensembles, and Bayesian approaches \u2014 are valuable in practice but remain largely empirical and external to the variational structure' \u2014 and positions IADFT as a variationally grounded, deterministic alternative. It cites Wang et al. (2021) and Janssen et al. (2024) as recent UQ frameworks and articulates how IADFT differs, though the comparative analysis remains somewhat high-level and the claimed connection to Gr\u00fcss\u2013Hadamard inequalities as a novel application to Levy\u2013Lieb functionals is asserted more than demonstrated against prior art."
+      },
+      "scientific_humility": {
+        "score": 10.0,
+        "justification": "The manuscript consistently and explicitly acknowledges limitations: energy mapping is described as 'an order-of-magnitude heuristic,' surrogate looseness is flagged ('the ratio r(\u03c1) often exceeds ~0.7 but can be much smaller in pathological cases'), and caveats on basis-set incompleteness, functional biases, and dimensionality effects are enumerated in Section 7.4. The authors note that 'all suggested numeric mappings are empirical and system-class dependent' and explicitly identify open questions including infinite-dimensional extension and automatic \u03b7 selection."
+      },
+      "engagement": {
+        "score": 9.0,
+        "justification": "The manuscript engages substantively with Levy\u2013Lieb (refs 1\u20132), Gr\u00fcss\u2013Hadamard inequalities (ref 4), and recent DFT UQ literature (Wang et al. 2021, Janssen et al. 2024), explicitly connecting each to the proposal in the text. However, engagement with the broader moment-problem literature and quantum information literature (Nielsen & Chuang cited but not deeply connected) is somewhat superficial, and the reference list is thin for a paper claiming to bridge multiple mathematical traditions \u2014 foundational texts like Hardy\u2013Littlewood\u2013P\u00f3lya and Bhatia are cited without recent follow-up work in those areas."
+      },
+      "rigor": {
+        "score": 6.0,
+        "justification": "The derivation chain from GH deviation to g\u2096\u1d56\u02b3\u1d52\u1d5b via TV distance and Cauchy\u2013Schwarz is logically structured and the key steps are stated, but several critical steps are 'sketch proofs' or asserted without full derivation \u2014 notably the scaling argument in Section 11.1 and the \u2113\u209a monotonicity step yielding g\u2096\u1d9c\u1d52\u207f\u02e2. The worked examples (H\u2082, NiO) provide numerical illustrations but do not verify the bound is actually satisfied against a reference value, and the energy mapping from dimensionless widths to kcal/mol lacks dimensional justification beyond heuristic analogy."
+      },
+      "citations": {
+        "score": 5.0,
+        "justification": "Only nine references are listed, with several being textbooks (Hardy\u2013Littlewood\u2013P\u00f3lya, Bhatia, Nielsen\u2013Chuang) cited without connection to specific claims, and reference 4 ('The Gr\u00fcss\u2013Hadamard Spectral Covariance Bounds for Quantum Density Operators') appears to lack standard bibliographic information suggesting it may be self-referential or incomplete. The two recent papers (Wang 2021, Janssen 2024) are genuinely connected to the text, but the overall citation density is low for the breadth of mathematical claims made, and several assertions \u2014 particularly around moment-problem theory and Schur-concavity \u2014 are made without citation."
+      }
+    }
+  },
+  {
+    "paper_id": "047",
+    "citation": "u/MisterSpectrum, 2026",
+    "group": "baseline",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-08T00:17:02.191422+00:00",
+    "input_tokens": 12507,
+    "output_tokens": 894,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 6.0,
+        "justification": "The manuscript advances a clear central claim\u2014\"a lightweight post-SCF framework that generates provable, two-sided bounds\" and that \u03a6k/gk provide a \"self-certifying diagnostic\"\u2014but it does not explicitly state a null hypothesis vs. alternate hypothesis, nor mutually exclusive falsification criteria. It suggests empirical validation (e.g., comparing mapped uncertainties to \"\u0394E_{DFT-ref}\") yet does not define what specific observed outcomes would refute the core claims of provability/tightness beyond general benchmarking."
+      },
+      "novelty": {
+        "score": 9.0,
+        "justification": "The paper articulates a specific proposed contribution\u2014using Gr\u00fcss\u2013Hadamard spectral covariance bounds plus moment-based tightening via \u03a6k and factors gk^{prov}/gk^{cons}\u2014and contrasts it with \"functional ensembles, and Bayesian approaches\" as largely empirical. However, the novelty case is only partially developed against recent DFT-UQ literature (it cites two recent UQ papers [8\u20139] but does not deeply compare to existing internal-error indicators or density-matrix diagnostics), and several claims of being a new bridge between inequalities and Levy\u2013Lieb functionals are asserted more than demonstrated via a detailed prior-art gap analysis."
+      },
+      "scientific_humility": {
+        "score": 11.0,
+        "justification": "The manuscript includes multiple scope/limitation caveats: it emphasizes that mapping the dimensionless width to energy can be heuristic (\"kBT scaling ... should be presented explicitly as an order-of-magnitude heuristic\"), warns about basis-set and subspace choices, and notes that strong correlation will widen bounds and may require higher-level methods. Still, some language is expansive (e.g., \"turning the density matrix into a self-certifying diagnostic\" and \"transforms DFT from a black-box point estimator\") relative to the limited demonstrated benchmarks and the reliance on active-space projection choices."
+      },
+      "engagement": {
+        "score": 10.0,
+        "justification": "The paper engages meaningfully with classical foundations (Levy\u2013Lieb, Gr\u00fcss/Hadamard, matrix analysis) and mentions modern DFT-UQ frameworks [8\u20139], but the connection to the current state of DFT uncertainty quantification is not developed in depth (e.g., limited discussion of how IADFT compares to established practical error estimators, ensemble-DFT approaches, or density-based diagnostics used in contemporary electronic-structure workflows). Much of the engagement is conceptual rather than a detailed positioning within the recent specialized literature."
+      },
+      "rigor": {
+        "score": 6.5,
+        "justification": "Several derivations are presented with clear definitions (e.g., \u03a6k, the expectation-difference representation of Dk, and the L2-based bound using p2k/pk^2 \u2212 1/n), and regularization for rank-deficient \u03c1 is addressed. However, there are notable rigor gaps/ambiguities: the stated ordering \"gk^{cons}(\u03a6k) \u2264 gk^{prov}(\u03c1) \u2264 1\" is asserted without a complete proof and depends on inequalities (e.g., p2k \u2264 p_{k+1}^{2k/(k+1)}) that are not fully justified in-text; additionally, the energy mapping discussion is largely heuristic and not derived from the Levy\u2013Lieb functional structure as claimed."
+      },
+      "citations": {
+        "score": 6.0,
+        "justification": "The bibliography includes foundational and relevant sources (Levy 1979; Lieb 1983; Ruskai 2002; Bhatia) and two recent UQ-related papers (2021, 2024). But citations are not consistently woven into specific technical claims (many key steps and inequalities are presented without pinpoint references), formatting is inconsistent (e.g., a placeholder-like entry \"The Gr\u00fcss\u2013Hadamard Spectral Covariance Bounds for Quantum Density Operators\" without full bibliographic details), and the manuscript leans heavily on classics without sufficient recent, directly connected citations in the DFT-UQ and density-matrix diagnostic subliteratures."
+      }
+    }
+  }
+]

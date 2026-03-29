@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "105",
+    "citation": "Christian, 2026",
+    "group": "contest",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-22T03:37:25.078107+00:00",
+    "input_tokens": 49699,
+    "output_tokens": 1064,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 4.0,
+        "justification": "The manuscript asserts that 'the regularity decision problem for averaged Navier\u2013Stokes systems is undecidable' and frames a four-way dichotomy (R/F/I/I'), but never explicitly states a null hypothesis or alternate hypothesis in testable scientific terms. The 'failure conditions' are purely mathematical (e.g., whether blow-up exists), and no plausible experimental or computational path toward testing the central claims is described \u2014 the paper is entirely theoretical and the 'testability' reduces to resolving the Clay Millennium Problem itself, which is not a plausible near-term test."
+      },
+      "novelty": {
+        "score": 9.0,
+        "justification": "The manuscript explicitly positions itself against Tao [3], Cardona-Miranda-Peralta-Salas [19,20], Cubitt-P\u00e9rez-Garc\u00eda-Wolf [4], and Dyhr et al. [25], stating 'The present construction is fundamentally different: it encodes computation in the time evolution of a viscous flow on R\u00b3, not in the steady-state orbits.' The introduction of the Fisher Information Matrix spectral gap as a geometric bridge and the 'programmable cascade theorem' extending Tao's single cascade to arbitrary cellular automata are presented as novel contributions, with reasonable comparative framing \u2014 though the FIM approach encounters an acknowledged obstruction (the equidistribution gap) that limits its novelty claim."
+      },
+      "scientific_humility": {
+        "score": 8.0,
+        "justification": "The manuscript explicitly acknowledges the equidistribution gap (Remark IV.11: 'This is a real obstruction in the FIM route to undecidability'), the (c)\u21d2(b) gap in the C2 equivalence (Remark VIII.4), and that Theorem IV.6 proof granularity is incomplete ('a standalone treatment with detailed bounds is in preparation'). However, the title and abstract claim 'Navier\u2013Stokes Regularity Is Independent of ZFC' and 'resolves' the Clay problem in Section X, which significantly overstates what is actually shown \u2014 the results apply to averaged NS (not physical NS), and the exact NS results are conditional on unproven hypotheses (C1, C2)."
+      },
+      "engagement": {
+        "score": 11.0,
+        "justification": "The manuscript engages substantively with Tao [3] throughout, explicitly building on his averaged operator framework and cascade mechanism, and connects to Cubitt et al. [4] via analogy in Remark V.5. Recent work by Cardona et al. [19,20] and Dyhr et al. [25] (2025) is cited and explicitly contrasted. However, engagement with the broader NS regularity literature (e.g., Ladyzhenskaya, Koch-Tataru, Kenig-Koch) is absent, and the FIM/information-geometry literature beyond Chentsov [5] and Bakry-\u00c9mery [6] is not engaged with modern developments."
+      },
+      "rigor": {
+        "score": 4.0,
+        "justification": "Several key proofs are incomplete or rely on unverified steps: Lemma VII.1's Gr\u00f6nwall bound for the averaged-exact approximation is stated without full justification of the forcing term bound; Theorem IV.6 explicitly defers its core construction ('a standalone treatment with detailed bounds is in preparation'); and the C2 equivalence direction (c)\u21d2(b) is acknowledged as conditional. The FIM evolution equation (8) is derived in Appendix A but the claim that the Leray projection 'annihilates \u2207p in the nonlinear term' conflates parameter derivatives with spatial derivatives without rigorous justification."
+      },
+      "citations": {
+        "score": 6.0,
+        "justification": "Citations are generally relevant and woven into the text with explicit connections (e.g., Tao [3] is cited repeatedly with specific equation and section references; Cook [14] is cited for Rule 110 universality). However, reference [23] is a self-citation to an unpublished preprint that is described as 'in preparation,' and reference [16] (Peyri\u00e8re 1975 on Hausdorff dimension) is cited for 'positive entropy of surjective CAs' which is not what that paper establishes \u2014 this is a potentially incorrect citation. Several foundational claims (e.g., Bakry-\u00c9mery Ricci contribution, Biot-Savart bounds) are cited to old sources without recent context."
+      }
+    }
+  },
+  {
+    "paper_id": "105",
+    "citation": "Christian, 2026",
+    "group": "contest",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-22T03:18:58.132715+00:00",
+    "input_tokens": 20206,
+    "output_tokens": 917,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 4.0,
+        "justification": "The manuscript advances strong central claims (e.g., \u201cregularity decision problem for averaged Navier\u2013Stokes systems is undecidable\u201d and \u201cNavier\u2013Stokes Regularity Is Independent of ZFC\u201d), but it does not explicitly define a null hypothesis vs alternate hypothesis or specify mutually exclusive, plausibly testable falsification outcomes. Some conditional structure appears for exact NS (Theorem VIII.1 assumptions (C1)\u2013(C2)), but these are not framed as testable hypotheses with clear empirical/operational failure conditions."
+      },
+      "novelty": {
+        "score": 12.0,
+        "justification": "The paper explicitly positions itself as extending Tao\u2019s averaged-operator blow-up framework [3] by claiming \u201cprogrammable cascade theorem\u201d (Theorem IV.6) implementing \u201cany cellular automaton transition function,\u201d and contrasts with CPW spectral-gap undecidability [4] and stationary-flow Turing completeness [19,20,25]. It identifies a specific gap in its own FIM route (\u201cequidistribution gap,\u201d Remark IV.11) and claims the direct route bypasses it, which is a concrete stated contribution beyond prior cited work."
+      },
+      "scientific_humility": {
+        "score": 9.0,
+        "justification": "The manuscript does acknowledge limitations and open gaps, e.g., Conjecture III.8 (forward direction for exact NS), the \u201cequidistribution gap\u201d (Remark IV.11), and the explicit (c)\u21d2(b) gap in Theorem VIII.3 with three possible routes to close it (Remark VIII.4). However, it also makes very strong headline claims (\u201cindependent of ZFC,\u201d \u201cuniversal regularity statement is false\u201d) while key constructions are deferred (\u201cfull multiplier-level construction\u2026 not reproduced here,\u201d Remark IV.7), which makes some claims feel ahead of what is fully demonstrated in-text."
+      },
+      "engagement": {
+        "score": 14.0,
+        "justification": "The paper substantively engages Tao 2016 [3] (averaged operator class, cascade scaling, energy identity) and connects to modern computability-in-physics precedents (CPW 2015 [4]) and recent Euler/NS Turing-completeness results (2021\u20132025 [19,20,25]) with explicit differentiation (time-evolving viscous flow on R3 vs stationary/compact-manifold settings). Some engagement is weakened where key technical steps are asserted without full detail (e.g., Theorem IV.6 proof sketch and Remark IV.7), limiting how concretely the work is tied to the cited technical literature."
+      },
+      "rigor": {
+        "score": 4.0,
+        "justification": "Several mathematical steps are presented as sketches or high-level assertions where the main claims depend on them: Theorem IV.6 (programmable cascade) relies on Lemmas IV.2\u2013IV.4 but the manuscript states \u201cfull multiplier-level construction\u2026 not reproduced here\u201d (Remark IV.7), and the digital refresh ODE (16) includes an energy-identity discussion that is not clearly consistent as written (it mixes amplitude dynamics with an L2 energy constraint without a full derivation). Additionally, the paper itself flags a prior incorrect inequality in Appendix D (Remark D.3), which raises concerns about verification standards even though it says that conjecture is not used in the main proof chain."
+      },
+      "citations": {
+        "score": 6.0,
+        "justification": "The bibliography includes relevant and recent citations (e.g., Tao 2016 [3], CPW 2015 [4], Cardona\u2013Miranda\u2013Peralta-Salas 2021/2023 [19,20], Dyhr et al. 2025 [25]) and the text often connects them to specific claims (e.g., Tao\u2019s framework for (13), CPW analogy in Remark V.5). However, some citations appear questionable or insufficiently supported in-text (e.g., CA mixing/entropy claims attributed to [16] \u201cPeyriere 1975\u201d without clear modern CA references), and the manuscript cites a \u201ccompanion paper\u201d preprint [23] for foundational proofs, leaving key support external."
+      }
+    }
+  }
+]

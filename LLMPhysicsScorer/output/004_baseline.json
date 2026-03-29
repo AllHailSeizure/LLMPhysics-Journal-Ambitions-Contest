@@ -1,0 +1,56 @@
+[
+  {
+    "paper_id": "004",
+    "citation": "Taylor, 2026",
+    "group": "baseline",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-07T21:33:18Z",
+    "input_tokens": 17500,
+    "output_tokens": 375,
+    "error": null,
+    "scores": {
+      "hypothesis": { "score": 9.5, "justification": "The manuscript presents a clear central claim -- that consciousness is identical to the temporal parallax phase necessitated by the metabolic wall -- and Section 11 provides specific quantitative falsification benchmarks (e.g., 'At alpha = 1.5, discrete tracking should require at least two orders of magnitude more power than continuous tracking at biological fidelities'). However, the paper never explicitly frames a null hypothesis and alternate hypothesis as such; falsification conditions are stated for the metabolic/physical premise but the core identity claim (the phase IS experience) is explicitly acknowledged as a 'posit rather than a derivation' with no stated falsification condition, leaving the deepest claim partially insulated." },
+      "novelty": { "score": 11.5, "justification": "Section 9 systematically positions CBP against predictive processing, IIT, GWT, enactivism, Whiteheadian process metaphysics, and higher-order theories, explicitly identifying what each lacks (e.g., predictive processing 'does not explain why prediction feels like anything'; IIT supplies 'a measure without a mechanism') and articulating how CBP adds thermodynamic grounding and a specific phase-transition account. The thermodynamic necessity argument and the compression-artifact error theory for the hard problem represent genuine framing contributions, and the metabolic scaling simulation is original work; however, many component ideas (process-based physicalism, phenomenal concepts strategy, a posteriori identity) are drawn directly from existing literature with CBP's novelty residing primarily in their synthesis." },
+      "scientific_humility": { "score": 11.5, "justification": "The paper is unusually explicit about its limits: Section 2.2 states four things CBP does not claim, Section 10 repeatedly marks where 'argument ends and proposal begins,' Section 8.3 acknowledges the disanalogy with kinetic theory of heat ('CBP does not yet have the same empirical track record'), and Section 10.7 notes that 'parsimony is one theoretical virtue among several and does not settle debates by itself.' The Disclosure section candidly acknowledges LLM assistance. Minor deductions apply because the rhetorical framing occasionally exceeds what the evidence supports -- e.g., describing the identity as 'forced' in Sections 6.4 and 10.2 goes beyond what a simulation of discrete vs. continuous tracking can establish, and the paper's tone in places is evocative rather than restrained." },
+      "engagement": { "score": 15.5, "justification": "Engagement is genuinely substantive: Section 9 dedicates named subsections to six competing frameworks with inline citation and explicit comparison; neuroscience citations (Fang et al. 2024, Toker et al. 2024, Ahissar et al. 2023, Berkovich-Ohana et al. 2023) are recent and directly connected to specific claims about thalamocortical gating, criticality, and meditational cessation; and empirical anchors (Laughlin et al. 1998, Sarpeshkar 1998) are invoked in Appendix C.5 with explicit relevance explained. The main deduction is that several foundational philosophy-of-mind sources (Chalmers, Putnam, Whitehead, James, Kripke) lack accompanying recent work in those specific philosophical sub-debates, and the rate-distortion theory citations are all foundational with no recent signal-processing literature cited alongside them." },
+      "rigor": { "score": 6.5, "justification": "The metabolic wall scaling laws are grounded in rate-distortion theory with citations, and the simulation confirms them with R-squared values reported (e.g., alpha=1.7: beta_disc = -3.03 vs theory -2.86, R-squared=0.991); the Smith predictor topology, coherence functional, and Lyapunov threshold are formally stated in Appendix A. However, the continuous power model is described in C.1 as 'a physically motivated approximation, not a derivation from first principles,' the calibration factor rests on a single-neuron model with acknowledged simplifications, and the claim that the discrete penalty is impassable for alpha < 1.3 is undermined by the author's admission that simulated exponents diverge substantially from theory at low alpha due to finite-duration effects the author concedes 'apply equally to biological systems.'" },
+      "citations": { "score": 8.0, "justification": "Citations are dense, largely recent, consistently numbered, and explicitly connected inline -- Fang et al. 2024 and Toker et al. 2024 are invoked with direct relevance to thalamocortical gating and criticality claims, Laughlin et al. 1998 and Sarpeshkar 1998 are connected explicitly to the calibration argument in C.5, and Berkovich-Ohana et al. 2023 is cited for the Nirodha Samapatti corroboration. The main deductions are that rate-distortion and signal-statistics citations are entirely foundational (Shannon 1948, Berger 1971, Field 1987) with no recent literature filling the gap, and the natural-signal roughness claim for alpha values in social and prey-tracking signals is supported only by Ruderman & Bialek 1994 and Kolmogorov 1941 with no recent empirical measurement literature cited." }
+    }
+  },
+  {
+    "paper_id": "004",
+    "citation": "Taylor, 2026",
+    "group": "baseline",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-08T01:06:46.215708+00:00",
+    "input_tokens": 26883,
+    "output_tokens": 920,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 9.0,
+        "justification": "The paper states a clear core claim that \u201cconsciousness is identical to\u2026a temporal parallax phase\u201d and makes testable predictions (e.g., Section 14\u2019s TMS/tACS protocols; Section 11\u2019s claim that discrete tracking should require \u201cat least two orders of magnitude more power\u201d at \u03b1=1.5 and \u03b5~10^-3). However, it does not explicitly define a null hypothesis vs. alternate hypothesis in a mutually exclusive way, and falsification conditions are stated but not cleanly framed as null/alt outcomes (e.g., \u201cAny architecture\u2026using purely discrete sampling would constitute a falsification\u201d is one-sided rather than a full hypothesis pair)."
+      },
+      "novelty": {
+        "score": 12.0,
+        "justification": "The manuscript explicitly positions CBP as distinct from predictive processing, IIT, GWT, enactivism, and higher-order theories (Section 9), claiming a new thermodynamic forcing argument (\u201cmetabolic wall\u201d) plus an information-theoretic \u201ccompression artifact\u201d error theory for the hard problem (Section 8). It cites several recent works (e.g., 2024 Science on thalamofrontal gating; 2024 eLife on criticality) and argues its contribution is grounding consciousness-relevant dynamics in rate-distortion/entropy-gradient constraints rather than axioms or functional description alone."
+      },
+      "scientific_humility": {
+        "score": 13.0,
+        "justification": "The author clearly delineates scope and non-claims (Section 2), repeatedly notes where the argument \u201cmotivates\u2014though does not logically compel\u2014the identification\u201d (Section 4.3) and that the identity is a \u201cposit rather than a derivation\u201d (Section 7). The paper also acknowledges limitations of simulation and calibration (Appendix C) and states that the simulation \u201cdoes not and cannot demonstrate consciousness,\u201d while still occasionally using strong language like \u201cforced\u201d (Section 6.4/10.2) that slightly outpaces the evidential base."
+      },
+      "engagement": {
+        "score": 15.0,
+        "justification": "The manuscript engages multiple contemporary frameworks and connects them to specific proposed mechanisms (e.g., Smith predictor topology linked to corticothalamic loops; Section 5.1 with citations through 2024; criticality and cross-frequency transfer during conscious states [50]). Engagement is substantive in the comparative section (Section 9), but some key technical pillars (e.g., the specific rate-distortion scaling used for biological discrete architectures) rely more on general information theory citations than on direct engagement with modern neuroscience/biophysics literature on neural coding efficiency under power-law stimuli."
+      },
+      "rigor": {
+        "score": 5.5,
+        "justification": "The paper provides equations and scaling claims (e.g., P_discrete ~ \u03b5^(\u22122/(\u03b1\u22121))\u00b7log(1/\u03b5); \u03c4_crit = 1/(2\u03c0f0\u00b7Q); coherence functional C(t)=\u222bI(\u03c3(t),\u03c3(t+\u0394))d\u0394>\u03b8) and reports simulation fits (Section 11), but several steps are asserted rather than derived (e.g., the discrete power proxy P_d = f_s \u00d7 log2(1/\u03b5) and the continuous damping-loss proxy in Appendix C.1). Dimensional consistency and mapping from proxy \u201cpower\u201d to biological watts are only approximately argued (Appendix C.5), leaving notable gaps between formalism and physically justified quantitative claims."
+      },
+      "citations": {
+        "score": 8.0,
+        "justification": "Citations are numerous, generally relevant, and often connected to specific claims in-text (e.g., thalamic gating of conscious perception [49], criticality and cross-frequency transfer [50], energy budgets [34\u201337], oscillator synchronization [63\u201365]). However, many foundational citations are older (Shannon, Kuramoto, classic philosophy), and while recent citations exist, some central quantitative claims (rate-distortion scaling applied to biological spiking and the specific metabolic proxies) are not consistently supported by directly targeted, recent empirical citations beyond a few anchoring references (e.g., Laughlin 1998; Sarpeshkar 1998)."
+      }
+    }
+  }
+]

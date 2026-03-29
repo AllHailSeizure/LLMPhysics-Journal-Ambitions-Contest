@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "001",
+    "citation": "u/Nervous_Solution5340, 2026",
+    "group": "baseline",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-07T23:48:58.459848+00:00",
+    "input_tokens": 10780,
+    "output_tokens": 925,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 6.0,
+        "justification": "The manuscript presents a clear central proposition \u2014 that a reduced-order continuum field representation of phage dynamics can preserve spatial infection phenomena while eliminating discrete-agent computational bottlenecks \u2014 but never explicitly states a null hypothesis or alternate hypothesis in formal terms. Section 7.2 lists three qualitative validation criteria (periphery-limited killing fronts, interior protection, herd-immunity shielding) that gesture toward falsifiability, but failure conditions are not defined as mutually exclusive testable outcomes, and no explicit statement of what would falsify the framework is provided."
+      },
+      "novelty": {
+        "score": 8.0,
+        "justification": "The manuscript explicitly identifies the 'millions of agents' bottleneck in frameworks like iDynoMiCS and attributes this limitation to prior work by Carey Nadell and collaborators, positioning the continuum hazard field as a direct solution. The combination of the hazard field \u03a0, the Landau-theory-inspired order parameter \u0398, and the defense capacity field D as a unified reduced-order system is presented as a novel integration, but the manuscript does not rigorously compare this specific combination against existing continuum phage-biofilm models in the literature, leaving the novelty claim partially substantiated."
+      },
+      "scientific_humility": {
+        "score": 7.0,
+        "justification": "The manuscript appropriately frames its contribution as a 'pathway' and 'framework' rather than a completed result, and Section 7 explicitly states the model must be 'demonstrably falsifiable' and benchmarked against biological parameters. However, Section 8.2 contains overreaching language such as 'opens entirely new pathways' and 'finally scale spatial simulators to the ecosystem level,' and the claim that the framework 'explains' metastability and hysteresis in dense microbial ecosystems exceeds what the presented (unvalidated) derivations actually support."
+      },
+      "engagement": {
+        "score": 7.0,
+        "justification": "The manuscript engages substantively with specific empirical systems (S. thermophilus phage 2972, AbiZ in L. lactis, the arbitrium system in Bacillus phages, iDynoMiCS) and explicitly connects these to model parameters, which demonstrates genuine field knowledge. However, no formal citations with author-year references or a bibliography are present anywhere in the manuscript; named researchers and systems are invoked in prose but without linked references, meaning the judge cannot verify recency or confirm that connections to specific published works are explicitly made rather than implied."
+      },
+      "rigor": {
+        "score": 5.0,
+        "justification": "The derivation in Section 4 follows a recognizable quasi-steady-state elimination procedure and the resulting hazard PDE has a plausible autocatalytic structure, but the step from scaling the virion PDE by k_eff to arriving at the closed equation for \u03a0 is stated without showing the full algebraic substitution, leaving a gap in the derivation. The Landau free-energy formulation for \u0398 in Section 5.3 is formally invoked but the specific form of the local potential f(\u0398; c) and its dependence on control parameters is never derived or justified beyond a sigmoid ansatz, and no dimensional analysis is provided for any of the introduced fields."
+      },
+      "citations": {
+        "score": 1.0,
+        "justification": "The manuscript contains no formatted citations, no in-text citation markers, and no bibliography or reference list anywhere in the document; named researchers (e.g., Carey Nadell), systems (phage 2972), and concepts (arbitrium, AbiZ, iDynoMiCS, PtW) are referenced in prose without any linked source, making it impossible to verify recency, relevance, or proper attribution. Under the rubric criterion that citations must be 'woven throughout the manuscript, supporting claims as they are made' and 'explicitly connected to their work in the body of the text,' the complete absence of a citation apparatus warrants near-zero marks."
+      }
+    }
+  },
+  {
+    "paper_id": "001",
+    "citation": "u/Nervous_Solution5340, 2026",
+    "group": "baseline",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-07T23:49:14.837246+00:00",
+    "input_tokens": 9298,
+    "output_tokens": 909,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 6.0,
+        "justification": "The manuscript advances a central testable claim that replacing explicit virion agents with coupled continuum fields (hazard \u03a0, defense D, and lysis\u2013lysogeny order parameter \u0398) can \u201cpreserve the critical spatial phenomena\u201d of particle-resolved models while greatly reducing cost, but it does not explicitly state a null vs alternate hypothesis or mutually exclusive falsification criteria. It gestures at validation (e.g., \u201cmust exhibit periphery-limited killing fronts\u2026 interior protection\u2026 herd-immunity shielding\u201d and \u201crecover the sharp transitions between regimes exactly where\u2026 individual-based simulations do\u201d) yet does not define quantitative pass/fail thresholds or what outcomes would refute the approach."
+      },
+      "novelty": {
+        "score": 7.0,
+        "justification": "The proposal to collapse virion dynamics into an \u201cinfection-hazard scalar field\u201d \u03a0 and add low-dimensional fields for defense (D) and life-history switching (\u0398) is presented as a reduced-order closure to bypass the \u201cmillions of agents\u201d bottleneck, and the manuscript contrasts this with explicit virion tracking in IbMs. However, it does not clearly delineate what is new relative to existing reaction\u2013diffusion phage models, quasi-steady infected-class eliminations, or prior coarse-graining approaches, and it provides few concrete, attributable comparisons to specific recent methods beyond general references to iDynoMiCS and \u2018state-of-the-art spatially explicit simulations\u2019."
+      },
+      "scientific_humility": {
+        "score": 8.0,
+        "justification": "The manuscript acknowledges that the continuum model is a closure that \u201caims to preserve\u201d key phenomena and repeatedly frames validation as necessary (e.g., \u201cmust be rigorously benchmarked,\u201d \u201conly valid if it is demonstrably falsifiable\u201d). That said, it occasionally overstates certainty and scope (e.g., \u201cmathematically rigorous\u2026 unprecedented computational efficiency,\u201d \u201cabsolute computational prerequisite,\u201d and broad claims about enabling ecosystem-level understanding) without clearly enumerating failure modes, limits of applicability (e.g., when quasi-steady assumptions break), or uncertainty in parameter mapping for complex metagenomes."
+      },
+      "engagement": {
+        "score": 6.0,
+        "justification": "The manuscript engages conceptually with recognized themes (biofilm impedance/refuges, Kill-the-Winner vs Piggyback-the-Winner, arbitrium signaling, Abi systems, CRISPR/R-M) and ties them to proposed state variables \u03a0/\u0398/D. However, engagement with the current field is mostly narrative: specific prior models, datasets, or recent papers are not explicitly cited and connected to particular modeling choices (e.g., why this \u0398 phase-field form is preferable to existing lysogeny-switch formulations), so the linkage between \u2018existing work\u2019 and the exact proposed closure remains underdeveloped."
+      },
+      "rigor": {
+        "score": 6.0,
+        "justification": "The manuscript provides a plausible reduction starting from a standard B\u2013I\u2013V reaction\u2013diffusion system and performs a quasi-steady elimination of I (setting \u2202t I \u2248 0 to obtain I \u2248 \u03bb k_a B V), then defines \u03a0 \u2261 k_eff V_eff and writes a closed PDE for \u03a0 with diffusion, autocatalytic production, and loss terms. But several steps are asserted rather than derived (e.g., the exact \u03a0 PDE coefficients after substituting k_eff and eliminating I, dimensional consistency of \u03a0 as \u2018inverse time scale,\u2019 and how \u03b2(k_eff) enters), and the \u0398 phase-field/Landau analogy is presented without specifying f(\u0398;c) or demonstrating that the dynamics reproduce known switching statistics under realistic parameter regimes."
+      },
+      "citations": {
+        "score": 1.0,
+        "justification": "Despite many concrete empirical claims (e.g., diffusion coefficients for T4 in agarose, \u2018critical colony size ~5\u00d710^4,\u2019 adsorption constants, latent periods, burst sizes, Nadell\u2019s \u2018millions of agents\u2019 remark, arbitrium discovery, AbiZ details), the manuscript provides essentially no formal citations, no bibliography, and no consistent attribution to specific papers. Because claims are not supported with verifiable references and citation formatting is absent, this category scores near the minimum."
+      }
+    }
+  }
+]

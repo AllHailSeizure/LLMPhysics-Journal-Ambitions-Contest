@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "022",
+    "citation": "u/Nice_Debt_7640, 2026",
+    "group": "baseline",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-08T01:50:15.092313+00:00",
+    "input_tokens": 2801,
+    "output_tokens": 506,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 1.5,
+        "justification": "The manuscript presents no structured hypothesis, null hypothesis, or alternate hypothesis. The closest the author comes is a vague intuition: 'Don't fight the plasma \u2014 confuse it, gently but continuously,' which is not a testable scientific claim and has no defined failure conditions or falsifiability criteria."
+      },
+      "novelty": {
+        "score": 1.0,
+        "justification": "The author makes no citations to prior or recent work and performs no comparative analysis against existing literature. Claims of potential novelty are entirely self-assessed and unsupported, as the author explicitly acknowledges they are unaware of the existing research landscape ('this idea already exists \u2014 here's where')."
+      },
+      "scientific_humility": {
+        "score": 7.5,
+        "justification": "The author repeatedly and explicitly disclaims expertise, stating 'I am not a physicist' and 'I am not claiming a new fusion design,' and acknowledges that 'a true M\u00f6bius magnetic surface isn't physically realizable.' However, the framing still implies the intuitions may be meaningfully contributory without substantive evidence, which slightly overreaches the actual content presented."
+      },
+      "engagement": {
+        "score": 1.0,
+        "justification": "The manuscript contains zero citations and no substantive engagement with current or foundational literature in plasma physics, magnetic confinement, or fusion research. References to concepts like 'helicity-preserving configurations' and 'RF techniques' are made in passing without any connection to specific work or researchers."
+      },
+      "rigor": {
+        "score": 0.5,
+        "justification": "The manuscript contains no mathematical derivations, no equations, no dimensional analysis, and no quantitative claims supported by calculation. The entire content is qualitative intuition and analogy, such as comparing plasma confinement to 'pattern recognition' across domains like yin-yang symbols and M\u00f6bius strips."
+      },
+      "citations": {
+        "score": 0.0,
+        "justification": "The manuscript contains no citations whatsoever \u2014 no bibliography, no in-text references, and no attribution of any kind to prior work, foundational concepts, or existing research. This fails every criterion in the citations rubric."
+      }
+    }
+  },
+  {
+    "paper_id": "022",
+    "citation": "u/Nice_Debt_7640, 2026",
+    "group": "baseline",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-08T00:03:05.235710+00:00",
+    "input_tokens": 2552,
+    "output_tokens": 537,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 3.0,
+        "justification": "The manuscript suggests a general idea that \u201ctime-varying fields,\u201d \u201ccontinuous rotation or phase-shifting,\u201d and \u201chighly twisted magnetic paths\u201d might reduce instabilities by avoiding \u201cfixed orientations that instabilities can \u2018lock onto\u2019,\u201d but it does not state a clear, testable hypothesis with explicit null/alternate hypotheses or mutually exclusive falsification criteria."
+      },
+      "novelty": {
+        "score": 2.0,
+        "justification": "The author frames the piece as intuition-driven and explicitly says it is \u201cnot a proposal\u201d and may \u201calready exist,\u201d but provides no literature comparison, no identified gap in prior work, and no concrete articulation of how the idea differs from existing approaches beyond broad themes like rotation, helicity, and topology."
+      },
+      "scientific_humility": {
+        "score": 14.0,
+        "justification": "The manuscript repeatedly and clearly limits its claims (e.g., \u201cI am not a physicist,\u201d \u201cThis post isn\u2019t a proposal,\u201d \u201cWhat I\u2019m not claiming\u2026 a new fusion design\u2026 a finished or testable concept,\u201d and \u201cI\u2019m not attached to being right\u201d), and explicitly invites \u201cCorrections\u201d and \u201cPointers to existing work,\u201d demonstrating strong restraint and openness about boundaries."
+      },
+      "engagement": {
+        "score": 3.0,
+        "justification": "While it mentions real research directions in broad terms (e.g., \u201ctime-varying fields,\u201d \u201crotating perturbations,\u201d \u201cRF\u2026 heating and control,\u201d and superconductors in fusion), it does not engage specific current work, does not connect claims to particular results, and provides no explicit discussion of how the ideas relate to or extend identifiable modern approaches."
+      },
+      "rigor": {
+        "score": 1.0,
+        "justification": "The manuscript contains no equations, models, quantitative estimates, or explicit logical derivations; key mechanisms are described metaphorically (e.g., \u201cDon\u2019t fight the plasma \u2014 confuse it\u201d) without physically grounded analysis or testable parameterization."
+      },
+      "citations": {
+        "score": 0.0,
+        "justification": "No citations or references are provided to support statements about existing work (e.g., claims that \u201cwhat is possible (and already being explored) is time-varying fields\u2026 helicity-preserving configurations\u201d), so the manuscript does not meet the rubric\u2019s requirements for recent, relevant, connected attribution."
+      }
+    }
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "016",
+    "citation": "u/Adiabatic_Egregore, 2026",
+    "group": "baseline",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-07T23:59:13.779814+00:00",
+    "input_tokens": 3483,
+    "output_tokens": 709,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 3.0,
+        "justification": "The manuscript asserts that 'a cognitive system becomes conscious precisely when its functorial representation admits a cylindrical extension,' but provides no explicit null hypothesis, no alternate hypothesis, and no falsification conditions. The author acknowledges the theory is 'speculative' but makes no attempt to define what outcomes would disconfirm it, and no plausible experimental path is described."
+      },
+      "novelty": {
+        "score": 6.0,
+        "justification": "The manuscript does attempt to position itself against existing theories, explicitly stating 'Unlike Integrated Information Theory, the present account does not quantify consciousness but characterizes its form' and distinguishing itself from Global Workspace and predictive processing accounts. However, citations are sparse and largely outdated, and the comparative work is superficial \u2014 the distinctions drawn are asserted rather than developed with reference to specific recent literature."
+      },
+      "scientific_humility": {
+        "score": 8.0,
+        "justification": "The author repeatedly flags the speculative nature of the work, describing the formal apparatus as 'suggestive rather than literal' and acknowledging in the conclusion that the theory is 'intentionally abstract and does not yet specify neural implementation.' The objections section honestly concedes that 'categorical language merely redescribes rather than explains,' though the response to this objection is underdeveloped and the overall framing of the theory as providing 'unified accounts' of multiple phenomena slightly overstates what is demonstrated."
+      },
+      "engagement": {
+        "score": 4.0,
+        "justification": "The manuscript references Husserl's phenomenology of internal time-consciousness and briefly mentions IIT, Global Workspace, and predictive processing, but these connections are gestural rather than substantive \u2014 no specific claims from cited works are engaged with, and the reference list includes a self-deprecating placeholder ('Anonymous Reviewer #2, forthcoming') that signals the citations are not being taken seriously. Modern literature in categorical approaches to cognition or consciousness is entirely absent."
+      },
+      "rigor": {
+        "score": 2.0,
+        "justification": "The mathematical notation is superficially consistent but the core move \u2014 defining 'Cyl(F(X)) = F(X) \u00d7 I' and identifying this product with conscious experience \u2014 is asserted without derivation, physical justification, or logical necessity. The claim that 'consciousness is identified with self-homotopy' is a metaphor dressed as a definition, and no quantitative claims about physical or neural systems are supported by any calculation or derivation."
+      },
+      "citations": {
+        "score": 2.0,
+        "justification": "The reference list contains only four substantive entries, three of which are foundational classics more than fifteen years old, with no justification offered for the absence of recent work. Citations are not woven into the body of the manuscript to support specific claims, and the inclusion of 'Anonymous Reviewer #2 (forthcoming). Major Revisions Required' \u2014 flagged by the author as a joke \u2014 undermines the integrity of the reference list, though it does not meet the threshold of a fabricated citation sufficient to trigger a zero under the rubric."
+      }
+    }
+  },
+  {
+    "paper_id": "016",
+    "citation": "u/Adiabatic_Egregore, 2026",
+    "group": "baseline",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-07T23:59:23.436893+00:00",
+    "input_tokens": 3154,
+    "output_tokens": 625,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 4.0,
+        "justification": "The central claim is stated (\u201ca cognitive system becomes conscious precisely when its functorial representation admits a cylindrical extension\u201d), but the manuscript provides no explicit null vs. alternate hypotheses and no mutually exclusive, plausibly testable falsification conditions; most support is framed as \u201cphenomenological evidence\u201d and structural interpretation rather than empirical outcomes."
+      },
+      "novelty": {
+        "score": 5.0,
+        "justification": "The paper proposes an unusual mapping of the cylinder functor to a \u201cthickened present\u201d and \u201cself-homotopy,\u201d and briefly contrasts itself with IIT and Global Workspace, but it does not identify specific gaps in recent literature (past ten years) nor demonstrate how this proposal improves on them beyond high-level assertions (e.g., \u201cdoes not quantify consciousness but characterizes its form\u201d)."
+      },
+      "scientific_humility": {
+        "score": 10.0,
+        "justification": "The author repeatedly flags the work as speculative (\u201csuggestive rather than literal,\u201d \u201cintentionally abstract,\u201d \u201cdoes not yet specify neural implementation\u201d) and acknowledges a key limitation (\u201ccategorical language merely redescribes rather than explains\u201d), but still makes broad explanatory claims (e.g., \u201cprovides unified accounts of\u2026 free agency\u201d and \u201cstructural account of first-person subjectivity\u201d) without corresponding evidence or implementation detail."
+      },
+      "engagement": {
+        "score": 6.0,
+        "justification": "Engagement with existing theories is present but thin: IIT, Global Workspace, and predictive processing are mentioned only in brief comparative sentences, and the reference list is dominated by foundational/older works (Husserl 1928, Mac Lane 1998) with little explicit integration of modern consciousness science or category-theoretic cognitive modeling into the argument."
+      },
+      "rigor": {
+        "score": 3.0,
+        "justification": "While basic categorical notation is used (categories \ud835\udce6, \ud835\udcdf; functor F; cylinder Cyl(\u2212) = (\u2212) \u00d7 I), the manuscript does not provide rigorous derivations connecting these constructions to claims about qualia, privacy, or agency (e.g., \u201cqualia corresponds to the local geometry of the cylinder\u201d is asserted without formal definition or argument), and key assumptions (interval object I, access to morphisms in Cyl(F(X))) are not physically or computationally grounded."
+      },
+      "citations": {
+        "score": 2.0,
+        "justification": "Citations are sparse and mostly not recent (e.g., 1928, 1998, 2007; one 2011), and they are not woven into the text to support specific claims; additionally, \u201cAnonymous Reviewer #2 (forthcoming). Major Revisions Required.\u201d is not a verifiable scholarly citation, which undermines citation reliability for this category."
+      }
+    }
+  }
+]

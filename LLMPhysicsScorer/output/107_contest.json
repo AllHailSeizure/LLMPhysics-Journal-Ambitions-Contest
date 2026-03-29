@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "107",
+    "citation": "Mosher, 2026",
+    "group": "contest",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-22T03:21:31.635211+00:00",
+    "input_tokens": 44887,
+    "output_tokens": 898,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 5.0,
+        "justification": "The manuscript presents a central claim \u2014 that a medium flowing toward mass at escape velocity causes gravity \u2014 but never explicitly frames a null hypothesis or alternate hypothesis in formal terms. The closest falsifiable prediction is the EP deviation at \u03b7 ~ 4\u00d710\u207b\u00b9\u2078 for Ti vs. Pt, described as 'two orders below current sensitivity,' but failure conditions are not clearly articulated: the author does not state what outcome would falsify the framework, only that it is 'consistent with all current experimental bounds.'"
+      },
+      "novelty": {
+        "score": 6.0,
+        "justification": "The author claims novelty in unifying gravitational, nuclear, and hadronic phenomena under a single medium framework, and explicitly notes that the baryon model 'is the framework's reframing of the existing DGG model [12]' rather than an independent derivation. The paper does not meaningfully engage with competing alternative gravity theories (e.g., MOND, entropic gravity, analog gravity models) or explain why this approach improves upon them, and the Painlev\u00e9\u2013Gullstrand connection is acknowledged as pre-existing, leaving the genuine novel contribution underspecified."
+      },
+      "scientific_humility": {
+        "score": 8.0,
+        "justification": "The manuscript includes explicit 'Status' annotations throughout (e.g., 'Not derived. The QCD vacuum is the best available candidate,' 'Interpreted estimate,' 'Unfinished') that honestly delineate what is earned versus assumed, and Section 9.2 explicitly lists what is 'Not derived.' However, the introduction adopts a challenging tone toward GR ('unearned step from descriptive success to ontological authority') and makes sweeping claims such as 'the cosmological constant problem is dissolved' that exceed what the paper's calculations actually demonstrate."
+      },
+      "engagement": {
+        "score": 5.0,
+        "justification": "The manuscript cites foundational works (Einstein 1915, Painlev\u00e9 1921, Pound-Rebka 1959) and some recent work (MICROSCOPE 2022, DESI 2024, AME2020), but engagement is largely superficial \u2014 citations appear in passing without substantive discussion of how those works inform or constrain the framework. Modern literature on analog gravity, fluid-mechanical gravity models, or competing medium-based approaches is entirely absent, and the connection between cited works and specific claims is rarely made explicit beyond naming the source."
+      },
+      "rigor": {
+        "score": 4.0,
+        "justification": "The derivation of v(r) = \u221a(2GM/r) from 'matching clock data to a velocity-dependent mechanism' is asserted rather than shown \u2014 the paper states 'the solution is uniquely determined' without presenting the actual derivation steps. The planetary mass calculation in Section 3.7 achieves 0.0004% agreement but uses \u03ba computed from G via \u03ba = Gmp/c\u00b2, making the result circular rather than an independent prediction. The equivalence principle 'structural proof' in Eq. 19 cancels ftick algebraically but does not justify why interaction mass and inertial mass both scale as mA \u00d7 ftick from first principles."
+      },
+      "citations": {
+        "score": 4.0,
+        "justification": "Several citations are old foundational works (Einstein 1915, Painlev\u00e9 1921, Pound-Rebka 1959, de Broglie 1924) cited without justification for why recent work is insufficient, and the reference list of 22 entries is sparse for a paper making claims across gravitational physics, nuclear physics, and cosmology. Recent citations (DESI 2024, MICROSCOPE 2022, AME2020) are present but minimally connected to specific claims in the text, and entire sections on baryon masses and atomic structure lack citations to relevant modern QCD or nuclear structure literature."
+      }
+    }
+  },
+  {
+    "paper_id": "107",
+    "citation": "Mosher, 2026",
+    "group": "contest",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-22T03:21:46.580569+00:00",
+    "input_tokens": 16181,
+    "output_tokens": 907,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 6.0,
+        "justification": "The central claim is stated clearly (e.g., \u201ca medium flows toward mass\u2026 atomic processes experience velocity-dependent resistance,\u201d yielding v(r)=sqrt(2GM/r) and tick rate \\hat f=\\sqrt{1-v_eff^2/c^2)), but the paper does not explicitly define a null hypothesis vs. alternate hypothesis. Falsification is only loosely implied via predicted deviations (e.g., EP violation \u201c\u03b7 \u223c 4\u00d710\u221218 for Ti vs. Pt\u201d) rather than mutually exclusive, clearly testable null/alt outcomes."
+      },
+      "novelty": {
+        "score": 7.0,
+        "justification": "The manuscript proposes a reframing of Schwarzschild/PG gravity as a \u201cmedium flow\u201d with a per-atom constant \u03ba and claims extensions to baryon/atomic mass fits and a \u201ccosmological constant dissolved\u201d interpretation. However, it largely asserts novelty (e.g., \u201cG is\u2026 not fundamental,\u201d \u201cAll 15 experimental tests of GR are reproduced\u201d) without a detailed comparison to existing ether/PG-flow, refractive-index, or emergent-gravity programs beyond brief mentions (e.g., PG coordinates and DGG model) and limited gap-analysis."
+      },
+      "scientific_humility": {
+        "score": 9.5,
+        "justification": "The paper repeatedly labels what is and is not derived (e.g., \u201cStatus: Not derived\u201d for identifying the QCD vacuum; \u201cStatus: Constrained fit, not a prediction\u201d for atomic masses; \u201cStatus: Interpreted estimate\u201d for \u03b7), and lists \u201cOpen problems\u201d (deriving quark costs from \u039bQCD, Koide parameters, cosmology w(z)). That said, some claims are expansive relative to support (e.g., \u201cThe cosmological constant problem is dissolved\u201d and \u201cAll 15 experimental tests of GR are reproduced with quantitative agreement\u201d)."
+      },
+      "engagement": {
+        "score": 7.5,
+        "justification": "The manuscript connects to specific established constructs (Schwarzschild metric, Painlev\u00e9\u2013Gullstrand coordinates, GPS/Pound\u2013Rebka, GW170817, MICROSCOPE) and cites a few modern reviews/measurements (e.g., Will 2014; MICROSCOPE 2022; DESI 2024). But engagement with the broader contemporary literature on alternative gravity, emergent gravity, refractive-index/optical analog models, or Lorentz-violation constraints is limited, and many connections are asserted rather than developed in detail."
+      },
+      "rigor": {
+        "score": 6.5,
+        "justification": "Several internal derivations are shown cleanly (e.g., from \\hat f=\\sqrt{1-r_s/r} to g(r)=GM/r^2 via Eq. 6\u20138; mapping n(r)=(1-r_s/r)^{-1/2} to Schwarzschild components), and the v_eff combination is clearly defined. However, key steps are under-justified or dimensionally unclear in places (e.g., \u03ba defined as a length from \u201c\u2206\\hat f \u00d7 R / N\u201d and then used in L = 1/2 r\u02d9^2 + N_cm \u03ba c^2 / r; the \u201creturnion\u201d scale r_ret and its physical interpretation at 10^{-52} m are asserted with limited physical justification), and some quantitative claims (e.g., \u201cverified\u2026 to 0.000000%,\u201d \u201cAll 15 tests\u201d) are not fully derived in-text."
+      },
+      "citations": {
+        "score": 7.0,
+        "justification": "The bibliography includes relevant foundational and some recent sources (e.g., GW170817 2017; MICROSCOPE 2022; DESI 2024; Will 2014), and some are tied to specific claims (e.g., GW speed, MICROSCOPE bound). But many major claims (e.g., \u201cAll 15 experimental tests,\u201d QCD vacuum as medium, cosmological-constant reinterpretation) are not consistently supported with targeted, in-body citations, and the reference set leans heavily on classics with limited recent subfield coverage."
+      }
+    }
+  }
+]

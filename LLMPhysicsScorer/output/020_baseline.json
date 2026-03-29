@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "020",
+    "citation": "Tilsner, 2026",
+    "group": "baseline",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-08T01:54:06.264222+00:00",
+    "input_tokens": 12622,
+    "output_tokens": 960,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 7.5,
+        "justification": "The manuscript presents a clear central claim \u2014 that observer significance is a structural property of thermodynamic embeddedness rather than a counting primitive \u2014 and Section 13 lists explicit 'pressure points' (e.g., 'if reconstructions show no elevated irreversible era' or 'if \u03b1_crit varies wildly across physically motivated \u03bd families'). However, there is no explicit null/alternate hypothesis framing, and the falsifiability conditions are asymmetric and vague enough (e.g., 'radically inconsistent') that a grant committee would struggle to operationalize a decisive test."
+      },
+      "novelty": {
+        "score": 10.0,
+        "justification": "The paper explicitly identifies limitations of existing measure families (causal patch, scale-factor cutoff, CEP, stationary measures) in Section 2.1 and articulates how EPWOM differs by separating ancestral depth, sustained dissipation, and counterfactual impact. The combination of the Compensator, EEPS geometry, and Counterfactual Weight as a unified framework is a genuine conceptual contribution, though the author's claim that this resolves rather than reframes the measure problem is stronger than the formal content strictly supports."
+      },
+      "scientific_humility": {
+        "score": 11.5,
+        "justification": "The manuscript consistently labels speculative content (Sections 14\u201315 are explicitly marked 'interpretive extension'), acknowledges open derivations ('Deriving the Compensator from first principles is explicitly not assumed here'), and identifies open questions throughout. However, phrases like 'the measure problem is thereby reframed' and the confident fiducial estimate of \u03b1_crit ~ 10^(-88) without a full derivation slightly exceed what the formal content supports, and the claim that BB dominance is 'resolved' rather than 'addressed' is somewhat stronger than warranted."
+      },
+      "engagement": {
+        "score": 11.0,
+        "justification": "The paper engages substantively with Dyson-Kleban-Susskind [3], Bousso-Freivogel [4], De Simone et al. [12], and the Causal Entropic Principle [13], explicitly connecting each to the EPWOM framework in Section 2.1. However, engagement with post-2015 literature on the measure problem (e.g., recent work by Bousso, Carroll, or others on self-locating uncertainty and the Born rule in eternal inflation) is thin, and several cited papers are used as background rather than being directly connected to specific technical claims in the body."
+      },
+      "rigor": {
+        "score": 5.5,
+        "justification": "The formal definitions (EPWOM weight eq. 5.1, Counterfactual Weight eq. 6.2, EEPS eq. 10.1) are internally consistent and dimensionally plausible, and Propositions 5.1, 6.2, 7.1, and 8.1 are stated with explicit conditions. However, the key quantitative claim \u2014 \u03b1_crit ~ 10^(-88) \u2014 is presented as a 'fiducial estimate' without a derivation or explicit calculation, and the Compensator (the foundational admissibility condition) is adopted by fiat with only heuristic motivations, leaving the logical chain from premises to conclusions incomplete at a critical juncture."
+      },
+      "citations": {
+        "score": 6.5,
+        "justification": "Citations are generally relevant and several recent sources are present (Planck 2018 [21], Madau & Dickinson 2014 [22], Behroozi et al. 2019 [24]), and key claims in Sections 2 and 11 are explicitly connected to cited works. However, many citations in the body text are listed as '[1\u20135]' or '[6\u201310]' in clusters without explicit connection to the specific claim being made at that point, and the bibliography is missing reference [14], suggesting incomplete preparation; the Pearl [20] citation on counterfactual intervention is invoked but not substantively connected to the formal definition of the rewrite intervention."
+      }
+    }
+  },
+  {
+    "paper_id": "020",
+    "citation": "Tilsner, 2026",
+    "group": "baseline",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-08T00:02:17.334734+00:00",
+    "input_tokens": 10368,
+    "output_tokens": 884,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 8.5,
+        "justification": "The manuscript advances a clear central claim that BB dominance is resolved by replacing raw counting with thermodynamic/causal embeddedness (Compensator + EPWOM + Counterfactual Weight), and it gives test-facing \u201cpressure points\u201d in Sec. 13 (e.g., entropy-production history, kernel/intervention stability, reference-measure sensitivity). However, it does not explicitly state a null vs alternate hypothesis pair, nor mutually exclusive falsification outcomes; the proposed falsifiers are suggestive but not framed as decisive hypothesis tests."
+      },
+      "novelty": {
+        "score": 11.0,
+        "justification": "The paper articulates a distinct package\u2014finite-entropy admissibility (\u201cCompensator,\u201d Eq. 3.2), worldtube weighting \u03bc \u221d \u03c3\u0304\u00b7exp(\u03b1\u2130) (Eq. 5.1), and a Pearl-style maximum-entropy rewrite intervention defining Counterfactual Weight (Eqs. 6.1\u20136.2)\u2014and contrasts it at a high level with causal patch, scale-factor cutoffs, and CEP in Sec. 2. But the novelty case is weakened by limited demonstration that these components are not rephrasings of existing entropic/causal measures, and by sparse engagement with the last-decade BB/measure literature beyond a few classic references."
+      },
+      "scientific_humility": {
+        "score": 13.0,
+        "justification": "The author repeatedly labels key elements as assumptions or open (e.g., \u201cDeriving the Compensator from first principles is explicitly not assumed,\u201d Sec. 3.3) and flags interpretive sections as non-theorems (Secs. 14\u201315). The paper also states robustness conditions and vulnerabilities (Sec. 13) rather than claiming guaranteed resolution, though some strong language like \u201cresolves BB dominance\u201d is not always matched by a fully worked quantitative demonstration."
+      },
+      "engagement": {
+        "score": 10.5,
+        "justification": "There is meaningful conceptual positioning against major measure families (Sec. 2) and explicit borrowing of ideas (e.g., Pearl causality, CEP-like entropy production weighting), and the \u039bCDM pipeline sketch references star-formation/UniverseMachine-type reconstructions (Sec. 11). Engagement is nonetheless somewhat schematic: many comparisons are qualitative, and the manuscript does not deeply connect its new diagnostics (EEPS/\ud835\udcb2) to specific recent technical debates or results in the BB/measure-problem literature from the past decade."
+      },
+      "rigor": {
+        "score": 6.5,
+        "justification": "Core definitions are mathematically clear (\u03c3=\u2207\u00b7s, Compensator integral finiteness, \u2130 as past-integrated \u03c3, \u03b1_crit from Eq. 5.3), and the scaling \u03b1_crit ~ 1/\u2130_OO is logically derived from the ratio (Eq. 5.4). However, several physically crucial pieces are under-justified or only sketched: \u03c3_eq and coarse-graining dependence (Sec. 4.2, 12.3), the rewrite intervention constraints \ud835\udc9e and well-posedness of h\\W evolution (Sec. 6, App. A1), and the numerical claim \u201coften of order 10^(-88)\u201d is not supported by an explicit calculation with units and inputs."
+      },
+      "citations": {
+        "score": 6.0,
+        "justification": "The bibliography includes relevant classics on BBs/measures (Dyson-Kleban-Susskind, Page, Linde, Bousso/Vilenkin) and some modern astrophysical inputs (Madau & Dickinson 2014; Behroozi et al. 2019; Planck 2018). But citations are not consistently woven into specific claims in the body (many sections make assertions without inline support), the measure-problem citations skew older than the last 10 years, and there are minor formatting issues (e.g., missing [14] and inconsistent punctuation) that reduce confidence in citation hygiene."
+      }
+    }
+  }
+]

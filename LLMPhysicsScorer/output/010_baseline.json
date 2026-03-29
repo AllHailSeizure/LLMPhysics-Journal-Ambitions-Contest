@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "010",
+    "citation": "u/Black_Jeff_Chileno, 2026",
+    "group": "baseline",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-08T01:12:44.448911+00:00",
+    "input_tokens": 13798,
+    "output_tokens": 838,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 4.5,
+        "justification": "The manuscript proposes Cosmological Continuity Presentism (CCP) with some testable predictions (CMB acoustic peak shifts ~10^{-4}, lab decoherence ratios ~2.5x, neural timing ~5% scaling), but never explicitly states a null hypothesis or alternate hypothesis in formal terms. Failure conditions are scattered and asymmetric \u2014 the manuscript discusses confirming evidence extensively but does not clearly articulate what outcomes would falsify CCP as a whole versus merely constrain parameters."
+      },
+      "novelty": {
+        "score": 4.0,
+        "justification": "The manuscript claims to synthesize presentism, CSL collapse models, IIT, and GR into a unified framework, but provides no citations to recent literature to establish what gaps it fills. References to 'CSL lit' and 'per lit' appear without actual citations, and no prior work on growing block universe, Bohmian mechanics, or other presentist-compatible interpretations is engaged with comparatively. The claim of novelty is asserted rather than demonstrated through comparative scholarly work."
+      },
+      "scientific_humility": {
+        "score": 3.0,
+        "justification": "The manuscript adopts a confident, at times promotional tone ('ledger's real, writing's now, blank pages stay unrealized'; 'Trust verified where it counts') that exceeds what the presented work supports. While some limitations are noted (e.g., foliation issues near black holes, the 'hard problem' mapping), the manuscript does not seriously engage with well-established objections to presentism from relativity, and foundational concepts like IIT and CSL are incorporated without acknowledging their own contested status in the literature."
+      },
+      "engagement": {
+        "score": 2.5,
+        "justification": "The manuscript references 'CSL lit,' 'arXiv: similar to Hubble tension probes,' 'per lit on strong convergence in QFT,' and 'Penzias & Wilson' without providing actual citations, author names, years, or titles. No specific papers are cited by name anywhere in the manuscript. The engagement with GR, IIT, Tomonaga-Schwinger formalism, and ADM formalism is terminologically present but not connected to any identifiable scholarly sources, making it impossible to assess genuine engagement with the current state of the field."
+      },
+      "rigor": {
+        "score": 3.5,
+        "justification": "The manuscript presents numerous equations (master equation, \u03c3 definition, ADM rescaling, commutator bounds) with some dimensional labeling, but derivations are largely asserted rather than shown \u2014 for example, the commutator bound C < 10^{-20} is stated without the intermediate algebraic steps, and the Kraus convergence 'proof' amounts to a sketch citing unnamed literature. The psychophysical mapping F = (\u03a6_IIT, entropy, graph degree, spectral power) is defined but the functional form q = \u03b8 \u00b7 F is not derived from any physical principle, constituting an unjustified premise."
+      },
+      "citations": {
+        "score": 0.0,
+        "justification": "The manuscript contains zero properly formatted citations \u2014 no author names, journal names, years, DOIs, or arXiv identifiers appear anywhere. Phrases like 'per lit,' 'CSL lit,' 'arXiv: similar to Hubble tension probes,' and 'Penzias & Wilson' are used as placeholders but do not constitute real citations. Under the rubric, citations must be explicitly connected to claims in the body text and properly formatted; none of these conditions are met, and the absence of any verifiable reference warrants the minimum score."
+      }
+    }
+  },
+  {
+    "paper_id": "010",
+    "citation": "u/Black_Jeff_Chileno, 2026",
+    "group": "baseline",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-07T23:55:44.257111+00:00",
+    "input_tokens": 11487,
+    "output_tokens": 825,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 6.0,
+        "justification": "The manuscript advances a central claim that a \u201cCosmological Continuity Presentism (CCP)\u201d with a generation parameter \u03c3 yields \u201cprogressive generation\u201d and can underwrite \u201creal succession\u201d and \u201cdynamic experience,\u201d and it lists potential empirical signatures (e.g., \u201cTiny CMB acoustic peak shifts ~10^-4,\u201d \u201cdensity-varied decoherence,\u201d \u201cneural timing\u201d effects). However, it does not clearly state an explicit null hypothesis vs. alternate hypothesis pair, nor does it give mutually exclusive falsification criteria (e.g., what specific measurement outcome would decisively rule CCP out rather than merely constrain parameters)."
+      },
+      "novelty": {
+        "score": 4.0,
+        "justification": "The proposal combines familiar elements (preferred FLRW/CMB foliation, growing-block/presentist ontology, CSL-like collapse, Tomonaga\u2013Schwinger evolution, IIT language) into a new package (\u03c3-ledger \u2018generated spacetime domain\u2019), but it does not substantively demonstrate novelty via comparison to prior approaches; it gestures to \u201cCSL variants per lit\u201d and \u201cADM formalism\u201d without identifying concrete gaps in existing growing-block, dynamical collapse, or cosmological time proposals and how CCP improves on them."
+      },
+      "scientific_humility": {
+        "score": 6.5,
+        "justification": "The manuscript sometimes acknowledges caveats (e.g., \u201cFoliation caveats\u2026 for failures (e.g., black holes): restrict to cosmological scales\u2026 local patches with gluing,\u201d and notes the need for a \u2018bridge\u2019 to qualia such as \u201cRussellian intrinsics\u201d). But it repeatedly overreaches in tone and certainty (e.g., \u201cThese seal CCP tight,\u201d \u201cledger\u2019s real, writing\u2019s now,\u201d and strong claims that \u201cStatic block can\u2019t constitute dynamic experience\u201d), and it asserts several technical \u2018proofs\u2019 and numerical bounds without providing verifiable derivations or external references."
+      },
+      "engagement": {
+        "score": 3.5,
+        "justification": "Engagement with the field is largely implicit and name-checking: it references \u201cGR\u2019s hyperbolic PDEs,\u201d \u201cADM,\u201d \u201cTomonaga\u2013Schwinger,\u201d \u201cCSL,\u201d \u201cdecoherence,\u201d and \u201cPlanck/CMB-S4,\u201d but does not connect these to specific papers or current debates in quantum foundations/cosmology (e.g., existing relativistic CSL models, preferred foliation discussions, or observational constraints). The manuscript claims consistency with \u2018lit\u2019 and \u2018bounds\u2019 yet does not demonstrate substantive, traceable engagement with recent work."
+      },
+      "rigor": {
+        "score": 3.0,
+        "justification": "The manuscript contains many formal expressions (e.g., \u03c3(\u03c4) integrals over \u221a-g, Lindblad-like master equations in \u03c3, commutator bounds, ADM-rescaled evolution) but key steps are asserted rather than derived, and several quantitative claims appear unsupported or physically dubious as written (e.g., commutator bounds with specific magnitudes, \u2018gauge phases unobservable\u2019 claims, and multiple numerical heating/constraint estimates). Notation and dimensional consistency are not consistently established (e.g., switching between \u221a-g dV d\u03c4 and \u221ah d^3x d\u03c4 forms, and introducing normalization by \u27e8\u03c1_c\u27e9 without a clear physical justification)."
+      },
+      "citations": {
+        "score": 0.0,
+        "justification": "No concrete citations are provided (no authors, titles, years, DOIs/arXiv IDs, or bibliography), despite repeated references to \u201cper lit,\u201d \u201cbounds,\u201d and \u201ccosmo lit.\u201d Because the manuscript makes many empirical and theoretical claims without any verifiable references, it earns zero in this category under the rubric."
+      }
+    }
+  }
+]

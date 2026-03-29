@@ -1,0 +1,710 @@
+{
+  "meta": {
+    "description": "Ranked contest results derived from contest_descriptives.json",
+    "n_papers": 10,
+    "categories": [
+      "hypothesis",
+      "novelty",
+      "scientific_humility",
+      "engagement",
+      "rigor",
+      "citations"
+    ],
+    "models": [
+      "claude-sonnet-4-6",
+      "gpt-5.2"
+    ],
+    "max_raw_score": 85.0,
+    "rank_by": "snorm_avg (mean of both models)"
+  },
+  "rankings": [
+    {
+      "rank": 1,
+      "paper_id": "106",
+      "citation": "Düring, 2026",
+      "group": "contest",
+      "snorm_avg": 63.5,
+      "models": {
+        "claude-sonnet-4-6": {
+          "snorm": 59.4,
+          "scores": {
+            "hypothesis": 8.5,
+            "novelty": 10.0,
+            "scientific_humility": 9.5,
+            "engagement": 11.0,
+            "rigor": 5.5,
+            "citations": 6.0
+          }
+        },
+        "gpt-5.2": {
+          "snorm": 67.6,
+          "scores": {
+            "hypothesis": 8.5,
+            "novelty": 11.0,
+            "scientific_humility": 12.5,
+            "engagement": 12.0,
+            "rigor": 6.5,
+            "citations": 7.0
+          }
+        }
+      },
+      "inter_model_deltas": {
+        "hypothesis": 0.0,
+        "novelty": -1.0,
+        "scientific_humility": -3.0,
+        "engagement": -1.0,
+        "rigor": -1.0,
+        "citations": -1.0,
+        "snorm": -8.2
+      }
+    },
+    {
+      "rank": 2,
+      "paper_id": "110",
+      "citation": "Anonymous, 2026",
+      "group": "contest",
+      "snorm_avg": 63.2,
+      "models": {
+        "claude-sonnet-4-6": {
+          "snorm": 63.5,
+          "scores": {
+            "hypothesis": 11.0,
+            "novelty": 9.0,
+            "scientific_humility": 10.0,
+            "engagement": 11.0,
+            "rigor": 6.5,
+            "citations": 6.5
+          }
+        },
+        "gpt-5.2": {
+          "snorm": 62.9,
+          "scores": {
+            "hypothesis": 8.0,
+            "novelty": 9.0,
+            "scientific_humility": 14.0,
+            "engagement": 10.0,
+            "rigor": 6.5,
+            "citations": 6.0
+          }
+        }
+      },
+      "inter_model_deltas": {
+        "hypothesis": 3.0,
+        "novelty": 0.0,
+        "scientific_humility": -4.0,
+        "engagement": 1.0,
+        "rigor": 0.0,
+        "citations": 0.5,
+        "snorm": 0.6
+      }
+    },
+    {
+      "rank": 3,
+      "paper_id": "102",
+      "citation": "Mata Sánchez, 2026",
+      "group": "contest",
+      "snorm_avg": 61.15,
+      "models": {
+        "claude-sonnet-4-6": {
+          "snorm": 59.4,
+          "scores": {
+            "hypothesis": 8.5,
+            "novelty": 9.0,
+            "scientific_humility": 12.5,
+            "engagement": 9.0,
+            "rigor": 5.5,
+            "citations": 6.0
+          }
+        },
+        "gpt-5.2": {
+          "snorm": 62.9,
+          "scores": {
+            "hypothesis": 9.0,
+            "novelty": 8.0,
+            "scientific_humility": 14.0,
+            "engagement": 9.0,
+            "rigor": 6.5,
+            "citations": 7.0
+          }
+        }
+      },
+      "inter_model_deltas": {
+        "hypothesis": -0.5,
+        "novelty": 1.0,
+        "scientific_humility": -1.5,
+        "engagement": 0.0,
+        "rigor": -1.0,
+        "citations": -1.0,
+        "snorm": -3.5
+      }
+    },
+    {
+      "rank": 4,
+      "paper_id": "108",
+      "citation": "Guri, 2026",
+      "group": "contest",
+      "snorm_avg": 58.55,
+      "models": {
+        "claude-sonnet-4-6": {
+          "snorm": 54.7,
+          "scores": {
+            "hypothesis": 4.0,
+            "novelty": 8.0,
+            "scientific_humility": 13.0,
+            "engagement": 9.0,
+            "rigor": 6.5,
+            "citations": 6.0
+          }
+        },
+        "gpt-5.2": {
+          "snorm": 62.4,
+          "scores": {
+            "hypothesis": 6.0,
+            "novelty": 9.0,
+            "scientific_humility": 14.0,
+            "engagement": 10.0,
+            "rigor": 7.5,
+            "citations": 6.5
+          }
+        }
+      },
+      "inter_model_deltas": {
+        "hypothesis": -2.0,
+        "novelty": -1.0,
+        "scientific_humility": -1.0,
+        "engagement": -1.0,
+        "rigor": -1.0,
+        "citations": -0.5,
+        "snorm": -7.7
+      }
+    },
+    {
+      "rank": 5,
+      "paper_id": "105",
+      "citation": "Christian, 2026",
+      "group": "contest",
+      "snorm_avg": 53.5,
+      "models": {
+        "claude-sonnet-4-6": {
+          "snorm": 49.4,
+          "scores": {
+            "hypothesis": 4.0,
+            "novelty": 9.0,
+            "scientific_humility": 8.0,
+            "engagement": 11.0,
+            "rigor": 4.0,
+            "citations": 6.0
+          }
+        },
+        "gpt-5.2": {
+          "snorm": 57.6,
+          "scores": {
+            "hypothesis": 4.0,
+            "novelty": 12.0,
+            "scientific_humility": 9.0,
+            "engagement": 14.0,
+            "rigor": 4.0,
+            "citations": 6.0
+          }
+        }
+      },
+      "inter_model_deltas": {
+        "hypothesis": 0.0,
+        "novelty": -3.0,
+        "scientific_humility": -1.0,
+        "engagement": -3.0,
+        "rigor": 0.0,
+        "citations": 0.0,
+        "snorm": -8.2
+      }
+    },
+    {
+      "rank": 6,
+      "paper_id": "101",
+      "citation": "BlackJakey, 2026",
+      "group": "contest",
+      "snorm_avg": 52.05,
+      "models": {
+        "claude-sonnet-4-6": {
+          "snorm": 48.2,
+          "scores": {
+            "hypothesis": 8.0,
+            "novelty": 9.0,
+            "scientific_humility": 11.0,
+            "engagement": 5.0,
+            "rigor": 5.0,
+            "citations": 3.0
+          }
+        },
+        "gpt-5.2": {
+          "snorm": 55.9,
+          "scores": {
+            "hypothesis": 9.0,
+            "novelty": 8.0,
+            "scientific_humility": 13.5,
+            "engagement": 6.5,
+            "rigor": 6.5,
+            "citations": 4.0
+          }
+        }
+      },
+      "inter_model_deltas": {
+        "hypothesis": -1.0,
+        "novelty": 1.0,
+        "scientific_humility": -2.5,
+        "engagement": -1.5,
+        "rigor": -1.5,
+        "citations": -1.0,
+        "snorm": -7.7
+      }
+    },
+    {
+      "rank": 7,
+      "paper_id": "109",
+      "citation": "Shatto, 2026",
+      "group": "contest",
+      "snorm_avg": 49.75,
+      "models": {
+        "claude-sonnet-4-6": {
+          "snorm": 47.1,
+          "scores": {
+            "hypothesis": 9.5,
+            "novelty": 8.0,
+            "scientific_humility": 5.5,
+            "engagement": 7.0,
+            "rigor": 4.5,
+            "citations": 5.5
+          }
+        },
+        "gpt-5.2": {
+          "snorm": 52.4,
+          "scores": {
+            "hypothesis": 9.0,
+            "novelty": 8.0,
+            "scientific_humility": 7.5,
+            "engagement": 9.0,
+            "rigor": 4.0,
+            "citations": 7.0
+          }
+        }
+      },
+      "inter_model_deltas": {
+        "hypothesis": 0.5,
+        "novelty": 0.0,
+        "scientific_humility": -2.0,
+        "engagement": -2.0,
+        "rigor": 0.5,
+        "citations": -1.5,
+        "snorm": -5.3
+      }
+    },
+    {
+      "rank": 8,
+      "paper_id": "107",
+      "citation": "Mosher, 2026",
+      "group": "contest",
+      "snorm_avg": 44.4,
+      "models": {
+        "claude-sonnet-4-6": {
+          "snorm": 37.6,
+          "scores": {
+            "hypothesis": 5.0,
+            "novelty": 6.0,
+            "scientific_humility": 8.0,
+            "engagement": 5.0,
+            "rigor": 4.0,
+            "citations": 4.0
+          }
+        },
+        "gpt-5.2": {
+          "snorm": 51.2,
+          "scores": {
+            "hypothesis": 6.0,
+            "novelty": 7.0,
+            "scientific_humility": 9.5,
+            "engagement": 7.5,
+            "rigor": 6.5,
+            "citations": 7.0
+          }
+        }
+      },
+      "inter_model_deltas": {
+        "hypothesis": -1.0,
+        "novelty": -1.0,
+        "scientific_humility": -1.5,
+        "engagement": -2.5,
+        "rigor": -2.5,
+        "citations": -3.0,
+        "snorm": -13.6
+      }
+    },
+    {
+      "rank": 9,
+      "paper_id": "103",
+      "citation": "Novgorodtsev, 2026",
+      "group": "contest",
+      "snorm_avg": 23.8,
+      "models": {
+        "claude-sonnet-4-6": {
+          "snorm": 18.2,
+          "scores": {
+            "hypothesis": 3.0,
+            "novelty": 5.0,
+            "scientific_humility": 1.0,
+            "engagement": 2.0,
+            "rigor": 1.5,
+            "citations": 3.0
+          }
+        },
+        "gpt-5.2": {
+          "snorm": 29.4,
+          "scores": {
+            "hypothesis": 6.0,
+            "novelty": 7.0,
+            "scientific_humility": 2.0,
+            "engagement": 3.0,
+            "rigor": 3.0,
+            "citations": 4.0
+          }
+        }
+      },
+      "inter_model_deltas": {
+        "hypothesis": -3.0,
+        "novelty": -2.0,
+        "scientific_humility": -1.0,
+        "engagement": -1.0,
+        "rigor": -1.5,
+        "citations": -1.0,
+        "snorm": -11.2
+      }
+    },
+    {
+      "rank": 10,
+      "paper_id": "104",
+      "citation": "aveeageZA, 2026",
+      "group": "contest",
+      "snorm_avg": 19.45,
+      "models": {
+        "claude-sonnet-4-6": {
+          "snorm": 16.5,
+          "scores": {
+            "hypothesis": 4.0,
+            "novelty": 3.0,
+            "scientific_humility": 3.0,
+            "engagement": 1.0,
+            "rigor": 3.0,
+            "citations": 0.0
+          }
+        },
+        "gpt-5.2": {
+          "snorm": 22.4,
+          "scores": {
+            "hypothesis": 6.0,
+            "novelty": 2.0,
+            "scientific_humility": 6.0,
+            "engagement": 1.0,
+            "rigor": 4.0,
+            "citations": 0.0
+          }
+        }
+      },
+      "inter_model_deltas": {
+        "hypothesis": -2.0,
+        "novelty": 1.0,
+        "scientific_humility": -3.0,
+        "engagement": 0.0,
+        "rigor": -1.0,
+        "citations": 0.0,
+        "snorm": -5.9
+      }
+    }
+  ],
+  "summary": {
+    "n_papers": 10,
+    "models": {
+      "claude-sonnet-4-6": {
+        "categories": {
+          "hypothesis": {
+            "mean": 6.55,
+            "median": 6.5,
+            "mode": 4.0,
+            "variance": 8.0806,
+            "stddev": 2.8426,
+            "min": 3.0,
+            "max": 11.0,
+            "n": 10
+          },
+          "novelty": {
+            "mean": 7.6,
+            "median": 8.5,
+            "mode": 9.0,
+            "variance": 4.9333,
+            "stddev": 2.2211,
+            "min": 3.0,
+            "max": 10.0,
+            "n": 10
+          },
+          "scientific_humility": {
+            "mean": 8.15,
+            "median": 8.75,
+            "mode": 8.0,
+            "variance": 15.6139,
+            "stddev": 3.9514,
+            "min": 1.0,
+            "max": 13.0,
+            "n": 10
+          },
+          "engagement": {
+            "mean": 7.1,
+            "median": 8.0,
+            "mode": 11.0,
+            "variance": 13.8778,
+            "stddev": 3.7253,
+            "min": 1.0,
+            "max": 11.0,
+            "n": 10
+          },
+          "rigor": {
+            "mean": 4.6,
+            "median": 4.75,
+            "mode": [
+              4.0,
+              5.5,
+              6.5
+            ],
+            "variance": 2.4333,
+            "stddev": 1.5599,
+            "min": 1.5,
+            "max": 6.5,
+            "n": 10
+          },
+          "citations": {
+            "mean": 4.6,
+            "median": 5.75,
+            "mode": 6.0,
+            "variance": 4.3222,
+            "stddev": 2.079,
+            "min": 0.0,
+            "max": 6.5,
+            "n": 10
+          }
+        },
+        "snorm": {
+          "mean": 45.4,
+          "median": 48.8,
+          "mode": 59.4,
+          "variance": 274.3022,
+          "stddev": 16.5621,
+          "min": 16.5,
+          "max": 63.5,
+          "n": 10
+        }
+      },
+      "gpt-5.2": {
+        "categories": {
+          "hypothesis": {
+            "mean": 7.15,
+            "median": 7.0,
+            "mode": 6.0,
+            "variance": 3.1139,
+            "stddev": 1.7646,
+            "min": 4.0,
+            "max": 9.0,
+            "n": 10
+          },
+          "novelty": {
+            "mean": 8.1,
+            "median": 8.0,
+            "mode": 8.0,
+            "variance": 7.2111,
+            "stddev": 2.6854,
+            "min": 2.0,
+            "max": 12.0,
+            "n": 10
+          },
+          "scientific_humility": {
+            "mean": 10.2,
+            "median": 11.0,
+            "mode": 14.0,
+            "variance": 17.0667,
+            "stddev": 4.1312,
+            "min": 2.0,
+            "max": 14.0,
+            "n": 10
+          },
+          "engagement": {
+            "mean": 8.2,
+            "median": 9.0,
+            "mode": [
+              9.0,
+              10.0
+            ],
+            "variance": 15.3444,
+            "stddev": 3.9172,
+            "min": 1.0,
+            "max": 14.0,
+            "n": 10
+          },
+          "rigor": {
+            "mean": 5.5,
+            "median": 6.5,
+            "mode": 6.5,
+            "variance": 2.4444,
+            "stddev": 1.5635,
+            "min": 3.0,
+            "max": 7.5,
+            "n": 10
+          },
+          "citations": {
+            "mean": 5.45,
+            "median": 6.25,
+            "mode": 7.0,
+            "variance": 5.025,
+            "stddev": 2.2417,
+            "min": 0.0,
+            "max": 7.0,
+            "n": 10
+          }
+        },
+        "snorm": {
+          "mean": 52.47,
+          "median": 56.75,
+          "mode": 62.9,
+          "variance": 224.5801,
+          "stddev": 14.986,
+          "min": 22.4,
+          "max": 67.6,
+          "n": 10
+        }
+      }
+    },
+    "inter_model_deltas": {
+      "hypothesis": {
+        "mean_delta": -0.6,
+        "stddev_delta": 1.6633,
+        "note": "claude-sonnet-4-6 minus gpt-5.2"
+      },
+      "novelty": {
+        "mean_delta": -0.5,
+        "stddev_delta": 1.354,
+        "note": "claude-sonnet-4-6 minus gpt-5.2"
+      },
+      "scientific_humility": {
+        "mean_delta": -2.05,
+        "stddev_delta": 1.0395,
+        "note": "claude-sonnet-4-6 minus gpt-5.2"
+      },
+      "engagement": {
+        "mean_delta": -1.1,
+        "stddev_delta": 1.2202,
+        "note": "claude-sonnet-4-6 minus gpt-5.2"
+      },
+      "rigor": {
+        "mean_delta": -0.9,
+        "stddev_delta": 0.8756,
+        "note": "claude-sonnet-4-6 minus gpt-5.2"
+      },
+      "citations": {
+        "mean_delta": -0.85,
+        "stddev_delta": 0.9733,
+        "note": "claude-sonnet-4-6 minus gpt-5.2"
+      },
+      "snorm": {
+        "mean_delta": -7.07,
+        "stddev_delta": 3.9317,
+        "note": "claude-sonnet-4-6 minus gpt-5.2"
+      }
+    },
+    "averaged_across_models": {
+      "categories": {
+        "hypothesis": {
+          "mean": 6.85,
+          "median": 7.0,
+          "mode": [
+            5.0,
+            8.5
+          ],
+          "variance": 4.9056,
+          "stddev": 2.2148
+        },
+        "novelty": {
+          "mean": 7.85,
+          "median": 8.5,
+          "mode": 8.5,
+          "variance": 5.6139,
+          "stddev": 2.3694
+        },
+        "scientific_humility": {
+          "mean": 9.175,
+          "median": 9.875,
+          "mode": [
+            1.5,
+            4.5,
+            6.5,
+            8.5,
+            8.75,
+            11.0,
+            12.0,
+            12.25,
+            13.25,
+            13.5
+          ],
+          "variance": 16.0701,
+          "stddev": 4.0088
+        },
+        "engagement": {
+          "mean": 7.65,
+          "median": 8.5,
+          "mode": [
+            1.0,
+            2.5,
+            5.75,
+            6.25,
+            8.0,
+            9.0,
+            9.5,
+            10.5,
+            11.5,
+            12.5
+          ],
+          "variance": 14.2389,
+          "stddev": 3.7734
+        },
+        "rigor": {
+          "mean": 5.05,
+          "median": 5.5,
+          "mode": 6.0,
+          "variance": 2.2472,
+          "stddev": 1.4991
+        },
+        "citations": {
+          "mean": 5.025,
+          "median": 6.125,
+          "mode": 6.25,
+          "variance": 4.4368,
+          "stddev": 2.1064
+        }
+      },
+      "snorm": {
+        "mean": 48.935,
+        "median": 52.775,
+        "mode": [
+          19.45,
+          23.8,
+          44.4,
+          49.75,
+          52.05,
+          53.5,
+          58.55,
+          61.15,
+          63.2,
+          63.5
+        ],
+        "variance": 245.5767,
+        "stddev": 15.6709,
+        "min": 19.45,
+        "max": 63.5
+      }
+    }
+  }
+}

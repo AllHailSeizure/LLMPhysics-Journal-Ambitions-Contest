@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "034",
+    "citation": "Novgorodtsev, 2026",
+    "group": "baseline",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-08T00:08:49.269829+00:00",
+    "input_tokens": 75057,
+    "output_tokens": 706,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 1.0,
+        "justification": "The manuscript asserts that 'all fundamental physical constants, particle masses, force ratios, and mathematical relationships emerge naturally from a minimal set of Kissing Numbers and the universal dimension D=14,' but presents no null hypothesis, no alternate hypothesis, and no falsification conditions. The work is structured as a series of declarations and 'solutions' to mysteries, with no discussion of what experimental outcomes would disprove the framework."
+      },
+      "novelty": {
+        "score": 1.5,
+        "justification": "The manuscript claims to be 'revolutionary' and introduces terms like the 'Novgorodtsev constant' (ln(312)), but makes no meaningful attempt to position this work against existing literature in quantum gravity, string theory, or lattice approaches to physics. The only citations are to the author's own prior versions of the same document, with no engagement with any external work that might overlap with or challenge the claims."
+      },
+      "scientific_humility": {
+        "score": 0.5,
+        "justification": "The manuscript is pervasively grandiose, claiming to provide 'a complete answer' to a century-old problem, declaring 48 mysteries 'resolved,' asserting that 'God is a programmer on 14-bit octonionic architecture,' and labeling results 'Crown Jewel level.' Limitations are never acknowledged, open questions are never identified, and established mathematical facts (e.g., the irrationality of \u03c0 and e) are dismissed as 'projection artifacts' without substantive proof."
+      },
+      "engagement": {
+        "score": 0.5,
+        "justification": "The reference list consists entirely of six self-citations to prior versions of the same UCT document, with no engagement with any external literature in physics, mathematics, or related fields. There is no connection made between the proposal and any external body of work, and no modern developments in lattice theory, E8 geometry, or dimensional reduction are cited or discussed."
+      },
+      "rigor": {
+        "score": 0.5,
+        "justification": "The manuscript presents equations such as '\u03b1\u207b\u00b9 = K\u2087 + K\u2083 - K\u2081 = 126 + 12 - 1 = 137' and 'm_p/m_e = D \u00d7 K\u2087 + K\u2086 = 14 \u00d7 126 + 72 = 1836' without any physical derivation, dimensional analysis, or justification for why these arithmetic combinations should correspond to physical observables. The 'Minimality Theorem' proof consists of informal verbal arguments rather than mathematical demonstration, and the claim that \u03c0 is rational in 14D contradicts proven mathematical theorems without any valid refutation."
+      },
+      "citations": {
+        "score": 0.5,
+        "justification": "All six references are self-citations to prior versions of the same manuscript by the same author, none of which are independently published or peer-reviewed external sources. No external papers are cited anywhere in the manuscript, and no citations are woven into the body text to support specific claims; the reference list functions purely as a version history."
+      }
+    }
+  },
+  {
+    "paper_id": "034",
+    "citation": "Novgorodtsev, 2026",
+    "group": "baseline",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-08T01:29:10.782050+00:00",
+    "input_tokens": 18863,
+    "output_tokens": 696,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 2.0,
+        "justification": "The manuscript asserts broad claims (e.g., \u201cthe universe exists as a 14-dimensional geometric structure\u201d and \u201call fundamental physical constants\u2026emerge naturally\u201d from kissing numbers and D=14) but does not state explicit null vs alternate hypotheses or mutually exclusive, testable falsification criteria. Some comparisons to measured values (e.g., \u03c0 error \u201c86 ppm,\u201d H0 = 70) are presented as confirmations rather than as pre-registered tests with failure conditions."
+      },
+      "novelty": {
+        "score": 3.0,
+        "justification": "The work repeatedly claims to be \u201crevolutionary\u201d and \u201ccomplete\u201d and introduces constructs like \u201c\u03a9-axiomatics,\u201d \u201cProjection Operator P\u030214\u21923,\u201d and \u201cMinimality Theorem K1=2,\u201d but it does not identify specific gaps/limitations in prior approaches with supporting citations. The reference list is almost entirely the author\u2019s own UCT versions (2026) with no comparative discussion against contemporary physics or mathematics literature."
+      },
+      "scientific_humility": {
+        "score": 1.0,
+        "justification": "Claims are sweeping and absolute (e.g., \u201cprovides a complete answer,\u201d \u201c48 fundamental mysteries are resolved,\u201d \u201cRiemann Hypothesis is true,\u201d \u201cGod is a programmer on 14-bit octonionic architecture\u201d) without delineating limitations or uncertainty. The manuscript frequently uses definitive language (\u201cprove,\u201d \u201cexact,\u201d \u201cmechanism of irrationality emergence\u201d) while providing little boundary-setting on applicability or open problems."
+      },
+      "engagement": {
+        "score": 1.0,
+        "justification": "There is minimal substantive engagement with the current state of relevant fields: the manuscript invokes concepts like E8, Leech lattice, QCD/QED, Weinberg angle, and Schumann resonance but does not connect them to modern literature or ongoing debates. The references are not used in-text to relate, extend, or challenge specific existing results beyond citing prior internal UCT documents."
+      },
+      "rigor": {
+        "score": 1.0,
+        "justification": "Many quantitative claims are asserted without derivation or dimensional justification (e.g., \u201cF_EM/F_grav = (240/24)^40 = 10^40,\u201d \u201cH0 = 72 \u2212 2 = 70 km/s/Mpc,\u201d \u201csin^2\u03b8W = 19/84,\u201d \u201c\u03c014D = 395/126\u201d with a projection producing observed \u03c0). Several sections show placeholders or missing equations (e.g., interaction coupling constants, mass formula figures) and the logical chain from axioms (e.g., \u201cAll physical quantities reduce to integers \u2208 Z\u201d) to physical predictions is not rigorously established."
+      },
+      "citations": {
+        "score": 1.0,
+        "justification": "The bibliography lists six items, primarily the author\u2019s own 2026 Zenodo versions plus an \u201cInternal Document,\u201d with no recent external peer-reviewed sources supporting major claims about particle physics, cosmology, lattice theory, or transcendental number theory. Citations are not woven through the manuscript to justify specific equations or empirical assertions; many major claims appear without any supporting references."
+      }
+    }
+  }
+]

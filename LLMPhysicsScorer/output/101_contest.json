@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "101",
+    "citation": "BlackJakey, 2026",
+    "group": "contest",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-22T03:14:30.766746+00:00",
+    "input_tokens": 32268,
+    "output_tokens": 968,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 8.0,
+        "justification": "The manuscript presents three clearly stated verifiable questions (Maxwell derivation from NB paths, IE ratio structure, observer axiom) and provides explicit falsification criteria in \u00a711 (e.g., 'photon rest mass measured > 10^-18 eV,' 'fourth-generation fermion discovered'). However, there is no explicit null hypothesis framing \u2014 the paper does not state what the null would be or distinguish it from the alternate, and some falsification criteria (e.g., 'same \u21130 yields contradictory values from G, \u03c3, H0') are vague about what 'contradictory' means quantitatively."
+      },
+      "novelty": {
+        "score": 9.0,
+        "justification": "The manuscript explicitly identifies its distinction from prior work: 'PGT reverses the logic: instead of putting known gauge groups onto a lattice, PGT derives force structure from Oh symmetry,' contrasting with Wilson's lattice gauge theory [4]. The NB matrix approach via Oh decomposition to derive Maxwell's equations without assuming gauge invariance is presented as novel. However, citations are sparse (only 6 references, none from the past ten years except NIST 2023), and the comparative work against modern alternatives is underdeveloped."
+      },
+      "scientific_humility": {
+        "score": 11.0,
+        "justification": "The manuscript demonstrates notable restraint through its explicit grading system ([P], [V], [O], [C], [\u00d7]), \u00a710 'What PGT Cannot Yet Do' listing 11 open problems, and \u00a710.1 documenting 33 rejected hypotheses. Claims are carefully qualified (e.g., 'Each particle's N is postdiction [O], not prediction'). However, the abstract's claim of 'deriving Maxwell's equations and Periodic Table Structure from a Single Geometric Parameter' and the Observer Axiom framing ('physics is not unifying four forces but confirming four forces are projections of the same matrix') border on overreach given the acknowledged gaps."
+      },
+      "engagement": {
+        "score": 5.0,
+        "justification": "The manuscript cites only 6 references, with the most recent physics papers being Wilson (1974) and Bombelli et al. (1987) \u2014 none from the past ten years in the relevant subfields of lattice field theory, non-backtracking matrices, or periodic table structure. The connections to cited works are briefly stated (e.g., 'Hashimoto introduced the NB adjacency matrix') but not substantively developed, and there is no engagement with modern developments in discrete spacetime models, spectral graph theory, or ab initio atomic physics."
+      },
+      "rigor": {
+        "score": 5.0,
+        "justification": "The manuscript presents analytic eigenvalue formulas and identity checks (P1\u2013P16) that are verifiable via the provided Python code, and the long-wavelength derivation of \u25a1A = \u2212J is partially structured. However, critical steps are acknowledged as incomplete or unjustified: the IE ratio \u2248 |\u03bb| ratio 'complete algebraic proof does not exist [O],' the source term J^\u03bc emergence is labeled [O] not [P], and the mapping from discrete lattice to continuous Maxwell relies on an approximation (k\u21130 \u226a 1) without bounding the error. The Pell equation derivation of \u03b4S conflates a quadratic root with a geometric cotangent without rigorous proof."
+      },
+      "citations": {
+        "score": 3.0,
+        "justification": "The manuscript contains only 6 citations, with the most recent physics literature being from 1992 (Bass) and 1987 (Bombelli et al.) \u2014 no citations from the past ten years in any relevant subfield. While citations are connected to claims in the text (e.g., Wilson [4] for lattice gauge theory contrast, Hashimoto [1] for NB matrices), the bibliography is far too sparse and outdated to support a paper claiming to derive Maxwell's equations and periodic table structure from first principles, and modern work on spectral graph theory, non-backtracking operators, or atomic physics is entirely absent."
+      }
+    }
+  },
+  {
+    "paper_id": "101",
+    "citation": "BlackJakey, 2026",
+    "group": "contest",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-22T03:14:50.849711+00:00",
+    "input_tokens": 12438,
+    "output_tokens": 872,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 9.0,
+        "justification": "The paper frames three testable questions (\"Can Maxwell\u2019s equations be derived...\", \"Can the same structure explain precise IE ratios...\", \"Where does the observer stand\") and provides explicit falsification criteria in \u00a711 (e.g., photon rest mass > 10\u221218 eV; \u03b1(Q) running incompatible; equivalence principle violation). However, it does not explicitly define a null hypothesis vs alternate hypothesis pair, and several key claims are framed as derivations rather than mutually exclusive hypothesis tests."
+      },
+      "novelty": {
+        "score": 8.0,
+        "justification": "The manuscript claims novel contributions such as \"NB matrix \u2192 physics mapping via Oh decomposition\" and a \"complete Maxwell derivation from lattice axioms without gauge invariance\" (\u00a716), and it contrasts its approach with lattice gauge theory and causal sets (\u00a72). But the comparative case is underdeveloped and relies on a small, mostly older set of references (Wilson 1974; Bombelli 1987; Hashimoto 1989; Ihara 1966; Bass 1992) with limited discussion of how modern related work is improved upon."
+      },
+      "scientific_humility": {
+        "score": 13.5,
+        "justification": "The paper repeatedly delineates proof status with tags [P]/[V]/[O]/[C]/[\u00d7] and explicitly lists limitations and open gaps in \u00a710 (e.g., \"Einstein field equation assembly undone [C]\", \"Spin-1/2... lacking [C]\", \"IE ratio \u2248 |\u03bb| ratio... does not exist [O]\"). It also narrows the strongest claims to \"Maxwell derivation and IE ratios\" and labels the mass formula step counts as \"postdiction [O]\" (\u00a713), though some broad statements (e.g., \"there is only one force, F = \u2212\u2207P\" in \u00a71) go beyond what is directly established in the manuscript."
+      },
+      "engagement": {
+        "score": 6.5,
+        "justification": "Engagement with prior work is present but largely limited to brief mentions of NB matrices/Ihara zeta and classic lattice gauge theory/casual sets (\u00a72), without sustained connection to current research directions or recent results in electromagnetism-from-lattices, discrete gauge theory, or atomic-structure modeling. The manuscript asserts it \"reverses the logic\" of Wilson-style lattice gauge theory but does not substantively engage with modern lattice field theory or condensed-matter analogs beyond these high-level contrasts."
+      },
+      "rigor": {
+        "score": 6.5,
+        "justification": "The manuscript provides explicit analytic eigenvalue formulas for the Oh irreps (Eq. (1)) and includes checkable identities (e.g., P1: \u2211 dim|\u03bb|^2 = 132; P4; P5) with reproducible code in Appendix A, indicating internal mathematical consistency. However, several physically crucial steps are asserted rather than fully derived in-text (e.g., the discrete-to-continuum passage and the emergence of the sourced equation \"\u25a1A\u00b5 = \u2212J\u00b5\" in \u00a77.6, and the claim that symmetry \"uniquely converges\" to Maxwell), and the physical justification for key axioms/parameter choice (\u03be from a Pell/geometry construction in \u00a73) is not established as uniquely compelled by physics rather than model design."
+      },
+      "citations": {
+        "score": 4.0,
+        "justification": "The bibliography is short (six items) and mostly old foundational sources (1966\u20131992) plus Wilson (1974) and a data source (NIST ASD 2023), with few in-text citations tied to specific technical claims beyond general background (\u00a72) and data provenance (\u00a79.2). The manuscript makes many strong claims (Maxwell derivation, Lorentz protection, periodic-table decoding) with minimal citation support to relevant modern literature, so citations are not consistently woven through the argument."
+      }
+    }
+  }
+]

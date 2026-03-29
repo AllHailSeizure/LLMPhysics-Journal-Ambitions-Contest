@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "110",
+    "citation": "Anonymous, 2026",
+    "group": "contest",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-22T03:39:55.611414+00:00",
+    "input_tokens": 367232,
+    "output_tokens": 1085,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 11.0,
+        "justification": "The manuscript presents a clear central hypothesis \u2014 that the Standard Model gauge group, matter content, and symmetry breaking all derive from the geometry of the bundle of Lorentzian metrics \u2014 and explicitly states falsification conditions: 'Any single failure would rule out the framework,' listing five specific tests including p\u2192K+\u03bd\u0304 dominance, inverted neutrino hierarchy, no axion, no light SUSY, and mH\u2248125.8 GeV. However, the null hypothesis is never formally stated as such, and some failure conditions (e.g., the Higgs mass prediction with \u00b12 GeV theoretical uncertainty) are soft enough that falsification would be contested rather than clean."
+      },
+      "novelty": {
+        "score": 9.0,
+        "justification": "The manuscript explicitly acknowledges that the core geometric observation originates with Weinstein's Geometric Unity [4,5] and states 'What this paper adds is' a list of specific contributions including the rigorous derivation, topological breaking mechanism, Higgs identification, and quantitative predictions. However, the comparative positioning against other approaches to deriving the Standard Model from geometry (e.g., noncommutative geometry of Connes [25,50], other GUT frameworks) is largely absent \u2014 the paper does not systematically explain why prior geometric approaches fail where this one succeeds, leaving the novelty claim partially supported."
+      },
+      "scientific_humility": {
+        "score": 10.0,
+        "justification": "The manuscript contains an unusually thorough 'Scope and limitations' section (Section 19) and a 'What is not established' subsection explicitly listing open problems including the hierarchy problem, propagating Higgs boson, Wilson line selection, and the cosmological constant. The LLM disclosure statement (Section V) is remarkably candid about the limitations of the authorship process. However, the abstract and closing statement contain language that somewhat exceeds the evidence ('derives the Standard Model,' 'zero free parameters' for predictions that demonstrably use fitted parameters like \u039b), and the closing statement's tone occasionally borders on grandiose ('the only thing that matters')."
+      },
+      "engagement": {
+        "score": 11.0,
+        "justification": "The manuscript cites relevant foundational and modern work including Chamseddine-Connes spectral action [25], Buttazzo et al. on Higgs near-criticality [35], Machacek-Vaughn two-loop RGEs [29], and van den Ban-Schlichtkrull Plancherel decomposition [12], with explicit connections made in the text (e.g., 'The same mechanism operates on Y14' referencing Connes' programme). However, engagement with competing geometric unification approaches is thin, and several citations to modern experimental results (NuFIT, Planck 2018) are present but not deeply integrated \u2014 the paper would benefit from more explicit comparison with current noncommutative geometry SM derivations."
+      },
+      "rigor": {
+        "score": 6.5,
+        "justification": "The manuscript presents many derivations in proposition-proof format with explicit logical structure, and some results (e.g., Proposition 3.1 on fibre signature, Theorem 13.2 on Wilson line breaking) are rigorously argued. However, several critical quantitative claims rest on chains of approximations whose uncertainties compound in ways not fully tracked \u2014 notably the coupling unification prediction \u03c1=0.717 involves a 'Shiab correction \u03b4\u0394_Shiab\u22480.04' derived from a 'geometric constant C_T\u22480.0014' whose derivation is sketched rather than completed, and the instanton determinant D\u22480.36 is computed from a 'dimensionless CW potential' with acknowledged uncertainty range [0.2,0.5] that is then used to claim a precise prediction."
+      },
+      "citations": {
+        "score": 6.5,
+        "justification": "Citations are generally relevant and woven into the text with explicit connections (e.g., '[35] showed that this condition, combined with three-loop SM running, predicts mH\u2248125.5 GeV'), and the reference list includes recent work (Buttazzo 2013, Abel et al. 2020, NuFIT 2024). However, the disclosure statement explicitly warns 'Citations have not been individually verified against original sources by a human' and notes adversarial verification 'did not flag any as hallucinated, but independent verification has not been performed' \u2014 this acknowledged uncertainty about citation integrity, combined with the inability to verify fabrication, prevents full marks under the rubric's explicit rule that fabricated citations result in zero, though the judge cannot confirm fabrication."
+      }
+    }
+  },
+  {
+    "paper_id": "110",
+    "citation": "Anonymous, 2026",
+    "group": "contest",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-22T03:28:12.331713+00:00",
+    "input_tokens": 129375,
+    "output_tokens": 905,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 8.0,
+        "justification": "The paper advances a clear central claim that \u201cthe gauge group and matter content of the Standard Model\u201d arise from the geometry of the Lorentzian metric bundle Y14\u2192X4, with further conditional claims depending on a Z3 Wilson line and an orbifold. It lists falsifiers (e.g., \u201cIf JUNO confirms normal hierarchy: falsified,\u201d \u201cIf a QCD axion is discovered: falsified,\u201d proton-decay channel predictions), but it does not explicitly define a null hypothesis vs. alternate hypothesis in mutually exclusive statistical form."
+      },
+      "novelty": {
+        "score": 9.0,
+        "justification": "The manuscript explicitly positions itself as making Weinstein\u2019s Geometric Unity idea rigorous and extending it to topology-driven SM breaking, electroweak breaking from the metric section, and quantitative predictions (e.g., Higgs mass from \u03bb(\u039b)=0, coupling correction via spectral action). However, the comparative case against modern competing approaches is limited; beyond citing Weinstein and standard GUT/spectral-action references, it does not systematically contrast with recent (last-10-years) work on related geometric unification or NCG beyond a few touchpoints."
+      },
+      "scientific_humility": {
+        "score": 14.0,
+        "justification": "The paper repeatedly delineates unconditional vs conditional results (e.g., Section 19 \u201cWhat is established (unconditionally)/(conditionally)/(not established)\u201d) and flags major open problems (hierarchy problem, cosmological constant, Wilson line selection, propagating Higgs). It also states the work is not peer-reviewed and explicitly notes limitations and conditionality (e.g., Remark 13.8; Section 19), though some headline claims in the Abstract/overview are very strong relative to the remaining open issues."
+      },
+      "engagement": {
+        "score": 10.0,
+        "justification": "The manuscript engages substantively with several established pillars (DeWitt metric, Giulini\u2013Kiefer, Hosotani, APS index/eta invariant, Machacek\u2013Vaughn RGEs, spectral action) and uses them in the derivations (e.g., Theorem 9.2 via Schur\u2019s lemma; Proposition R.24 two-loop coefficients). But engagement with the current state of the field is uneven: many citations are foundational (1970s\u20131990s) and the paper does not deeply connect to recent literature on GUT breaking, orbifold GUTs, or modern precision unification analyses beyond a small number of references (e.g., Buttazzo et al. 2013; NuFIT 2024)."
+      },
+      "rigor": {
+        "score": 6.5,
+        "justification": "Large parts are presented in proposition\u2013proof style with explicit constructions (e.g., signature of G\u03bb, maximal compact subgroup giving Pati\u2013Salam, Wilson line commutants, O\u2019Neill decomposition, Dirac-operator splitting), and many quantitative steps are at least sketched with formulas. However, several key physics-critical steps rely on nontrivial assumptions or heuristic identifications (e.g., deriving \u03bb<\u22121/4 from \u201cHamiltonian constraint forces the conformal mode\u201d in Theorem 9.3; multiple non-perturbative spectral-action claims and instanton determinant extraction), and some major predictions depend on conditional frameworks (Z3 vacuum selection, adjoint-fermion origin, two-scale orbifold) rather than being fully derived from first principles."
+      },
+      "citations": {
+        "score": 6.0,
+        "justification": "The bibliography includes relevant foundational sources (DeWitt, Pati\u2013Salam, SO(10), Hosotani, APS, Gilkey, Machacek\u2013Vaughn) and some modern references (e.g., Buttazzo et al. 2013; NuFIT 2024; Planck 2018). But many claims\u2014especially the most novel spectral-action/Plancherel/instanton quantitative assertions\u2014are not consistently tied to specific external citations in the body, and the reference list is not strongly weighted toward the last decade; the manuscript itself also notes citations were not independently verified by a human."
+      }
+    }
+  }
+]

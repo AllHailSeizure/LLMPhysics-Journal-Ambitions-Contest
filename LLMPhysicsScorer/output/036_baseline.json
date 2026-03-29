@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "036",
+    "citation": "Sutton, 2026",
+    "group": "baseline",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-08T00:10:25.512020+00:00",
+    "input_tokens": 10378,
+    "output_tokens": 766,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 2.0,
+        "justification": "The manuscript asserts that the Torsion Coefficient \u03b1 \u2248 0.495 'is a deterministic result of the interaction between the Fine Structure Constant and the Plastic Constant mapped onto a Modulo 24 vacuum lattice,' but no null hypothesis is stated, no falsification conditions are defined, and no experimental test is proposed. The paper only discusses confirming evidence, such as the 99.8% accuracy claim for the W/Z mass ratio, with no consideration of what outcomes would disprove the theory."
+      },
+      "novelty": {
+        "score": 3.0,
+        "justification": "The manuscript claims to provide 'the first complete source code for the Standard Model,' but makes no attempt to engage with existing beyond-Standard-Model literature, alternative mass generation mechanisms, or prior work on Koide formulas and lepton mass relations. The only citations are an unpublished internal thesis, a GitHub simulation, a 1928 architectural text, and a CODATA constants table \u2014 none of which are used to identify gaps in prior approaches or position this work against competing proposals."
+      },
+      "scientific_humility": {
+        "score": 1.0,
+        "justification": "The manuscript makes sweeping grandiose claims throughout, including that 'The Torsion Bridge is the universal regulator of physical reality' and that PWT provides 'the first complete source code for the Standard Model.' No limitations, open questions, or scope boundaries are acknowledged anywhere in the paper, and the conclusion asserts total unification of number theory, electromagnetism, and the weak force without qualification or restraint."
+      },
+      "engagement": {
+        "score": 1.0,
+        "justification": "The manuscript cites only four sources: an unpublished internal thesis, a GitHub repository, a 1928 book on architectural proportions, and a CODATA constants table. There is no engagement with any peer-reviewed physics literature, no connection to modern work on lepton mass relations, electroweak theory, or group-theoretic approaches to particle physics, and no explicit articulation of how this proposal relates to or challenges current work in any relevant subfield."
+      },
+      "rigor": {
+        "score": 1.0,
+        "justification": "The Unified Torsion Formula (Eq. 1/4) is presented without derivation of the M_n values from first principles \u2014 M3 for the electron is simply stated as '\u22120.034629' with no justification, and the formula is reverse-engineered to match known values rather than derived independently. The scaling law transitions (e.g., '5 amplified by 12^1.5 \u2248 41.57, resulting ratio \u2248 207.8') use ad hoc exponents with no physical or mathematical justification for why 1.5 versus 1.0 is chosen for different transitions."
+      },
+      "citations": {
+        "score": 1.0,
+        "justification": "The manuscript cites only four sources, none of which are peer-reviewed physics publications relevant to the specific claims made; reference [3] is a 1928 text on architectural proportions cited to justify using the Plastic Constant in particle physics without any explanation of why recent work is insufficient. Citations are listed only in the bibliography and are not woven into the body text to support specific claims as they are made."
+      }
+    }
+  },
+  {
+    "paper_id": "036",
+    "citation": "Sutton, 2026",
+    "group": "baseline",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-08T01:31:34.977354+00:00",
+    "input_tokens": 3634,
+    "output_tokens": 722,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 4.0,
+        "justification": "The paper asserts testable claims such as \u201c\u03b1 is equivalent to the Weak Mixing Angle (\u03b8W)\u201d and predicts \u201cmW/mZ = cos(\u03b1) \u2248 0.8799,\u201d but it does not state an explicit null vs. alternate hypothesis pair or mutually exclusive falsification criteria. Support/failure conditions are implied only by agreement with observed ratios (e.g., \u201c99.8% accuracy\u201d) rather than a structured hypothesis framework."
+      },
+      "novelty": {
+        "score": 3.0,
+        "justification": "The manuscript claims a \u201cunified first-principles derivation of lepton masses and bosonic ratios\u201d from a \u201cModulo 24 vacuum lattice,\u201d but it does not identify specific gaps/limitations in prior approaches or compare against modern Standard Model/precision-electroweak literature. The references are mostly internal (Prime Wave Lab/GitHub, a 2026 thesis) plus an old source on the plastic number (1928), with little demonstrated comparative novelty."
+      },
+      "scientific_humility": {
+        "score": 1.0,
+        "justification": "The tone makes sweeping claims such as \u201cPrime Wave Theory provides the first complete \u2018source code\u2019 for the Standard Model\u201d and \u201cThe Torsion Bridge is the universal regulator of physical reality,\u201d without delineating limitations or open questions. The manuscript presents strong universality assertions (\u201cproves its universality across both the fermionic and bosonic sectors\u201d) without proportional evidentiary boundaries."
+      },
+      "engagement": {
+        "score": 2.0,
+        "justification": "Engagement with the field is minimal: the work references CODATA (2018) and a 1928 plastic-number source but does not discuss or connect to contemporary electroweak precision results, Koide literature, or established group-theory/particle-physics treatments beyond brief mentions (e.g., \u201cADE classification\u201d). The \u201cReddit community (January 2026) correctly identified\u2026\u201d is not a substantive scholarly engagement with current research."
+      },
+      "rigor": {
+        "score": 2.0,
+        "justification": "Key equations are asserted with limited derivation and unclear physical justification, e.g., defining torsion as \u201c\u03b1 = M1/24 + M2/24^2 + M3/24^3\u201d and then equating it to the Weinberg angle to get \u201cmW/mZ = cos(\u03b1)\u201d without deriving this from electroweak theory. Several quantities (e.g., \u201cM3 = \u22120.034629\u201d for the electron, \u201c12-node volume factor 12^1.5\u201d) are introduced ad hoc, and dimensional/physical grounding for mapping group orders to mass ratios is not established."
+      },
+      "citations": {
+        "score": 2.0,
+        "justification": "Citations are sparse and not woven into the argument: most claims (e.g., \u03b1 as \u03b8W, lepton mass generation, modulo-24 lattice physics) are presented without in-text citation support. The bibliography includes internal/unclear sources (a \u201cFormal Thesis v11.1,\u201d \u201cPrime Wave Lab Simulation, GitHub, 2026\u201d) and an old 1928 reference; there is little recent peer-reviewed literature directly connected to the manuscript\u2019s central claims."
+      }
+    }
+  }
+]

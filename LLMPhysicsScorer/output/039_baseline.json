@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "039",
+    "citation": "St\u00fcrtz, 2026",
+    "group": "baseline",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-08T00:11:45.954100+00:00",
+    "input_tokens": 7300,
+    "output_tokens": 727,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 1.0,
+        "justification": "The manuscript presents no scientific hypothesis whatsoever \u2014 it is a technical documentation or pedagogical overview of an architecture called Manifold. There is no null hypothesis, no alternate hypothesis, and no discussion of what outcomes would falsify or support any claim. The document makes assertions such as 'symplectic integration eliminates the possibility of gradient problems by construction' but frames none of these as testable hypotheses."
+      },
+      "novelty": {
+        "score": 1.0,
+        "justification": "The manuscript makes no attempt to cite prior work or position itself against existing literature. There are no citations of any kind, no identification of gaps in prior approaches, and no comparative analysis. Claims of novelty \u2014 such as deriving architecture 'from first principles of physics' \u2014 are asserted without any engagement with related prior work in geometric deep learning, Hamiltonian neural networks, or symplectic integrators in machine learning."
+      },
+      "scientific_humility": {
+        "score": 2.0,
+        "justification": "The manuscript makes numerous grandiose, unsupported claims, such as 'symplectic integration eliminates the possibility of gradient problems by construction' and 'guaranteed stability over infinite horizons,' without providing mathematical proof or empirical evidence. The document adopts a boastful tone throughout, asserting that the physics-first approach provides 'theoretical guarantees' and 'principled mechanisms' without substantiating these claims, and does not acknowledge any limitations, open questions, or failure modes of the proposed approach."
+      },
+      "engagement": {
+        "score": 0.5,
+        "justification": "The manuscript contains zero citations and makes no reference to any external work, including foundational texts in differential geometry, Hamiltonian mechanics, SIREN networks (which are named and described but not cited), or any prior work on geometric or physics-inspired deep learning. The mention of 'SIREN (Sinusoidal Representation Networks)' by name without citation is the closest the document comes to acknowledging prior work, but no connection is made and no attribution is provided."
+      },
+      "rigor": {
+        "score": 3.0,
+        "justification": "The manuscript presents standard mathematical formulas from differential geometry and Hamiltonian mechanics (e.g., Christoffel symbols, Hamilton's equations, the geodesic equation) with generally correct notation, but provides no original derivations and makes quantitative claims \u2014 such as the specific parameterization '\u0393(v,x) \u2248 W\u00b7[(U^T v)^2 \u2299 \u03c3(\u2016U^T v\u2016)]' and the claim that leapfrog integration 'preserves phase-space volume exactly' \u2014 without derivation or justification. The logical leap from standard physics formalism to claimed architectural properties is asserted rather than demonstrated."
+      },
+      "citations": {
+        "score": 0.0,
+        "justification": "The manuscript contains no citations of any kind \u2014 no bibliography, no in-text references, and no footnotes. Named concepts such as SIREN, Liouville's theorem, and leapfrog integration are used without attribution. Per the rubric, citations are entirely absent, earning the lowest possible score."
+      }
+    }
+  },
+  {
+    "paper_id": "039",
+    "citation": "St\u00fcrtz, 2026",
+    "group": "baseline",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-08T00:11:54.715431+00:00",
+    "input_tokens": 6548,
+    "output_tokens": 547,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 2.0,
+        "justification": "The manuscript makes broad claims (e.g., that symplectic integration \u201celiminates the possibility of gradient problems by construction\u201d and provides \u201cguaranteed stability over infinite horizons\u201d) but does not state a clear, testable hypothesis with explicit null and alternate hypotheses or mutually exclusive falsification criteria."
+      },
+      "novelty": {
+        "score": 3.0,
+        "justification": "It asserts a \u201cphysics-first approach\u201d and describes components like symplectic/leapfrog integration, friction gating, and SIREN-based functional embeddings, but it does not compare against specific prior architectures or papers, identify concrete gaps in them, or demonstrate how the proposal is distinct beyond high-level positioning."
+      },
+      "scientific_humility": {
+        "score": 4.0,
+        "justification": "The tone includes strong, absolute claims (e.g., \u201cgradients cannot vanish or explode\u201d and \u201cstability is ensured\u2026 by geometry\u201d) without clearly delimiting assumptions, edge cases, or empirical validation requirements; it mentions practical clamps/normalization but does not frame them as limitations or open questions."
+      },
+      "engagement": {
+        "score": 2.0,
+        "justification": "Despite referencing general areas (Transformers, Liouville\u2019s theorem, SIREN), the manuscript provides essentially no engagement with current literature in geometric deep learning, neural ODEs, symplectic networks, or embedding methods\u2014no explicit discussion of how it relates to or improves upon recent work."
+      },
+      "rigor": {
+        "score": 4.0,
+        "justification": "Several definitions/equations are presented correctly at a textbook level (Riemannian metric, Christoffel symbols, geodesic equation, leapfrog steps), but key claims are not rigorously supported (e.g., \u201csingular values of the Jacobian are all exactly 1\u201d for Hamiltonian flow, and the leap from volume preservation to \u201cgradients cannot vanish/explode\u201d); the low-rank Christoffel parameterization is introduced without derivation from a metric/connection or conditions ensuring it corresponds to a valid Levi-Civita connection."
+      },
+      "citations": {
+        "score": 0.0,
+        "justification": "No formal citations or bibliography are provided at all; foundational and modern claims (e.g., about SIREN, symplectic integration benefits, and stability guarantees) are made without attribution, so this category must score zero."
+      }
+    }
+  }
+]

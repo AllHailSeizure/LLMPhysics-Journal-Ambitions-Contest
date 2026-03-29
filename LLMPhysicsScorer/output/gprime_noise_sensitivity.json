@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "description": "Noise-floor sensitivity of g' to instrument jitter via error propagation. This is NOT a true uncertainty \u2014 it quantifies how much g' shifts per sigma2_noise. Noise is symmetric and does not bias the point estimate. True estimation uncertainty is given by bootstrap CIs.",
+    "method": "delta_g' = |(-1/2) * k * (s2_pooled)^(-3/2)| * sigma2_noise",
+    "n_contest": 10,
+    "n_baseline": 50,
+    "J": 0.987013
+  },
+  "results": {
+    "hypothesis": {
+      "g_prime": 0.906135,
+      "delta_gprime": 0.010527,
+      "formatted": "0.906(11)",
+      "mean_diff": 1.94,
+      "s2_pooled": 4.465431,
+      "sigma2_noise": 0.10375
+    },
+    "novelty": {
+      "g_prime": 1.389684,
+      "delta_gprime": 0.022124,
+      "formatted": "1.390(22)",
+      "mean_diff": 3.475,
+      "s2_pooled": 6.091487,
+      "sigma2_noise": 0.193958
+    },
+    "scientific_humility": {
+      "g_prime": 0.726585,
+      "delta_gprime": 0.003557,
+      "formatted": "0.7266(36)",
+      "mean_diff": 2.725,
+      "s2_pooled": 13.702694,
+      "sigma2_noise": 0.134167
+    },
+    "engagement": {
+      "g_prime": 1.212292,
+      "delta_gprime": 0.00943,
+      "formatted": "1.2123(94)",
+      "mean_diff": 4.075,
+      "s2_pooled": 11.007435,
+      "sigma2_noise": 0.17125
+    },
+    "rigor": {
+      "g_prime": 1.295612,
+      "delta_gprime": 0.012593,
+      "formatted": "1.296(13)",
+      "mean_diff": 2.17,
+      "s2_pooled": 2.732845,
+      "sigma2_noise": 0.053125
+    },
+    "citations": {
+      "g_prime": 1.453163,
+      "delta_gprime": 0.003904,
+      "formatted": "1.4532(39)",
+      "mean_diff": 3.28,
+      "s2_pooled": 4.963233,
+      "sigma2_noise": 0.026667
+    },
+    "s_norm": {
+      "g_prime": 1.328051,
+      "delta_gprime": 0.004391,
+      "formatted": "1.3281(44)",
+      "mean_diff": 20.785176,
+      "s2_pooled": 238.629183,
+      "sigma2_noise": 1.577839
+    }
+  }
+}

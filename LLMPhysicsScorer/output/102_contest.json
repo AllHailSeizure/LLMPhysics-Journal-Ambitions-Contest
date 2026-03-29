@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "102",
+    "citation": "Mata S\u00e1nchez, 2026",
+    "group": "contest",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-22T03:15:29.546854+00:00",
+    "input_tokens": 66397,
+    "output_tokens": 915,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 8.5,
+        "justification": "The manuscript provides explicit falsification conditions in Section 9: e.g., 'WEP experiments find correlations with binding energy at \u03b7 < 10^\u221216 inconsistent with the synchronisation mechanism' and 'Geff/G is measured to exceed \u221a16/15 \u2248 1.033 at any density.' However, the manuscript does not formally state a null hypothesis and alternate hypothesis as distinct constructs, and some failure conditions (e.g., 'E8 chain cannot be completed') are mathematical rather than empirically testable in any near-term sense."
+      },
+      "novelty": {
+        "score": 9.0,
+        "justification": "The manuscript explicitly identifies six novel contributions including 'WEP as LCM synchronisation \u2014 emergent, not postulated' and 'Neutron-star density window (2\u221a2\u22121)\u03c10 \u2014 parameter-free,' and compares against Verlinde and Jacobson in Table 11, noting those approaches do not address WEP. However, engagement with recent emergent gravity literature beyond these two references is thin, and the comparison is brief rather than substantive."
+      },
+      "scientific_humility": {
+        "score": 12.5,
+        "justification": "The manuscript is notably transparent about limitations, explicitly labeling claims as [POSTULATE], [DERIVED], [HYPOTHESIS], [SPECULATIVE], or [OPEN] throughout, and honestly reporting the falsified v9.6 result (Mmax = 0.70 M\u2299). Open problems are enumerated in priority order, and the author states 'No experimental validation independent of the author's prior program is claimed.' Minor deduction for occasional language like 'parameter-free prediction distinguishable from GR' that slightly overstates the robustness given the acknowledged open derivations."
+      },
+      "engagement": {
+        "score": 9.0,
+        "justification": "The manuscript cites Verlinde [2], Jacobson [3], and Padmanabhan [4] and explicitly positions itself against them in Table 11, but engagement with modern emergent gravity literature is shallow \u2014 no post-2017 theoretical work in emergent gravity is cited. The neutron star observational literature is engaged more substantively (NICER, LIGO, PSR J0740+6620), but the theoretical physics citations lean heavily on foundational classics (Hurwitz 1898, Conway 2003, Baez 2002) without recent counterparts."
+      },
+      "rigor": {
+        "score": 5.5,
+        "justification": "Several key steps are explicitly labeled [HYPOTHESIS] rather than [DERIVED], including the channel-rate scaling \u0393 \u221d \u03c9\u00b2_V (Eq. 13) and the two-horizon counting d = 2R_V, which are central to the Geff derivation and the stellar density window respectively. The author acknowledges 'a strict derivation remains open' for these steps, meaning the headline result Geff = G\u00b7\u03c9m(n)/\u03c9m(4) rests on an unproven physical hypothesis, not a derivation from postulates as claimed in the abstract."
+      },
+      "citations": {
+        "score": 6.0,
+        "justification": "Citations are present and mostly relevant, with observational neutron star references (NICER, LIGO, Cromartie et al.) woven into the text with explicit connections. However, several citations are old (Hurwitz 1898, Oppenheimer 1939, Goldreich 1982) without justification for why recent work is insufficient, and the emergent gravity comparison relies on papers from 1995\u20132011 with no recent theoretical counterparts cited. Reference [18] is attributed to Cromartie et al. 2020 but describes PSR J0952-0607 (2.35 M\u2299), which is actually from a different paper, suggesting a citation mismatch."
+      }
+    }
+  },
+  {
+    "paper_id": "102",
+    "citation": "Mata S\u00e1nchez, 2026",
+    "group": "contest",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-22T03:15:42.792014+00:00",
+    "input_tokens": 17946,
+    "output_tokens": 809,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 9.0,
+        "justification": "The manuscript advances testable claims (e.g., a \u201chard ceiling Geff/G \u2264 \u221a(16/15) \u2248 1.033,\u201d a neutron-star central-density window 1.52\u20134.30 \u03c10, and WEP \u201c\u03b7 = 0 for ordinary matter\u201d under a stated coupling assumption) and lists explicit \u201cFalsification conditions\u201d in Section 9. However, it does not explicitly define a null hypothesis vs. alternate hypothesis pair; instead it provides one-sided framework predictions with failure conditions rather than mutually exclusive null/alt framing."
+      },
+      "novelty": {
+        "score": 8.0,
+        "justification": "The paper explicitly claims novelty (e.g., \u201cWEP as LCM synchronisation,\u201d \u201cdensity window (2\u221a2 \u2212 1)\u03c10 parameter-free,\u201d and corrected Geff with a ceiling) and provides a brief comparison table against Verlinde/Jacobson/standard GR (Table 11). But the novelty case is only lightly developed: the comparison is high-level, and the manuscript does not deeply identify specific gaps in recent emergent-gravity literature beyond broad categories."
+      },
+      "scientific_humility": {
+        "score": 14.0,
+        "justification": "The manuscript consistently labels claims ([POSTULATE]/[DERIVED]/[HYPOTHESIS]/[OPEN]) and repeatedly acknowledges limitations and open problems (e.g., \u201cno experimental validation independent of the author\u2019s prior program,\u201d \u201ctwo-horizon counting\u2026 remains open,\u201d \u201cderive isotropy\u2026 open,\u201d \u201cderive channel-rate scaling\u2026 remains open\u201d). It also reports a prior falsified result (v9.6 giving Mmax = 0.70 M\u2299) and corrects it, keeping claims proportionate to stated assumptions."
+      },
+      "engagement": {
+        "score": 9.0,
+        "justification": "Engagement with the field is present but uneven: the manuscript cites and briefly situates itself relative to emergent-gravity ideas (Verlinde 2011; Jacobson 1995; Padmanabhan 2010) and uses standard neutron-star/TOV context with an EoS reference (SLy; Lattimer & Prakash review). However, the connections to current neutron-star constraints and modern emergent-gravity developments are mostly asserted rather than analyzed in depth, and much of the discussion remains internal to the proposed framework."
+      },
+      "rigor": {
+        "score": 6.5,
+        "justification": "There is substantial internal mathematical structure (postulates P1\u2013P3, quaternionic realization Theorems 1\u20132, explicit formulas for RV(n), \u03c9V(n), I(n), and an algebraic derivation leading to Geff(\u03c1) = G\u00b7\u03c9m(n(\u03c1))/\u03c9m(4)). But key physical steps are explicitly hypotheses rather than derived (e.g., \u201cChannel-rate scaling \u0393 \u221d \u03c9V^2\u201d and \u201ctwo-horizon counting d = 2RV\u201d), and several central identifications are acknowledged as not derived from postulates, limiting physical soundness despite formal algebra."
+      },
+      "citations": {
+        "score": 7.0,
+        "justification": "The bibliography includes relevant sources (MICROSCOPE 2017; LIGO/Virgo 2018; neutron-star EoS reviews; quaternion/octonion and E8 references) and is consistently formatted. However, many core claims are supported primarily by internal derivations and labeled hypotheses rather than being explicitly tied to specific external citations in the body (e.g., the neutron-star density window and Geff ceiling are largely self-contained), and several foundational citations are older without extensive recent-literature anchoring."
+      }
+    }
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "025",
+    "citation": "Tenor, 2026",
+    "group": "baseline",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-08T01:26:57.855614+00:00",
+    "input_tokens": 9984,
+    "output_tokens": 753,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 3.0,
+        "justification": "The manuscript asserts that 'physical constants map coherently to prime-encoded n-ary logical structures' but never states a formal null hypothesis or alternate hypothesis. Failure conditions are explicitly softened: 'If discovered at ~400 or ~700 GeV: NOT: PLO is refuted / YES: Reinterpret SPEC role,' meaning no outcome is treated as falsifying, which disqualifies the predictions from functioning as genuine tests."
+      },
+      "novelty": {
+        "score": 4.0,
+        "justification": "The manuscript claims a novel ontological framework but makes no meaningful attempt to compare PLO against existing work on dimensional analysis of constants, numerological traditions (e.g., Eddington's work), or contemporary approaches to explaining free parameters such as asymptotic safety or swampland conjectures. The cited literature (Tegmark, Hofstadter, Ladyman) is used decoratively rather than to establish what gap PLO specifically fills."
+      },
+      "scientific_humility": {
+        "score": 6.0,
+        "justification": "The manuscript does explicitly acknowledge limitations ('incomplete mathematical formalization,' 'we could be fundamentally mistaken') and frames PLO as complementary rather than replacing QED. However, claims such as 'errors typically < 1% with zero free parameters' and the assertion that error structure 'had prime structure' in the top quark case are presented as meaningful results without acknowledging that post-hoc prime factorization of any integer is always possible, which constitutes overreach beyond what the work supports."
+      },
+      "engagement": {
+        "score": 3.0,
+        "justification": "Citations to Peskin & Schroeder (1995), Hardy & Wright (2008), and Mac Lane (1971) are foundational classics with no accompanying recent literature in the same subfields. The manuscript cites the Particle Data Group (2024) but makes no substantive connection between PDG content and the PLO framework. No recent work on the fine structure constant, Higgs mass measurements, or dark matter searches is cited or engaged with meaningfully."
+      },
+      "rigor": {
+        "score": 1.5,
+        "justification": "The core axiom '\u00ac() \u225c Tf' is asserted without derivation, and the function n(k) = -2k+1 is stated to 'emerge from the alternating conjunction/disjunction structure' without any formal demonstration. The mappings (e.g., \u03b1\u207b\u00b9 \u2248 11\u00b2-7\u00b2+5\u00d713) are arithmetic identities presented without physical derivation, dimensional analysis, or logical necessity \u2014 the manuscript acknowledges 'complete mathematical formalization' is absent but still presents quantitative claims as structurally meaningful."
+      },
+      "citations": {
+        "score": 2.5,
+        "justification": "The majority of citations are either foundational classics from the 1970s\u20131990s or general-audience books (Hofstadter, Tegmark), with only the PDG 2024 reference being recent. Citations are listed in a bibliography but are not woven into the body of the manuscript to support specific claims \u2014 for example, no citation supports the specific prime-operator assignments or the dark matter mass prediction of ~532 GeV."
+      }
+    }
+  },
+  {
+    "paper_id": "025",
+    "citation": "Tenor, 2026",
+    "group": "baseline",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-08T00:04:22.794769+00:00",
+    "input_tokens": 8542,
+    "output_tokens": 767,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 5.0,
+        "justification": "The manuscript advances a central claim that \u201cphysical constants map coherently to prime-encoded n-ary logical structures\u201d emerging from the axiom \u201c\u00ac() \u225c Tf,\u201d and it offers concrete numerical mappings and two mass-scale predictions (~532 GeV dark matter; ~1847 GeV resonance). However, it does not explicitly define null vs. alternate hypotheses, nor does it specify mutually exclusive falsification criteria; it also states that if predictions differ, this leads to \u201creinterpret[ation]\u201d rather than clear refutation conditions."
+      },
+      "novelty": {
+        "score": 6.0,
+        "justification": "The proposed framework (Prime-Logical Ontology with prime-operator grammar and the axiom linking negation to time) is presented as a distinct interpretive program and includes original-looking mapping formulas (e.g., \u03b1\u207b\u00b9 \u2248 11\u00b2\u22127\u00b2+5\u00d713). But the manuscript does not substantively compare against existing approaches to explaining constants (e.g., renormalization-group, GUT relations, anthropic/landscape, numerological/algorithmic-information approaches) beyond broad statements that the SM has free parameters, so the case for novelty relative to prior art is underdeveloped."
+      },
+      "scientific_humility": {
+        "score": 11.0,
+        "justification": "The paper repeatedly delineates scope (\u201cPLO does not compete with QED or the Standard Model computationally\u201d), acknowledges limitations (\u201cincomplete mathematical formalization,\u201d \u201cwork in progress\u201d), and explicitly invites critique (\u201cAdmit PLO could be fundamentally mistaken\u201d). That said, some claims are stronger than the evidential support (e.g., \u201csystematic mappings\u2026 with zero free parameters\u201d and framing errors as informative via Rule R17), and the stance that mismatches prompt reinterpretation weakens clear boundary conditions."
+      },
+      "engagement": {
+        "score": 5.0,
+        "justification": "Engagement with the current field is mostly generic: it references QED/SM and cites textbooks (Peskin & Schroeder; Schwartz) and PDG, but does not connect specific contemporary research programs or results to PLO\u2019s mechanisms. The manuscript does not meaningfully situate its claims within recent literature on fundamental-constant explanations or precision tests, and most citations are not used in-text to support particular technical steps."
+      },
+      "rigor": {
+        "score": 2.0,
+        "justification": "Key premises are asserted rather than derived (e.g., \u201c\u00ac() \u225c Tf \u2243 Tp\u201d and the emergence of the n(k) function and prime-operator assignments), and the mapping formulas are presented as arithmetic coincidences without a physically justified derivation linking the logical recursion to measured dimensionful quantities (e.g., Higgs mass in GeV from prime products/\u03c0). The approach lacks dimensional analysis and does not provide a rigorous procedure that would uniquely generate the stated formulas or quantify selection effects among \u201cmultiple PLO mappings.\u201d"
+      },
+      "citations": {
+        "score": 3.0,
+        "justification": "The bibliography includes some relevant sources (PDG 2024; standard QFT textbooks; Mac Lane; Priest; Tegmark; Ladyman & Ross), but citations are sparse, mostly older than ten years, and are not woven into the argument to justify specific claims or derivations. The manuscript makes many substantive assertions (e.g., prime-operator roles, boundary-condition mapping to gauge structure, specific constant formulas) without accompanying targeted citations to prior work or empirical/technical references."
+      }
+    }
+  }
+]

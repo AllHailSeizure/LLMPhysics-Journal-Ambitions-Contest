@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "023",
+    "citation": "u/ButterscotchHot5891, 2026",
+    "group": "baseline",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-08T01:24:42.481743+00:00",
+    "input_tokens": 2577,
+    "output_tokens": 628,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 6.0,
+        "justification": "The manuscript implies a null hypothesis (coherence outliers are instrumental, not astrophysical) and an alternate (cross-detector coherence reflects astrophysical structure), and the pipeline is designed to falsify the alternate. However, these are never explicitly stated as H0/H1, failure conditions are described informally ('signal dies'), and the specific metrics that would constitute confirmation vs. falsification are not rigorously pre-specified."
+      },
+      "novelty": {
+        "score": 3.0,
+        "justification": "The manuscript makes no attempt to cite prior work or position itself against existing literature. Operator-level coherence metrics and time-slide background estimation are established techniques in LIGO data analysis, and the manuscript does not argue how its 'operator embedding' approach differs from or improves upon existing methods \u2014 novelty is asserted implicitly through framing but never demonstrated comparatively."
+      },
+      "scientific_humility": {
+        "score": 11.0,
+        "justification": "The manuscript is notably restrained, explicitly stating 'This is not a claim of new physics' and concluding 'No event remains a robust cross-detector astrophysical coherence candidate.' The authors frame the null result as a success and correctly attribute surviving signals to 'single-detector nonstationarity.' Minor deduction for vague framing around 'operator embedding' without acknowledging that this concept is not standard and may itself be unjustified."
+      },
+      "engagement": {
+        "score": 2.0,
+        "justification": "The manuscript contains zero citations to any prior work \u2014 no references to LIGO data analysis literature, time-slide methodology, coherence metrics, or GWOSC documentation. The phrase 'GWOSC open strain' is the only external reference, and it is not cited. There is no engagement with the current state of the field whatsoever."
+      },
+      "rigor": {
+        "score": 4.0,
+        "justification": "The pipeline steps are described qualitatively (STFT, bandpower, z-score, operator embedding, cosine similarity, eigenspectrum distance) but no mathematical definitions, derivations, or dimensional analysis are provided. The 'operator embedding' concept is undefined. The reported p-value (p \u2248 0.04) lacks description of the test statistic distribution or sample size of the background, making the quantitative claim unverifiable from the manuscript alone."
+      },
+      "citations": {
+        "score": 0.0,
+        "justification": "The manuscript contains no citations whatsoever \u2014 no references to foundational LIGO papers, GWOSC data releases, time-slide methodology, or any other prior work. Per the rubric, citations are entirely absent and thus receive the lowest possible score."
+      }
+    }
+  },
+  {
+    "paper_id": "023",
+    "citation": "u/ButterscotchHot5891, 2026",
+    "group": "baseline",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-08T00:03:29.518455+00:00",
+    "input_tokens": 2328,
+    "output_tokens": 616,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 7.5,
+        "justification": "The manuscript frames a testable research question\u2014\u201cwhether certain operator-level coherence metrics show nontrivial structure beyond na\u00efve cross-correlation\u201d\u2014and describes controls (background windows, time slides, self-coherence, dominance) intended to falsify apparent outliers. However, it does not explicitly define a null vs alternate hypothesis in mutually exclusive terms, nor does it pre-specify clear acceptance/rejection criteria beyond qualitative statements like outliers that \u201cdo not survive\u201d controls."
+      },
+      "novelty": {
+        "score": 2.0,
+        "justification": "The manuscript claims a contribution (\u201cfully reproducible empirical pipeline\u2026 operator-level coherence metrics\u201d) but provides no comparison to prior approaches and no citations to establish what is new relative to standard LIGO coherence studies, time-slide background estimation, or detector-characterization methods. Without literature positioning, the intellectual contribution is not demonstrably novel under the rubric."
+      },
+      "scientific_humility": {
+        "score": 14.0,
+        "justification": "The author repeatedly constrains claims (\u201cThis is not a claim of new physics,\u201d \u201cStill no astrophysical claim,\u201d \u201cNo event remains a robust\u2026 candidate\u201d) and emphasizes falsification and controls (\u201cSignal appears\u2026 dies under better questions\u201d). Limitations and next steps are stated (\u201cvalid null result,\u201d \u201creframe as a detector diagnostics tool\u201d), though attribution to existing standard methods is not discussed."
+      },
+      "engagement": {
+        "score": 1.0,
+        "justification": "There is essentially no engagement with the current state of the field: no cited work, no discussion of how the pipeline relates to established LIGO/Virgo coherence analyses, data-quality vetoes, or detector-characterization literature. The manuscript describes internal modes (A/B/C) but does not connect them to modern subfield practice via explicit references."
+      },
+      "rigor": {
+        "score": 5.5,
+        "justification": "The pipeline is described with some concrete locked parameters (GWOSC H1+L1, 32 s, 4096 Hz; STFT\u2192bandpower\u2192log\u2192z-score; time slides; empirical p-values) and includes a control logic (self- vs cross-coherence dominance). However, key definitions are missing (what \u201coperator embedding,\u201d \u201ceigenspectrum distance,\u201d and \u201cquality gating\u201d precisely are), and quantitative results are sparse (only a single example p \u2248 0.04 without methodology details), limiting reproducibility and formal soundness."
+      },
+      "citations": {
+        "score": 0.0,
+        "justification": "No citations are provided at all (neither to GWOSC documentation nor to prior coherence/time-slide/detector-characterization methods), so claims are unsupported by referenced sources. Under the rubric, this yields minimal credit for the citations category."
+      }
+    }
+  }
+]

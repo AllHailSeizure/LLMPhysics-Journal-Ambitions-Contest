@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "027",
+    "citation": "u/Frandj89, 2026",
+    "group": "baseline",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-08T00:05:48.279038+00:00",
+    "input_tokens": 2105,
+    "output_tokens": 479,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 2.0,
+        "justification": "The manuscript asserts that a Gravastar 'acts as a negative pressure valve' and channels matter into a white hole, but no explicit null hypothesis or alternate hypothesis is stated anywhere. There are no defined failure conditions, no discussion of what outcomes would falsify the proposal, and no plausible path toward testing is outlined."
+      },
+      "novelty": {
+        "score": 3.0,
+        "justification": "The manuscript combines existing concepts (Gravastar, Einstein-Rosen bridge, white holes, Big Bounce) without citing any prior literature, making it impossible to assess what gap this work fills. No references to recent or foundational work are provided, so the claim to novelty is entirely unsubstantiated."
+      },
+      "scientific_humility": {
+        "score": 2.0,
+        "justification": "The manuscript makes sweeping claims such as 'this model resolves the information loss paradox' and provides 'a mechanical basis for the Big Bounce' without any supporting derivation or evidence, far exceeding what the work actually demonstrates. No limitations, open questions, or uncertainties are acknowledged anywhere in the text."
+      },
+      "engagement": {
+        "score": 1.0,
+        "justification": "The manuscript contains zero citations and makes no reference to any existing literature, whether foundational or recent. There is no engagement whatsoever with the current state of research on Gravastars, white holes, wormholes, or the information paradox."
+      },
+      "rigor": {
+        "score": 1.0,
+        "justification": "No mathematical derivations, equations, dimensional analysis, or formal logical structure are presented anywhere in the manuscript. Claims such as 'gravity undergoes a phase transition' and 'space-time torsion' are asserted without any physical justification, definition, or quantitative support."
+      },
+      "citations": {
+        "score": 0.0,
+        "justification": "The manuscript contains no citations whatsoever \u2014 no bibliography, no in-text references, and no attribution of any kind. This fails every criterion in the citations rubric."
+      }
+    }
+  },
+  {
+    "paper_id": "027",
+    "citation": "u/Frandj89, 2026",
+    "group": "baseline",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-08T00:05:55.482920+00:00",
+    "input_tokens": 1921,
+    "output_tokens": 472,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 4.0,
+        "justification": "The manuscript proposes a central claim\u2014replacing the singularity with a \u201cdynamic Gravastar\u2026 negative pressure valve\u201d that drives a phase transition to a repulsive regime producing a white hole\u2014but it does not define explicit null vs alternate hypotheses or specify mutually exclusive, plausibly testable falsification criteria."
+      },
+      "novelty": {
+        "score": 2.0,
+        "justification": "The submission asserts a mechanism combining gravastars, torsion-driven phase transition, Einstein\u2013Rosen bridge stabilization, and white-hole emergence, but it provides no comparison to prior gravastar/black-hole-to-white-hole/bounce literature and includes no cited gaps or limitations it improves upon."
+      },
+      "scientific_humility": {
+        "score": 3.0,
+        "justification": "The manuscript makes strong claims such as \u201cThis model resolves the information loss paradox\u201d and \u201cprovides a mechanical basis for the \u2018Big Bounce\u2019\u201d without delineating scope, assumptions, or open problems, and it does not acknowledge alternative explanations or limitations of the proposed torsion/phase-transition mechanism."
+      },
+      "engagement": {
+        "score": 1.0,
+        "justification": "Aside from naming concepts (gravastar, dark energy-like pressure, Einstein\u2013Rosen bridge, white hole, Big Bounce), the manuscript does not engage with the current state of the field through discussion of existing models or results, nor does it connect any literature to its specific proposal."
+      },
+      "rigor": {
+        "score": 1.0,
+        "justification": "No equations, derivations, or quantitative estimates are provided for the claimed \u201cspace-time torsion\u201d phase transition, membrane stabilization of a wormhole, or the dynamics of \u201cexplosive decompression,\u201d leaving the logical chain from premises to conclusions largely qualitative and unsupported."
+      },
+      "citations": {
+        "score": 0.0,
+        "justification": "The submission contains no formal citations or bibliography supporting key claims (gravastar behavior, torsion effects, wormhole stabilization, information-loss resolution), so sources are not attributed or connected to the argument."
+      }
+    }
+  }
+]

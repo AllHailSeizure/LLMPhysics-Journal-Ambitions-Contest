@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "108",
+    "citation": "Guri, 2026",
+    "group": "contest",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-22T03:22:21.294573+00:00",
+    "input_tokens": 54393,
+    "output_tokens": 995,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 4.0,
+        "justification": "The manuscript presents a modeling claim \u2014 that threshold-activated dissipation yields a conditional continuation criterion \u2014 but never frames this as a testable hypothesis with explicit null and alternate formulations. The paper states 'finite-time breakdown can occur only if the enstrophy becomes unbounded' as a mathematical result for the modified system, but provides no discussion of what experimental or numerical outcomes would falsify or support the model's physical relevance, and no path toward empirical testing is articulated beyond vague suggestions in Section 6.5 about 'high-resolution numerical simulations.'"
+      },
+      "novelty": {
+        "score": 8.0,
+        "justification": "The author explicitly compares the threshold-activated model to hyperviscous models, Leray-alpha regularizations, and Ladyzhenskaya-type systems in Sections 1.2 and 6.4, identifying two distinguishing features: dependence on vorticity magnitude rather than strain rate, and threshold-activation behavior. However, the engagement with recent literature (past ten years) is thin \u2014 only references [4], [9], and [10] are from the past decade, and the novelty argument relies heavily on structural comparison rather than demonstrating that no prior work has introduced vorticity-dependent viscosity in this specific form."
+      },
+      "scientific_humility": {
+        "score": 13.0,
+        "justification": "The manuscript is notably restrained throughout, explicitly stating in Section 4 that 'the result proved here is not an unconditional global-regularity theorem' and in Section 6.2 that 'the continuation criterion established above therefore applies only to this modified system' and 'does not alter the classical constant-viscosity Navier\u2013Stokes equations.' The author clearly identifies Assumption B as an unproved conditional hypothesis and acknowledges open questions in Section 6.5, though the physical motivation sections occasionally make heuristic claims (e.g., the coherence length relation) without sufficient qualification."
+      },
+      "engagement": {
+        "score": 9.0,
+        "justification": "The author engages substantively with Ladyzhenskaya [6,7], Leray [8], Cheskidov et al. [9], Taylor [11], and Kato [12] in the body of the text, explicitly connecting each to the model's structure in Sections 1.2 and 6.4. However, engagement with recent turbulence literature ([4], [10]) is largely confined to motivational paragraphs and does not connect to the mathematical analysis; the connections between cited work and the specific estimates derived (e.g., Lemma 3.1, Assumption B) are mostly implicit rather than explicitly stated."
+      },
+      "rigor": {
+        "score": 6.5,
+        "justification": "The core estimates in Lemma 3.1 follow a recognizable interpolation-Sobolev-Young's inequality chain that is mostly sound, and the enstrophy inequality (3.12) and Gr\u00f6nwall closure in Section 4.4 are logically structured. However, the derivation of equation (3.8) \u2014 the decomposition of the curl of the activation operator \u2014 is asserted rather than derived, and Lemma 3.2 is given only as a 'proof sketch' with the commutator estimate left unverified; Assumption B, the key higher-order estimate needed for the main theorem, is explicitly left unproved, which the author acknowledges but which substantially limits the rigor of the central result."
+      },
+      "citations": {
+        "score": 6.0,
+        "justification": "Citations are consistently formatted and several are woven into the text with explicit connections (Taylor [11] and Kato [12] are cited at specific steps in the quasilinear argument; Ladyzhenskaya [6,7] and Leray [8] are connected to the model comparison in Sections 1.2 and 6.4). However, the majority of citations are foundational works from 1934\u20131977, and only [4], [9], and [10] are from the past ten years; the author provides no justification for why recent work on nonlinear viscosity or vorticity-dependent regularizations is absent, and references [4] and [10] are used only for motivational color without connection to the mathematical estimates."
+      }
+    }
+  },
+  {
+    "paper_id": "108",
+    "citation": "Guri, 2026",
+    "group": "contest",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-22T03:22:35.826079+00:00",
+    "input_tokens": 17490,
+    "output_tokens": 844,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 6.0,
+        "justification": "The manuscript\u2019s central claim is that adding a \u201cthreshold-activated dissipation mechanism\u201d depending on |\u03c9| yields a \u201cweighted enstrophy estimate\u201d and a \u201cconditional continuation criterion\u201d (Abstract, Theorem 4.1). However, it does not explicitly state a null hypothesis vs alternate hypothesis, nor does it specify mutually exclusive, testable falsification outcomes beyond the mathematical conditional statement \u201cbreakdown can occur only if the enstrophy becomes unbounded.\u201d"
+      },
+      "novelty": {
+        "score": 9.0,
+        "justification": "The paper positions the model against hyperviscosity, Leray\u2013\u03b1, and Ladyzhenskaya-type viscosity laws, emphasizing two differences: dependence on vorticity magnitude and threshold activation (Section 1.2, 2). It argues the contribution is an enstrophy mechanism where \u201cenhanced dissipation absorbs the vortex-stretching contribution\u201d (Abstract, Section 3), but the comparative case is mostly conceptual and not supported by detailed comparison to closely related modern nonlinear-viscosity/vorticity-dependent models."
+      },
+      "scientific_humility": {
+        "score": 14.0,
+        "justification": "The manuscript repeatedly and clearly limits scope: it is \u201ca phenomenological modeling extension\u2026 not a reformulation of the classical regularity problem\u201d (Sections 1, 6) and \u201cnot an unconditional global-regularity theorem\u201d (Section 4). It explicitly flags the key unproven technical input as \u201cthe only genuinely nonstandard higher-order input not proved in full\u2026 Assumption B\u201d (Section 4), and suggests future work (Section 6.5) without overclaiming."
+      },
+      "engagement": {
+        "score": 10.0,
+        "justification": "The paper cites relevant categories of regularizations and turbulence phenomenology (e.g., Leray\u2013\u03b1 [9], Ladyzhenskaya/Lions [6,7], extreme events [4,10]) and briefly explains how its mechanism differs (Section 1.2, 6.4). Engagement with the current subfield is somewhat superficial: most technical scaffolding relies on classic PDE references (Taylor [11], Kato [12]) and the manuscript does not deeply connect to recent mathematical literature on quasilinear/derivative-dependent viscosity or vorticity-based regularizations beyond broad mentions."
+      },
+      "rigor": {
+        "score": 7.5,
+        "justification": "The derivations for energy (3.1) and the enstrophy inequality (3.12) are presented with standard tools (Biot\u2013Savart/Calder\u00f3n\u2013Zygmund, Sobolev embedding, interpolation, Young\u2019s inequality) and a clear logical flow in Lemma 3.1. However, a central step for continuation is deferred to an explicit assumption (Assumption B, inequality (4.12)), and the commutator control in Lemma 3.2 is only a \u201cproof sketch,\u201d leaving a key part of the claimed continuation mechanism not fully established within the manuscript."
+      },
+      "citations": {
+        "score": 6.5,
+        "justification": "The bibliography includes some recent sources (2012 [4], 2014 [10], 2005 [9]) and foundational classics (Leray 1934, Ladyzhenskaya 1969, Temam 1977, Taylor 1996, Kato 1975). Citations are used to support general background claims (e.g., turbulence intermittency [4,5,10]) and local theory references [11,12], but many key modeling and analytical choices (e.g., the specific vorticity-dependent diffusion form and the commutator framework in Assumption B) are not strongly anchored to specific prior works in the text, and the overall citation set is not heavily weighted toward the last decade."
+      }
+    }
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "106",
+    "citation": "D\u00fcring, 2026",
+    "group": "contest",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-22T03:35:59.180353+00:00",
+    "input_tokens": 30736,
+    "output_tokens": 999,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 8.5,
+        "justification": "The manuscript presents a clear central hypothesis \u2014 that quantum measurement outcomes emerge from large-deviation consensus dynamics in macroscopic apparatuses \u2014 and identifies specific falsifiable predictions such as a non-monotonic collapse time \u03c4(\u03ba) and Born-rule deviations scaling as O(\u03b2\u00b2) for biased apparatuses. However, no explicit null hypothesis is stated, and while failure conditions are described (e.g., 'Modern POVM tomography can resolve this'), the conditions under which the theory would be definitively falsified versus merely requiring parameter adjustment are not clearly delineated, leaving the falsification criteria somewhat one-sided."
+      },
+      "novelty": {
+        "score": 10.0,
+        "justification": "The manuscript explicitly compares QCP against Copenhagen, Many-Worlds, Bohmian mechanics, GRW, and Quantum Darwinism in Table I, identifying specific gaps such as that 'no existing framework derives the emergence of a unique pointer state, nor the Born rule, nor the apparatus dependence of measurement statistics.' The claim that Born's rule emerges as a 'neutral fixed point' of apparatus dynamics rather than an axiom, and the prediction of apparatus-dependent POVM deformations, represent a genuinely articulated distinction from prior work, though the novelty case relies heavily on the author's own framing rather than independent verification."
+      },
+      "scientific_humility": {
+        "score": 9.5,
+        "justification": "The manuscript includes a dedicated 'Scope and logical status' section explicitly stating that 'the strongest claims made here are to be read conditional on those standing assumptions and calibration conditions, rather than as unrestricted statements about arbitrary detector models,' and the Consensus Collapse theorem is carefully qualified: 'quantitative contraction-rate statements remain tied to the stated regularity hypotheses.' However, the abstract and introduction contain moderately strong language such as 'mathematically rigorous collapse' and 'first principles theory' that slightly outpaces what is demonstrated in the main text alone without the companion Supplement."
+      },
+      "engagement": {
+        "score": 11.0,
+        "justification": "The manuscript engages substantively with Quantum Darwinism (Zurek refs 34\u201336), open quantum systems (Breuer & Petruccione ref 9, Wiseman & Milburn ref 10), and process-tensor formalism (Pollock et al. refs 23\u201324), explicitly connecting these to QCP's architecture. However, engagement is uneven \u2014 several citations (refs 39\u201346) are listed with minimal or no body-text connection, and the comparison with Quantum Darwinism, while the most developed, still relies on the author's characterization rather than direct engagement with recent Darwinism literature beyond 2014."
+      },
+      "rigor": {
+        "score": 5.5,
+        "justification": "The manuscript presents formal structures including Lindblad generators, BKM-metric quadratic forms, Green-Kubo integrals, and a Hellinger-contractive supermartingale, but the main text repeatedly defers critical derivations to a 'companion Supplement' that is not provided for evaluation \u2014 e.g., 'The stronger path-space uniqueness and no-competing-divergence statements are proved in the Supplement.' The large-deviation principle Pr(\u03c1_T \u2192 \u03a0_i) \u224d exp[\u2212T\u03a6_i] is stated without derivation, and the uniqueness theorem is asserted conditionally on an admissible class whose full specification is also in the absent Supplement, making independent assessment of rigor impossible from the submitted document alone."
+      },
+      "citations": {
+        "score": 6.0,
+        "justification": "The reference list includes 46 entries spanning foundational and recent work (e.g., Pollock et al. 2018, Murch et al. 2013, Chetrite & Touchette 2015), and some citations are explicitly connected to claims in the body text. However, a significant portion of citations (refs 39\u201346) are listed with incomplete bibliographic information (e.g., 'Hudson & Parthasarathy (1984) \u2013 Quantum stochastic calculus') and are not explicitly connected to specific claims in the manuscript body, functioning more as a bibliography than integrated support, which limits their evaluative credit under the rubric."
+      }
+    }
+  },
+  {
+    "paper_id": "106",
+    "citation": "D\u00fcring, 2026",
+    "group": "contest",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-22T03:20:57.186865+00:00",
+    "input_tokens": 13495,
+    "output_tokens": 814,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 8.5,
+        "justification": "The manuscript advances a structured central claim that \u201cmeasurement outcomes emerge from information-theoretic large-deviation selection inside a macroscopic apparatus,\u201d yielding almost-sure convergence to a unique pointer state and an apparatus-dependent POVM deformation. However, it does not explicitly define a null vs. alternate hypothesis pair; falsifiability is discussed (e.g., \u201cnon-monotonic collapse rate\u201d and \u201cBorn deviations for biased apparatus\u201d) but without mutually exclusive null/alt outcome criteria stated in hypothesis form."
+      },
+      "novelty": {
+        "score": 11.0,
+        "justification": "The paper explicitly contrasts QCP with Copenhagen, Many-Worlds, GRW, Bohmian mechanics, and Quantum Darwinism (Table I) and claims new elements such as a unique linear selector \u03a6i = a R\u0303i + bi \u03c7i, a large-deviation derivation of outcome probabilities, and a U-shaped collapse-time dependence with \u03baopt = a/b. The novelty case is weakened by limited engagement with the most recent measurement/decoherence literature beyond a few modern citations, and several key novelty claims are deferred to a \u201ccompanion Supplement\u201d rather than demonstrated in the main text."
+      },
+      "scientific_humility": {
+        "score": 12.5,
+        "justification": "The manuscript repeatedly bounds its strongest claims as conditional: \u201cthe strongest claims made here are to be read conditional on those standing assumptions,\u201d and it notes that uniqueness/exclusion of nonlinear selectors holds only \u201cwithin that explicit admissible class\u201d and that robustness beyond Markov/QND is claimed only in that \u201cconditional sense.\u201d Still, it occasionally overreaches in tone (e.g., \u201cno existing framework derives the emergence of a unique pointer state, nor the Born rule\u201d) while key proofs are deferred."
+      },
+      "engagement": {
+        "score": 12.0,
+        "justification": "There is substantive conceptual engagement via explicit comparisons to Quantum Darwinism and other approaches, and the manuscript situates itself in open quantum systems/quantum trajectories (e.g., Lindblad/Wiseman-Milburn/Jacobs; Doob transform and large deviations). However, many connections to cited modern work are asserted rather than developed in-text (e.g., process-tensor/DPI/additivity conditions are referenced but largely relegated to the Supplement), and the discussion of how QCP concretely extends specific recent results is relatively high-level."
+      },
+      "rigor": {
+        "score": 6.5,
+        "justification": "The paper presents a coherent formal scaffold (stochastic master equation, Lindblad form, Doob h-transform, large-deviation scaling Pr(\u03c1T\u2192\u03a0i) \u224d exp[\u2212T\u03a6i], and a Hellinger contraction bound Hi(t) \u2264 Hi(0)e^{\u2212\u03b3i(\u03ba)t}). But many crucial steps (uniqueness theorem conditions, calibration of sufficient statistics, proof of martingale/large-deviation results, and derivation of U-shaped \u03a6(\u03ba)) are not shown in the main manuscript and are deferred to companion materials, leaving logical gaps for several quantitative claims."
+      },
+      "citations": {
+        "score": 7.0,
+        "justification": "The reference list includes relevant foundational and modern sources (e.g., Pollock et al. 2018 on process tensors; Chetrite & Touchette 2015; Chetrite & Gupta 2021; Wiseman & Milburn 2010; Jacobs 2014) and is broadly appropriate to open-system measurement and large deviations. However, citations are not consistently woven into specific technical claims in the body (many key assertions are made without immediate citation), and the bibliography leans heavily on classics alongside a modest number of post-2015 works."
+      }
+    }
+  }
+]

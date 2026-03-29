@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "description": "Scorer noise sensitivity of g' via direct perturbation of V_p. g'_low = K/sqrt(V_p + sigma2_noise), g'_high = K/sqrt(V_p - sigma2_noise). Asymmetric bounds. NOT a confidence interval.",
+    "method": "direct_perturbation",
+    "n_contest": 10,
+    "n_baseline": 50,
+    "J": 0.987013
+  },
+  "results": {
+    "hypothesis": {
+      "g_obs": 0.906135,
+      "g_low": 0.895788,
+      "g_high": 0.916849,
+      "delta_plus": 0.010714,
+      "delta_minus": 0.010347,
+      "delta_linear_old": 0.010527,
+      "K": 1.914805,
+      "V_p": 4.465431,
+      "sigma2_noise": 0.10375
+    },
+    "novelty": {
+      "g_obs": 1.389684,
+      "g_low": 1.368074,
+      "g_high": 1.412351,
+      "delta_plus": 0.022667,
+      "delta_minus": 0.02161,
+      "delta_linear_old": 0.022124,
+      "K": 3.42987,
+      "V_p": 6.091487,
+      "sigma2_noise": 0.193958
+    },
+    "scientific_humility": {
+      "g_obs": 0.726585,
+      "g_low": 0.723054,
+      "g_high": 0.730168,
+      "delta_plus": 0.003583,
+      "delta_minus": 0.003531,
+      "delta_linear_old": 0.003557,
+      "K": 2.68961,
+      "V_p": 13.702694,
+      "sigma2_noise": 0.134167
+    },
+    "engagement": {
+      "g_obs": 1.212292,
+      "g_low": 1.202971,
+      "g_high": 1.221834,
+      "delta_plus": 0.009542,
+      "delta_minus": 0.009322,
+      "delta_linear_old": 0.00943,
+      "K": 4.022078,
+      "V_p": 11.007435,
+      "sigma2_noise": 0.17125
+    },
+    "rigor": {
+      "g_obs": 1.295612,
+      "g_low": 1.2832,
+      "g_high": 1.308392,
+      "delta_plus": 0.01278,
+      "delta_minus": 0.012412,
+      "delta_linear_old": 0.012593,
+      "K": 2.141818,
+      "V_p": 2.732845,
+      "sigma2_noise": 0.053125
+    },
+    "citations": {
+      "g_obs": 1.453163,
+      "g_low": 1.449275,
+      "g_high": 1.457083,
+      "delta_plus": 0.00392,
+      "delta_minus": 0.003888,
+      "delta_linear_old": 0.003904,
+      "K": 3.237403,
+      "V_p": 4.963233,
+      "sigma2_noise": 0.026667
+    },
+    "snorm": {
+      "g_obs": 1.328051,
+      "g_low": 1.323682,
+      "g_high": 1.332464,
+      "delta_plus": 0.004412,
+      "delta_minus": 0.004369,
+      "delta_linear_old": 0.004391,
+      "K": 20.515239,
+      "V_p": 238.629183,
+      "sigma2_noise": 1.577839
+    }
+  }
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "paper_id": "103",
+    "citation": "Novgorodtsev, 2026",
+    "group": "contest",
+    "model": "claude-sonnet-4-6",
+    "timestamp_utc": "2026-03-22T03:16:09.593134+00:00",
+    "input_tokens": 20411,
+    "output_tokens": 756,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 3.0,
+        "justification": "The manuscript asserts that SEMF coefficients are derivable from kissing numbers and kappa with zero free parameters, but never states a null hypothesis or explicit falsification conditions. The paper presents only confirming evidence (R^2, win rates) without discussing what outcomes would disprove the UCT framework, making the hypothesis untestable in any rigorous sense."
+      },
+      "novelty": {
+        "score": 5.0,
+        "justification": "The paper claims to be the first derivation of SEMF coefficients from first principles, stating 'no first-principles derivation of these coefficients has existed,' but provides no citations to prior attempts at geometric or algebraic derivations of nuclear binding coefficients beyond the original Weizs\u00e4cker (1935) paper. The comparative work against existing approaches is entirely absent \u2014 the only modern nuclear physics citation is the AME2020 dataset."
+      },
+      "scientific_humility": {
+        "score": 1.0,
+        "justification": "The manuscript makes sweeping grandiose claims throughout, including 'The universe does not have five arbitrary nuclear parameters. It has one lattice,' and positions UCT against Einstein (1905) and Weizs\u00e4cker (1935) in a 'three-way comparison' table. Significant limitations are not acknowledged \u2014 the ~1% errors are dismissed, the framework's physical justification for connecting Collatz map constants to nuclear energy scales is never questioned, and the paper claims to explain 'Chemistry -> Biology' from the E_8 lattice without any substantive support."
+      },
+      "engagement": {
+        "score": 2.0,
+        "justification": "The manuscript cites sphere packing results (Viazovska 2017, Musin 2008, Levenshtein 1979) but makes no substantive connection between these mathematical results and nuclear physics mechanisms. Modern nuclear structure theory, density functional theory, ab initio nuclear calculations, or any post-1935 nuclear physics literature beyond AME2020 are entirely absent, demonstrating minimal engagement with the current state of nuclear physics as a field."
+      },
+      "rigor": {
+        "score": 1.5,
+        "justification": "The derivations are not derivations in any physical sense \u2014 formulas like a_V = (K_2 + kappa)/kappa are presented as 'physical interpretations' without any derivation from a Hamiltonian, Lagrangian, or established physical principle. The connection between log_2(4/3) from the Collatz map and nuclear binding energy scales is asserted without dimensional analysis or physical justification, and the claim that 'c = K_8/K_4 = 10 in lattice units' redefines c by construction rather than deriving it."
+      },
+      "citations": {
+        "score": 3.0,
+        "justification": "Citations are sparse and largely decorative \u2014 Kramers (1940) and Gamarnik (2021) appear in the reference list but are never connected to any specific claim in the manuscript body. The two self-citations (references 9 and 10) point to Zenodo preprints that are not peer-reviewed, and the bulk of the nuclear physics claims are made without any supporting citations to the extensive modern literature on nuclear mass models or liquid drop model refinements."
+      }
+    }
+  },
+  {
+    "paper_id": "103",
+    "citation": "Novgorodtsev, 2026",
+    "group": "contest",
+    "model": "gpt-5.2",
+    "timestamp_utc": "2026-03-22T03:16:24.323112+00:00",
+    "input_tokens": 10132,
+    "output_tokens": 766,
+    "error": null,
+    "scores": {
+      "hypothesis": {
+        "score": 6.0,
+        "justification": "The manuscript makes a clear central claim that \u201call five coefficients of the Weizs\u00e4cker semi-empirical mass formula (SEMF) [are derived] as closed-form algebraic expressions of kissing numbers\u2026 and kappa\u2026 with zero free parameters,\u201d and that this reproduces AME2020 binding energies with stated error statistics. However, it does not explicitly define null vs alternate hypotheses, nor does it specify mutually exclusive falsification criteria beyond general performance claims (e.g., mean error/R^2) or what outcome would refute the geometric derivations."
+      },
+      "novelty": {
+        "score": 7.0,
+        "justification": "The paper asserts a novel contribution\u2014deriving SEMF coefficients from kissing numbers and kappa with \u201czero fitted parameters\u201d\u2014and presents specific closed-form expressions (e.g., a_A = 164/7, a_P = K_3 = 12). But it does not substantively position this against modern nuclear-mass-model literature or prior SEMF-derivation attempts; the novelty case is mostly asserted (\u201cThis paper provides the answer\u201d) rather than demonstrated via comparative discussion of recent approaches."
+      },
+      "scientific_humility": {
+        "score": 2.0,
+        "justification": "The manuscript repeatedly makes expansive, absolute claims that exceed the evidence presented, e.g., \u201cThe universe does not have five arbitrary nuclear parameters. It has one lattice,\u201d and \u201cThe input is the E8 lattice. The output is the periodic table of elements.\u201d It also uses dismissive framing toward other approaches (\u201cLattice QCD\u2026 has not produced\u2026 The question\u2026 had no answer\u201d), and provides limited discussion of limitations beyond noting weaker performance near shell closures."
+      },
+      "engagement": {
+        "score": 3.0,
+        "justification": "Engagement with the current state of nuclear-structure and nuclear-mass modeling is minimal: aside from citing AME2020 and classic SEMF, the manuscript does not discuss contemporary mass models, shell corrections, density functional approaches, or recent SEMF refinements, nor does it connect its proposal to such work. Most references (sphere packing, Collatz-related claims, and UCT/Zenodo items) are not meaningfully integrated with established nuclear-physics literature in the body."
+      },
+      "rigor": {
+        "score": 3.0,
+        "justification": "While the manuscript provides explicit algebraic formulas for coefficients and computes numerical values and dataset-level error summaries, the derivations are largely asserted with interpretive narratives (e.g., \u201cEuler\u2019s Key\u2026 E8 chessboard algebra,\u201d \u201cc = K8/K4 = 10 in lattice units\u201d) without physically justified premises, dimensional analysis, or a rigorous mapping from sphere-packing constants to MeV. Several strong claims (e.g., speed of light emergence, iron peak necessity) are presented as theorems but lack derivations that would make the logical chain sound in established physics terms."
+      },
+      "citations": {
+        "score": 4.0,
+        "justification": "The bibliography includes some relevant and recent items (AME2020 (2021), Viazovska (2017), Musin (2008)) and foundational SEMF (1935), but citations are sparse for many major claims (e.g., Collatz drift governing nuclear binding, \u201cspectral staircase gap,\u201d mapping interactions to K-levels). Citations are not consistently woven into the argument at the point of each claim, and much of the nuclear-physics-specific context is uncited."
+      }
+    }
+  }
+]

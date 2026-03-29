@@ -1,0 +1,699 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{parskip}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+
+\definecolor{rowgray}{RGB}{245,245,245}
+
+\begin{document}
+
+\section*{Appendix C: Per-Paper Scoring Justifications (Contest)}
+\addcontentsline{toc}{section}{Appendix C: Per-Paper Scoring Justifications (Contest)}
+
+Each entry includes a compact score summary followed by side-by-side model justifications
+for all six rubric categories. Category maximum scores are: Hypothesis (15), Novelty (15),
+Scientific Humility (15), Engagement (20), Rigor (10), Citations (10).
+
+\tableofcontents
+
+\bigskip
+\hrule
+\bigskip
+
+\subsection*{Paper 101 --- BlackJakey, 2026}
+\addcontentsline{toc}{subsection}{Paper 101 --- BlackJakey, 2026}
+
+\medskip
+
+\begin{tabular}{lcc}
+\toprule
+\textbf{Category} & \textbf{Sonnet 4.6} & \textbf{GPT-5.2} \\
+\midrule
+Hypothesis (15) & 8.0 & 9.0 \\
+Novelty (15) & 9.0 & 8.0 \\
+Humility (15) & 11.0 & 13.5 \\
+Engagement (20) & 5.0 & 6.5 \\
+Rigor (10) & 5.0 & 6.5 \\
+Citations (10) & 3.0 & 4.0 \\
+\midrule
+\textbf{Total (85)} & \textbf{41.0} & \textbf{47.5} \\
+\bottomrule
+\end{tabular}
+
+\bigskip
+
+\begin{longtable}{@{} p{2.2cm} p{6.3cm} p{6.3cm} @{}}
+\toprule
+\textbf{Category} & \textbf{Sonnet 4.6} & \textbf{GPT-5.2} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Category} & \textbf{Sonnet 4.6} & \textbf{GPT-5.2} \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+
+\rowcolor{rowgray}
+\textbf{Hypothesis} &
+The manuscript presents three clearly stated verifiable questions (Maxwell derivation from NB paths, IE ratio structure, observer axiom) and provides explicit falsification criteria in §11 (e.g., 'photon rest mass measured > 10\textasciicircum{}-18 eV,' 'fourth-generation fermion discovered'). However, there is no explicit null hypothesis framing — the paper does not state what the null would be or distinguish it from the alternate, and some falsification criteria (e.g., 'same ℓ0 yields contradictory values from G, σ, H0') are vague about what 'contradictory' means quantitatively. &
+The paper frames three testable questions ("Can Maxwell’s equations be derived...", "Can the same structure explain precise IE ratios...", "Where does the observer stand") and provides explicit falsification criteria in §11 (e.g., photon rest mass > 10−18 eV; α(Q) running incompatible; equivalence principle violation). However, it does not explicitly define a null hypothesis vs alternate hypothesis pair, and several key claims are framed as derivations rather than mutually exclusive hypothesis tests. \\[6pt]
+
+\textbf{Novelty} &
+The manuscript explicitly identifies its distinction from prior work: 'PGT reverses the logic: instead of putting known gauge groups onto a lattice, PGT derives force structure from Oh symmetry,' contrasting with Wilson's lattice gauge theory [4]. The NB matrix approach via Oh decomposition to derive Maxwell's equations without assuming gauge invariance is presented as novel. However, citations are sparse (only 6 references, none from the past ten years except NIST 2023), and the comparative work against modern alternatives is underdeveloped. &
+The manuscript claims novel contributions such as "NB matrix → physics mapping via Oh decomposition" and a "complete Maxwell derivation from lattice axioms without gauge invariance" (§16), and it contrasts its approach with lattice gauge theory and causal sets (§2). But the comparative case is underdeveloped and relies on a small, mostly older set of references (Wilson 1974; Bombelli 1987; Hashimoto 1989; Ihara 1966; Bass 1992) with limited discussion of how modern related work is improved upon. \\[6pt]
+
+\rowcolor{rowgray}
+\textbf{Humility} &
+The manuscript demonstrates notable restraint through its explicit grading system ([P], [V], [O], [C], [×]), §10 'What PGT Cannot Yet Do' listing 11 open problems, and §10.1 documenting 33 rejected hypotheses. Claims are carefully qualified (e.g., 'Each particle's N is postdiction [O], not prediction'). However, the abstract's claim of 'deriving Maxwell's equations and Periodic Table Structure from a Single Geometric Parameter' and the Observer Axiom framing ('physics is not unifying four forces but confirming four forces are projections of the same matrix') border on overreach given the acknowledged gaps. &
+The paper repeatedly delineates proof status with tags [P]/[V]/[O]/[C]/[×] and explicitly lists limitations and open gaps in §10 (e.g., "Einstein field equation assembly undone [C]", "Spin-1/2... lacking [C]", "IE ratio ≈ |λ| ratio... does not exist [O]"). It also narrows the strongest claims to "Maxwell derivation and IE ratios" and labels the mass formula step counts as "postdiction [O]" (§13), though some broad statements (e.g., "there is only one force, F = −∇P" in §1) go beyond what is directly established in the manuscript. \\[6pt]
+
+\textbf{Engagement} &
+The manuscript cites only 6 references, with the most recent physics papers being Wilson (1974) and Bombelli et al. (1987) — none from the past ten years in the relevant subfields of lattice field theory, non-backtracking matrices, or periodic table structure. The connections to cited works are briefly stated (e.g., 'Hashimoto introduced the NB adjacency matrix') but not substantively developed, and there is no engagement with modern developments in discrete spacetime models, spectral graph theory, or ab initio atomic physics. &
+Engagement with prior work is present but largely limited to brief mentions of NB matrices/Ihara zeta and classic lattice gauge theory/casual sets (§2), without sustained connection to current research directions or recent results in electromagnetism-from-lattices, discrete gauge theory, or atomic-structure modeling. The manuscript asserts it "reverses the logic" of Wilson-style lattice gauge theory but does not substantively engage with modern lattice field theory or condensed-matter analogs beyond these high-level contrasts. \\[6pt]
+
+\rowcolor{rowgray}
+\textbf{Rigor} &
+The manuscript presents analytic eigenvalue formulas and identity checks (P1–P16) that are verifiable via the provided Python code, and the long-wavelength derivation of □A = −J is partially structured. However, critical steps are acknowledged as incomplete or unjustified: the IE ratio ≈ |λ| ratio 'complete algebraic proof does not exist [O],' the source term J\textasciicircum{}μ emergence is labeled [O] not [P], and the mapping from discrete lattice to continuous Maxwell relies on an approximation (kℓ0 ≪ 1) without bounding the error. The Pell equation derivation of δS conflates a quadratic root with a geometric cotangent without rigorous proof. &
+The manuscript provides explicit analytic eigenvalue formulas for the Oh irreps (Eq. (1)) and includes checkable identities (e.g., P1: ∑ dim|λ|\textasciicircum{}2 = 132; P4; P5) with reproducible code in Appendix A, indicating internal mathematical consistency. However, several physically crucial steps are asserted rather than fully derived in-text (e.g., the discrete-to-continuum passage and the emergence of the sourced equation "□Aµ = −Jµ" in §7.6, and the claim that symmetry "uniquely converges" to Maxwell), and the physical justification for key axioms/parameter choice (ξ from a Pell/geometry construction in §3) is not established as uniquely compelled by physics rather than model design. \\[6pt]
+
+\textbf{Citations} &
+The manuscript contains only 6 citations, with the most recent physics literature being from 1992 (Bass) and 1987 (Bombelli et al.) — no citations from the past ten years in any relevant subfield. While citations are connected to claims in the text (e.g., Wilson [4] for lattice gauge theory contrast, Hashimoto [1] for NB matrices), the bibliography is far too sparse and outdated to support a paper claiming to derive Maxwell's equations and periodic table structure from first principles, and modern work on spectral graph theory, non-backtracking operators, or atomic physics is entirely absent. &
+The bibliography is short (six items) and mostly old foundational sources (1966–1992) plus Wilson (1974) and a data source (NIST ASD 2023), with few in-text citations tied to specific technical claims beyond general background (§2) and data provenance (§9.2). The manuscript makes many strong claims (Maxwell derivation, Lorentz protection, periodic-table decoding) with minimal citation support to relevant modern literature, so citations are not consistently woven through the argument. \\
+
+\end{longtable}
+
+\bigskip
+\hrule
+\bigskip
+
+\subsection*{Paper 102 --- Mata Sánchez, 2026}
+\addcontentsline{toc}{subsection}{Paper 102 --- Mata Sánchez, 2026}
+
+\medskip
+
+\begin{tabular}{lcc}
+\toprule
+\textbf{Category} & \textbf{Sonnet 4.6} & \textbf{GPT-5.2} \\
+\midrule
+Hypothesis (15) & 8.5 & 9.0 \\
+Novelty (15) & 9.0 & 8.0 \\
+Humility (15) & 12.5 & 14.0 \\
+Engagement (20) & 9.0 & 9.0 \\
+Rigor (10) & 5.5 & 6.5 \\
+Citations (10) & 6.0 & 7.0 \\
+\midrule
+\textbf{Total (85)} & \textbf{50.5} & \textbf{53.5} \\
+\bottomrule
+\end{tabular}
+
+\bigskip
+
+\begin{longtable}{@{} p{2.2cm} p{6.3cm} p{6.3cm} @{}}
+\toprule
+\textbf{Category} & \textbf{Sonnet 4.6} & \textbf{GPT-5.2} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Category} & \textbf{Sonnet 4.6} & \textbf{GPT-5.2} \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+
+\rowcolor{rowgray}
+\textbf{Hypothesis} &
+The manuscript provides explicit falsification conditions in Section 9: e.g., 'WEP experiments find correlations with binding energy at η < 10\textasciicircum{}−16 inconsistent with the synchronisation mechanism' and 'Geff/G is measured to exceed √16/15 ≈ 1.033 at any density.' However, the manuscript does not formally state a null hypothesis and alternate hypothesis as distinct constructs, and some failure conditions (e.g., 'E8 chain cannot be completed') are mathematical rather than empirically testable in any near-term sense. &
+The manuscript advances testable claims (e.g., a “hard ceiling Geff/G ≤ √(16/15) ≈ 1.033,” a neutron-star central-density window 1.52–4.30 ρ0, and WEP “η = 0 for ordinary matter” under a stated coupling assumption) and lists explicit “Falsification conditions” in Section 9. However, it does not explicitly define a null hypothesis vs. alternate hypothesis pair; instead it provides one-sided framework predictions with failure conditions rather than mutually exclusive null/alt framing. \\[6pt]
+
+\textbf{Novelty} &
+The manuscript explicitly identifies six novel contributions including 'WEP as LCM synchronisation — emergent, not postulated' and 'Neutron-star density window (2√2−1)ρ0 — parameter-free,' and compares against Verlinde and Jacobson in Table 11, noting those approaches do not address WEP. However, engagement with recent emergent gravity literature beyond these two references is thin, and the comparison is brief rather than substantive. &
+The paper explicitly claims novelty (e.g., “WEP as LCM synchronisation,” “density window (2√2 − 1)ρ0 parameter-free,” and corrected Geff with a ceiling) and provides a brief comparison table against Verlinde/Jacobson/standard GR (Table 11). But the novelty case is only lightly developed: the comparison is high-level, and the manuscript does not deeply identify specific gaps in recent emergent-gravity literature beyond broad categories. \\[6pt]
+
+\rowcolor{rowgray}
+\textbf{Humility} &
+The manuscript is notably transparent about limitations, explicitly labeling claims as [POSTULATE], [DERIVED], [HYPOTHESIS], [SPECULATIVE], or [OPEN] throughout, and honestly reporting the falsified v9.6 result (Mmax = 0.70 M⊙). Open problems are enumerated in priority order, and the author states 'No experimental validation independent of the author's prior program is claimed.' Minor deduction for occasional language like 'parameter-free prediction distinguishable from GR' that slightly overstates the robustness given the acknowledged open derivations. &
+The manuscript consistently labels claims ([POSTULATE]/[DERIVED]/[HYPOTHESIS]/[OPEN]) and repeatedly acknowledges limitations and open problems (e.g., “no experimental validation independent of the author’s prior program,” “two-horizon counting… remains open,” “derive isotropy… open,” “derive channel-rate scaling… remains open”). It also reports a prior falsified result (v9.6 giving Mmax = 0.70 M⊙) and corrects it, keeping claims proportionate to stated assumptions. \\[6pt]
+
+\textbf{Engagement} &
+The manuscript cites Verlinde [2], Jacobson [3], and Padmanabhan [4] and explicitly positions itself against them in Table 11, but engagement with modern emergent gravity literature is shallow — no post-2017 theoretical work in emergent gravity is cited. The neutron star observational literature is engaged more substantively (NICER, LIGO, PSR J0740+6620), but the theoretical physics citations lean heavily on foundational classics (Hurwitz 1898, Conway 2003, Baez 2002) without recent counterparts. &
+Engagement with the field is present but uneven: the manuscript cites and briefly situates itself relative to emergent-gravity ideas (Verlinde 2011; Jacobson 1995; Padmanabhan 2010) and uses standard neutron-star/TOV context with an EoS reference (SLy; Lattimer \& Prakash review). However, the connections to current neutron-star constraints and modern emergent-gravity developments are mostly asserted rather than analyzed in depth, and much of the discussion remains internal to the proposed framework. \\[6pt]
+
+\rowcolor{rowgray}
+\textbf{Rigor} &
+Several key steps are explicitly labeled [HYPOTHESIS] rather than [DERIVED], including the channel-rate scaling Γ ∝ ω²\_V (Eq. 13) and the two-horizon counting d = 2R\_V, which are central to the Geff derivation and the stellar density window respectively. The author acknowledges 'a strict derivation remains open' for these steps, meaning the headline result Geff = G·ωm(n)/ωm(4) rests on an unproven physical hypothesis, not a derivation from postulates as claimed in the abstract. &
+There is substantial internal mathematical structure (postulates P1–P3, quaternionic realization Theorems 1–2, explicit formulas for RV(n), ωV(n), I(n), and an algebraic derivation leading to Geff(ρ) = G·ωm(n(ρ))/ωm(4)). But key physical steps are explicitly hypotheses rather than derived (e.g., “Channel-rate scaling Γ ∝ ωV\textasciicircum{}2” and “two-horizon counting d = 2RV”), and several central identifications are acknowledged as not derived from postulates, limiting physical soundness despite formal algebra. \\[6pt]
+
+\textbf{Citations} &
+Citations are present and mostly relevant, with observational neutron star references (NICER, LIGO, Cromartie et al.) woven into the text with explicit connections. However, several citations are old (Hurwitz 1898, Oppenheimer 1939, Goldreich 1982) without justification for why recent work is insufficient, and the emergent gravity comparison relies on papers from 1995–2011 with no recent theoretical counterparts cited. Reference [18] is attributed to Cromartie et al. 2020 but describes PSR J0952-0607 (2.35 M⊙), which is actually from a different paper, suggesting a citation mismatch. &
+The bibliography includes relevant sources (MICROSCOPE 2017; LIGO/Virgo 2018; neutron-star EoS reviews; quaternion/octonion and E8 references) and is consistently formatted. However, many core claims are supported primarily by internal derivations and labeled hypotheses rather than being explicitly tied to specific external citations in the body (e.g., the neutron-star density window and Geff ceiling are largely self-contained), and several foundational citations are older without extensive recent-literature anchoring. \\
+
+\end{longtable}
+
+\bigskip
+\hrule
+\bigskip
+
+\subsection*{Paper 103 --- Novgorodtsev, 2026}
+\addcontentsline{toc}{subsection}{Paper 103 --- Novgorodtsev, 2026}
+
+\medskip
+
+\begin{tabular}{lcc}
+\toprule
+\textbf{Category} & \textbf{Sonnet 4.6} & \textbf{GPT-5.2} \\
+\midrule
+Hypothesis (15) & 3.0 & 6.0 \\
+Novelty (15) & 5.0 & 7.0 \\
+Humility (15) & 1.0 & 2.0 \\
+Engagement (20) & 2.0 & 3.0 \\
+Rigor (10) & 1.5 & 3.0 \\
+Citations (10) & 3.0 & 4.0 \\
+\midrule
+\textbf{Total (85)} & \textbf{15.5} & \textbf{25.0} \\
+\bottomrule
+\end{tabular}
+
+\bigskip
+
+\begin{longtable}{@{} p{2.2cm} p{6.3cm} p{6.3cm} @{}}
+\toprule
+\textbf{Category} & \textbf{Sonnet 4.6} & \textbf{GPT-5.2} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Category} & \textbf{Sonnet 4.6} & \textbf{GPT-5.2} \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+
+\rowcolor{rowgray}
+\textbf{Hypothesis} &
+The manuscript asserts that SEMF coefficients are derivable from kissing numbers and kappa with zero free parameters, but never states a null hypothesis or explicit falsification conditions. The paper presents only confirming evidence (R\textasciicircum{}2, win rates) without discussing what outcomes would disprove the UCT framework, making the hypothesis untestable in any rigorous sense. &
+The manuscript makes a clear central claim that “all five coefficients of the Weizsäcker semi-empirical mass formula (SEMF) [are derived] as closed-form algebraic expressions of kissing numbers… and kappa… with zero free parameters,” and that this reproduces AME2020 binding energies with stated error statistics. However, it does not explicitly define null vs alternate hypotheses, nor does it specify mutually exclusive falsification criteria beyond general performance claims (e.g., mean error/R\textasciicircum{}2) or what outcome would refute the geometric derivations. \\[6pt]
+
+\textbf{Novelty} &
+The paper claims to be the first derivation of SEMF coefficients from first principles, stating 'no first-principles derivation of these coefficients has existed,' but provides no citations to prior attempts at geometric or algebraic derivations of nuclear binding coefficients beyond the original Weizsäcker (1935) paper. The comparative work against existing approaches is entirely absent — the only modern nuclear physics citation is the AME2020 dataset. &
+The paper asserts a novel contribution—deriving SEMF coefficients from kissing numbers and kappa with “zero fitted parameters”—and presents specific closed-form expressions (e.g., a\_A = 164/7, a\_P = K\_3 = 12). But it does not substantively position this against modern nuclear-mass-model literature or prior SEMF-derivation attempts; the novelty case is mostly asserted (“This paper provides the answer”) rather than demonstrated via comparative discussion of recent approaches. \\[6pt]
+
+\rowcolor{rowgray}
+\textbf{Humility} &
+The manuscript makes sweeping grandiose claims throughout, including 'The universe does not have five arbitrary nuclear parameters. It has one lattice,' and positions UCT against Einstein (1905) and Weizsäcker (1935) in a 'three-way comparison' table. Significant limitations are not acknowledged — the \textasciitilde{}1\% errors are dismissed, the framework's physical justification for connecting Collatz map constants to nuclear energy scales is never questioned, and the paper claims to explain 'Chemistry -> Biology' from the E\_8 lattice without any substantive support. &
+The manuscript repeatedly makes expansive, absolute claims that exceed the evidence presented, e.g., “The universe does not have five arbitrary nuclear parameters. It has one lattice,” and “The input is the E8 lattice. The output is the periodic table of elements.” It also uses dismissive framing toward other approaches (“Lattice QCD… has not produced… The question… had no answer”), and provides limited discussion of limitations beyond noting weaker performance near shell closures. \\[6pt]
+
+\textbf{Engagement} &
+The manuscript cites sphere packing results (Viazovska 2017, Musin 2008, Levenshtein 1979) but makes no substantive connection between these mathematical results and nuclear physics mechanisms. Modern nuclear structure theory, density functional theory, ab initio nuclear calculations, or any post-1935 nuclear physics literature beyond AME2020 are entirely absent, demonstrating minimal engagement with the current state of nuclear physics as a field. &
+Engagement with the current state of nuclear-structure and nuclear-mass modeling is minimal: aside from citing AME2020 and classic SEMF, the manuscript does not discuss contemporary mass models, shell corrections, density functional approaches, or recent SEMF refinements, nor does it connect its proposal to such work. Most references (sphere packing, Collatz-related claims, and UCT/Zenodo items) are not meaningfully integrated with established nuclear-physics literature in the body. \\[6pt]
+
+\rowcolor{rowgray}
+\textbf{Rigor} &
+The derivations are not derivations in any physical sense — formulas like a\_V = (K\_2 + kappa)/kappa are presented as 'physical interpretations' without any derivation from a Hamiltonian, Lagrangian, or established physical principle. The connection between log\_2(4/3) from the Collatz map and nuclear binding energy scales is asserted without dimensional analysis or physical justification, and the claim that 'c = K\_8/K\_4 = 10 in lattice units' redefines c by construction rather than deriving it. &
+While the manuscript provides explicit algebraic formulas for coefficients and computes numerical values and dataset-level error summaries, the derivations are largely asserted with interpretive narratives (e.g., “Euler’s Key… E8 chessboard algebra,” “c = K8/K4 = 10 in lattice units”) without physically justified premises, dimensional analysis, or a rigorous mapping from sphere-packing constants to MeV. Several strong claims (e.g., speed of light emergence, iron peak necessity) are presented as theorems but lack derivations that would make the logical chain sound in established physics terms. \\[6pt]
+
+\textbf{Citations} &
+Citations are sparse and largely decorative — Kramers (1940) and Gamarnik (2021) appear in the reference list but are never connected to any specific claim in the manuscript body. The two self-citations (references 9 and 10) point to Zenodo preprints that are not peer-reviewed, and the bulk of the nuclear physics claims are made without any supporting citations to the extensive modern literature on nuclear mass models or liquid drop model refinements. &
+The bibliography includes some relevant and recent items (AME2020 (2021), Viazovska (2017), Musin (2008)) and foundational SEMF (1935), but citations are sparse for many major claims (e.g., Collatz drift governing nuclear binding, “spectral staircase gap,” mapping interactions to K-levels). Citations are not consistently woven into the argument at the point of each claim, and much of the nuclear-physics-specific context is uncited. \\
+
+\end{longtable}
+
+\bigskip
+\hrule
+\bigskip
+
+\subsection*{Paper 104 --- aveeageZA, 2026}
+\addcontentsline{toc}{subsection}{Paper 104 --- aveeageZA, 2026}
+
+\medskip
+
+\begin{tabular}{lcc}
+\toprule
+\textbf{Category} & \textbf{Sonnet 4.6} & \textbf{GPT-5.2} \\
+\midrule
+Hypothesis (15) & 4.0 & 6.0 \\
+Novelty (15) & 3.0 & 2.0 \\
+Humility (15) & 3.0 & 6.0 \\
+Engagement (20) & 1.0 & 1.0 \\
+Rigor (10) & 3.0 & 4.0 \\
+Citations (10) & 0.0 & 0.0 \\
+\midrule
+\textbf{Total (85)} & \textbf{14.0} & \textbf{19.0} \\
+\bottomrule
+\end{tabular}
+
+\bigskip
+
+\begin{longtable}{@{} p{2.2cm} p{6.3cm} p{6.3cm} @{}}
+\toprule
+\textbf{Category} & \textbf{Sonnet 4.6} & \textbf{GPT-5.2} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Category} & \textbf{Sonnet 4.6} & \textbf{GPT-5.2} \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+
+\rowcolor{rowgray}
+\textbf{Hypothesis} &
+The manuscript asserts that dark energy arises from residual elastic stress of the vacuum and that the scaling exponent p is a 'measurable signature of vacuum relaxation,' but never explicitly states a null hypothesis or alternate hypothesis. No failure conditions are defined — the paper does not specify what observational outcome would falsify the TUE framework versus ΛCDM, making the hypothesis untestable as presented. &
+The manuscript advances a central claim that “the vacuum is…a relativistic elastic medium” whose slow relaxation yields a measurable scaling exponent p (e.g., “p is no longer an arbitrary parameter but a measurable signature of vacuum relaxation”), but it does not explicitly state a null vs. alternate hypothesis or mutually exclusive falsification criteria. It gestures at observational consistency (“For TUE to be consistent with current Dark Energy observations (p \textasciitilde{} 10\textasciicircum{}-2)”) without specifying what concrete measurement outcomes would rule the model out versus support it. \\[6pt]
+
+\textbf{Novelty} &
+The manuscript claims novelty by framing the vacuum as a 'relativistic elastic medium' and deriving a power-law scaling ρ ∝ a\textasciicircum{}\{-2p\}, but provides zero citations to prior or competing work — no engagement with existing elastic dark energy models, Chaplygin gas, quintessence, or solid dark energy literature. Claiming novelty without any comparative literature work does not earn credit under the rubric. &
+The manuscript asserts an elastic-vacuum framework and a derived scaling law, but provides no comparison to prior approaches and no citations to establish what is new relative to existing dark-energy, modified-gravity, or elastic/solid dark energy literature. Claims like “This extremely low energy scale is not fine-tuned; it emerges naturally” are not situated against identified gaps or limitations in prior work. \\[6pt]
+
+\rowcolor{rowgray}
+\textbf{Humility} &
+The manuscript makes strong claims such as 'Dark Energy we observe is simply the residual potential energy of a cosmic elastic mode' and asserts the extremely low energy scale 'is not fine-tuned; it emerges naturally,' without substantive derivation supporting these conclusions. No limitations, open questions, or alternative interpretations are acknowledged, and the tone is assertive beyond what the presented work supports. &
+The tone is mostly technical and avoids overt attacks on established theory, but it makes strong, under-qualified claims such as “not fine-tuned; it emerges naturally as the fundamental mode of the cosmic horizon” and “The ‘Dark Energy’ we observe is simply the residual potential energy,” without discussing limitations, degeneracies with ΛCDM, or open questions (e.g., microphysical origin of K, μ, stability, or coupling to matter). The manuscript does not clearly delineate what the model does not address beyond the presented scaling argument. \\[6pt]
+
+\textbf{Engagement} &
+The manuscript contains no citations whatsoever — no references to foundational or recent work in dark energy, elastic media cosmology, quintessence, or FRW dynamics. There is no engagement with the current state of the field, and no connections between the proposal and existing literature are made anywhere in the text. &
+There is no engagement with the current state of the field: no cited works, no discussion of how this relates to or differs from existing dark-energy parameterizations, scalar-field quintessence, effective field theory of dark energy, or solid/elastic cosmology models. As written, the proposal is presented in isolation, so connections to modern developments are not demonstrated. \\[6pt]
+
+\rowcolor{rowgray}
+\textbf{Rigor} &
+The manuscript presents equations (e.g., the damped oscillator EOM and the slow-roll reduction) but omits derivations for nearly every step — the Lagrangian is stated without derivation, the slow-roll approximation is invoked without justification of its validity, and the final scaling ρ ∝ a\textasciicircum{}\{-2p\} is asserted rather than derived. The numerical claim ω* ≈ 0.17 H₀ for p ≈ 0.01 is stated without showing the calculation. &
+The manuscript outlines a plausible chain (stress conservation → effective scalar strain ε → damped EOM → slow-roll → ε(a) ∝ a\textasciicircum{}\{-p\} and ρ ∝ ε\textasciicircum{}2), but key steps are elided: the continuity equation is referenced but not shown, the Lagrangian is mentioned without explicit form in the provided text, and the derivation of p (and the numerical mapping to ω*/H0 giving “ω* ≈ 0.17 H0”) is asserted rather than fully derived. Several physical assumptions (e.g., identifying ε as the trace strain scalar and taking ρ ∝ ε\textasciicircum{}2) are not justified or checked for consistency/stability. \\[6pt]
+
+\textbf{Citations} &
+The manuscript contains no citations of any kind — no bibliography, no in-text references, and no attribution of any foundational or recent work. Under the rubric, citations that are absent cannot be evaluated as relevant or properly formatted, resulting in the lowest possible score. &
+No citations are provided anywhere in the submission, despite multiple claims that require support (e.g., observational target “p \textasciitilde{} 10\textasciicircum{}-2,” the interpretation of ω* as a horizon mode, and the effective-field description). Under the rubric, the absence of citations yields a zero for this category. \\
+
+\end{longtable}
+
+\bigskip
+\hrule
+\bigskip
+
+\subsection*{Paper 105 --- Christian, 2026}
+\addcontentsline{toc}{subsection}{Paper 105 --- Christian, 2026}
+
+\medskip
+
+\begin{tabular}{lcc}
+\toprule
+\textbf{Category} & \textbf{Sonnet 4.6} & \textbf{GPT-5.2} \\
+\midrule
+Hypothesis (15) & 4.0 & 4.0 \\
+Novelty (15) & 9.0 & 12.0 \\
+Humility (15) & 8.0 & 9.0 \\
+Engagement (20) & 11.0 & 14.0 \\
+Rigor (10) & 4.0 & 4.0 \\
+Citations (10) & 6.0 & 6.0 \\
+\midrule
+\textbf{Total (85)} & \textbf{42.0} & \textbf{49.0} \\
+\bottomrule
+\end{tabular}
+
+\bigskip
+
+\begin{longtable}{@{} p{2.2cm} p{6.3cm} p{6.3cm} @{}}
+\toprule
+\textbf{Category} & \textbf{Sonnet 4.6} & \textbf{GPT-5.2} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Category} & \textbf{Sonnet 4.6} & \textbf{GPT-5.2} \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+
+\rowcolor{rowgray}
+\textbf{Hypothesis} &
+The manuscript asserts that 'the regularity decision problem for averaged Navier–Stokes systems is undecidable' and frames a four-way dichotomy (R/F/I/I'), but never explicitly states a null hypothesis or alternate hypothesis in testable scientific terms. The 'failure conditions' are purely mathematical (e.g., whether blow-up exists), and no plausible experimental or computational path toward testing the central claims is described — the paper is entirely theoretical and the 'testability' reduces to resolving the Clay Millennium Problem itself, which is not a plausible near-term test. &
+The manuscript advances strong central claims (e.g., “regularity decision problem for averaged Navier–Stokes systems is undecidable” and “Navier–Stokes Regularity Is Independent of ZFC”), but it does not explicitly define a null hypothesis vs alternate hypothesis or specify mutually exclusive, plausibly testable falsification outcomes. Some conditional structure appears for exact NS (Theorem VIII.1 assumptions (C1)–(C2)), but these are not framed as testable hypotheses with clear empirical/operational failure conditions. \\[6pt]
+
+\textbf{Novelty} &
+The manuscript explicitly positions itself against Tao [3], Cardona-Miranda-Peralta-Salas [19,20], Cubitt-Pérez-García-Wolf [4], and Dyhr et al. [25], stating 'The present construction is fundamentally different: it encodes computation in the time evolution of a viscous flow on R³, not in the steady-state orbits.' The introduction of the Fisher Information Matrix spectral gap as a geometric bridge and the 'programmable cascade theorem' extending Tao's single cascade to arbitrary cellular automata are presented as novel contributions, with reasonable comparative framing — though the FIM approach encounters an acknowledged obstruction (the equidistribution gap) that limits its novelty claim. &
+The paper explicitly positions itself as extending Tao’s averaged-operator blow-up framework [3] by claiming “programmable cascade theorem” (Theorem IV.6) implementing “any cellular automaton transition function,” and contrasts with CPW spectral-gap undecidability [4] and stationary-flow Turing completeness [19,20,25]. It identifies a specific gap in its own FIM route (“equidistribution gap,” Remark IV.11) and claims the direct route bypasses it, which is a concrete stated contribution beyond prior cited work. \\[6pt]
+
+\rowcolor{rowgray}
+\textbf{Humility} &
+The manuscript explicitly acknowledges the equidistribution gap (Remark IV.11: 'This is a real obstruction in the FIM route to undecidability'), the (c)⇒(b) gap in the C2 equivalence (Remark VIII.4), and that Theorem IV.6 proof granularity is incomplete ('a standalone treatment with detailed bounds is in preparation'). However, the title and abstract claim 'Navier–Stokes Regularity Is Independent of ZFC' and 'resolves' the Clay problem in Section X, which significantly overstates what is actually shown — the results apply to averaged NS (not physical NS), and the exact NS results are conditional on unproven hypotheses (C1, C2). &
+The manuscript does acknowledge limitations and open gaps, e.g., Conjecture III.8 (forward direction for exact NS), the “equidistribution gap” (Remark IV.11), and the explicit (c)⇒(b) gap in Theorem VIII.3 with three possible routes to close it (Remark VIII.4). However, it also makes very strong headline claims (“independent of ZFC,” “universal regularity statement is false”) while key constructions are deferred (“full multiplier-level construction… not reproduced here,” Remark IV.7), which makes some claims feel ahead of what is fully demonstrated in-text. \\[6pt]
+
+\textbf{Engagement} &
+The manuscript engages substantively with Tao [3] throughout, explicitly building on his averaged operator framework and cascade mechanism, and connects to Cubitt et al. [4] via analogy in Remark V.5. Recent work by Cardona et al. [19,20] and Dyhr et al. [25] (2025) is cited and explicitly contrasted. However, engagement with the broader NS regularity literature (e.g., Ladyzhenskaya, Koch-Tataru, Kenig-Koch) is absent, and the FIM/information-geometry literature beyond Chentsov [5] and Bakry-Émery [6] is not engaged with modern developments. &
+The paper substantively engages Tao 2016 [3] (averaged operator class, cascade scaling, energy identity) and connects to modern computability-in-physics precedents (CPW 2015 [4]) and recent Euler/NS Turing-completeness results (2021–2025 [19,20,25]) with explicit differentiation (time-evolving viscous flow on R3 vs stationary/compact-manifold settings). Some engagement is weakened where key technical steps are asserted without full detail (e.g., Theorem IV.6 proof sketch and Remark IV.7), limiting how concretely the work is tied to the cited technical literature. \\[6pt]
+
+\rowcolor{rowgray}
+\textbf{Rigor} &
+Several key proofs are incomplete or rely on unverified steps: Lemma VII.1's Grönwall bound for the averaged-exact approximation is stated without full justification of the forcing term bound; Theorem IV.6 explicitly defers its core construction ('a standalone treatment with detailed bounds is in preparation'); and the C2 equivalence direction (c)⇒(b) is acknowledged as conditional. The FIM evolution equation (8) is derived in Appendix A but the claim that the Leray projection 'annihilates ∇p in the nonlinear term' conflates parameter derivatives with spatial derivatives without rigorous justification. &
+Several mathematical steps are presented as sketches or high-level assertions where the main claims depend on them: Theorem IV.6 (programmable cascade) relies on Lemmas IV.2–IV.4 but the manuscript states “full multiplier-level construction… not reproduced here” (Remark IV.7), and the digital refresh ODE (16) includes an energy-identity discussion that is not clearly consistent as written (it mixes amplitude dynamics with an L2 energy constraint without a full derivation). Additionally, the paper itself flags a prior incorrect inequality in Appendix D (Remark D.3), which raises concerns about verification standards even though it says that conjecture is not used in the main proof chain. \\[6pt]
+
+\textbf{Citations} &
+Citations are generally relevant and woven into the text with explicit connections (e.g., Tao [3] is cited repeatedly with specific equation and section references; Cook [14] is cited for Rule 110 universality). However, reference [23] is a self-citation to an unpublished preprint that is described as 'in preparation,' and reference [16] (Peyrière 1975 on Hausdorff dimension) is cited for 'positive entropy of surjective CAs' which is not what that paper establishes — this is a potentially incorrect citation. Several foundational claims (e.g., Bakry-Émery Ricci contribution, Biot-Savart bounds) are cited to old sources without recent context. &
+The bibliography includes relevant and recent citations (e.g., Tao 2016 [3], CPW 2015 [4], Cardona–Miranda–Peralta-Salas 2021/2023 [19,20], Dyhr et al. 2025 [25]) and the text often connects them to specific claims (e.g., Tao’s framework for (13), CPW analogy in Remark V.5). However, some citations appear questionable or insufficiently supported in-text (e.g., CA mixing/entropy claims attributed to [16] “Peyriere 1975” without clear modern CA references), and the manuscript cites a “companion paper” preprint [23] for foundational proofs, leaving key support external. \\
+
+\end{longtable}
+
+\bigskip
+\hrule
+\bigskip
+
+\subsection*{Paper 106 --- Düring, 2026}
+\addcontentsline{toc}{subsection}{Paper 106 --- Düring, 2026}
+
+\medskip
+
+\begin{tabular}{lcc}
+\toprule
+\textbf{Category} & \textbf{Sonnet 4.6} & \textbf{GPT-5.2} \\
+\midrule
+Hypothesis (15) & 8.5 & 8.5 \\
+Novelty (15) & 10.0 & 11.0 \\
+Humility (15) & 9.5 & 12.5 \\
+Engagement (20) & 11.0 & 12.0 \\
+Rigor (10) & 5.5 & 6.5 \\
+Citations (10) & 6.0 & 7.0 \\
+\midrule
+\textbf{Total (85)} & \textbf{50.5} & \textbf{57.5} \\
+\bottomrule
+\end{tabular}
+
+\bigskip
+
+\begin{longtable}{@{} p{2.2cm} p{6.3cm} p{6.3cm} @{}}
+\toprule
+\textbf{Category} & \textbf{Sonnet 4.6} & \textbf{GPT-5.2} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Category} & \textbf{Sonnet 4.6} & \textbf{GPT-5.2} \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+
+\rowcolor{rowgray}
+\textbf{Hypothesis} &
+The manuscript presents a clear central hypothesis — that quantum measurement outcomes emerge from large-deviation consensus dynamics in macroscopic apparatuses — and identifies specific falsifiable predictions such as a non-monotonic collapse time τ(κ) and Born-rule deviations scaling as O(β²) for biased apparatuses. However, no explicit null hypothesis is stated, and while failure conditions are described (e.g., 'Modern POVM tomography can resolve this'), the conditions under which the theory would be definitively falsified versus merely requiring parameter adjustment are not clearly delineated, leaving the falsification criteria somewhat one-sided. &
+The manuscript advances a structured central claim that “measurement outcomes emerge from information-theoretic large-deviation selection inside a macroscopic apparatus,” yielding almost-sure convergence to a unique pointer state and an apparatus-dependent POVM deformation. However, it does not explicitly define a null vs. alternate hypothesis pair; falsifiability is discussed (e.g., “non-monotonic collapse rate” and “Born deviations for biased apparatus”) but without mutually exclusive null/alt outcome criteria stated in hypothesis form. \\[6pt]
+
+\textbf{Novelty} &
+The manuscript explicitly compares QCP against Copenhagen, Many-Worlds, Bohmian mechanics, GRW, and Quantum Darwinism in Table I, identifying specific gaps such as that 'no existing framework derives the emergence of a unique pointer state, nor the Born rule, nor the apparatus dependence of measurement statistics.' The claim that Born's rule emerges as a 'neutral fixed point' of apparatus dynamics rather than an axiom, and the prediction of apparatus-dependent POVM deformations, represent a genuinely articulated distinction from prior work, though the novelty case relies heavily on the author's own framing rather than independent verification. &
+The paper explicitly contrasts QCP with Copenhagen, Many-Worlds, GRW, Bohmian mechanics, and Quantum Darwinism (Table I) and claims new elements such as a unique linear selector Φi = a R̃i + bi χi, a large-deviation derivation of outcome probabilities, and a U-shaped collapse-time dependence with κopt = a/b. The novelty case is weakened by limited engagement with the most recent measurement/decoherence literature beyond a few modern citations, and several key novelty claims are deferred to a “companion Supplement” rather than demonstrated in the main text. \\[6pt]
+
+\rowcolor{rowgray}
+\textbf{Humility} &
+The manuscript includes a dedicated 'Scope and logical status' section explicitly stating that 'the strongest claims made here are to be read conditional on those standing assumptions and calibration conditions, rather than as unrestricted statements about arbitrary detector models,' and the Consensus Collapse theorem is carefully qualified: 'quantitative contraction-rate statements remain tied to the stated regularity hypotheses.' However, the abstract and introduction contain moderately strong language such as 'mathematically rigorous collapse' and 'first principles theory' that slightly outpaces what is demonstrated in the main text alone without the companion Supplement. &
+The manuscript repeatedly bounds its strongest claims as conditional: “the strongest claims made here are to be read conditional on those standing assumptions,” and it notes that uniqueness/exclusion of nonlinear selectors holds only “within that explicit admissible class” and that robustness beyond Markov/QND is claimed only in that “conditional sense.” Still, it occasionally overreaches in tone (e.g., “no existing framework derives the emergence of a unique pointer state, nor the Born rule”) while key proofs are deferred. \\[6pt]
+
+\textbf{Engagement} &
+The manuscript engages substantively with Quantum Darwinism (Zurek refs 34–36), open quantum systems (Breuer \& Petruccione ref 9, Wiseman \& Milburn ref 10), and process-tensor formalism (Pollock et al. refs 23–24), explicitly connecting these to QCP's architecture. However, engagement is uneven — several citations (refs 39–46) are listed with minimal or no body-text connection, and the comparison with Quantum Darwinism, while the most developed, still relies on the author's characterization rather than direct engagement with recent Darwinism literature beyond 2014. &
+There is substantive conceptual engagement via explicit comparisons to Quantum Darwinism and other approaches, and the manuscript situates itself in open quantum systems/quantum trajectories (e.g., Lindblad/Wiseman-Milburn/Jacobs; Doob transform and large deviations). However, many connections to cited modern work are asserted rather than developed in-text (e.g., process-tensor/DPI/additivity conditions are referenced but largely relegated to the Supplement), and the discussion of how QCP concretely extends specific recent results is relatively high-level. \\[6pt]
+
+\rowcolor{rowgray}
+\textbf{Rigor} &
+The manuscript presents formal structures including Lindblad generators, BKM-metric quadratic forms, Green-Kubo integrals, and a Hellinger-contractive supermartingale, but the main text repeatedly defers critical derivations to a 'companion Supplement' that is not provided for evaluation — e.g., 'The stronger path-space uniqueness and no-competing-divergence statements are proved in the Supplement.' The large-deviation principle Pr(ρ\_T → Π\_i) ≍ exp[−TΦ\_i] is stated without derivation, and the uniqueness theorem is asserted conditionally on an admissible class whose full specification is also in the absent Supplement, making independent assessment of rigor impossible from the submitted document alone. &
+The paper presents a coherent formal scaffold (stochastic master equation, Lindblad form, Doob h-transform, large-deviation scaling Pr(ρT→Πi) ≍ exp[−TΦi], and a Hellinger contraction bound Hi(t) ≤ Hi(0)e\textasciicircum{}\{−γi(κ)t\}). But many crucial steps (uniqueness theorem conditions, calibration of sufficient statistics, proof of martingale/large-deviation results, and derivation of U-shaped Φ(κ)) are not shown in the main manuscript and are deferred to companion materials, leaving logical gaps for several quantitative claims. \\[6pt]
+
+\textbf{Citations} &
+The reference list includes 46 entries spanning foundational and recent work (e.g., Pollock et al. 2018, Murch et al. 2013, Chetrite \& Touchette 2015), and some citations are explicitly connected to claims in the body text. However, a significant portion of citations (refs 39–46) are listed with incomplete bibliographic information (e.g., 'Hudson \& Parthasarathy (1984) – Quantum stochastic calculus') and are not explicitly connected to specific claims in the manuscript body, functioning more as a bibliography than integrated support, which limits their evaluative credit under the rubric. &
+The reference list includes relevant foundational and modern sources (e.g., Pollock et al. 2018 on process tensors; Chetrite \& Touchette 2015; Chetrite \& Gupta 2021; Wiseman \& Milburn 2010; Jacobs 2014) and is broadly appropriate to open-system measurement and large deviations. However, citations are not consistently woven into specific technical claims in the body (many key assertions are made without immediate citation), and the bibliography leans heavily on classics alongside a modest number of post-2015 works. \\
+
+\end{longtable}
+
+\bigskip
+\hrule
+\bigskip
+
+\subsection*{Paper 107 --- Mosher, 2026}
+\addcontentsline{toc}{subsection}{Paper 107 --- Mosher, 2026}
+
+\medskip
+
+\begin{tabular}{lcc}
+\toprule
+\textbf{Category} & \textbf{Sonnet 4.6} & \textbf{GPT-5.2} \\
+\midrule
+Hypothesis (15) & 5.0 & 6.0 \\
+Novelty (15) & 6.0 & 7.0 \\
+Humility (15) & 8.0 & 9.5 \\
+Engagement (20) & 5.0 & 7.5 \\
+Rigor (10) & 4.0 & 6.5 \\
+Citations (10) & 4.0 & 7.0 \\
+\midrule
+\textbf{Total (85)} & \textbf{32.0} & \textbf{43.5} \\
+\bottomrule
+\end{tabular}
+
+\bigskip
+
+\begin{longtable}{@{} p{2.2cm} p{6.3cm} p{6.3cm} @{}}
+\toprule
+\textbf{Category} & \textbf{Sonnet 4.6} & \textbf{GPT-5.2} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Category} & \textbf{Sonnet 4.6} & \textbf{GPT-5.2} \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+
+\rowcolor{rowgray}
+\textbf{Hypothesis} &
+The manuscript presents a central claim — that a medium flowing toward mass at escape velocity causes gravity — but never explicitly frames a null hypothesis or alternate hypothesis in formal terms. The closest falsifiable prediction is the EP deviation at η \textasciitilde{} 4×10⁻¹⁸ for Ti vs. Pt, described as 'two orders below current sensitivity,' but failure conditions are not clearly articulated: the author does not state what outcome would falsify the framework, only that it is 'consistent with all current experimental bounds.' &
+The central claim is stated clearly (e.g., “a medium flows toward mass… atomic processes experience velocity-dependent resistance,” yielding v(r)=sqrt(2GM/r) and tick rate \textbackslash\{\}hat f=\textbackslash\{\}sqrt\{1-v\_eff\textasciicircum{}2/c\textasciicircum{}2)), but the paper does not explicitly define a null hypothesis vs. alternate hypothesis. Falsification is only loosely implied via predicted deviations (e.g., EP violation “η ∼ 4×10−18 for Ti vs. Pt”) rather than mutually exclusive, clearly testable null/alt outcomes. \\[6pt]
+
+\textbf{Novelty} &
+The author claims novelty in unifying gravitational, nuclear, and hadronic phenomena under a single medium framework, and explicitly notes that the baryon model 'is the framework's reframing of the existing DGG model [12]' rather than an independent derivation. The paper does not meaningfully engage with competing alternative gravity theories (e.g., MOND, entropic gravity, analog gravity models) or explain why this approach improves upon them, and the Painlevé–Gullstrand connection is acknowledged as pre-existing, leaving the genuine novel contribution underspecified. &
+The manuscript proposes a reframing of Schwarzschild/PG gravity as a “medium flow” with a per-atom constant κ and claims extensions to baryon/atomic mass fits and a “cosmological constant dissolved” interpretation. However, it largely asserts novelty (e.g., “G is… not fundamental,” “All 15 experimental tests of GR are reproduced”) without a detailed comparison to existing ether/PG-flow, refractive-index, or emergent-gravity programs beyond brief mentions (e.g., PG coordinates and DGG model) and limited gap-analysis. \\[6pt]
+
+\rowcolor{rowgray}
+\textbf{Humility} &
+The manuscript includes explicit 'Status' annotations throughout (e.g., 'Not derived. The QCD vacuum is the best available candidate,' 'Interpreted estimate,' 'Unfinished') that honestly delineate what is earned versus assumed, and Section 9.2 explicitly lists what is 'Not derived.' However, the introduction adopts a challenging tone toward GR ('unearned step from descriptive success to ontological authority') and makes sweeping claims such as 'the cosmological constant problem is dissolved' that exceed what the paper's calculations actually demonstrate. &
+The paper repeatedly labels what is and is not derived (e.g., “Status: Not derived” for identifying the QCD vacuum; “Status: Constrained fit, not a prediction” for atomic masses; “Status: Interpreted estimate” for η), and lists “Open problems” (deriving quark costs from ΛQCD, Koide parameters, cosmology w(z)). That said, some claims are expansive relative to support (e.g., “The cosmological constant problem is dissolved” and “All 15 experimental tests of GR are reproduced with quantitative agreement”). \\[6pt]
+
+\textbf{Engagement} &
+The manuscript cites foundational works (Einstein 1915, Painlevé 1921, Pound-Rebka 1959) and some recent work (MICROSCOPE 2022, DESI 2024, AME2020), but engagement is largely superficial — citations appear in passing without substantive discussion of how those works inform or constrain the framework. Modern literature on analog gravity, fluid-mechanical gravity models, or competing medium-based approaches is entirely absent, and the connection between cited works and specific claims is rarely made explicit beyond naming the source. &
+The manuscript connects to specific established constructs (Schwarzschild metric, Painlevé–Gullstrand coordinates, GPS/Pound–Rebka, GW170817, MICROSCOPE) and cites a few modern reviews/measurements (e.g., Will 2014; MICROSCOPE 2022; DESI 2024). But engagement with the broader contemporary literature on alternative gravity, emergent gravity, refractive-index/optical analog models, or Lorentz-violation constraints is limited, and many connections are asserted rather than developed in detail. \\[6pt]
+
+\rowcolor{rowgray}
+\textbf{Rigor} &
+The derivation of v(r) = √(2GM/r) from 'matching clock data to a velocity-dependent mechanism' is asserted rather than shown — the paper states 'the solution is uniquely determined' without presenting the actual derivation steps. The planetary mass calculation in Section 3.7 achieves 0.0004\% agreement but uses κ computed from G via κ = Gmp/c², making the result circular rather than an independent prediction. The equivalence principle 'structural proof' in Eq. 19 cancels ftick algebraically but does not justify why interaction mass and inertial mass both scale as mA × ftick from first principles. &
+Several internal derivations are shown cleanly (e.g., from \textbackslash\{\}hat f=\textbackslash\{\}sqrt\{1-r\_s/r\} to g(r)=GM/r\textasciicircum{}2 via Eq. 6–8; mapping n(r)=(1-r\_s/r)\textasciicircum{}\{-1/2\} to Schwarzschild components), and the v\_eff combination is clearly defined. However, key steps are under-justified or dimensionally unclear in places (e.g., κ defined as a length from “∆\textbackslash\{\}hat f × R / N” and then used in L = 1/2 r˙\textasciicircum{}2 + N\_cm κ c\textasciicircum{}2 / r; the “returnion” scale r\_ret and its physical interpretation at 10\textasciicircum{}\{-52\} m are asserted with limited physical justification), and some quantitative claims (e.g., “verified… to 0.000000\%,” “All 15 tests”) are not fully derived in-text. \\[6pt]
+
+\textbf{Citations} &
+Several citations are old foundational works (Einstein 1915, Painlevé 1921, Pound-Rebka 1959, de Broglie 1924) cited without justification for why recent work is insufficient, and the reference list of 22 entries is sparse for a paper making claims across gravitational physics, nuclear physics, and cosmology. Recent citations (DESI 2024, MICROSCOPE 2022, AME2020) are present but minimally connected to specific claims in the text, and entire sections on baryon masses and atomic structure lack citations to relevant modern QCD or nuclear structure literature. &
+The bibliography includes relevant foundational and some recent sources (e.g., GW170817 2017; MICROSCOPE 2022; DESI 2024; Will 2014), and some are tied to specific claims (e.g., GW speed, MICROSCOPE bound). But many major claims (e.g., “All 15 experimental tests,” QCD vacuum as medium, cosmological-constant reinterpretation) are not consistently supported with targeted, in-body citations, and the reference set leans heavily on classics with limited recent subfield coverage. \\
+
+\end{longtable}
+
+\bigskip
+\hrule
+\bigskip
+
+\subsection*{Paper 108 --- Guri, 2026}
+\addcontentsline{toc}{subsection}{Paper 108 --- Guri, 2026}
+
+\medskip
+
+\begin{tabular}{lcc}
+\toprule
+\textbf{Category} & \textbf{Sonnet 4.6} & \textbf{GPT-5.2} \\
+\midrule
+Hypothesis (15) & 4.0 & 6.0 \\
+Novelty (15) & 8.0 & 9.0 \\
+Humility (15) & 13.0 & 14.0 \\
+Engagement (20) & 9.0 & 10.0 \\
+Rigor (10) & 6.5 & 7.5 \\
+Citations (10) & 6.0 & 6.5 \\
+\midrule
+\textbf{Total (85)} & \textbf{46.5} & \textbf{53.0} \\
+\bottomrule
+\end{tabular}
+
+\bigskip
+
+\begin{longtable}{@{} p{2.2cm} p{6.3cm} p{6.3cm} @{}}
+\toprule
+\textbf{Category} & \textbf{Sonnet 4.6} & \textbf{GPT-5.2} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Category} & \textbf{Sonnet 4.6} & \textbf{GPT-5.2} \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+
+\rowcolor{rowgray}
+\textbf{Hypothesis} &
+The manuscript presents a modeling claim — that threshold-activated dissipation yields a conditional continuation criterion — but never frames this as a testable hypothesis with explicit null and alternate formulations. The paper states 'finite-time breakdown can occur only if the enstrophy becomes unbounded' as a mathematical result for the modified system, but provides no discussion of what experimental or numerical outcomes would falsify or support the model's physical relevance, and no path toward empirical testing is articulated beyond vague suggestions in Section 6.5 about 'high-resolution numerical simulations.' &
+The manuscript’s central claim is that adding a “threshold-activated dissipation mechanism” depending on |ω| yields a “weighted enstrophy estimate” and a “conditional continuation criterion” (Abstract, Theorem 4.1). However, it does not explicitly state a null hypothesis vs alternate hypothesis, nor does it specify mutually exclusive, testable falsification outcomes beyond the mathematical conditional statement “breakdown can occur only if the enstrophy becomes unbounded.” \\[6pt]
+
+\textbf{Novelty} &
+The author explicitly compares the threshold-activated model to hyperviscous models, Leray-alpha regularizations, and Ladyzhenskaya-type systems in Sections 1.2 and 6.4, identifying two distinguishing features: dependence on vorticity magnitude rather than strain rate, and threshold-activation behavior. However, the engagement with recent literature (past ten years) is thin — only references [4], [9], and [10] are from the past decade, and the novelty argument relies heavily on structural comparison rather than demonstrating that no prior work has introduced vorticity-dependent viscosity in this specific form. &
+The paper positions the model against hyperviscosity, Leray–α, and Ladyzhenskaya-type viscosity laws, emphasizing two differences: dependence on vorticity magnitude and threshold activation (Section 1.2, 2). It argues the contribution is an enstrophy mechanism where “enhanced dissipation absorbs the vortex-stretching contribution” (Abstract, Section 3), but the comparative case is mostly conceptual and not supported by detailed comparison to closely related modern nonlinear-viscosity/vorticity-dependent models. \\[6pt]
+
+\rowcolor{rowgray}
+\textbf{Humility} &
+The manuscript is notably restrained throughout, explicitly stating in Section 4 that 'the result proved here is not an unconditional global-regularity theorem' and in Section 6.2 that 'the continuation criterion established above therefore applies only to this modified system' and 'does not alter the classical constant-viscosity Navier–Stokes equations.' The author clearly identifies Assumption B as an unproved conditional hypothesis and acknowledges open questions in Section 6.5, though the physical motivation sections occasionally make heuristic claims (e.g., the coherence length relation) without sufficient qualification. &
+The manuscript repeatedly and clearly limits scope: it is “a phenomenological modeling extension… not a reformulation of the classical regularity problem” (Sections 1, 6) and “not an unconditional global-regularity theorem” (Section 4). It explicitly flags the key unproven technical input as “the only genuinely nonstandard higher-order input not proved in full… Assumption B” (Section 4), and suggests future work (Section 6.5) without overclaiming. \\[6pt]
+
+\textbf{Engagement} &
+The author engages substantively with Ladyzhenskaya [6,7], Leray [8], Cheskidov et al. [9], Taylor [11], and Kato [12] in the body of the text, explicitly connecting each to the model's structure in Sections 1.2 and 6.4. However, engagement with recent turbulence literature ([4], [10]) is largely confined to motivational paragraphs and does not connect to the mathematical analysis; the connections between cited work and the specific estimates derived (e.g., Lemma 3.1, Assumption B) are mostly implicit rather than explicitly stated. &
+The paper cites relevant categories of regularizations and turbulence phenomenology (e.g., Leray–α [9], Ladyzhenskaya/Lions [6,7], extreme events [4,10]) and briefly explains how its mechanism differs (Section 1.2, 6.4). Engagement with the current subfield is somewhat superficial: most technical scaffolding relies on classic PDE references (Taylor [11], Kato [12]) and the manuscript does not deeply connect to recent mathematical literature on quasilinear/derivative-dependent viscosity or vorticity-based regularizations beyond broad mentions. \\[6pt]
+
+\rowcolor{rowgray}
+\textbf{Rigor} &
+The core estimates in Lemma 3.1 follow a recognizable interpolation-Sobolev-Young's inequality chain that is mostly sound, and the enstrophy inequality (3.12) and Grönwall closure in Section 4.4 are logically structured. However, the derivation of equation (3.8) — the decomposition of the curl of the activation operator — is asserted rather than derived, and Lemma 3.2 is given only as a 'proof sketch' with the commutator estimate left unverified; Assumption B, the key higher-order estimate needed for the main theorem, is explicitly left unproved, which the author acknowledges but which substantially limits the rigor of the central result. &
+The derivations for energy (3.1) and the enstrophy inequality (3.12) are presented with standard tools (Biot–Savart/Calderón–Zygmund, Sobolev embedding, interpolation, Young’s inequality) and a clear logical flow in Lemma 3.1. However, a central step for continuation is deferred to an explicit assumption (Assumption B, inequality (4.12)), and the commutator control in Lemma 3.2 is only a “proof sketch,” leaving a key part of the claimed continuation mechanism not fully established within the manuscript. \\[6pt]
+
+\textbf{Citations} &
+Citations are consistently formatted and several are woven into the text with explicit connections (Taylor [11] and Kato [12] are cited at specific steps in the quasilinear argument; Ladyzhenskaya [6,7] and Leray [8] are connected to the model comparison in Sections 1.2 and 6.4). However, the majority of citations are foundational works from 1934–1977, and only [4], [9], and [10] are from the past ten years; the author provides no justification for why recent work on nonlinear viscosity or vorticity-dependent regularizations is absent, and references [4] and [10] are used only for motivational color without connection to the mathematical estimates. &
+The bibliography includes some recent sources (2012 [4], 2014 [10], 2005 [9]) and foundational classics (Leray 1934, Ladyzhenskaya 1969, Temam 1977, Taylor 1996, Kato 1975). Citations are used to support general background claims (e.g., turbulence intermittency [4,5,10]) and local theory references [11,12], but many key modeling and analytical choices (e.g., the specific vorticity-dependent diffusion form and the commutator framework in Assumption B) are not strongly anchored to specific prior works in the text, and the overall citation set is not heavily weighted toward the last decade. \\
+
+\end{longtable}
+
+\bigskip
+\hrule
+\bigskip
+
+\subsection*{Paper 109 --- Shatto, 2026}
+\addcontentsline{toc}{subsection}{Paper 109 --- Shatto, 2026}
+
+\medskip
+
+\begin{tabular}{lcc}
+\toprule
+\textbf{Category} & \textbf{Sonnet 4.6} & \textbf{GPT-5.2} \\
+\midrule
+Hypothesis (15) & 9.5 & 9.0 \\
+Novelty (15) & 8.0 & 8.0 \\
+Humility (15) & 5.5 & 7.5 \\
+Engagement (20) & 7.0 & 9.0 \\
+Rigor (10) & 4.5 & 4.0 \\
+Citations (10) & 5.5 & 7.0 \\
+\midrule
+\textbf{Total (85)} & \textbf{40.0} & \textbf{44.5} \\
+\bottomrule
+\end{tabular}
+
+\bigskip
+
+\begin{longtable}{@{} p{2.2cm} p{6.3cm} p{6.3cm} @{}}
+\toprule
+\textbf{Category} & \textbf{Sonnet 4.6} & \textbf{GPT-5.2} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Category} & \textbf{Sonnet 4.6} & \textbf{GPT-5.2} \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+
+\rowcolor{rowgray}
+\textbf{Hypothesis} &
+The manuscript states clear primary predictions with explicit falsification thresholds, e.g., 'a0(z) ∝ H(z)' falsified if 'a0 consistent with constant at high z ≥ 2σ, z > 2,' and 'Λ constant' falsified if 'ρDE(z) shows significant evolution ≥ 2σ.' However, the null hypothesis is never explicitly framed as such — the paper presents falsification conditions but does not formally distinguish null from alternate hypotheses, and some secondary predictions (e.g., 'H0 discrete') lack precise quantitative thresholds. &
+The manuscript advances a central structured claim that a single topological postulate “S1 = ∂(Möbius) → S3, ∂S3 = ∅” yields a scaling law “A/AP ≈ C(Θ)·(√Ω)−n” that determines Λ, H0, a0, and α, and it lists explicit falsification criteria (e.g., “a0(z) ∝ H(z) while Λ remains constant,” and thresholds such as “≥ 2σ, z > 2” for a0). However, it does not explicitly define a null hypothesis vs alternate hypothesis pair; instead it provides one-sided predictions and a falsification table without mutually exclusive null/alt framing. \\[6pt]
+
+\textbf{Novelty} &
+The manuscript explicitly positions itself against MOND (Milgrom [10]), ΛCDM, DESI w(z) results [13], and the Luminet/Weeks Poincaré dodecahedral space proposal [32], articulating how MIT extends those frameworks. However, the comparative work is often brief and the claimed improvements over prior topological cosmology approaches are asserted rather than rigorously demonstrated — for instance, the extension from CMB anomalies to particle structure via McKay correspondence is identified as novel but the derivation is described as 'in progress.' &
+The paper claims a unifying topological mechanism that maps multiple anomalies and constants to discrete “Fibonacci wells” on a “120 domain” and introduces a specific “phase field” step (2/120) to explain the Hubble tension, which is presented as a distinct proposal. But the comparative case is underdeveloped: it references related ideas (e.g., Poincaré dodecahedral space, MOND, DESI w(z)) without clearly identifying concrete limitations of those approaches and demonstrating, with direct comparisons, how MIT improves on them beyond asserting one-to-one mappings and percent-level fits. \\[6pt]
+
+\rowcolor{rowgray}
+\textbf{Humility} &
+The manuscript includes a section explicitly stating 'What MIT does not modify' and identifies open questions in 'The Horizon' table, which shows some restraint. However, the paper makes sweeping claims such as 'Einstein's constant, resolved,' 'Neither matter nor energy is dark,' and 'The answer is easy money' regarding the Yang-Mills mass gap — a Millennium Prize problem — without complete derivations, and the tone frequently exceeds what the presented evidence supports. &
+The manuscript does delineate some scope and open work (e.g., “What MIT does not modify. Einstein’s field equations and the Standard Model particle content are unchanged,” and a ‘Horizon’ section listing items ‘in progress’), and it provides explicit falsification thresholds. However, it repeatedly makes very strong claims (“derives the constants of the universe… across 122 orders of magnitude,” “The topology had only one choice,” “easy money” on the Yang–Mills gap) that exceed what is fully demonstrated within the manuscript and sometimes adopt a rhetorically confident tone. \\[6pt]
+
+\textbf{Engagement} &
+The manuscript cites recent work including DESI 2025 [13], COMPACT 2025 [19], LZ 2023 [21], XENONnT 2023 [22], Labbé et al. 2023 [11], and Riess et al. 2022 [12], and explicitly connects these to specific claims (e.g., DESI phantom crossing mapped to zcross ≈ 0.66, COMPACT parity result matched to RTT < 1). However, engagement with modern quantum gravity, loop quantum cosmology, or competing topological field theory literature is absent, and connections between citations and claims are sometimes stated only in passing. &
+The paper engages several modern observational results and tensions (Planck 2020, Riess 2022, LZ 2023, XENONnT 2023, Labbé 2023 JWST, DESI 2025 preprint) and ties them to specific proposed mechanisms (e.g., an 8.4\% H0 shift from Θf = 2/120; zcross ≈ 0.66 from the standing-wave phase). Still, engagement with the broader contemporary theoretical literature on topology, dark matter alternatives, and modified gravity is limited; many connections are asserted rather than developed through detailed comparison to current models and constraints. \\[6pt]
+
+\rowcolor{rowgray}
+\textbf{Rigor} &
+The manuscript presents several derivations with explicit steps (e.g., the Gauss-Codazzi conversion yielding Λobs = (3/2)Λtop, the anti-periodic boundary condition yielding half-integer modes), but critical load-bearing steps are deferred — the particle mass spectrum computation is explicitly described as 'in progress,' and the Grid-Hierarchy exponent 1/|I| = 1/60 for α is motivated but not rigorously derived. The assignment of observables to Fibonacci wells relies on post-hoc coprimality arguments rather than derivation from first principles. &
+While the manuscript contains many equations and some internal calculations (e.g., deriving half-integer modes from anti-periodic BCs; defining C(Θ)=2 sin\textasciicircum{}2(πΘ); computing the 8.4\% shift via C(36/120)/C(34/120)), key premises are not physically justified to the standard required for soundness (e.g., selection rules assigning n=1,2,3 by ‘observable character,’ the identification of |2I|=120 as ‘maximum resolution,’ and the step-function ‘phase field’ response locking exactly to 2/120). Several quantitative leaps (e.g., L ≈ 2.1 Gpc, ℓcut ≈ 31, and the mapping of Λtop to Λobs via a minimal-embedding assumption Kij=0) are presented with limited derivational support and rely on strong, nonstandard assumptions. \\[6pt]
+
+\textbf{Citations} &
+The manuscript includes a mix of recent (2022–2025) and foundational citations, with several explicitly connected to claims in the text (e.g., Milgrom [10] for a0, Planck Collaboration [16] for Λobs·ℓP²). However, many older citations (de Broglie 1924, Gauss 1828, Fibonacci 1202, Klein 1884) are used without justification for why recent work is insufficient, and the McKay correspondence [25] — central to the particle structure section — is cited via a 1980 proceedings paper with no modern follow-up literature cited. &
+The bibliography includes a mix of foundational and recent sources, with multiple post-2016 references directly relevant to claims (Planck 2020 for Λ/CMB, Riess 2022 for H0, LZ/XENONnT 2023 for null detection, Labbé 2023 for early galaxies, DESI 2025 for w(z)). However, many central claims (e.g., the uniqueness of the topology choice, the 120-domain resolution argument, and the specific phase-field trigger/locking mechanism) are not supported by external citations, and some citations are invoked broadly rather than being tightly connected to the specific derivations in the text. \\
+
+\end{longtable}
+
+\bigskip
+\hrule
+\bigskip
+
+\subsection*{Paper 110 --- Anonymous, 2026}
+\addcontentsline{toc}{subsection}{Paper 110 --- Anonymous, 2026}
+
+\medskip
+
+\begin{tabular}{lcc}
+\toprule
+\textbf{Category} & \textbf{Sonnet 4.6} & \textbf{GPT-5.2} \\
+\midrule
+Hypothesis (15) & 11.0 & 8.0 \\
+Novelty (15) & 9.0 & 9.0 \\
+Humility (15) & 10.0 & 14.0 \\
+Engagement (20) & 11.0 & 10.0 \\
+Rigor (10) & 6.5 & 6.5 \\
+Citations (10) & 6.5 & 6.0 \\
+\midrule
+\textbf{Total (85)} & \textbf{54.0} & \textbf{53.5} \\
+\bottomrule
+\end{tabular}
+
+\bigskip
+
+\begin{longtable}{@{} p{2.2cm} p{6.3cm} p{6.3cm} @{}}
+\toprule
+\textbf{Category} & \textbf{Sonnet 4.6} & \textbf{GPT-5.2} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Category} & \textbf{Sonnet 4.6} & \textbf{GPT-5.2} \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+
+\rowcolor{rowgray}
+\textbf{Hypothesis} &
+The manuscript presents a clear central hypothesis — that the Standard Model gauge group, matter content, and symmetry breaking all derive from the geometry of the bundle of Lorentzian metrics — and explicitly states falsification conditions: 'Any single failure would rule out the framework,' listing five specific tests including p→K+ν̄ dominance, inverted neutrino hierarchy, no axion, no light SUSY, and mH≈125.8 GeV. However, the null hypothesis is never formally stated as such, and some failure conditions (e.g., the Higgs mass prediction with ±2 GeV theoretical uncertainty) are soft enough that falsification would be contested rather than clean. &
+The paper advances a clear central claim that “the gauge group and matter content of the Standard Model” arise from the geometry of the Lorentzian metric bundle Y14→X4, with further conditional claims depending on a Z3 Wilson line and an orbifold. It lists falsifiers (e.g., “If JUNO confirms normal hierarchy: falsified,” “If a QCD axion is discovered: falsified,” proton-decay channel predictions), but it does not explicitly define a null hypothesis vs. alternate hypothesis in mutually exclusive statistical form. \\[6pt]
+
+\textbf{Novelty} &
+The manuscript explicitly acknowledges that the core geometric observation originates with Weinstein's Geometric Unity [4,5] and states 'What this paper adds is' a list of specific contributions including the rigorous derivation, topological breaking mechanism, Higgs identification, and quantitative predictions. However, the comparative positioning against other approaches to deriving the Standard Model from geometry (e.g., noncommutative geometry of Connes [25,50], other GUT frameworks) is largely absent — the paper does not systematically explain why prior geometric approaches fail where this one succeeds, leaving the novelty claim partially supported. &
+The manuscript explicitly positions itself as making Weinstein’s Geometric Unity idea rigorous and extending it to topology-driven SM breaking, electroweak breaking from the metric section, and quantitative predictions (e.g., Higgs mass from λ(Λ)=0, coupling correction via spectral action). However, the comparative case against modern competing approaches is limited; beyond citing Weinstein and standard GUT/spectral-action references, it does not systematically contrast with recent (last-10-years) work on related geometric unification or NCG beyond a few touchpoints. \\[6pt]
+
+\rowcolor{rowgray}
+\textbf{Humility} &
+The manuscript contains an unusually thorough 'Scope and limitations' section (Section 19) and a 'What is not established' subsection explicitly listing open problems including the hierarchy problem, propagating Higgs boson, Wilson line selection, and the cosmological constant. The LLM disclosure statement (Section V) is remarkably candid about the limitations of the authorship process. However, the abstract and closing statement contain language that somewhat exceeds the evidence ('derives the Standard Model,' 'zero free parameters' for predictions that demonstrably use fitted parameters like Λ), and the closing statement's tone occasionally borders on grandiose ('the only thing that matters'). &
+The paper repeatedly delineates unconditional vs conditional results (e.g., Section 19 “What is established (unconditionally)/(conditionally)/(not established)”) and flags major open problems (hierarchy problem, cosmological constant, Wilson line selection, propagating Higgs). It also states the work is not peer-reviewed and explicitly notes limitations and conditionality (e.g., Remark 13.8; Section 19), though some headline claims in the Abstract/overview are very strong relative to the remaining open issues. \\[6pt]
+
+\textbf{Engagement} &
+The manuscript cites relevant foundational and modern work including Chamseddine-Connes spectral action [25], Buttazzo et al. on Higgs near-criticality [35], Machacek-Vaughn two-loop RGEs [29], and van den Ban-Schlichtkrull Plancherel decomposition [12], with explicit connections made in the text (e.g., 'The same mechanism operates on Y14' referencing Connes' programme). However, engagement with competing geometric unification approaches is thin, and several citations to modern experimental results (NuFIT, Planck 2018) are present but not deeply integrated — the paper would benefit from more explicit comparison with current noncommutative geometry SM derivations. &
+The manuscript engages substantively with several established pillars (DeWitt metric, Giulini–Kiefer, Hosotani, APS index/eta invariant, Machacek–Vaughn RGEs, spectral action) and uses them in the derivations (e.g., Theorem 9.2 via Schur’s lemma; Proposition R.24 two-loop coefficients). But engagement with the current state of the field is uneven: many citations are foundational (1970s–1990s) and the paper does not deeply connect to recent literature on GUT breaking, orbifold GUTs, or modern precision unification analyses beyond a small number of references (e.g., Buttazzo et al. 2013; NuFIT 2024). \\[6pt]
+
+\rowcolor{rowgray}
+\textbf{Rigor} &
+The manuscript presents many derivations in proposition-proof format with explicit logical structure, and some results (e.g., Proposition 3.1 on fibre signature, Theorem 13.2 on Wilson line breaking) are rigorously argued. However, several critical quantitative claims rest on chains of approximations whose uncertainties compound in ways not fully tracked — notably the coupling unification prediction ρ=0.717 involves a 'Shiab correction δΔ\_Shiab≈0.04' derived from a 'geometric constant C\_T≈0.0014' whose derivation is sketched rather than completed, and the instanton determinant D≈0.36 is computed from a 'dimensionless CW potential' with acknowledged uncertainty range [0.2,0.5] that is then used to claim a precise prediction. &
+Large parts are presented in proposition–proof style with explicit constructions (e.g., signature of Gλ, maximal compact subgroup giving Pati–Salam, Wilson line commutants, O’Neill decomposition, Dirac-operator splitting), and many quantitative steps are at least sketched with formulas. However, several key physics-critical steps rely on nontrivial assumptions or heuristic identifications (e.g., deriving λ<−1/4 from “Hamiltonian constraint forces the conformal mode” in Theorem 9.3; multiple non-perturbative spectral-action claims and instanton determinant extraction), and some major predictions depend on conditional frameworks (Z3 vacuum selection, adjoint-fermion origin, two-scale orbifold) rather than being fully derived from first principles. \\[6pt]
+
+\textbf{Citations} &
+Citations are generally relevant and woven into the text with explicit connections (e.g., '[35] showed that this condition, combined with three-loop SM running, predicts mH≈125.5 GeV'), and the reference list includes recent work (Buttazzo 2013, Abel et al. 2020, NuFIT 2024). However, the disclosure statement explicitly warns 'Citations have not been individually verified against original sources by a human' and notes adversarial verification 'did not flag any as hallucinated, but independent verification has not been performed' — this acknowledged uncertainty about citation integrity, combined with the inability to verify fabrication, prevents full marks under the rubric's explicit rule that fabricated citations result in zero, though the judge cannot confirm fabrication. &
+The bibliography includes relevant foundational sources (DeWitt, Pati–Salam, SO(10), Hosotani, APS, Gilkey, Machacek–Vaughn) and some modern references (e.g., Buttazzo et al. 2013; NuFIT 2024; Planck 2018). But many claims—especially the most novel spectral-action/Plancherel/instanton quantitative assertions—are not consistently tied to specific external citations in the body, and the reference list is not strongly weighted toward the last decade; the manuscript itself also notes citations were not independently verified by a human. \\
+
+\end{longtable}
+
+\bigskip
+\hrule
+\bigskip
+
+\end{document}
